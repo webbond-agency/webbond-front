@@ -1,0 +1,264 @@
+{
+  "Navigation": {
+    "home": "HJEM",
+    "services": "SERVICES",
+    "prices": "PRISER",
+    "about": "OM OS",
+    "cases": "CASES"
+  },
+  "Hero": {
+    "subtitle": "ALT TIL DIN VIRKSOMHED:",
+    "title": "HJEMMESIDE, SEO, LOGO OG ANNONCER",
+    "description": "Vi forvandler jeres hjemmesider til kunde-genererende maskiner",
+    "mainDescription": "<gray>Med vores komplette løsning på ét sted sparer</gray> I både tid og penge, <gray>mens</gray> vi skaber resultater for hele jeres forretning",
+    "button": "Bestil din hjemmeside",
+    "verticalText": "Cases",
+    "digitalAgency": "Digitalt bureau"
+  },
+  "Services": {
+    "title": "SERVICES OG PRISER",
+    "subtitle": "Fra idé til resultat — kreativitet og kode i én formel",
+    "description": "Hjemmesider på ren kode, SEO, reklame og branding — alt, hvad du behøver for en succesfuld online-forretning",
+    "button": "Få et tilbud",
+    "verticalText": "Services",
+    "seeMore": "Se mere",
+    "items": {
+      "1": {
+        "title": "Hjemmeside",
+        "description": "En hjemmeside, der gør det nemt for dine kunder at finde dig og købe dine produkter",
+        "price": "Pris fra 37.500 kr (5000€)"
+      },
+      "2": {
+        "title": "SEO",
+        "description": "Bliv fundet på Google, så flere mennesker opdager din virksomhed",
+        "price": "Pris fra 6.000 kr/måned (800€)"
+      },
+      "3": {
+        "title": "Logo",
+        "description": "Et logo, der gør det nemt for folk at genkende din virksomhed",
+        "price": "Pris fra 3.000 kr (400€)"
+      },
+      "4": {
+        "title": "Google Ads",
+        "description": "Annonce på Google, så kunder ser dig og kommer til din virksomhed",
+        "price": "Pris fra 3.750 kr/måned (600€)"
+      },
+      "5": {
+        "title": "FB & Instagram ADS",
+        "description": "Reklame på sociale medier, der fanger folks opмærksomhed og skaber nye kunder",
+        "price": "Pris fra 3.750 kr/måned (600€)"
+      },
+      "6": {
+        "title": "Motion Design",
+        "description": "Videoer og animationer, der gør dit brand levende og spændende for kunderne",
+        "price": "Pris fra 2.000 kr (250€)"
+      },
+      "7": {
+        "title": "Kalkulatorer",
+        "description": "Interaktive værktøjer, så folk hurtigt kan se priser og muligheder",
+        "price": "Pris fra 4.500 kr (600€)"
+      }
+    }
+  },
+  "ChooseWebsite": {
+    "title": "<gray>Vælg et website,</gray> der arbejder for din virksomhed",
+    "subtitle": "Landingpages, hjemmesider eller webshops — et værktøj, der tiltrækker kunder, øger indtjeningen og frigør tid til at udvikle din virksomhed",
+    "buttonOrder": "Bestil din hjemmeside",
+    "buttonStart": "Start samarbejdet",
+    "types": {
+      "landingpage": {
+        "label": "LANDINGPAGE",
+        "description": "En enkel side med alt det vigtigste – perfekt, når du vil præsentere ét produkt eller én tjeneste og få kunder hurtigt",
+        "firstSection": {
+          "title": "HVEM PASSER DET TIL",
+          "items": {
+            "0": "Et specifikt produkt eller kampagne",
+            "1": "Startups og små virksomheder, personlige brands",
+            "2": "Tjenester med ét klart tilbud"
+          }
+        },
+        "secondSection": {
+          "title": "FORDELE",
+          "items": {
+            "0": "Fokuserer kundens opmærksomhed på ét mål",
+            "1": "Hurtig lancering og lav pris",
+            "2": "Giver hurtige resultater og salg"
+          }
+        }
+      },
+      "hjemmeside": {
+        "label": "HJEMMESIDE",
+        "description": "En professionelt website, der viser alt, hvad din virksomhed tilbyder — bygget til at skabe tillid og tiltrække kunder fra Google.",
+        "firstSection": {
+          "title": "STRUKTUR",
+          "items": {
+            "0": "Virksomheder med flere tjenester",
+            "1": "Servicefirmaer og konsulenter",
+            "2": "Dem, der ønsker stabil trafik uden annoncer"
+          }
+        },
+        "secondSection": {
+          "title": "VÆKST",
+          "items": {
+            "0": "Vises højt på Google (SEO-optimeret)",
+            "1": "Bygger tillid hos kunder",
+            "2": "Giver en jævn strøm af henvendelser"
+          }
+        }
+      },
+      "webshop": {
+        "label": "WEBSHOP",
+        "description": "En webshop, der gør det nemt at sælge online – automatiske betalinger, ordrer og lagerstyring samlet ét sted.",
+        "firstSection": {
+          "title": "SALG",
+          "items": {
+            "0": "Fysiske butikker, der vil sælge online",
+            "1": "Producenter og håndværkere",
+            "2": "Dem, der vil spare tid på manuelle opgaver"
+          }
+        },
+        "secondSection": {
+          "title": "EFFEKTIVITET",
+          "items": {
+            "0": "Salg 24/7 – selv når du sover",
+            "1": "Automatiseret system sparer tid og fejl",
+            "2": "Flere kunder, større omsætning"
+          }
+        }
+      }
+    }
+  },
+  "Cases": {
+    "title": "<gray>Cases</gray> WebBond '{ }' CodeSite.Art",
+    "subtitle": "Virksomheder, der har betroet os deres forretning",
+    "button": "Få et tilbud"
+  },
+  "About": {
+    "title": "Om WebBond '{ }' Code.Site.Art",
+    "description": "<gray>Vi kombinerer kreativitet, kode og strategi i ét partnerskab</gray> for at <gray>gøre</gray> din virksomhed stærkere og mere succesfuld",
+    "resultsTitle": "Resultater, du får i samarbejde med os:",
+    "growthTitle": "Synlighed:",
+    "growthDesc": "Bliv set online og styrk dit brand med professionelt design og SEO",
+    "visibilityTitle": "Vækst:",
+    "visibilityDesc": "Flere kunder og øget salg gennem målrettede kampagner og optimerede websites",
+    "efficiencyTitle": "Effektivitet:",
+    "efficiencyDesc": "Spar tid med automatiserede løsninger og samlet digital service ét sted",
+    "button": "Få et tilbud"
+  },
+  "Team": {
+    "title": "Vores team",
+    "buttonQuote": "Få et tilbud",
+    "buttonAbout": "Om Os"
+  },
+  "Reviews": {
+    "title": "Vores kunders anmeldelser",
+    "subtitle": "Se hvad vores kunder siger om os, og gennemgå vores anmeldelser"
+  },
+  "Business": {
+    "title": "Tag din virksomhed <gray>til</gray> næste <gray>niveau med</gray> WebBond <gray>'{ }' CodeSite.</gray> Art",
+    "description": "Din ambition, vores ekspertise — sammen gør vi din virksomhed synlig, effektiv og profitabel",
+    "button": "Start samarbejdet"
+  },
+  "Contacts": {
+    "cvr": "CVR:44894181",
+    "city": "København",
+    "email": "Email: info@webbond.dk",
+    "button": "Kontakt Os"
+  },
+  "Questions": {
+    "title": "Spørgsmål og svar",
+    "seeMore": "Se andre spørgsmål",
+    "q1": {
+      "question": "Hvor lang tid tager det at lave en hjemmeside?",
+      "answer": "Små projekter tager normalt 2–3 uger, mens større websites tager op til 8 uger, afhængigt af funktioner og design."
+    },
+    "q2": {
+      "question": "Hvad koster en hjemmeside om måneden?",
+      "answer": "En professionel hjemmeside starter fra ca. 37.500 kr (5000€) og opefter, afhængigt af design, antal sider og funktioner. Den præcise pris får du efter en gratis konsultation, hvor vi gennemgår dit projekt."
+    },
+    "q3": {
+      "question": "Hvad er bedst – Wix, WordPress eller jeres løsning?",
+      "answer": "Ingen af platformene kan levere de resultater, vi gør. Vi bygger hjemmesider på ren kode, uden afhængighed af platforme, med livstidsgaranti på vores system. Det betyder maksimal hastighed, fleksibilitet og sikkerhed."
+    },
+    "q4": {
+      "question": "Er der ekstra udgifter til vedligeholdelse af hjemmesiden?",
+      "answer": "Du betaler kun for domæne og hosting, afhængigt af størrelsen på dit site. Der findes både gratis og betalte løsninger."
+    },
+    "q5": {
+      "question": "Hvad er betingelserne for samarbejde?",
+      "answer": "Vi starter med en gratis konsultation, derefter laver vi et tilbud. Når du godkender det, underskriver vi kontrakten, og efter 50 % forudbetaling begynder vi arbejdet."
+    },
+    "q6": {
+      "question": "Er der mulighed for afbetaling?",
+      "answer": "Ja, vi tilbyder fleksible betalingsaftaler i 2–4 rater efter aftale, så du nemt kan planlægge din investering."
+    },
+    "q7": {
+      "question": "Hvis jeg ikke har tekster, billeder eller struktur – hjælper I med det?",
+      "answer": "Ja, selvfølgelig! Under den gratis konsultation gennemgår vi dit projekt og laver tekster, billeder og struktur for dig. Du fortæller bare om din virksomhed — vi klarer resten."
+    },
+    "q8": {
+      "question": "Er SEO gratis?",
+      "answer": "Nej, SEO er ikke gratis – men det er en investering, der hurtigt betaler sig. Du betaler for arbejdet én gang, og resultaterne fortsætter med at skabe trafik og kunder over tid."
+    },
+    "q9": {
+      "question": "Hvad koster SEO om måneden?",
+      "answer": "SEO koster fra ca. 6.000 kr/måned (800€) om måneden og opefter, afhængigt af branche, konkurrence og mål. Vi tilpasser altid løsningen, så du får mest muligt ud af dit budget."
+    },
+    "q10": {
+      "question": "Er Google Ads og SEO det samme?",
+      "answer": "Nej. Google Ads er betalte annoncer, mens SEO handler om at blive fundet organisk uden at betale pr. klik. Sammen giver de den bedste effekt."
+    },
+    "q11": {
+      "question": "Kan jeg selv lave SEO?",
+      "answer": "Det er bedst at overlade det til specialister. Vi arbejder med professionelle værktøjer som Ahrefs, Semrush, SEOAbility og Screaming Frog, kombineret med mange års erfaring. Det giver et langt stærkere og hurtigere resultat."
+    },
+    "q12": {
+      "question": "Hvad koster et logo?",
+      "answer": "Et professionelt logo koster fra ca. 3.000 kr (400€) og opefter, men vi tilbyder også komplet branding med visuel identitet, farver, skrifttyper og designmanual."
+    },
+    "q13": {
+      "question": "Laver I også visitkort og brandingmateriale?",
+      "answer": "Ja, vi designer visitkort, flyers, brandbøger og marketingstrategier, så din virksomhed får et samlet, professionelt udtryk."
+    }
+  },
+  "FeedbackModal": {
+    "title": "Fra idé til forretning",
+    "description": "Vi forvandler din virksomhed til et system, der fungerer og skaber profit for dig.",
+    "form": {
+      "namePlaceholder": "Dit navn",
+      "phonePlaceholder": "Telefon",
+      "emailPlaceholder": "E-mail",
+      "messagePlaceholder": "Besked",
+      "submit": "Send besked",
+      "loading": "Sender..."
+    },
+    "validation": {
+      "nameMin": "Navnet skal være mindst 2 tegn",
+      "phoneRequired": "Telefonnummer er påkrævet",
+      "phoneInvalid": "Ugyldigt telefonnummer",
+      "emailInvalid": "Ugyldig e-mailadresse",
+      "messageRequired": "Besked er påkrævet",
+      "messageMax": "Beskeden er for lang",
+      "submitError": "Der opstod en fejl. Prøv venligst igen senere."
+    }
+  },
+  "SuccessModal": {
+    "title": "Tak for dine oplysninger!",
+    "description": "Vi har modtaget dine oplysninger og vender tilbage til dig snarest muligt.",
+    "button": "Luk"
+  },
+  "CasePage": {
+    "Cta": {
+      "title": "Kontakt os og få en skræddersyet løsning til dine mål",
+      "description": "Din ambition, vores ekspertise — sammen gør vi din virksomhed synlig, effektiv og profitabel",
+      "button": "Start samarbejdet"
+    },
+    "Result": {
+      "title": "Resultat"
+    }
+  },
+  "Breadcrumbs": {
+    "home": "Hjem",
+    "cases": "Cases"
+  }
+}
