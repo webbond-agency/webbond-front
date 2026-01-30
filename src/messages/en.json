@@ -1,0 +1,266 @@
+{
+  "Navigation": {
+    "home": "HOME",
+    "services": "SERVICES",
+    "prices": "PRICES",
+    "about": "ABOUT",
+    "cases": "CASES"
+  },
+  "Hero": {
+    "subtitle": "EVERYTHING FOR YOUR BUSINESS:",
+    "title": "WEBSITE, SEO, LOGO AND ADS",
+    "description": "We transform your websites into customer-generating machines",
+    "mainDescription": "<gray>With our complete solution in one place, you save</gray> both time and money, <gray>while</gray> we create results for your entire business",
+    "button": "Order your website",
+    "verticalText": "Cases",
+    "digitalAgency": "Digital agency"
+  },
+  "Services": {
+    "title": "SERVICES AND PRICES",
+    "subtitle": "From idea to result — creativity and code in one formula",
+    "description": "Websites on pure code, SEO, advertising and branding — everything you need for a successful online business",
+    "button": "Get a quote",
+    "verticalText": "Services",
+    "seeMore": "See more",
+    "items": {
+      "1": {
+        "title": "Website",
+        "description": "A website that makes it easy for your customers to find you and buy your products",
+        "price": "Price from approx. 37,500 DKK (5000€)"
+      },
+      "2": {
+        "title": "SEO",
+        "description": "Get found on Google so more people discover your business",
+        "price": "Price from approx. 6,000 DKK/month (800€)"
+      },
+      "3": {
+        "title": "Logo",
+        "description": "A logo that makes it easy for people to recognize your business",
+        "price": "Price from approx. 3,000 DKK (400€)"
+      },
+      "4": {
+        "title": "Google Ads",
+        "description": "Ads on Google so customers see you and come to your business",
+        "price": "Price from approx. 3,750 DKK/month (600€)"
+      },
+      "5": {
+        "title": "FB & Instagram ADS",
+        "description": "Social media advertising that catches people's attention and creates new customers",
+        "price": "Price from approx. 3,750 DKK/month (600€)"
+      },
+      "6": {
+        "title": "Motion Design",
+        "description": "Videos and animations that make your brand come alive and exciting for customers",
+        "price": "Price from approx. 2,000 DKK (250€)"
+      },
+      "7": {
+        "title": "Calculators",
+        "description": "Interactive tools so people can quickly see prices and options",
+        "price": "Price from approx. 4,500 DKK (600€)"
+      }
+    }
+  },
+  "ChooseWebsite": {
+    "title": "<gray>Choose a website,</gray> that works for your business",
+    "subtitle": "Landing pages, websites or webshops — a tool that attracts customers, increases earnings and frees up time to develop your business",
+    "buttonOrder": "Order your website",
+    "buttonStart": "Start cooperation",
+    "types": {
+      "landingpage": {
+        "label": "LANDING PAGE",
+        "description": "A simple page with all the essentials – perfect when you want to present one product or service and get customers quickly",
+        "firstSection": {
+          "title": "WHO IS IT FOR",
+          "items": {
+            "0": "A specific product or campaign",
+            "1": "Startups and small businesses, personal brands",
+            "2": "Services with one clear offer"
+          }
+        },
+        "secondSection": {
+          "title": "BENEFITS",
+          "items": {
+            "0": "Focuses customer attention on one goal",
+            "1": "Quick launch and low price",
+            "2": "Provides quick results and sales"
+          }
+        }
+      },
+      "hjemmeside": {
+        "label": "WEBSITE",
+        "description": "A professional website that shows everything your business offers — built to build trust and attract customers from Google.",
+        "firstSection": {
+          "title": "STRUCTURE",
+          "items": {
+            "0": "Companies with multiple services",
+            "1": "Service firms and consultants",
+            "2": "Those who want stable traffic without ads"
+          }
+        },
+        "secondSection": {
+          "title": "GROWTH",
+          "items": {
+            "0": "Appears high on Google (SEO optimized)",
+            "1": "Builds trust with customers",
+            "2": "Provides a steady stream of inquiries"
+          }
+        }
+      },
+      "webshop": {
+        "label": "WEBSHOP",
+        "description": "A webshop that makes it easy to sell online – automatic payments, orders, and inventory management all in one place.",
+        "firstSection": {
+          "title": "SALES",
+          "items": {
+            "0": "Physical stores that want to sell online",
+            "1": "Manufacturers and craftsmen",
+            "2": "Those who want to save time on manual tasks"
+          }
+        },
+        "secondSection": {
+          "title": "EFFICIENCY",
+          "items": {
+            "0": "Sales 24/7 – even while you sleep",
+            "1": "Automated system saves time and errors",
+            "2": "More customers, higher revenue"
+          }
+        }
+      }
+    }
+  },
+  "Cases": {
+    "title": "<gray>Cases</gray> WebBond '{ }' CodeSite.Art",
+    "subtitle": "Companies that have entrusted us with their business",
+    "button": "Get a quote"
+  },
+  "About": {
+    "title": "About WebBond '{ }' Code.Site.Art",
+    "description": "<gray>We combine creativity, code and strategy in one partnership</gray> to <gray>make</gray> your business stronger and more successful",
+    "resultsTitle": "Results you get in cooperation with us:",
+    "growthTitle": "Visibility:",
+    "growthDesc": "Get seen online and strengthen your brand with professional design and SEO",
+    "visibilityTitle": "Growth:",
+    "visibilityDesc": "More customers and increased sales through targeted campaigns and optimized websites",
+    "efficiencyTitle": "Efficiency:",
+    "efficiencyDesc": "Save time with automated solutions and unified digital service in one place",
+    "button": "Get a quote"
+  },
+  "Team": {
+    "title": "Our team",
+    "buttonQuote": "Get a quote",
+    "buttonAbout": "About Us"
+  },
+  "Reviews": {
+    "title": "Reviews",
+    "subtitle": "See what our customers say about us, and browse our reviews"
+  },
+  "Business": {
+    "title": "Take your business <gray>to</gray> the next <gray>level with</gray> WebBond <gray>'{ }' CodeSite.</gray> Art",
+    "description": "Your ambition, our expertise — together we make your business visible, effective and profitable",
+    "button": "Start cooperation"
+  },
+  "Contacts": {
+    "cvr": "CVR:44894181",
+    "city": "Copenhagen",
+    "email": "Email: info@webbond.dk",
+    "button": "Contact Us"
+  },
+  "Questions": {
+    "title": "Questions and answers",
+    "seeMore": "See other questions",
+    "q1": {
+      "question": "How long does it take to create a website?",
+      "answer": "Small projects usually take 2–3 weeks, while larger websites can take up to 8 weeks, depending on the features and design."
+    },
+    "q2": {
+      "question": "How much does a website cost per month?",
+      "answer": "A professional website starts from approx. 37,500 DKK (5000€) and upwards, depending on design, number of pages, and features. You will receive an exact price after a free consultation where we go through your project."
+    },
+    "q3": {
+      "question": "What is best – Wix, WordPress or your solution?",
+      "answer": "None of the platforms can deliver the results we do. We build websites on pure code, without dependency on platforms, with a lifetime warranty on our system. This means maximum speed, flexibility, and security."
+    },
+    "q4": {
+      "question": "Are there extra costs for maintaining the website?",
+      "answer": "You only pay for domain and hosting, depending on the size of your site. Both free and paid solutions are available."
+    },
+    "q5": {
+      "question": "What are the conditions for cooperation?",
+      "answer": "We start with a free consultation, then we prepare an offer. Once you approve it, we sign the contract, and after a 50% down payment, we begin the work."
+    },
+    "q6": {
+      "question": "Is it possible to pay in installments?",
+      "answer": "Yes, we offer flexible payment agreements in 2–4 installments by arrangement, so you can easily plan your investment."
+    },
+    "q7": {
+      "question": "If I don't have texts, images or structure – do you help with that?",
+      "answer": "Yes, of course! During the free consultation, we go through your project and create texts, images, and structure for you. You just tell us about your business — we'll handle the rest."
+    },
+    "q8": {
+      "question": "Is SEO free?",
+      "answer": "No, SEO is not free – but it is an investment that quickly pays off. You pay for the work once, and the results continue to generate traffic and customers over time."
+    },
+    "q9": {
+      "question": "How much does SEO cost per month?",
+      "answer": "The price varies depending on your industry and competition, but we always tailor a solution that fits your budget and goals. (approx. 800€/month and upwards)"
+    },
+    "q10": {
+      "question": "Are Google Ads and SEO the same?",
+      "answer": "No. Google Ads are paid advertisements, while SEO is about being found organically without paying per click. Together, they provide the best effect."
+    },
+    "q11": {
+      "question": "Can I do SEO myself?",
+      "answer": "It's best to leave it to specialists. We work with professional tools like Ahrefs, Semrush, SEOAbility, and Screaming Frog, combined with years of experience. This provides a much stronger and faster result."
+    },
+    "q12": {
+      "question": "How much does a logo cost?",
+      "answer": "A professional logo starts from approx. 3,000 DKK (400€) and upwards, but we also offer complete branding with visual identity, colors, fonts, and a design manual."
+    },
+    "q13": {
+      "question": "Do you also make business cards and branding material?",
+      "answer": "Yes, we design business cards, flyers, brand books, and marketing strategies, so your business gets a unified, professional look."
+    }
+  },
+  "FeedbackModal": {
+    "title": "From Idea to Business",
+    "description": "We transform your business into a system that works and creates profit for you.",
+    "form": {
+      "namePlaceholder": "Your Name",
+      "phonePlaceholder": "Phone",
+      "emailPlaceholder": "E-mail",
+      "messagePlaceholder": "Message",
+      "submit": "Send Message",
+      "loading": "Sending..."
+    },
+    "validation": {
+      "nameMin": "Name must be at least 2 characters",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Invalid phone number",
+      "emailInvalid": "Invalid email address",
+      "messageRequired": "Message is required",
+      "messageMax": "Message is too long",
+      "submitError": "An error occurred. Please try again later."
+    }
+  },
+  "SuccessModal": {
+    "title": "Thank you for your information!",
+    "description": "We have received your information and will get back to you as soon as possible.",
+    "button": "Close"
+  },
+
+  "CasePage": {
+    "Cta": {
+      "title": "Contact us and get a tailored solution for your goals",
+      "description": "Your ambition, our expertise — together we make your business visible, efficient, and profitable",
+      "button": "Start the collaboration"
+    },
+    "Result": {
+      "title": "Result"
+    }
+  },
+
+  "Breadcrumbs": {
+    "home": "Home",
+    "cases": "Cases"
+  }
+}
