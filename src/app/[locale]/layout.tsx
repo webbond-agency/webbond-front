@@ -1,94 +1,97 @@
-import type { Metadata } from 'next';
-import { Montserrat, Inter, Manrope } from 'next/font/google';
-import './globals.css';
-import { routing } from '@/i18n/routing';
-import { hasLocale, NextIntlClientProvider } from 'next-intl';
-import { notFound } from 'next/navigation';
-import { setRequestLocale } from 'next-intl/server';
-import { FramerMotionProvider } from '@/components/ui/framer-motion-provider';
-import Header from '@/components/header/header';
-import Footer from '@/components/footer/footer';
-import ScrollProvider from '@/utils/scrollProvider';
+import type { Metadata } from "next";
+import { Montserrat, Inter, Manrope } from "next/font/google";
+import "./globals.css";
+import { routing } from "@/i18n/routing";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
+import { FramerMotionProvider } from "@/components/ui/framer-motion-provider";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
+import ScrollProvider from "@/utils/scrollProvider";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const montserrat = Montserrat({
-  variable: '--font-montserrat',
-  subsets: ['latin', 'cyrillic'],
-  display: 'swap',
+  variable: "--font-montserrat",
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
 });
 
 const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin', 'cyrillic'],
-  display: 'swap',
+  variable: "--font-inter",
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
 });
 
 const manrope = Manrope({
-  variable: '--font-manrope',
-  subsets: ['latin', 'cyrillic'],
-  display: 'swap',
+  variable: "--font-manrope",
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
 });
+
+const GTM_ID = "GTM-54GZR7KH";
 
 export const metadata: Metadata = {
   metadataBase: process.env.NEXT_PUBLIC_BASE_URL
     ? new URL(process.env.NEXT_PUBLIC_BASE_URL)
     : undefined,
   title: {
-    default: 'WebBond — Digital Agency in Copenhagen',
-    template: '%s | WebBond',
+    default: "WebBond — Digital Agency in Copenhagen",
+    template: "%s | WebBond",
   },
   description:
-    'WebBond is your partner in digital growth. We create high-performance websites, SEO strategies, and brand identities that convert visitors into customers.',
-  generator: 'Next.js',
-  applicationName: 'WebBond — Digital Agency',
-  referrer: 'origin-when-cross-origin',
+    "WebBond is your partner in digital growth. We create high-performance websites, SEO strategies, and brand identities that convert visitors into customers.",
+  generator: "Next.js",
+  applicationName: "WebBond — Digital Agency",
+  referrer: "origin-when-cross-origin",
   keywords: [
-    'web development',
-    'web bond',
-    'digital agency copenhagen',
-    'website design',
-    'SEO optimization',
-    'branding',
-    'custom software',
-    'marketing strategy',
-    'landing pages',
-    'ecommerce solutions',
+    "web development",
+    "web bond",
+    "digital agency copenhagen",
+    "website design",
+    "SEO optimization",
+    "branding",
+    "custom software",
+    "marketing strategy",
+    "landing pages",
+    "ecommerce solutions",
   ],
   authors: [
     {
-      name: 'WebBond',
+      name: "WebBond",
       url: process.env.NEXT_PUBLIC_BASE_URL,
     },
   ],
-  creator: 'WebBond',
-  publisher: 'WebBond',
+  creator: "WebBond",
+  publisher: "WebBond",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'WebBond — Digital Agency in Copenhagen',
+    title: "WebBond — Digital Agency in Copenhagen",
     description:
-      'We combine creativity, code, and strategy to make your business stronger and more successful. High-speed websites and professional SEO.',
+      "We combine creativity, code, and strategy to make your business stronger and more successful. High-speed websites and professional SEO.",
     images: [
       {
         url: process.env.NEXT_PUBLIC_BASE_URL
           ? `${process.env.NEXT_PUBLIC_BASE_URL}/Opengraph.webp`
-          : '/Opengraph.webp',
+          : "/Opengraph.webp",
         width: 1200,
         height: 630,
-        alt: 'WebBond — Digital Agency',
+        alt: "WebBond — Digital Agency",
       },
     ],
-    type: 'website',
-    siteName: 'WebBond',
+    type: "website",
+    siteName: "WebBond",
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
   icons: {
-    apple: '/apple-icon',
-    icon: '/icon',
+    apple: "/apple-icon",
+    icon: "/icon",
   },
 };
 
@@ -121,6 +124,7 @@ export default async function RootLayout({
           href="https://prod.spline.design/S6FngPEV2SNfSBPp/scene.splinecode"
           crossOrigin="anonymous"
         />
+        <GoogleTagManager gtmId={GTM_ID} />
       </head>
       <body
         className={`${montserrat.variable} ${inter.variable} ${manrope.variable} antialiased`}
