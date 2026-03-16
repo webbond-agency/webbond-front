@@ -262,5 +262,13 @@
   "Breadcrumbs": {
     "home": "Home",
     "cases": "Cases"
+  },
+
+  "WebSitesPage": {
+    "Hero": {
+      "title": "Websites that generate sales, not just traffic",
+      "description": "<gray>We help business owners transform</gray> their <gray>websites into sales tools</gray> and lead generation. Clean code, <gray>fast performance,</gray> strong marketing structure, SEO-ready and <gray>full</gray> automation from inquiries to payment.",
+      "button": "Order your website"
+    }
   }
 }

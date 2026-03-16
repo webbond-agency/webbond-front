@@ -260,5 +260,13 @@
   "Breadcrumbs": {
     "home": "Hjem",
     "cases": "Cases"
+  },
+
+  "WebSitesPage": {
+    "Hero": {
+      "title": "Sider, der skaber salg, ikke kun trafik",
+      "description": "<gray>Vi hjælper virksomhedsejere med at omdanne</gray> deres <gray>websites til salgsværktøjer</gray> og leadgenerering. Ren kode, <gray>hurtig ydeevne,</gray> stærk marketingstruktur, SEO-klar og <gray>fuld</gray> automatisering fra forespørgsler til betaling.",
+      "button": "Bestil din hjemmeside"
+    }
   }
 }
