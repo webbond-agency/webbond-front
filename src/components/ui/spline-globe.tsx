@@ -178,12 +178,12 @@ export default function SplineGlobe({
 
       {/* Заглушка для Десктопа */}
       <div
-        className={`absolute inset-0 top-[45px] w-full h-full transition-opacity duration-1000 hidden md:flex items-center justify-center ${
+        className={`absolute inset-0 top-11 -left-10 w-full h-full transition-opacity duration-1000 hidden md:flex items-center justify-center ${
           !showPlaceholder ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
         style={{ display: shouldHideAll ? "none" : undefined }}
       >
-        <div className="relative w-[83%] h-[83%]">
+        <div className="relative w-full h-full lg:w-[87%] lg:h-[87%]">
           <Image
             src="/desktop-globus.webp"
             alt="Globe placeholder desktop"
