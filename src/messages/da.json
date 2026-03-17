@@ -299,6 +299,29 @@
       "listFour": "Skalerbar løsning til voksende forretning",
       "button": "Vælg e-commerce pakke",
       "subtitle": "Fordele for virksomheden"
+    },
+    "Questions": {
+      "title": "OFTE STILLEDE SPØRGSMÅL",
+      "q1": {
+        "question": "Hvad koster et professionelt website?",
+        "answer": "Udvikling af basale websites starter fra 37.500 kr (5.000 €), premium fra 60.000 kr (8.000 €)."
+      },
+      "q2": {
+        "question": "Hvor lang tid tager udviklingen?",
+        "answer": "Typisk 30–60 arbejdsdage, afhængigt af antal sider og funktioner."
+      },
+      "q3": {
+        "question": "Kan jeg ændre indhold uden udvikler?",
+        "answer": "90% af ændringer kan håndteres direkte via adminpanel."
+      },
+      "q4": {
+        "question": "Tilbyder I garanti?",
+        "answer": "Vi giver garanti på alle vores sites."
+      },
+      "q5": {
+        "question": "Er design inkluderet?",
+        "answer": "Ja, design er inkluderet i alle pakker."
+      }
     }
   }
 }

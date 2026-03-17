@@ -301,6 +301,29 @@
       "listFour": "A scalable solution for a growing business",
       "button": "Choose an e-commerce package",
       "subtitle": "Benefits for your business"
+    },
+    "Questions": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "q1": {
+        "question": "What does a professional website cost?",
+        "answer": "Development of basic websites starts from 37,500 DKK (€5,000), premium from 60,000 DKK (€8,000)."
+      },
+      "q2": {
+        "question": "How long does development take?",
+        "answer": "Typically 30–60 business days, depending on the number of pages and features."
+      },
+      "q3": {
+        "question": "Can I change content without a developer?",
+        "answer": "90% of changes can be handled directly via the admin panel."
+      },
+      "q4": {
+        "question": "Do you offer a warranty?",
+        "answer": "We provide a warranty for all our sites."
+      },
+      "q5": {
+        "question": "Is design included?",
+        "answer": "Yes, design is included in all packages."
+      }
     }
   }
 }
