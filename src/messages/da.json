@@ -268,6 +268,34 @@
       "title": "Sider, der skaber salg, ikke kun trafik",
       "description": "Vi hjælper virksomhedsejere med at omdanne deres websites til salgsværktøjer og leadgenerering. Ren kode, hurtig ydeevne, stærk marketingstruktur, SEO-klar og fuld automatisering fra forespørgsler til betaling.",
       "button": "Bestil din hjemmeside"
+    },
+    "Landing": {
+      "title": "<gray>Landingpages –</gray> hurtig konvertering af besøgende til kunder",
+      "description": "Vi designer og udvikler unikke landingpages på ren kode med fokus på salg og leadgenerering. Marketingstruktur, analyse af målgruppe og optimering af konvertering er inkluderet.",
+      "listOne": "Hurtig lancering og opsamling af leads",
+      "listTwo": "Nem administration via adminpanel uden udviklerafhængighed",
+      "listThree": "Design og funktionalitet, der maksimerer salg",
+      "listFour": "Betaling kun for domæne efter lancering",
+      "button": "Vælg landingpage-pakke"
+    },
+    "Multipage": {
+      "title": "<gray>Hjemmesider –</gray> større muligheder for konvertering",
+      "description": "Vi skaber brugervenlige websites med flere sider, der hjælper din virksomhed med at vokse online. Ren kode, fleksible funktioner og adminpanel sikrer uafhængighed og skalerbarhed.",
+      "listOne": "Flere kontaktpunkter = højere leadgenerering",
+      "listTwo": "Uafhængighed af udviklere gennem adminpanel",
+      "listThree": "Mulighed for fremtidig SEO og udvidelse af sider",
+      "listFour": "Optimeret struktur og marketingfokus for konvertering",
+      "listFive": "Klar til skalering og vækst",
+      "button": "Vælg hjemmeside-pakke"
+    },
+    "Webshop": {
+      "title": "<gray>E-commerce –</gray> automatiseret salg direkte fra din hjemmeside",
+      "description": "Vi udvikler e-commerce løsninger, der konverterer besøgende til kunder. Integration af betalingssystemer, produktkataloger, lagerstyring, personaliserede e-mailbeskeder og fuld automatisering af salgsprocessen.",
+      "listOne": "Automatiseret salg fra første besøg",
+      "listTwo": "Højere konvertering gennem personaliserede kundeoplevelser",
+      "listThree": "Fuld kontrol og uafhængighed via adminpanel",
+      "listFour": "Skalerbar løsning til voksende forretning",
+      "button": "Vælg e-commerce pakke"
     }
   }
 }
