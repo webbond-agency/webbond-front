@@ -259,6 +259,15 @@
   },
   "Breadcrumbs": {
     "home": "Hjem",
-    "cases": "Cases"
+    "cases": "Cases",
+    "websites": "Websites"
+  },
+
+  "WebSitesPage": {
+    "Hero": {
+      "title": "Sider, der skaber salg, ikke kun trafik",
+      "description": "Vi hjælper virksomhedsejere med at omdanne deres websites til salgsværktøjer og leadgenerering. Ren kode, hurtig ydeevne, stærk marketingstruktur, SEO-klar og fuld automatisering fra forespørgsler til betaling.",
+      "button": "Bestil din hjemmeside"
+    }
   }
 }
