@@ -37,7 +37,7 @@ export default function SiteTypeSection({
           {title}
         </motion.h2>
         <motion.div
-          initial={{ opacity: 0, x: 15 }}
+          initial={{ opacity: 0, x: variant === "left" ? 15 : -15 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}

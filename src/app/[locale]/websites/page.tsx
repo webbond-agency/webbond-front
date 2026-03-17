@@ -3,6 +3,7 @@ import Container from "@/components/ui/container";
 import Landing from "@/components/websites-page/landing/landing";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getTranslations } from "next-intl/server";
+import Multipage from "@/components/websites-page/multipage/multipage";
 
 export default async function WebSitesPage() {
   const t = await getTranslations("Breadcrumbs");
@@ -21,6 +22,7 @@ export default async function WebSitesPage() {
         />
       </Container>
       <Landing />
+      <Multipage />
     </div>
   );
 }
