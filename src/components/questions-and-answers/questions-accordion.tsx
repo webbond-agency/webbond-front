@@ -23,6 +23,7 @@ const QuestionsAccordion = ({ items, seeMoreLabel }: QuestionsAccordionProps) =>
 
   const firstFive = items.slice(0, 5);
   const remaining = items.slice(5);
+  const hasMore = remaining.length > 0;
 
   return (
     <div className="flex flex-col gap-4">
@@ -63,7 +64,7 @@ const QuestionsAccordion = ({ items, seeMoreLabel }: QuestionsAccordionProps) =>
           ))}
       </Accordion>
 
-      {!isExpanded && (
+      {!isExpanded && hasMore && seeMoreLabel && (
         <div
           onClick={() => setIsExpanded(true)}
           className="h-[96px] flex items-center justify-between px-[32px] py-[31px] rounded-[50px] bg-white cursor-pointer group"

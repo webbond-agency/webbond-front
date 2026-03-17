@@ -2,8 +2,9 @@ import dynamic from 'next/dynamic';
 import HeroContainer from '@/components/hero/hero-container';
 import { casesOnHomepageQuery } from '@/lib/queries';
 import { fetchSanityData } from '@/utils/fetchSanityData';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { CaseWithLanguage } from '@/types/case';
+import { QUESTIONS_DATA } from '@/components/questions-and-answers/questions-data';
 
 // Heavy containers/sections loaded dynamically
 const ServicesWrapper = dynamic(
@@ -80,6 +81,14 @@ export default async function Home({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const tQuestions = await getTranslations('Questions');
+
+  const questionsItems = QUESTIONS_DATA.map(({ id }) => ({
+    id,
+    question: tQuestions(`q${id}.question`),
+    answer: tQuestions(`q${id}.answer`),
+  }));
+
   const casesList = await fetchSanityData<CaseWithLanguage[]>(
     casesOnHomepageQuery,
     {
@@ -106,7 +115,13 @@ export default async function Home({
       </div>
       <TeamWrapper />
       <ReviewsContainer />
-      <QuestionsAndAnswersContainer />
+      <QuestionsAndAnswersContainer
+        title={tQuestions('title')}
+        items={questionsItems}
+        seeMoreLabel={tQuestions('seeMore')}
+        showBottomDecor
+        className="px-[20px] sm:px-[40px] md:px-0 pt-[148px] md:pt-[178px] lg:pt-[100px] xl:pt-[178px]"
+      />
       <BusinessWrapper />
       <ContactsContainer />
     </div>

@@ -1,27 +1,34 @@
-'use client';
-import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+"use client";
+import Image from "next/image";
 
-import QuestionsAccordion from './questions-accordion';
-import { QUESTIONS_DATA } from './questions-data';
+import QuestionsAccordion from "./questions-accordion";
+import { cn } from "@/lib/utils";
+
+type QuestionItem = {
+  id: string;
+  question: string;
+  answer: string;
+};
 
 type QuestionsAndAnswersContainerProps = {
-  title?: string;
+  title: string;
+  items: QuestionItem[];
+  seeMoreLabel?: string;
+  showBottomDecor?: boolean;
+  className?: string;
 };
 
 const QuestionsAndAnswersContainer = ({
   title,
+  items,
+  seeMoreLabel,
+  showBottomDecor,
+  className,
 }: QuestionsAndAnswersContainerProps) => {
-  const t = useTranslations('Questions');
-
-  const items = QUESTIONS_DATA.map(({ id }) => ({
-    id,
-    question: t(`q${id}.question`),
-    answer: t(`q${id}.answer`),
-  }));
-
   return (
-    <section className="relative px-[20px] sm:px-[40px] md:px-0 pt-[148px] md:pt-[178px] lg:pt-[100px] xl:pt-[178px]">
+    <section
+      className={cn("relative", className)}
+    >
       {/* questions-shadow left */}
       <Image
         src="/questions-shadow.webp"
@@ -44,18 +51,20 @@ const QuestionsAndAnswersContainer = ({
         className="hidden md:block absolute bottom-[-300px] right-[-400px] max-w-none -z-20 pointer-events-none opacity-70 transform-gpu"
       />
       <h2 className="max-w-[240px] sm:max-w-[400px] md:max-w-full mb-[48px] lg:mb-[24px] xl:mb-[48px] font-manrope font-light text-[40px] sm:text-[52px] md:text-[64px] lg:text-[48px] xl:text-[64px] leading-[120%] text-white uppercase [text-shadow:4px_3px_9px_rgba(255,0,166,0.2)]">
-        {title ?? t('title')}
+        {title}
       </h2>
-      <QuestionsAccordion items={items} seeMoreLabel={t('seeMore')} />
-      <Image
-        src="/questions-red-decor.webp"
-        alt="questions-right-decor"
-        width={898}
-        height={388}
-        sizes="(max-width: 898px) 100vw, 898px"
-        quality={75}
-        className="absolute bottom-[-60px] left-[-100px] max-w-none -z-20 pointer-events-none opacity-80 transform-gpu"
-      />
+      <QuestionsAccordion items={items} seeMoreLabel={seeMoreLabel} />
+      {showBottomDecor && (
+        <Image
+          src="/questions-red-decor.webp"
+          alt="questions-right-decor"
+          width={898}
+          height={388}
+          sizes="(max-width: 898px) 100vw, 898px"
+          quality={75}
+          className="absolute bottom-[-60px] left-[-100px] max-w-none -z-20 pointer-events-none opacity-80 transform-gpu"
+        />
+      )}
     </section>
   );
 };
