@@ -18,6 +18,26 @@ export default function Hero() {
       ref={containerRef}
       className="relative pt-[97px] lg:pt-[166px] pb-[129px] lg:pb-[227px]"
     >
+      <div className="absolute top-[-960px] left-[-800px] xl:top-[-1060px] w-[1192px] ">
+        <Image
+          width={1192}
+          height={1205}
+          src="/case-hero-shadow.webp"
+          alt="case-hero-shadow"
+          sizes="(max-width: 1280px) 33vw, 1192px"
+          className="select-none pointer-events-none"
+        />
+      </div>
+      <div className="absolute -z-10 top-[19px] left-[-633px] w-[1238px] aspect-square mix-blend-hard-light">
+        <Image
+          width={1238}
+          height={1238}
+          src="/webpages-hero-decor.webp"
+          alt="webpages-hero-decor"
+          sizes="1238px"
+          className="select-none pointer-events-none"
+        />
+      </div>
       <Container>
         <h1 className="md:max-w-[440px] lg:max-w-[660px] mb-2.5 lg:mb-[15px] font-manrope text-[40px] lg:text-[64px] leading-[120%] text-white uppercase font-light">
           {t("title")}
