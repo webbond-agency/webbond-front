@@ -28,7 +28,7 @@ export default function Hero() {
           className="select-none pointer-events-none"
         />
       </div>
-      <div className="absolute -z-10 top-[19px] left-[-633px] w-[1238px] aspect-square mix-blend-hard-light">
+      <div className="absolute -z-10 top-[-40px] left-[-803px] lg:top-[19px] lg:left-[-633px] w-[1238px] aspect-square mix-blend-hard-light">
         <Image
           width={1238}
           height={1238}
