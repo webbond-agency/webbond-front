@@ -31,7 +31,7 @@ export default function SiteTypeSection({
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
           className={`mb-6 lg:mb-15 font-manrope text-[36px] lg:text-[64px] leading-[120%] text-white uppercase font-light ${variant === "left" ? "text-left" : "text-right"}`}
         >
           {title}
@@ -40,7 +40,7 @@ export default function SiteTypeSection({
           initial={{ opacity: 0, x: variant === "left" ? 15 : -15 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
           className={`flex flex-col gap-6 lg:gap-8 mb-6 ${variant === "left" ? "md:flex-row" : "md:flex-row-reverse"}`}
         >
           <Image
@@ -76,8 +76,8 @@ export default function SiteTypeSection({
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className={`flex items-center will-change-opacity transform-gpu ${variant === "left" ? "flex-row" : "flex-row-reverse"}`}
+          transition={{ duration: 1, delay: 0.6 }}
+          className={`flex items-center will-change-opacity transform-gpu ${variant === "left" ? "flex-row-reverse" : "flex-row"}`}
         >
           <GooeyWhiteButton
             text={buttonText}
@@ -87,7 +87,9 @@ export default function SiteTypeSection({
             height={52}
           />
 
-          <div className="hidden sm:flex flex-1 h-px bg-linear-to-r from-[#FFFFFF] to-[#0A0704]"></div>
+          <div
+            className={`hidden sm:flex flex-1 h-px from-[#FFFFFF] to-[#0A0704] ${variant === "left" ? "bg-linear-to-l" : "bg-linear-to-r"}`}
+          ></div>
         </motion.div>
       </Container>
     </section>

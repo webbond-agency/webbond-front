@@ -1,16 +1,10 @@
 import SiteTypeSection from "@/components/ui/site-type-section";
 import { useTranslations } from "next-intl";
 
-export default function Multipage() {
-  const t = useTranslations("WebSitesPage.Multipage");
+export default function Webshop() {
+  const t = useTranslations("WebSitesPage.Webshop");
 
-  const list = [
-    t("listOne"),
-    t("listTwo"),
-    t("listThree"),
-    t("listFour"),
-    t("listFive"),
-  ];
+  const list = [t("listOne"), t("listTwo"), t("listThree"), t("listFour")];
 
   return (
     <SiteTypeSection
@@ -18,12 +12,12 @@ export default function Multipage() {
         gray: (chunks) => <span className="text-[#818181]">{chunks}</span>,
       })}
       description={t("description")}
-      imageUrl={"/websites-multipage.webp"}
+      imageUrl={"/websites-webshop.webp"}
       imageAlt="Landing page"
       list={list}
       buttonText={t("button")}
       subtitle={t("subtitle")}
-      variant="right"
+      variant="left"
     />
   );
 }
