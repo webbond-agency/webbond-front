@@ -1,21 +1,14 @@
-"use client";
-import SplineGlobe from "@/components/ui/spline-globe";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Container from "@/components/ui/container";
 import GooeyWhiteButton from "@/components/ui/gooey-white-button";
+import HeroGlobe from "@/components/websites-page/hero/hero-globe";
 
-export default function Hero() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(containerRef, { amount: 0 });
-
-  const t = useTranslations("WebSitesPage.Hero");
+export default async function Hero() {
+  const t = await getTranslations("WebSitesPage.Hero");
 
   return (
     <section
-      ref={containerRef}
       className="relative pt-[97px] lg:pt-[166px] pb-[129px] lg:pb-[227px]"
     >
       <div className="absolute top-[-960px] left-[-800px] xl:top-[-1060px] w-[1192px] ">
@@ -68,9 +61,7 @@ export default function Hero() {
           />
         </div>
       </Container>
-      <div className="w-[1213px] h-[758px] absolute -z-10 top-[-246px] md:top-[-318px] right-[-593px] md:right-[-440px] lg:scale-[1.0] xl:scale-[1.4] pointer-events-none">
-        <SplineGlobe isVisible={isInView} />
-      </div>
+      <HeroGlobe />
     </section>
   );
 }
