@@ -278,7 +278,8 @@
       "listTwo": "Easy management via an admin panel without developer dependency",
       "listThree": "Design and functionality that maximize sales",
       "listFour": "You only pay for the domain after launch",
-      "button": "Choose a landing page package"
+      "button": "Choose a landing page package",
+      "subtitle": "Benefits for your business"
     },
     "Multipage": {
       "title": "<gray>Websites –</gray> greater opportunities for conversion",
@@ -288,7 +289,8 @@
       "listThree": "Option for future SEO and expanding pages",
       "listFour": "Optimized structure and marketing focus for conversion",
       "listFive": "Ready to scale and grow",
-      "button": "Choose a website package"
+      "button": "Choose a website package",
+      "subtitle": "Benefits for your business"
     },
     "Webshop": {
       "title": "<gray>E-commerce –</gray> automated sales directly from your website",
@@ -297,7 +299,8 @@
       "listTwo": "Higher conversion through personalized customer experiences",
       "listThree": "Full control and independence via an admin panel",
       "listFour": "A scalable solution for a growing business",
-      "button": "Choose an e-commerce package"
+      "button": "Choose an e-commerce package",
+      "subtitle": "Benefits for your business"
     }
   }
 }

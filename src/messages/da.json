@@ -276,7 +276,8 @@
       "listTwo": "Nem administration via adminpanel uden udviklerafhængighed",
       "listThree": "Design og funktionalitet, der maksimerer salg",
       "listFour": "Betaling kun for domæne efter lancering",
-      "button": "Vælg landingpage-pakke"
+      "button": "Vælg landingpage-pakke",
+      "subtitle": "Fordele for virksomheden"
     },
     "Multipage": {
       "title": "<gray>Hjemmesider –</gray> større muligheder for konvertering",
@@ -286,7 +287,8 @@
       "listThree": "Mulighed for fremtidig SEO og udvidelse af sider",
       "listFour": "Optimeret struktur og marketingfokus for konvertering",
       "listFive": "Klar til skalering og vækst",
-      "button": "Vælg hjemmeside-pakke"
+      "button": "Vælg hjemmeside-pakke",
+      "subtitle": "Fordele for virksomheden"
     },
     "Webshop": {
       "title": "<gray>E-commerce –</gray> automatiseret salg direkte fra din hjemmeside",
@@ -295,7 +297,8 @@
       "listTwo": "Højere konvertering gennem personaliserede kundeoplevelser",
       "listThree": "Fuld kontrol og uafhængighed via adminpanel",
       "listFour": "Skalerbar løsning til voksende forretning",
-      "button": "Vælg e-commerce pakke"
+      "button": "Vælg e-commerce pakke",
+      "subtitle": "Fordele for virksomheden"
     }
   }
 }

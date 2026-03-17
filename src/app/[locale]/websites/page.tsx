@@ -1,5 +1,6 @@
 import Hero from "@/components/websites-page/hero/hero";
 import Container from "@/components/ui/container";
+import Landing from "@/components/websites-page/landing/landing";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getTranslations } from "next-intl/server";
 
@@ -19,6 +20,7 @@ export default async function WebSitesPage() {
           className="py-10 lg:pt-0 lg:pb-20"
         />
       </Container>
+      <Landing />
     </div>
   );
 }
