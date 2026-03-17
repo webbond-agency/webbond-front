@@ -27,9 +27,8 @@ const ReviewsContainer = dynamic(
   () => import('@/components/reviews/reviews-container'),
   { ssr: true }
 );
-const QuestionsAndAnswersContainer = dynamic(
-  () =>
-    import('@/components/questions-and-answers/questions-and-answers-container'),
+const Faq = dynamic(
+  () => import('@/components/questions-and-answers/faq'),
   { ssr: true }
 );
 const BusinessWrapper = dynamic(
@@ -106,7 +105,7 @@ export default async function Home({
       </div>
       <TeamWrapper />
       <ReviewsContainer />
-      <QuestionsAndAnswersContainer />
+      <Faq />
       <BusinessWrapper />
       <ContactsContainer />
     </div>
