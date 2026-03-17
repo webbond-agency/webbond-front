@@ -92,3 +92,4 @@ const QuestionsAccordion = ({ items, seeMoreLabel }: QuestionsAccordionProps) =>
 };
 
 export default QuestionsAccordion;
+

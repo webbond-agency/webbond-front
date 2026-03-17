@@ -1,6 +1,6 @@
-import QuestionsAndAnswersContainer from "@/components/questions-and-answers/questions-and-answers-container";
+import QuestionsAndAnswersContainer from "@/components/shared/questions-and-answers/questions-and-answers-container";
 import Container from "@/components/ui/container";
-import { QUESTIONS_DATA } from "@/components/questions-and-answers/questions-data";
+import { QUESTIONS_DATA } from "@/components/shared/questions-and-answers/questions-data";
 import { getTranslations } from "next-intl/server";
 
 export default async function Faq() {

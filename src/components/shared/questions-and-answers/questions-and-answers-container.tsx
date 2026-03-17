@@ -26,9 +26,7 @@ const QuestionsAndAnswersContainer = ({
   className,
 }: QuestionsAndAnswersContainerProps) => {
   return (
-    <section
-      className={cn("relative", className)}
-    >
+    <section className={cn("relative", className)}>
       {/* questions-shadow left */}
       <Image
         src="/questions-shadow.webp"
@@ -70,3 +68,4 @@ const QuestionsAndAnswersContainer = ({
 };
 
 export default QuestionsAndAnswersContainer;
+
