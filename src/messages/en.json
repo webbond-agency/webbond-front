@@ -270,6 +270,37 @@
       "title": "Websites that generate sales, not just traffic",
       "description": "We help business owners transform their websites into sales tools and lead generation. Clean code, fast performance, strong marketing structure, SEO-ready and full automation from inquiries to payment.",
       "button": "Order your website"
+    },
+    "Landing": {
+      "title": "<gray>Landing pages –</gray> fast conversion of visitors into customers",
+      "description": "We design and develop unique landing pages in pure code with a focus on sales and lead generation. Marketing structure, target audience analysis, and conversion optimization are included.",
+      "listOne": "Fast launch and lead capture",
+      "listTwo": "Easy management via an admin panel without developer dependency",
+      "listThree": "Design and functionality that maximize sales",
+      "listFour": "You only pay for the domain after launch",
+      "button": "Choose a landing page package",
+      "subtitle": "Benefits for your business"
+    },
+    "Multipage": {
+      "title": "<gray>Websites –</gray> greater opportunities for conversion",
+      "description": "We create user-friendly multi-page websites that help your business grow online. Clean code, flexible features, and an admin panel ensure independence and scalability.",
+      "listOne": "More touchpoints = higher lead generation",
+      "listTwo": "Independence from developers through an admin panel",
+      "listThree": "Option for future SEO and expanding pages",
+      "listFour": "Optimized structure and marketing focus for conversion",
+      "listFive": "Ready to scale and grow",
+      "button": "Choose a website package",
+      "subtitle": "Benefits for your business"
+    },
+    "Webshop": {
+      "title": "<gray>E-commerce –</gray> automated sales directly from your website",
+      "description": "We develop e-commerce solutions that convert visitors into customers. Integration of payment systems, product catalogs, inventory management, personalized email messages, and full automation of the sales process.",
+      "listOne": "Automated sales from the first visit",
+      "listTwo": "Higher conversion through personalized customer experiences",
+      "listThree": "Full control and independence via an admin panel",
+      "listFour": "A scalable solution for a growing business",
+      "button": "Choose an e-commerce package",
+      "subtitle": "Benefits for your business"
     }
   }
 }
