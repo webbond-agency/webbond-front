@@ -1,10 +1,24 @@
 'use client';
-import QuestionsAccordion from './questions-accordion';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-const QuestionsAndAnswersContainer = () => {
+import QuestionsAccordion from './questions-accordion';
+import { QUESTIONS_DATA } from './questions-data';
+
+type QuestionsAndAnswersContainerProps = {
+  title?: string;
+};
+
+const QuestionsAndAnswersContainer = ({
+  title,
+}: QuestionsAndAnswersContainerProps) => {
   const t = useTranslations('Questions');
+
+  const items = QUESTIONS_DATA.map(({ id }) => ({
+    id,
+    question: t(`q${id}.question`),
+    answer: t(`q${id}.answer`),
+  }));
 
   return (
     <section className="relative px-[20px] sm:px-[40px] md:px-0 pt-[148px] md:pt-[178px] lg:pt-[100px] xl:pt-[178px]">
@@ -30,9 +44,9 @@ const QuestionsAndAnswersContainer = () => {
         className="hidden md:block absolute bottom-[-300px] right-[-400px] max-w-none -z-20 pointer-events-none opacity-70 transform-gpu"
       />
       <h2 className="max-w-[240px] sm:max-w-[400px] md:max-w-full mb-[48px] lg:mb-[24px] xl:mb-[48px] font-manrope font-light text-[40px] sm:text-[52px] md:text-[64px] lg:text-[48px] xl:text-[64px] leading-[120%] text-white uppercase [text-shadow:4px_3px_9px_rgba(255,0,166,0.2)]">
-        {t('title')}
+        {title ?? t('title')}
       </h2>
-      <QuestionsAccordion />
+      <QuestionsAccordion items={items} seeMoreLabel={t('seeMore')} />
       <Image
         src="/questions-red-decor.webp"
         alt="questions-right-decor"
