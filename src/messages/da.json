@@ -353,5 +353,20 @@
       "listTitleThree": "Integrationer og funktioner",
       "listDescriptionThree": "Nem integration af email, betalingsmetoder, kalkulatorer og andre værktøjer, der gør din hjemmeside komplet og brugbar."
     }
+  },
+
+  "WebshopPage": {
+    "Hero": {
+      "title": "Webshop, der sælger 24/7 uden salgsafdeling",
+      "description": "Du får ikke en skabelon og ikke en platform, men en webshop udviklet i ren kode med fuld kontrol via adminpanel. Det er en investering i automatiserede salg — ikke en udgift. Alle processer er automatiseret fra ordre til betaling.",
+      "subtitle": "Fordele ved Webshop",
+      "button": "Bestil din Webshop",
+      "listTitleOne": "Fuld ejerskab og kontrol",
+      "listDescriptionOne": "Ejer din webshop fuldt ud og afhænger ikke af platforme eller udviklere.",
+      "listTitleTwo": "Automatisering af processer",
+      "listDescriptionTwo": "Automatiserede processer håndterer alt fra ordrer til betalinger.",
+      "listTitleThree": "Vækst og skalering",
+      "listDescriptionThree": "Skab vækst og flere salg uden ekstra personale eller tid på administration."
+    }
   }
 }
