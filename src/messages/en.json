@@ -355,5 +355,20 @@
       "listTitleThree": "Integrations and features",
       "listDescriptionThree": "Easy integration of email, payment methods, calculators, and other tools that make your website complete and practical."
     }
+  },
+
+  "WebshopPage": {
+    "Hero": {
+      "title": "A webshop that sells 24/7 without a sales department",
+      "description": "You get neither a template nor a platform, but a webshop developed in pure code with full control through an admin panel. This is an investment in automated sales — not an expense. All processes are automated from order to payment.",
+      "subtitle": "Benefits of a webshop",
+      "button": "Order your webshop",
+      "listTitleOne": "Full ownership and control",
+      "listDescriptionOne": "Own your webshop completely and do not depend on platforms or developers.",
+      "listTitleTwo": "Process automation",
+      "listDescriptionTwo": "Automated processes handle everything from orders to payments.",
+      "listTitleThree": "Growth and scaling",
+      "listDescriptionThree": "Create growth and more sales without extra staff or time spent on administration."
+    }
   }
 }
