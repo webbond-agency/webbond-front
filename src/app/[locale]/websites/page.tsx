@@ -15,7 +15,7 @@ export default async function WebSitesPage() {
     { label: t("websites") },
   ];
   return (
-    <div className="pt-15 sm:pt-20 md:pt-[110px] max-w-[1340px] mx-auto">
+    <div className="pt-15 sm:pt-20 md:pt-[110px]">
       <Hero />
       <Container>
         <Breadcrumbs

@@ -323,5 +323,20 @@
         "answer": "Ja, design er inkluderet i alle pakker."
       }
     }
+  },
+
+  "LandingPage": {
+    "Hero": {
+      "title": "Landingpages, der konverterer",
+      "description": "Fokuseret design, der skaber resultater",
+      "subtitle": "Fordele ved en landingpage",
+      "button": "Få et tilbud",
+      "listTitleOne": "Hurtigt resultat",
+      "listDescriptionOne": "Landingpagen kan lanceres hurtigt og begynder straks at generere leads og salg.",
+      "listTitleTwo": "Maksimal konvertering",
+      "listDescriptionTwo": "Fokus på én handling hjælper brugeren med hurtigt at træffe beslutninger.",
+      "listTitleThree": "Effektiv reklame",
+      "listDescriptionThree": "Perfekt til annoncekampagner på Google, Facebook, Instagram og TikTok."
+    }
   }
 }
