@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import * as m from "motion/react-client";
 
 export default function Hero() {
-  const t = useTranslations("LandingPage.Hero");
+  const t = useTranslations("MultiPagePage.Hero");
 
   return (
     <section className="relative pt-18 sm:pt-[52px] md:pt-[50px] pb-30 lg:pb-[105px]">
@@ -48,24 +48,32 @@ export default function Hero() {
           />
         </m.div>
 
-        <p className="mb-3 font-manrope text-[14px] lg:text-[16px] leading-[120%] text-white uppercase font-light">
-          {t("description")}
-        </p>
-        <h1 className="md:max-w-[440px] lg:max-w-[660px] mb-2.5 lg:mb-3 font-manrope text-[40px] lg:text-[64px] leading-[120%] text-white uppercase font-light">
-          {t("title")}
-        </h1>
-        <div className="flex items-center justify-center w-[67px] lg:w-[121px] mb-4 lg:-mb-4 rounded-full py-[5px] px-[8px] backdrop-blur-sm bg-white/3 shadow-[inset_2px_-1px_5px_-1px_rgba(255,255,255,0.12)] safari-blur-fix">
-          <Image
-            src="/mobile-title-banner.png"
-            alt="mobile-title-banner badge"
-            width={103}
-            height={56}
-            className="w-full h-auto"
-          />
+        <div className="flex flex-col gap-6 md:flex-row md:justify-between  mb-6 lg:-mb-4">
+          <div>
+            <h1 className="md:max-w-[400px] lg:max-w-[660px] mb-2.5 lg:mb-3 font-manrope text-[40px] lg:text-[64px] leading-[120%] text-white uppercase font-light">
+              {t("title")}
+            </h1>
+            <div className="flex items-center justify-center w-[67px] lg:w-[121px] rounded-full py-[5px] px-[8px] backdrop-blur-sm bg-white/3 shadow-[inset_2px_-1px_5px_-1px_rgba(255,255,255,0.12)] safari-blur-fix">
+              <Image
+                src="/mobile-title-banner.png"
+                alt="mobile-title-banner badge"
+                width={103}
+                height={56}
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+          <div className="flex gap-5 md:max-w-[240px] lg:max-w-[300px] xl:max-w-[407px] h-fit">
+            <div className="w-[2px] h-auto bg-[linear-gradient(0deg,_#ffffff_0%,_#0a0704_100%)] opacity-32 rounded-full" />
+            <p className="font-montserrat text-[14px] lg:text-[18px] font-light text-white leading-[120%]">
+              {t("description")}
+            </p>
+          </div>
         </div>
+
         <div className="flex items-center gap-4 ml-auto w-fit mb-5 lg:mb-12 f">
           <div className="rounded-full bg-white w-5 h-5 shrink-0" />
-          <h2 className="max-w-[144px] md:max-w-full font-manrope text-[14px] lg:text-[16px] leading-[120%] text-white uppercase font-light">
+          <h2 className="max-w-[184px] md:max-w-full font-manrope text-[14px] lg:text-[16px] leading-[120%] text-white uppercase font-light">
             {t("subtitle")}
           </h2>
         </div>
@@ -90,9 +98,9 @@ export default function Hero() {
               show: { opacity: 1, x: 0 },
             }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative flex items-center w-full h-[109px] px-[20px] rounded-[12px] backdrop-blur-[32px] bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden"
+            className="relative flex items-center w-full h-[128px] px-[20px] rounded-[12px] backdrop-blur-[32px] bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden"
           >
-            <p className="w-full max-w-[183px] sm:max-w-full text-white wrap-break-word">
+            <p className="w-full max-w-[212px] sm:max-w-[80%] text-white wrap-break-word">
               <span className="block font-manrope text-[16px] font-light uppercase leading-[120%] mb-3">
                 {t("listTitleOne")}
               </span>
@@ -100,7 +108,7 @@ export default function Hero() {
                 {t("listDescriptionOne")}
               </span>
             </p>
-            <div className="absolute top-[-15px] right-[17px] font-montserrat font-semibold text-[145px] leading-[120%] pointer-events-none select-none z-30 bg-linear-to-b from-white/25 to-white/0 bg-clip-text text-transparent">
+            <div className="absolute top-[-5px] right-[17px] font-montserrat font-semibold text-[145px] leading-[120%] pointer-events-none select-none z-30 bg-linear-to-b from-white/25 to-white/0 bg-clip-text text-transparent">
               1
             </div>
           </m.li>
@@ -110,9 +118,9 @@ export default function Hero() {
               show: { opacity: 1, x: 0 },
             }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative flex items-center justify-end w-full h-[109px] px-[20px] rounded-[12px] backdrop-blur-[32px] bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden"
+            className="relative flex items-center justify-end w-full h-[128px] px-[20px] rounded-[12px] backdrop-blur-[32px] bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden"
           >
-            <p className="w-full max-w-[191px] sm:max-w-fit text-white wrap-break-word">
+            <p className="w-full max-w-[191px] sm:max-w-[80%] text-white wrap-break-word">
               <span className="block font-manrope text-[16px] font-light uppercase leading-[120%] mb-3">
                 {t("listTitleTwo")}
               </span>
@@ -120,7 +128,7 @@ export default function Hero() {
                 {t("listDescriptionTwo")}
               </span>
             </p>
-            <div className="absolute top-[-25px] left-0 font-montserrat font-semibold text-[145px] leading-[120%] pointer-events-none select-none z-0 bg-linear-to-b from-white/25 to-white/0 bg-clip-text text-transparent">
+            <div className="absolute top-[-5px] left-0 font-montserrat font-semibold text-[145px] leading-[120%] pointer-events-none select-none z-0 bg-linear-to-b from-white/25 to-white/0 bg-clip-text text-transparent">
               2
             </div>
           </m.li>
@@ -130,9 +138,9 @@ export default function Hero() {
               show: { opacity: 1, x: 0 },
             }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative flex items-center w-full h-[109px] px-[20px] rounded-[12px] backdrop-blur-[32px] bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden"
+            className="relative flex items-center w-full h-[128px] px-[20px] rounded-[12px] backdrop-blur-[32px] bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden"
           >
-            <p className="w-full max-w-[210px] sm:max-w-full text-white wrap-break-word">
+            <p className="w-full max-w-[210px] sm:max-w-[80%] text-white wrap-break-word">
               <span className="block font-manrope text-[16px] font-light uppercase leading-[120%] mb-3">
                 {t("listTitleThree")}
               </span>
@@ -140,7 +148,7 @@ export default function Hero() {
                 {t("listDescriptionThree")}
               </span>
             </p>
-            <div className="absolute top-[-20px] right-0 font-montserrat font-semibold text-[145px] leading-[120%] pointer-events-none select-none z-0 bg-linear-to-b from-white/25 to-white/0 bg-clip-text text-transparent">
+            <div className="absolute top-[-5px] right-0 font-montserrat font-semibold text-[145px] leading-[120%] pointer-events-none select-none z-0 bg-linear-to-b from-white/25 to-white/0 bg-clip-text text-transparent">
               3
             </div>
           </m.li>
@@ -160,7 +168,7 @@ export default function Hero() {
           }}
           className="hidden md:flex flex-wrap md:flex-nowrap justify-end gap-[12px] xl:gap-[20px] relative z-30 md:mb-[68px]"
         >
-          <li className="relative md:w-1/3 md:h-[170px] p-4 xl:p-5 rounded-[12px] backdrop-blur-sm bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden safari-blur-fix will-change-transform transform-gpu">
+          <li className="relative md:w-1/3 md:h-[186px] lg:h-58 xl:h-[186px] p-4 xl:p-5 rounded-[12px] backdrop-blur-sm bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden safari-blur-fix will-change-transform transform-gpu">
             <m.p
               variants={{
                 hidden: { opacity: 0, x: -20 },
@@ -172,7 +180,7 @@ export default function Hero() {
               <span className="block mb-[12px] lg:mb-[20px] font-manrope font-light text-[16px] lg:text-[24px] text-white leading-[120%] uppercase">
                 {t("listTitleOne")}
               </span>
-              <span className="block max-w-[200px] xl:max-w-[285px] font-montserrat text-[10px] lg:text-[14px] leading-[120%]">
+              <span className="block max-w-[200px] md:max-w-[140px] lg:max-w-[190px] xl:max-w-[285px] font-montserrat text-[10px] lg:text-[14px] leading-[120%]">
                 {t("listDescriptionOne")}
               </span>
             </m.p>
@@ -187,7 +195,7 @@ export default function Hero() {
               1
             </m.div>
           </li>
-          <li className="flex items-end relative md:w-1/3 md:h-[170px] p-4 xl:p-5 rounded-[12px] backdrop-blur-sm bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden safari-blur-fix will-change-transform transform-gpu">
+          <li className="flex items-end relative md:w-1/3 md:h-[186px] lg:h-58 xl:h-[186px] p-4 xl:p-5 rounded-[12px] backdrop-blur-sm bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden safari-blur-fix will-change-transform transform-gpu">
             <m.p
               variants={{
                 hidden: { opacity: 0, x: -20 },
@@ -196,10 +204,10 @@ export default function Hero() {
               transition={{ duration: 0.8 }}
               className="text-white"
             >
-              <span className="block max-w-[200px] mb-[12px] lg:mb-[20px] font-manrope font-light text-[16px] lg:text-[24px] text-white leading-[120%] uppercase">
+              <span className="block max-w-[200px] xl:max-w-[315px] mb-[12px] lg:mb-[20px] font-manrope font-light text-[16px] lg:text-[24px] text-white leading-[120%] uppercase">
                 {t("listTitleTwo")}
               </span>
-              <span className="block max-w-[213px] xl:max-w-[285px] font-montserrat text-[10px] lg:text-[14px] leading-[120%]">
+              <span className="block max-w-[213px] md:max-w-[140px] lg:max-w-[190px] xl:max-w-[285px] font-montserrat text-[10px] lg:text-[14px] leading-[120%]">
                 {t("listDescriptionTwo")}
               </span>
             </m.p>
@@ -214,7 +222,7 @@ export default function Hero() {
               2
             </m.div>
           </li>
-          <li className="relative md:w-1/3 md:h-[170px] p-4 xl:p-5 rounded-[12px] backdrop-blur-sm bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden safari-blur-fix will-change-transform transform-gpu">
+          <li className="relative md:w-1/3 md:h-[186px] lg:h-58 xl:h-[186px] p-4 xl:p-5 rounded-[12px] backdrop-blur-sm bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden safari-blur-fix will-change-transform transform-gpu">
             <m.p
               variants={{
                 hidden: { opacity: 0, x: -20 },
@@ -226,7 +234,7 @@ export default function Hero() {
               <span className="block mb-[12px] lg:mb-[20px] font-manrope font-light text-[16px] lg:text-[24px] text-white leading-[120%] uppercase">
                 {t("listTitleThree")}
               </span>
-              <span className="block max-w-[193px] xl:max-w-[237px] font-montserrat text-[10px] lg:text-[14px] leading-[120%]">
+              <span className="block max-w-[193px] md:max-w-[140px] lg:max-w-[190px] xl:max-w-[257px] font-montserrat text-[10px] lg:text-[14px] leading-[120%]">
                 {t("listDescriptionThree")}
               </span>
             </m.p>
