@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import * as m from "motion/react-client";
 
 export default function Hero() {
-  const t = useTranslations("MultiPagePage.Hero");
+  const t = useTranslations("WebshopPage.Hero");
 
   return (
     <section className="relative pt-18 sm:pt-[52px] md:pt-[50px] pb-30 lg:pb-[105px]">
