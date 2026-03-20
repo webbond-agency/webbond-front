@@ -325,5 +325,20 @@
         "answer": "Yes, design is included in all packages."
       }
     }
+  },
+
+  "LandingPage": {
+    "Hero": {
+      "title": "Landing pages that convert",
+      "description": "Focused design that delivers results",
+      "subtitle": "Benefits of a landing page",
+      "button": "Get a quote",
+      "listTitleOne": "Fast results",
+      "listDescriptionOne": "Design that drives conversions",
+      "listTitleTwo": "Maximum conversion",
+      "listDescriptionTwo": "A focus on one action helps the user make decisions quickly.",
+      "listTitleThree": "Effective advertising",
+      "listDescriptionThree": "Perfect for ad campaigns on Google, Facebook, Instagram, and TikTok."
+    }
   }
 }
