@@ -338,5 +338,20 @@
       "listTitleThree": "Effektiv reklame",
       "listDescriptionThree": "Perfekt til annoncekampagner på Google, Facebook, Instagram og TikTok."
     }
+  },
+
+  "MultiPagePage": {
+    "Hero": {
+      "title": "Professionelle websites med mange sider",
+      "description": "Vi skaber brugervenlige websites med flere sider, der hjælper din virksomhed med at vokse online",
+      "subtitle": "Fordele ved en professionel hjemmeside",
+      "button": "Få et tilbud",
+      "listTitleOne": "Detaljeret præsentation af services",
+      "listDescriptionOne": "Præsenter alle dine produkter og tjenester på separate sider, så dine kunder nemt kan finde information.",
+      "listTitleTwo": "SEO og synlighed",
+      "listDescriptionTwo": "Hurtigere placering i Google og bedre synlighed, så din hjemmeside arbejder for dig og sparer penge på annoncering.",
+      "listTitleThree": "Integrationer og funktioner",
+      "listDescriptionThree": "Nem integration af email, betalingsmetoder, kalkulatorer og andre værktøjer, der gør din hjemmeside komplet og brugbar."
+    }
   }
 }

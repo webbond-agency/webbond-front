@@ -340,5 +340,20 @@
       "listTitleThree": "Effective advertising",
       "listDescriptionThree": "Perfect for ad campaigns on Google, Facebook, Instagram, and TikTok."
     }
+  },
+
+  "MultiPagePage": {
+    "Hero": {
+      "title": "Professional multi-page websites",
+      "description": "We create user-friendly multi-page websites that help your business grow online",
+      "subtitle": "Benefits of a professional website",
+      "button": "Get a quote",
+      "listTitleOne": "Detailed presentation of services",
+      "listDescriptionOne": "Present all your products and services on separate pages, so your customers can easily find information.",
+      "listTitleTwo": "SEO and visibility",
+      "listDescriptionTwo": "Faster Google rankings and better visibility, so your website works for you and saves money on advertising.",
+      "listTitleThree": "Integrations and features",
+      "listDescriptionThree": "Easy integration of email, payment methods, calculators, and other tools that make your website complete and practical."
+    }
   }
 }
