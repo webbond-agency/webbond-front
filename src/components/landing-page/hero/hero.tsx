@@ -9,8 +9,46 @@ export default function Hero() {
   const t = useTranslations("LandingPage.Hero");
 
   return (
-    <section className="pt-18 sm:pt-[52px] md:pt-[50px] pb-30 lg:pb-[105px]">
-      <Container>
+    <section className="relative pt-18 sm:pt-[52px] md:pt-[50px] pb-30 lg:pb-[105px]">
+      <div className="hidden lg:block absolute top-[-960px] left-[-800px] xl:top-[-1060px] w-[1192px] ">
+        <Image
+          width={1192}
+          height={1205}
+          src="/case-hero-shadow.webp"
+          alt="landing-hero-shadow"
+          sizes="(max-width: 1280px) 33vw, 1192px"
+          className="select-none pointer-events-none"
+        />
+      </div>
+      <div className="lg:hidden absolute top-[-280px] left-[-849px] w-[1128px]">
+        <Image
+          width={1128}
+          height={1131}
+          src="/landing-hero-shadow-mobile.webp"
+          alt="landing-hero-shadow"
+          sizes="(max-width: 1280px) 33vw, 1128px"
+          className="select-none pointer-events-none"
+        />
+      </div>
+
+      <Container className="relative">
+        <m.div
+          initial={{ opacity: 0, x: 100, rotate: 10 }}
+          whileInView={{ opacity: 1, x: 0, rotate: -5 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeOut", delay: 1.5 }}
+          className="absolute -z-10 top-[-418px] right-[-1090px] md:top-[-645px] lg:top-[-555px] md:right-[-435px] lg:right-[-335px] xl:right-[-248px] w-[1632px] md:w-[1454px] aspect-square mix-blend-hard-light"
+        >
+          <Image
+            width={1632}
+            height={1632}
+            src="/landing-hero-decor.webp"
+            alt="landing-hero-decor"
+            sizes="1632px"
+            className="select-none pointer-events-none w-[1632px] md:w-[1454px] h-auto"
+          />
+        </m.div>
+
         <p className="mb-3 font-manrope text-[14px] lg:text-[16px] leading-[120%] text-white uppercase font-light">
           {t("description")}
         </p>
