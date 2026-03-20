@@ -337,6 +337,65 @@
       "listDescriptionTwo": "Fokus på én handling hjælper brugeren med hurtigt at træffe beslutninger.",
       "listTitleThree": "Effektiv reklame",
       "listDescriptionThree": "Perfekt til annoncekampagner på Google, Facebook, Instagram og TikTok."
+    },
+    "Questions": {
+      "title": "SPØRGSMÅL OG SVAR",
+      "q1": {
+        "question": "Hvad koster en landingpage?",
+        "answer": "Prisen på en landingpage starter fra 18.750 kr (2500€)."
+      },
+      "q2": {
+        "question": "Skal designet betales separat?",
+        "answer": "Nej, betalingen er samlet — udvikling med design og alle elementer er inkluderet."
+      },
+      "q3": {
+        "question": "Tilbyder I delbetaling?",
+        "answer": "Ja, betalingen kan opdeles 50/50."
+      },
+      "q4": {
+        "question": "Hjælper I med teksterne?",
+        "answer": "Ja, vi hjælper med at skrive tekster til din landingpage."
+      },
+      "q5": {
+        "question": "Skal jeg betale ekstra for at vedligeholde siden?",
+        "answer": "Nej, for at vedligeholde siden skal du kun betale for domænet."
+      },
+      "q6": {
+        "question": "Hvad er et domæne?",
+        "answer": "Et domæne er navnet på din hjemmeside."
+      },
+      "q7": {
+        "question": "Kan jeg selv lave ændringer uden udviklere?",
+        "answer": "Ja, du kan selv ændre indholdet via adminpanelet, som du har adgang til fra din telefon."
+      },
+      "q8": {
+        "question": "Kan jeg sælge ét produkt via landingpagen?",
+        "answer": "Ja, det kan du."
+      },
+      "q9": {
+        "question": "Hvilke betalingssystemer bruger I?",
+        "answer": "Vi kan tilslutte de betalingssystemer, du har brug for — Stripe, MobilePay og andre."
+      },
+      "q10": {
+        "question": "Tilpasser I e-mail marketing?",
+        "answer": "Ja, vi opsætter komplet e-mail marketing til dig og dine kunder."
+      },
+      "q11": {
+        "question": "Hvor lang tid tager udviklingen af landingpagen?",
+        "answer": "Fra 7 dage op til 2 uger."
+      },
+      "q12": {
+        "question": "Er landingpagen mobilvenlig?",
+        "answer": "Ja, fuldt responsiv på alle enheder."
+      },
+      "q13": {
+        "question": "Kan jeg få animationer eller interaktive elementer?",
+        "answer": "Ja, vi integrerer moderne animationer og interaktive elementer."
+      },
+      "q14": {
+        "question": "Kan jeg ændre sprogene på siden?",
+        "answer": "Ja, flersprogede versioner er tilgængelige."
+      }
     }
   },
 
