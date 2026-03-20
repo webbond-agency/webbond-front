@@ -302,6 +302,7 @@
     },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
+      "seeMore": "Se andre spørgsmål",
       "q1": {
         "question": "Hvad koster et professionelt website?",
         "answer": "Udvikling af basale websites starter fra 37.500 kr (5.000 €), premium fra 60.000 kr (8.000 €)."
@@ -340,6 +341,7 @@
     },
     "Questions": {
       "title": "SPØRGSMÅL OG SVAR",
+      "seeMore": "Se andre spørgsmål",
       "q1": {
         "question": "Hvad koster en landingpage?",
         "answer": "Prisen på en landingpage starter fra 18.750 kr (2500€)."
