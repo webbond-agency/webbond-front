@@ -5,16 +5,14 @@ import { QUESTIONS_DATA } from "@/components/shared/questions-and-answers/questi
 
 const QuestionsAndAnswersContainer = dynamic(
   () =>
-    import(
-      "@/components/shared/questions-and-answers/questions-and-answers-container"
-    ),
-  { ssr: true }
+    import("@/components/shared/questions-and-answers/questions-and-answers-container"),
+  { ssr: true },
 );
 
 export default async function Faq() {
   const tQuestions = await getTranslations("Questions");
 
-  const questionsItems = QUESTIONS_DATA.map(({ id }) => ({
+  const questionsItems = QUESTIONS_DATA.slice(0, 13).map(({ id }) => ({
     id,
     question: tQuestions(`q${id}.question`),
     answer: tQuestions(`q${id}.answer`),
@@ -30,4 +28,3 @@ export default async function Faq() {
     />
   );
 }
-

@@ -339,6 +339,66 @@
       "listDescriptionTwo": "A focus on one action helps the user make decisions quickly.",
       "listTitleThree": "Effective advertising",
       "listDescriptionThree": "Perfect for ad campaigns on Google, Facebook, Instagram, and TikTok."
+    },
+    "Questions": {
+      "title": "QUESTIONS AND ANSWERS",
+      "seeMore": "See other questions",
+      "q1": {
+        "question": "What does a landing page cost?",
+        "answer": "The price of a landing page starts from 18,750 DKK (€2,500)."
+      },
+      "q2": {
+        "question": "Is design paid separately?",
+        "answer": "No, payment is all-inclusive — development with design and all elements are included."
+      },
+      "q3": {
+        "question": "Do you offer installment payments?",
+        "answer": "Yes, payment can be split 50/50."
+      },
+      "q4": {
+        "question": "Do you help with the texts?",
+        "answer": "Yes, we help write texts for your landing page."
+      },
+      "q5": {
+        "question": "Do I have to pay extra to maintain the page?",
+        "answer": "No, to maintain the page you only pay for the domain."
+      },
+      "q6": {
+        "question": "What is a domain?",
+        "answer": "A domain is the name of your website."
+      },
+      "q7": {
+        "question": "Can I make changes myself without developers?",
+        "answer": "Yes, you can change the content yourself via the admin panel, which you can access from your phone."
+      },
+      "q8": {
+        "question": "Can I sell one product through the landing page?",
+        "answer": "Yes, you can."
+      },
+      "q9": {
+        "question": "Which payment systems do you use?",
+        "answer": "We can connect the payment systems you need — Stripe, MobilePay, and others."
+      },
+      "q10": {
+        "question": "Do you set up email marketing?",
+        "answer": "Yes, we set up complete email marketing for you and your customers."
+      },
+      "q11": {
+        "question": "How long does development of the landing page take?",
+        "answer": "From 7 days up to 2 weeks."
+      },
+      "q12": {
+        "question": "Is the landing page mobile-friendly?",
+        "answer": "Yes, fully responsive on all devices."
+      },
+      "q13": {
+        "question": "Can I get animations or interactive elements?",
+        "answer": "Yes, we integrate modern animations and interactive elements."
+      },
+      "q14": {
+        "question": "Can I change the languages on the page?",
+        "answer": "Yes, multilingual versions are available."
+      }
     }
   },
 
