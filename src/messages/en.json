@@ -481,6 +481,34 @@
       "listDescriptionTwo": "Automated processes handle everything from orders to payments.",
       "listTitleThree": "Growth and scaling",
       "listDescriptionThree": "Create growth and more sales without extra staff or time spent on administration."
+    },
+    "Questions": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "seeMore": "See other questions",
+      "q1": {
+        "question": "What does a webshop cost?",
+        "answer": "The price starts from 75,000 DKK (€10,000) (incl. SEO) *VAT is not included in the price. The final price depends on the number of products, categories, integrations and functionality. More complex webshops can cost more."
+      },
+      "q2": {
+        "question": "How long does development of a webshop take?",
+        "answer": "Development typically takes 30–60 business days. The timeframe depends on the project's complexity, the number of products and specific business requirements."
+      },
+      "q3": {
+        "question": "Do I have to pay continuously after launch?",
+        "answer": "No. After launch you only pay for the domain. There are no fixed monthly payments to platforms or developers."
+      },
+      "q4": {
+        "question": "Can the webshop be integrated with CRM systems?",
+        "answer": "Yes. We integrate the webshop with CRM systems, payment solutions, email marketing and analytics for full automation of sales processes."
+      },
+      "q5": {
+        "question": "Is design included in the price?",
+        "answer": "Yes. Design is always included. We develop a unique, tailor-made design based on target audience analysis and business goals."
+      },
+      "q6": {
+        "question": "Do you offer a warranty on your webshops?",
+        "answer": "Yes. We provide a warranty on our work, so you can be sure the webshop works stably and correctly after launch."
+      }
     }
   }
 }
