@@ -323,6 +323,11 @@
         "question": "Er design inkluderet?",
         "answer": "Ja, design er inkluderet i alle pakker."
       }
+    },
+    "Cta": {
+      "title": "Klar til at få din hjemmeside?",
+      "description": "Med vores e-commerce løsninger integrerer vi betaling, produktkataloger og personaliseret e-mail marketing for at automatisere hele salgstragten. Alt er skalerbart,  lersproget og optimeret til at vækste forretningen.",
+      "button": "Bestil din hjemmeside"
     }
   },
 

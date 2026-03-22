@@ -1,26 +1,48 @@
-'use client';
-import Image from 'next/image';
-import GooeyWhiteButton from '../ui/gooey-white-button';
-import { useTranslations } from 'next-intl';
-import { m } from 'framer-motion';
-import dynamic from 'next/dynamic';
-import { useState } from 'react';
+"use client";
 
-const FeedbackModal = dynamic(() => import('@/components/feedback-modal'), {
+import Image from "next/image";
+import dynamic from "next/dynamic";
+import { useState } from "react";
+import { m } from "framer-motion";
+
+import GooeyWhiteButton from "@/components/ui/gooey-white-button";
+import { cn } from "@/lib/utils";
+
+const FeedbackModal = dynamic(() => import("@/components/feedback-modal"), {
   ssr: false,
 });
 
-const BusinessContainer = () => {
-  const t = useTranslations('Business');
+type CtaContainerProps = {
+  title: React.ReactNode;
+  description: string;
+  buttonText: string;
+  className?: string;
+  onButtonClick?: () => void;
+};
+
+const CtaContainer = ({
+  title,
+  description,
+  buttonText,
+  className,
+  onButtonClick,
+}: CtaContainerProps) => {
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
 
+  const handleClick = onButtonClick ?? (() => setIsFeedbackOpen(true));
+
   return (
-    <section className="relative px-[20px] sm:px-[40px] pt-[190px] pb-[148px]">
+    <section
+      className={cn(
+        "relative px-[20px] sm:px-[40px] pt-[190px] pb-[148px]",
+        className,
+      )}
+    >
       <m.div
         initial={{ opacity: 0, scale: 0.9, y: 30 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, ease: 'easeOut' }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className="relative w-full h-[437px] will-change-transform"
       >
         <Image
@@ -41,9 +63,7 @@ const BusinessContainer = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-[320px] sm:max-w-[450px] font-manrope text-[40px] sm:text-[48px] font-light uppercase text-white leading-[120%] mb-[32px] will-change-transform"
         >
-          {t.rich('title', {
-            gray: (chunks) => <span className="text-[#999]">{chunks}</span>,
-          })}
+          {title}
         </m.h2>
         <m.div
           initial={{ opacity: 0, x: 20 }}
@@ -69,7 +89,7 @@ const BusinessContainer = () => {
           transition={{ duration: 0.7, delay: 0.6 }}
           className="ml-auto pr-[20px] max-w-[254px] sm:max-w-[350px] mb-[44px] font-montserrat font-light text-[14px] sm:text-[16px] text-white leading-[120%] will-change-transform"
         >
-          {t('description')}
+          {description}
         </m.p>
         <m.div
           initial={{ scaleY: 0 }}
@@ -88,12 +108,17 @@ const BusinessContainer = () => {
         </m.div>
       </div>
       <GooeyWhiteButton
-        text={t('button')}
-        onClick={() => setIsFeedbackOpen(true)}
+        text={buttonText}
+        onClick={handleClick}
         className="mx-auto text-center w-full text-[14px] font-montserrat font-light text-black"
         height={52}
       />
-      <FeedbackModal isOpen={isFeedbackOpen} onOpenChange={setIsFeedbackOpen} />
+      {!onButtonClick && (
+        <FeedbackModal
+          isOpen={isFeedbackOpen}
+          onOpenChange={setIsFeedbackOpen}
+        />
+      )}
       <m.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -103,14 +128,13 @@ const BusinessContainer = () => {
       >
         <Image
           src="/business-right-decor.png"
-          alt="business-left-decor"
+          alt="business-right-decor"
           width={1257}
           height={1257}
           sizes="(max-width: 768px) 100vw, 1257px"
           quality={100}
           className="absolute top-[-30px] right-[-750px] max-w-none pointer-events-none -z-20 contrast-125 saturate-150"
         />
-
         <Image
           src="/business-shadow.webp"
           alt="business-shadow"
@@ -125,4 +149,4 @@ const BusinessContainer = () => {
   );
 };
 
-export default BusinessContainer;
+export default CtaContainer;

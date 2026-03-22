@@ -324,6 +324,11 @@
         "question": "Is design included?",
         "answer": "Yes, design is included in all packages."
       }
+    },
+    "Cta": {
+      "title": "Ready to get your website?",
+      "description": "With our e-commerce solutions we integrate payment, product catalogs and personalized email marketing to automate the entire sales funnel. Everything is scalable, multilingual and optimized for business growth.",
+      "button": "Order your website"
     }
   },
 

@@ -1,27 +1,44 @@
-'use client';
-import Image from 'next/image';
-import GooeyWhiteButton from '../ui/gooey-white-button';
-import { useTranslations } from 'next-intl';
-import { m } from 'framer-motion';
-import dynamic from 'next/dynamic';
-import { useState } from 'react';
+"use client";
 
-const FeedbackModal = dynamic(() => import('@/components/feedback-modal'), {
+import Image from "next/image";
+import dynamic from "next/dynamic";
+import { useState } from "react";
+import { m } from "framer-motion";
+
+import GooeyWhiteButton from "@/components/ui/gooey-white-button";
+import { cn } from "@/lib/utils";
+
+const FeedbackModal = dynamic(() => import("@/components/feedback-modal"), {
   ssr: false,
 });
 
-const DesktopBisinesContainer = () => {
-  const t = useTranslations('Business');
+type CtaDesktopProps = {
+  title: React.ReactNode;
+  description: string;
+  buttonText: string;
+  className?: string;
+  onButtonClick?: () => void;
+};
+
+const CtaDesktop = ({
+  title,
+  description,
+  buttonText,
+  className,
+  onButtonClick,
+}: CtaDesktopProps) => {
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
 
+  const handleClick = onButtonClick ?? (() => setIsFeedbackOpen(true));
+
   return (
-    <section className="relative pt-[303px] pb-[176px]">
+    <section className={cn("relative pb-[176px]", className)}>
       <m.div
         initial={{ opacity: 0, x: -100, rotate: 5 }}
         whileInView={{ opacity: 1, x: 0, rotate: 10 }}
         viewport={{ once: true }}
-        transition={{ duration: 1.2, ease: 'easeOut' }}
-        className="absolute max-w-none top-1/2 left-[-210px] -translate-y-1/2 origin-top-left pointer-events-none select-none z-10 will-change-transform transform-gpu"
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        className="absolute -z-10 max-w-none top-[-180px] left-[-230px] xl:left-[-170px] origin-top-left pointer-events-none select-none will-change-transform transform-gpu"
       >
         <Image
           src="/Business-phone.png"
@@ -33,7 +50,6 @@ const DesktopBisinesContainer = () => {
           className="scale-[1.1] object-contain"
         />
       </m.div>
-      {/* decor elements */}
       <m.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -41,7 +57,6 @@ const DesktopBisinesContainer = () => {
         transition={{ duration: 2, delay: 0.5 }}
         className="will-change-opacity"
       >
-        {/* right decor */}
         <Image
           src="/busines-desktop-decor.webp"
           alt="business-desktop-decor"
@@ -49,9 +64,8 @@ const DesktopBisinesContainer = () => {
           height={1600}
           sizes="(max-width: 1600px) 100vw, 1600px"
           quality={100}
-          className="absolute top-[-150px] right-[-900px] 2xl:right-[-1000px] max-w-none pointer-events-none -z-10 contrast-110 saturate-170"
+          className="absolute top-[-500px] right-[-900px] 2xl:right-[-1000px] max-w-none pointer-events-none -z-10 contrast-110 saturate-170"
         />
-        {/* shadow dark on decor */}
         <Image
           src="/desktop-busines-shadow-ellipse-for-decor.webp"
           alt="business-desktop-shadow"
@@ -59,9 +73,8 @@ const DesktopBisinesContainer = () => {
           height={900}
           sizes="(max-width: 1300px) 100vw, 1300px"
           quality={40}
-          className="absolute bottom-[-550px] right-[-900px] max-w-none pointer-events-none -z-10 blur-md"
+          className="absolute bottom-[-400px] right-[-800px] max-w-none pointer-events-none -z-10 blur-md"
         />
-        {/* radial light shadow */}
         <Image
           src="/desktop-busines-radial-light-shadow.webp"
           alt="business-desktop-radial-light-shadow"
@@ -77,12 +90,10 @@ const DesktopBisinesContainer = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           className="font-manrope text-[48px] xl:text-[64px] font-light uppercase text-white text-center leading-[120%] mb-[60px] will-change-transform transform-gpu"
         >
-          {t.rich('title', {
-            gray: (chunks) => <span className="text-[#999]">{chunks}</span>,
-          })}
+          {title}
         </m.h2>
         <m.div
           initial={{ opacity: 0 }}
@@ -91,30 +102,23 @@ const DesktopBisinesContainer = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex justify-between items-center will-change-opacity"
         >
-          <div className="relative">
+          <div className="relative flex">
             <m.div
               initial={{ scaleY: 0 }}
               whileInView={{ scaleY: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="absolute bottom-0 left-0 w-[2px] h-[81px] origin-bottom"
-            >
-              <Image
-                src="/hero-mobile-description-vetical-lie.png"
-                alt="hero-mobile-description-vetical-lie"
-                width={2}
-                height={81}
-                className="w-full h-full"
-              />
-            </m.div>
+              className="w-[2px] h-auto bg-[linear-gradient(0deg,_#ffffff_0%,_#0a0704_100%)] opacity-32 rounded-full"
+            />
+
             <m.p
               initial={{ opacity: 0, x: 10 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="pl-[20px] max-w-[350px] font-montserrat font-light text-[20px] text-white leading-[120%] will-change-transform transform-gpu"
+              className="pl-[20px] max-w-[350px] font-montserrat font-light text-[14px] text-white leading-[120%] will-change-transform transform-gpu"
             >
-              {t('description')}
+              {description}
             </m.p>
           </div>
           <div className="flex items-center justify-center rounded-[37px] w-[121px] py-[9px] px-[14px] backdrop-blur-md bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] safari-blur-fix">
@@ -127,17 +131,22 @@ const DesktopBisinesContainer = () => {
             />
           </div>
           <GooeyWhiteButton
-            text={t('button')}
-            onClick={() => setIsFeedbackOpen(true)}
+            text={buttonText}
+            onClick={handleClick}
             className="text-[14px] text-center font-montserrat font-light text-black"
-            width={236}
+            width={256}
             height={52}
           />
         </m.div>
       </div>
-      <FeedbackModal isOpen={isFeedbackOpen} onOpenChange={setIsFeedbackOpen} />
+      {!onButtonClick && (
+        <FeedbackModal
+          isOpen={isFeedbackOpen}
+          onOpenChange={setIsFeedbackOpen}
+        />
+      )}
     </section>
   );
 };
 
-export default DesktopBisinesContainer;
+export default CtaDesktop;
