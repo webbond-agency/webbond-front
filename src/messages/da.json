@@ -480,6 +480,34 @@
       "listDescriptionTwo": "Automatiserede processer håndterer alt fra ordrer til betalinger.",
       "listTitleThree": "Vækst og skalering",
       "listDescriptionThree": "Skab vækst og flere salg uden ekstra personale eller tid på administration."
+    },
+    "Questions": {
+      "title": "OFTE STILLEDE SPØRGSMÅL",
+      "seeMore": "Se andre spørgsmål",
+      "q1": {
+        "question": "Hvad koster en webshop?",
+        "answer": "Prisen starter fra 75.000 kr (10.000 €) (inkl. SEO) *moms er ikke inkluderet i prisen. Den endelige pris afhænger af antallet af produkter, kategorier, integrationer og funktionalitet. Mere komplekse webshops kan koste mere."
+      },
+      "q2": {
+        "question": "Hvor lang tid tager udviklingen af en webshop?",
+        "answer": "Udviklingen tager typisk 30–60 arbejdsdage. Tidsrammen afhænger af projektets kompleksitet, antallet af produkter og specifikke forretningskrav."
+      },
+      "q3": {
+        "question": "Skal jeg betale løbende efter lanceringen?",
+        "answer": "Nej. Efter lancering betaler du kun for domænet. Der er ingen faste månedlige betalinger til platforme eller udviklere."
+      },
+      "q4": {
+        "question": "Kan webshoppen integreres med CRM-systemer?",
+        "answer": "Ja. Vi integrerer webshoppen med CRM-systemer, betalingsløsninger, e-mail marketing og analytics for fuld automatisering af salgsprocesser."
+      },
+      "q5": {
+        "question": "Er design inkluderet i prisen?",
+        "answer": "Ja. Design er altid inkluderet. Vi udvikler et unikt, skræddersyet design baseret på målgruppeanalyse og forretningsmål."
+      },
+      "q6": {
+        "question": "Giver I garanti på jeres webshops?",
+        "answer": "Ja. Vi yder garanti på vores arbejde, så du er sikker på, at webshoppen fungerer stabilt og korrekt efter lancering."
+      }
     }
   }
 }
