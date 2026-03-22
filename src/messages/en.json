@@ -414,6 +414,58 @@
       "listDescriptionTwo": "Faster Google rankings and better visibility, so your website works for you and saves money on advertising.",
       "listTitleThree": "Integrations and features",
       "listDescriptionThree": "Easy integration of email, payment methods, calculators, and other tools that make your website complete and practical."
+    },
+    "Questions": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "seeMore": "See other questions",
+      "q1": {
+        "question": "What does it cost to develop a website?",
+        "answer": "Development of a complete website starts from approx. 37,500 DKK (€5,000) and includes design, SEO, marketing structure, all integrations, admin panel and warranty – everything is delivered turnkey."
+      },
+      "q2": {
+        "question": "How long does development take?",
+        "answer": "Depends on the number of pages; typically between 30 and 60 business days or more."
+      },
+      "q3": {
+        "question": "Do you offer a warranty on your services?",
+        "answer": "Yes, payment can be split 50/50."
+      },
+      "q4": {
+        "question": "What does it cost to maintain the website after launch?",
+        "answer": "After launch you only pay for the domain."
+      },
+      "q5": {
+        "question": "Do I need to involve developers if I want to change something?",
+        "answer": "90% of changes you can make yourself through the admin panel we develop for you."
+      },
+      "q6": {
+        "question": "Can I receive inquiries from the website on my email?",
+        "answer": "Yes, all inquiries are sent directly to your email."
+      },
+      "q7": {
+        "question": "Can I get to the top of Google with this website?",
+        "answer": "With complete SEO and a multi-page website, it is possible to achieve high rankings in search results."
+      },
+      "q8": {
+        "question": "Do you offer help with text, images and other content?",
+        "answer": "Yes, we help with text, images and other relevant content."
+      },
+      "q9": {
+        "question": "Can we meet offline?",
+        "answer": "Yes, if you are located in Copenhagen or other parts of Denmark, it is possible."
+      },
+      "q10": {
+        "question": "Do you integrate booking systems?",
+        "answer": "Yes, we set up complete email marketing for you and your customers."
+      },
+      "q11": {
+        "question": "Do you offer a contract?",
+        "answer": "Yes, we draw up a contract for all our customers."
+      },
+      "q12": {
+        "question": "Is design included in the price?",
+        "answer": "Yes, design is included in the price as part of the complete package."
+      }
     }
   },
 

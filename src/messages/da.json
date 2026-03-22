@@ -413,6 +413,58 @@
       "listDescriptionTwo": "Hurtigere placering i Google og bedre synlighed, så din hjemmeside arbejder for dig og sparer penge på annoncering.",
       "listTitleThree": "Integrationer og funktioner",
       "listDescriptionThree": "Nem integration af email, betalingsmetoder, kalkulatorer og andre værktøjer, der gør din hjemmeside komplet og brugbar."
+    },
+    "Questions": {
+      "title": "OFTE STILLEDE SPØRGSMÅL",
+      "seeMore": "Se andre spørgsmål",
+      "q1": {
+        "question": "Hvad koster det at udvikle en hjemmeside?",
+        "answer": "Udvikling af en komplet hjemmeside starter fra ca. 37.500 kr (5000€) og inkluderer design, SEO, marketingstruktur, alle integrationer, adminpanel og garanti – alt leveres turnkey."
+      },
+      "q2": {
+        "question": "Hvor lang tid tager udviklingen?",
+        "answer": "Afhænger af antallet af sider; typisk mellem 30 og 60 arbejdsdage eller mere."
+      },
+      "q3": {
+        "question": "Giver I garanti på jeres tjenester?",
+        "answer": "Ja, betalingen kan opdeles 50/50."
+      },
+      "q4": {
+        "question": "Hvad koster det at vedligeholde hjemmesiden efter lancering?",
+        "answer": "Efter lancering skal du kun betale for domænet."
+      },
+      "q5": {
+        "question": "Skal jeg involvere udviklere, hvis jeg vil ændre noget?",
+        "answer": "90% af ændringer kan du selv foretage gennem det adminpanel, vi udvikler til dig."
+      },
+      "q6": {
+        "question": "Kan jeg modtage henvendelser fra hjemmesiden på min email?",
+        "answer": "Ja, alle henvendelser sendes direkte til din email."
+      },
+      "q7": {
+        "question": "Kan jeg komme i top 1 på Google med denne hjemmeside?",
+        "answer": "Med komplet SEO og en flersidet hjemmeside er det muligt at opnå høje placeringer på søgeresultaterne."
+      },
+      "q8": {
+        "question": "Tilbyder I hjælp med tekst, billeder og andet indhold?",
+        "answer": "Ja, vi hjælper med tekst, billeder og andet relevant indhold."
+      },
+      "q9": {
+        "question": "Kan vi mødes offline?",
+        "answer": "Ja, hvis du befinder dig lokalt i København eller andre dele af Danmark, er det muligt."
+      },
+      "q10": {
+        "question": "Integrerer I booking-systemer?",
+        "answer": "Ja, vi opsætter komplet e-mail marketing til dig og dine kunder."
+      },
+      "q11": {
+        "question": "Tilbyder I kontrakt?",
+        "answer": "Ja, vi udarbejder en kontrakt for alle vores kunder."
+      },
+      "q12": {
+        "question": "Er design inkluderet i prisen?",
+        "answer": "Ja, design er inkluderet i prisen som en del af hele pakken."
+      }
     }
   },
 
