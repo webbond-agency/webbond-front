@@ -12,7 +12,7 @@ export default function Cta() {
       title={t("title")}
       description={t("description")}
       buttonText={t("button")}
-      className="pt-0 pb-25 lg:pb-[273px]"
+      className="pt-0 pb-25 md:pb-[273px]"
     />
   );
 }
