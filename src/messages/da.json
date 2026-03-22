@@ -155,7 +155,7 @@
     "subtitle": "Se hvad vores kunder siger om os, og gennemgå vores anmeldelser"
   },
   "Business": {
-    "title": "Tag din virksomhed <gray>til</gray> næste <gray>niveau med</gray> WebBond <gray>'{ }' CodeSite.</gray> Art",
+    "title": "Tag din virksomhed <gray>til</gray> næste <gray>niveau med</gray> WebBond <gray>'{}' CodeSite.</gray> Art",
     "description": "Din ambition, vores ekspertise — sammen gør vi din virksomhed synlig, effektiv og profitabel",
     "button": "Start samarbejdet"
   },
@@ -323,6 +323,11 @@
         "question": "Er design inkluderet?",
         "answer": "Ja, design er inkluderet i alle pakker."
       }
+    },
+    "Cta": {
+      "title": "Klar til at få din hjemmeside?",
+      "description": "Med vores e-commerce løsninger integrerer vi betaling, produktkataloger og personaliseret e-mail marketing for at automatisere hele salgstragten. Alt er skalerbart,  lersproget og optimeret til at vækste forretningen.",
+      "button": "Bestil din hjemmeside"
     }
   },
 

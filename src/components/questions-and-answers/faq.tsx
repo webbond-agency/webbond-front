@@ -24,7 +24,7 @@ export default async function Faq() {
       items={questionsItems}
       seeMoreLabel={tQuestions("seeMore")}
       showBottomDecor
-      className="px-[20px] sm:px-[40px] md:px-0 pt-[148px] md:pt-[178px] lg:pt-[100px] xl:pt-[178px]"
+      className="px-[20px] sm:px-[40px] md:px-0 pt-[148px] md:pt-[178px] lg:pt-[100px] xl:pt-[178px] mb-[150px] lg:mb-[303px]"
     />
   );
 }

@@ -17,7 +17,7 @@ export default async function Faq() {
       <QuestionsAndAnswersContainer
         title={t("title")}
         items={items}
-        className="mb-[226px] lg:mb-[243px]"
+        className="mb-[150px] lg:mb-[243px]"
       />
     </Container>
   );

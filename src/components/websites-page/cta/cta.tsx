@@ -4,18 +4,15 @@ import { useTranslations } from "next-intl";
 
 import CtaWrapper from "@/components/shared/cta/cta-wrapper";
 
-const BusinessWrapper = () => {
-  const t = useTranslations("Business");
+export default function Cta() {
+  const t = useTranslations("WebSitesPage.Cta");
 
   return (
     <CtaWrapper
-      title={t.rich("title", {
-        gray: (chunks) => <span className="text-[#999]">{chunks}</span>,
-      })}
+      title={t("title")}
       description={t("description")}
       buttonText={t("button")}
+      className="pt-0 pb-25 md:pb-[273px]"
     />
   );
-};
-
-export default BusinessWrapper;
+}
