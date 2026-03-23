@@ -99,12 +99,12 @@ const Services = ({
               className="list-none flex flex-col justify-between items-start relative"
             >
               <div className="flex flex-col gap-5 md:flex-row justify-between items-start w-full relative">
-                <motion.h2
+                <motion.h3
                   variants={itemVariants}
-                  className="font-manrope text-2xl lg:text-[40px] font-light uppercase text-white leading-[108%]"
+                  className="md:max-w-[400px] font-manrope text-2xl lg:text-[40px] font-light uppercase text-white leading-[108%]"
                 >
                   {service?.title}
-                </motion.h2>
+                </motion.h3>
                 <motion.ul
                   variants={itemVariants}
                   className="flex flex-col gap-2 list-none md:max-w-[400px] items-start pl-2 lg:pl-[11px]"
