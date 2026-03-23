@@ -476,6 +476,11 @@
         "question": "Is design included in the price?",
         "answer": "Yes, design is included in the price as part of the complete package."
       }
+    },
+    "Cta": {
+      "title": "Ready to get your website?",
+      "description": "Contact us today and get a professional website",
+      "button": "Order a Website"
     }
   },
 

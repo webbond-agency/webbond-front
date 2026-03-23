@@ -475,6 +475,11 @@
         "question": "Er design inkluderet i prisen?",
         "answer": "Ja, design er inkluderet i prisen som en del af hele pakken."
       }
+    },
+    "Cta": {
+      "title": "Klar til at få din hjemmeside?",
+      "description": "Kontakt os i dag, og få en professionel hjemmeside",
+      "button": "Bestil Hjemmeside"
     }
   },
 
