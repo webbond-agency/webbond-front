@@ -446,6 +446,22 @@
       "listTitleThree": "Integrations and features",
       "listDescriptionThree": "Easy integration of email, payment methods, calculators, and other tools that make your website complete and practical."
     },
+    "Services": {
+      "title": "What do our websites include?",
+      "description": "We develop complete websites with great design, flexible features, booking systems, contact forms, and integrated tools, so your business can grow online and be managed easily.",
+      "listTitleOne": "Design",
+      "listDescriptionOne": "Individual design for each page that matches your brand and target audience.",
+      "listTitleTwo": "Development",
+      "listDescriptionTwo": "Clean and flexible code ensures fast updates, stability, and quick loading.",
+      "listTitleThree": "SEO and marketing",
+      "listDescriptionThree": "Optimized for search engines and integrated with marketing tools such as email and social media.",
+      "listTitleFour": "Integrations",
+      "listDescriptionFour": "Email marketing, payment methods, calculators, booking systems, contact forms, and all required analytics tools can be tailored to your needs.",
+      "listTitleFive": "Administration",
+      "listDescriptionFive": "Full access to update content, prices, and pages without help from developers.",
+      "listTitleSix": "Fast delivery and responsive design",
+      "listDescriptionSix": "Websites are delivered quickly, with responsive design for all devices and multilingual versions."
+    },
     "Order": {
       "button": "Order your website now"
     },
