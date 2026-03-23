@@ -344,6 +344,24 @@
       "listTitleThree": "Effektiv reklame",
       "listDescriptionThree": "Perfekt til annoncekampagner på Google, Facebook, Instagram og TikTok."
     },
+    "Services": {
+      "title": "Hvad består vores landingpages af?",
+      "description": "Vi skaber skræddersyede landingpages, der kombinerer design, udvikling, marketing og SEO, så dine kunder får den bedste oplevelse og dine kampagner konverterer.",
+      "listTitleOne": "Design",
+      "listDescriptionOne": "Vi skaber unikke og salgsklare designs, der fanger dine kunders opmærksomhed.",
+      "listTitleTwo": "Udvikling",
+      "listDescriptionTwo": "Landingpages bygges med ren kode, hvilket sikrer hurtige og stabile sider uden afhængighed af platforme.",
+      "listTitleThree": "Marketing",
+      "listDescriptionThree": "Vi udvikler marketingstrukturen, så dine kampagner konverterer bedst muligt.",
+      "listTitleFour": "SEO",
+      "listDescriptionFour": "Landingpages optimeres til søgemaskiner, så du bliver fundet af dine kunder.",
+      "listTitleFive": "Fuld adgang til admin",
+      "listDescriptionFive": "Du kan selv ændre indhold, priser og opdateringer uden at kontakte udviklere.",
+      "listTitleSix": "Hurtig udvikling",
+      "listDescriptionSix": "Vi leverer færdige landingpages inden for 2 uger, fuldt responsive med animationer og flersprogede versioner.",
+      "listTitleSeven": "Integrationer",
+      "listDescriptionSeven": "Vi integrerer betalingsmetoder som Stripe, MobilePay, e-mail marketing og kontaktformularer."
+    },
     "Order": {
       "button": "Bestil en landingpage"
     },
