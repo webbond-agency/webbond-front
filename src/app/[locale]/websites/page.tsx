@@ -7,6 +7,7 @@ import Multipage from "@/components/websites-page/multipage/multipage";
 import Webshop from "@/components/websites-page/webshop/webshop";
 import Faq from "@/components/websites-page/faq/faq";
 import Cta from "@/components/websites-page/cta/cta";
+import ContactsContainer from "@/components/contacts/contacts-container";
 
 export default async function WebSitesPage() {
   const t = await getTranslations("Breadcrumbs");
@@ -29,6 +30,7 @@ export default async function WebSitesPage() {
       <Webshop />
       <Faq />
       <Cta />
+      <ContactsContainer />
     </div>
   );
 }
