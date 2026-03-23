@@ -60,7 +60,7 @@ const Services = ({
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.6 }}
-              className="font-manrope text-[36px] lg:text-[48px] xl:text-[64px] font-light uppercase text-white leading-[120%] text-right"
+              className="md:max-w-[661px] font-manrope text-[36px] lg:text-[48px] xl:text-[64px] font-light uppercase text-white leading-[120%] text-right"
             >
               {_title}
             </motion.h2>

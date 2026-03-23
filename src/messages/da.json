@@ -536,6 +536,24 @@
       "listTitleThree": "Vækst og skalering",
       "listDescriptionThree": "Skab vækst og flere salg uden ekstra personale eller tid på administration."
     },
+    "Services": {
+      "title": "Hvad indeholder vores webshops?",
+      "description": "Vi udvikler avancerede webshops som komplette salgsplatforme — designet til automatiserede processer, høj konvertering og fuld kontrol for virksomhedsejeren. Webshoppen arbejder 24/7 og kræver ikke et ekstra salgs- eller supportteam.",
+      "listTitleOne": "Produkt- og indholdsstyring",
+      "listDescriptionOne": "Ejeren kan selv administrere produkter, priser, kategorier og kampagner via adminpanel — uden ekstra betaling eller udviklere.",
+      "listTitleTwo": "Automatiseret salgsflow",
+      "listDescriptionTwo": "Fuldt automatiseret proces fra ordre, betaling, bekræftelse, e-mails og lagerstatus — uden manuel håndtering.",
+      "listTitleThree": "CRM, betalinger & integrationer",
+      "listDescriptionThree": "Integration med CRM-systemer, betalingsløsninger, e-mail marketing og analytics for fuld forretningskontrol.",
+      "listTitleFour": "Design & brugeroplevelse",
+      "listDescriptionFour": "Unikt design baseret på analyse af målgruppe, kunderejse samt købspsykologi for maksimal tillid og salg.",
+      "listTitleFive": "Teknisk udvikling",
+      "listDescriptionFive": "Webshoppen bygges i ren, skalerbar kode med høj ydeevne, hurtig indlæsning og stabil drift uden unødige fejl eller platforme.",
+      "listTitleSix": "Skalering & vækst",
+      "listDescriptionSix": "Webshoppen er klar til vækst: flere produkter, markeder, sprog og integrationer uden tekniske begrænsninger.",
+      "listTitleSeven": "Ejerskab & garanti",
+      "listDescriptionSeven": "Du ejer webshoppen 100% fra dag ét uden abonnementer eller kundelås. Vi leverer garanti på løsningens stabilitet og funktion."
+    },
     "Order": {
       "button": "Bestil Webshop"
     },

@@ -537,6 +537,24 @@
       "listTitleThree": "Growth and scaling",
       "listDescriptionThree": "Create growth and more sales without extra staff or time spent on administration."
     },
+    "Services": {
+      "title": "What do our webshops include?",
+      "description": "We develop advanced webshops as complete sales platforms — designed for automated processes, high conversion, and full control for the business owner. The webshop works 24/7 and does not require an extra sales or support team.",
+      "listTitleOne": "Product and content management",
+      "listDescriptionOne": "The owner can manage products, prices, categories, and campaigns via the admin panel — without extra fees or developers.",
+      "listTitleTwo": "Automated sales flow",
+      "listDescriptionTwo": "A fully automated process from order and payment to confirmation emails and stock status — without manual handling.",
+      "listTitleThree": "CRM, payments & integrations",
+      "listDescriptionThree": "Integration with CRM systems, payment solutions, email marketing, and analytics for full business control.",
+      "listTitleFour": "Design & user experience",
+      "listDescriptionFour": "Unique design based on target audience analysis, customer journey, and buying psychology for maximum trust and sales.",
+      "listTitleFive": "Technical development",
+      "listDescriptionFive": "The webshop is built in clean, scalable code with high performance, fast loading, and stable operation without unnecessary errors or platform lock-in.",
+      "listTitleSix": "Scaling & growth",
+      "listDescriptionSix": "The webshop is ready to grow: more products, markets, languages, and integrations without technical limitations.",
+      "listTitleSeven": "Ownership & warranty",
+      "listDescriptionSeven": "You own the webshop 100% from day one, with no subscriptions or vendor lock-in. We provide a warranty for the solution's stability and functionality."
+    },
     "Order": {
       "button": "Order webshop"
     },
