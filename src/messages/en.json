@@ -345,6 +345,24 @@
       "listTitleThree": "Effective advertising",
       "listDescriptionThree": "Perfect for ad campaigns on Google, Facebook, Instagram, and TikTok."
     },
+    "Services": {
+      "title": "What are our landing pages made of?",
+      "description": "We create tailored landing pages that combine design, development, marketing, and SEO, so your customers get the best experience and your campaigns convert.",
+      "listTitleOne": "Design",
+      "listDescriptionOne": "We create unique, sales-ready designs that capture your customers' attention.",
+      "listTitleTwo": "Development",
+      "listDescriptionTwo": "Landing pages are built with clean code, ensuring fast and stable pages without platform dependencies.",
+      "listTitleThree": "Marketing",
+      "listDescriptionThree": "We build the marketing structure so your campaigns convert as effectively as possible.",
+      "listTitleFour": "SEO",
+      "listDescriptionFour": "Landing pages are optimized for search engines so your customers can find you.",
+      "listTitleFive": "Full admin access",
+      "listDescriptionFive": "You can update content, prices, and changes yourself without contacting developers.",
+      "listTitleSix": "Fast development",
+      "listDescriptionSix": "We deliver finished landing pages within 2 weeks, fully responsive with animations and multilingual versions.",
+      "listTitleSeven": "Integrations",
+      "listDescriptionSeven": "We integrate payment methods like Stripe, MobilePay, email marketing, and contact forms."
+    },
     "Order": {
       "button": "Order a landing page"
     },
