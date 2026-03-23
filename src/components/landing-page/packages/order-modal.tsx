@@ -26,6 +26,7 @@ export default function OrderModal({
         onClick={() => setIsFeedbackOpen(true)}
         className="text-center w-full text-[14px] font-montserrat font-light text-black"
         height={52}
+        centerText
       />
       {!onButtonClick && (
         <FeedbackModal
