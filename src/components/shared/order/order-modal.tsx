@@ -27,6 +27,7 @@ export default function OrderModal({
         className="text-center w-full text-[14px] font-montserrat font-light text-black"
         width={313}
         height={52}
+        centerText
       />
       {!onButtonClick && (
         <FeedbackModal
