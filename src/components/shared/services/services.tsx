@@ -49,9 +49,7 @@ const Services = ({
     },
   };
   return (
-    <section
-      className={twMerge("pt-10 lg:pt-20 pb-[90px] lg:pb-[148px]", className)}
-    >
+    <section className={twMerge("pb-[148px]", className)}>
       <Container className="relative">
         <div className="flex flex-col md:flex-row-reverse md:justify-between md:items-end gap-6 mb-6 md:mb-[58px]">
           {_title ? (

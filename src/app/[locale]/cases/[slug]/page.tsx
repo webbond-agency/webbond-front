@@ -32,7 +32,7 @@ const CasesDynamicPage = async ({
     <div className="pt-15 sm:pt-20 md:pt-[110px] overflow-y-clip max-w-[1340px] mx-auto">
       {currentCase?.hero && <CaseHeroContainer currentCase={currentCase} />}
       <Breadcrumbs steps={breadcrumbSteps} className="px-[20px] sm:px-[32px]" />
-      {currentCase?.services && <Services services={currentCase?.services} />}
+      {currentCase?.services && <Services services={currentCase?.services} className="pt-10 lg:pt-20 pb-[90px] lg:pb-[148px]" />}
       {currentCase?.imageBlock && (
         <CasePreviewContainer imageBlock={currentCase?.imageBlock} />
       )}
