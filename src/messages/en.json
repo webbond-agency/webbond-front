@@ -524,6 +524,11 @@
         "question": "Do you offer a warranty on your webshops?",
         "answer": "Yes. We provide a warranty on our work, so you can be sure the webshop works stably and correctly after launch."
       }
+    },
+    "Cta": {
+      "title": "Ready to get your automated webshop?",
+      "description": "Contact us today and get a professional webshop that sells 24/7 without extra staff.",
+      "button": "Order your webshop"
     }
   }
 }
