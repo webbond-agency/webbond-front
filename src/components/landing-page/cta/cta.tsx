@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import CtaWrapper from "@/components/shared/cta/cta-wrapper";
 
 export default function Cta() {
-  const t = useTranslations("WebSitesPage.Cta");
+  const t = useTranslations("LandingPage.Cta");
 
   return (
     <CtaWrapper

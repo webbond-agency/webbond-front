@@ -403,6 +403,11 @@
         "question": "Kan jeg ændre sprogene på siden?",
         "answer": "Ja, flersprogede versioner er tilgængelige."
       }
+    },
+    "Cta": {
+      "title": "Klar til at få din landingpage?",
+      "description": "Kontakt os i dag, og lad os skabe en landingpage, der øger dine resultater",
+      "button": "Bestil en landingpage"
     }
   },
 
