@@ -14,7 +14,7 @@ interface GooeyWhiteButtonProps {
   className?: string;
   icon?: React.ReactNode;
   onClick?: () => void;
-  width?: number; // Optional now, will be used as initial/min width
+  width?: number; // Fixed width in px (optional)
   height?: number;
   type?: 'button' | 'submit' | 'reset';
   disabled?: boolean;
@@ -101,13 +101,13 @@ const GooeyWhiteButton = ({
       initial="initial"
       whileHover={disabled || isLoading ? 'initial' : 'hover'}
       className={cn(
-        'group relative flex cursor-pointer items-center overflow-visible bg-transparent transition-all will-change-transform',
+        'group relative flex w-full cursor-pointer items-center overflow-visible bg-transparent transition-all will-change-transform',
         !disabled && !isLoading && 'active:scale-95',
         (disabled || isLoading) &&
           'cursor-not-allowed opacity-50 grayscale-[0.5]',
         className,
       )}
-      style={{ width: initialWidth || '100%', height }}
+      style={{ width: initialWidth, height }}
     >
       {/* Динамический фон отрисованный напрямую в SVG с поддержкой Gooey эффекта */}
       <svg
