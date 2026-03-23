@@ -66,7 +66,7 @@ const Services = ({
             </motion.h2>
           ) : null}
           {_description ? (
-            <div className="relative flex">
+            <div className="relative flex md:max-w-[300px] lg:max-w-[375px]">
               <motion.div
                 initial={{ scaleY: 0 }}
                 whileInView={{ scaleY: 1 }}
@@ -79,7 +79,7 @@ const Services = ({
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.6 }}
-                className="ml-auto pl-[20px] md:max-w-[400px] font-montserrat font-light text-[14px] lg:text-[18px] text-white leading-[120%] will-change-transform"
+                className="pl-[20px] font-montserrat font-light text-[14px] lg:text-[18px] text-white leading-[120%] will-change-transform"
               >
                 {_description}
               </motion.p>
