@@ -523,6 +523,11 @@
         "question": "Giver I garanti på jeres webshops?",
         "answer": "Ja. Vi yder garanti på vores arbejde, så du er sikker på, at webshoppen fungerer stabilt og korrekt efter lancering."
       }
+    },
+    "Cta": {
+      "title": "Klar til at få din automatiserede webshop?",
+      "description": "Kontakt os i dag, og få en professionel webshop, der sælger 24/7 uden ekstra personale.",
+      "button": "Bestil din Webshop"
     }
   }
 }
