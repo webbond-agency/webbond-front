@@ -404,6 +404,11 @@
         "question": "Can I change the languages on the page?",
         "answer": "Yes, multilingual versions are available."
       }
+    },
+    "Cta": {
+      "title": "Ready to get your landing page?",
+      "description": "Contact us today, and let us create a landing page that boosts your results",
+      "button": "Order a landing page"
     }
   },
 

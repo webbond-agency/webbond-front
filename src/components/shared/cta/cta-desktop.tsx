@@ -118,7 +118,7 @@ const CtaDesktop = ({
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                className="pl-[20px] max-w-[350px] font-montserrat font-light text-[14px] text-white leading-[120%] will-change-transform transform-gpu"
+                className="pl-[20px] max-w-[350px] font-montserrat font-light text-[14px] xl:text-[20px] text-white leading-[120%] will-change-transform transform-gpu"
               >
                 {description}
               </m.p>
