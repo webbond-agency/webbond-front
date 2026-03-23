@@ -445,6 +445,22 @@
       "listTitleThree": "Integrationer og funktioner",
       "listDescriptionThree": "Nem integration af email, betalingsmetoder, kalkulatorer og andre værktøjer, der gør din hjemmeside komplet og brugbar."
     },
+    "Services": {
+      "title": "Hvad indeholder vores hjemmesider?",
+      "description": "Vi udvikler komplette hjemmesider med flot design, fleksible funktioner, booking systemer, kontaktformularer og integrerede værktøjer, så din virksomhed kan vokse online og administreres nemt.",
+      "listTitleOne": "Design",
+      "listDescriptionOne": "Individuelt design til hver side, der matcher din virksomheds brand og målgruppe.",
+      "listTitleTwo": "Udvikling",
+      "listDescriptionTwo": "Ren og fleksibel kode sikrer hurtig opdatering, stabilitet og hurtig indlæsning.",
+      "listTitleThree": "SEO og marketing",
+      "listDescriptionThree": "Optimeret for søgemaskiner og integreret med marketingværktøjer som email og sociale medier.",
+      "listTitleFour": "Integrationer",
+      "listDescriptionFour": "Email-marketing, betalingsmetoder, kalkulatorer, booking-systemer, kontaktformularer og alle nødvendige analyseværktøjer kan tilpasses dine behov.",
+      "listTitleFive": "Administration",
+      "listDescriptionFive": "Fuld adgang til at ændre indhold, priser og sider uden hjælp fra udviklere.",
+      "listTitleSix": "Hurtig levering og responsivt design",
+      "listDescriptionSix": "Websites leveres hurtigt, med responsivt design til alle enheder og flersprogede versioner."
+    },
     "Order": {
       "button": "Bestil din hjemmeside nu"
     },
