@@ -502,6 +502,9 @@
       "listTitleThree": "Vækst og skalering",
       "listDescriptionThree": "Skab vækst og flere salg uden ekstra personale eller tid på administration."
     },
+    "Order": {
+      "button": "Bestil Webshop"
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",
