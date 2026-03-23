@@ -503,6 +503,9 @@
       "listTitleThree": "Growth and scaling",
       "listDescriptionThree": "Create growth and more sales without extra staff or time spent on administration."
     },
+    "Order": {
+      "button": "Order webshop"
+    },
     "Questions": {
       "title": "FREQUENTLY ASKED QUESTIONS",
       "seeMore": "See other questions",
