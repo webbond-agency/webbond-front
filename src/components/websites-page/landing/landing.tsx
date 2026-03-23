@@ -1,4 +1,4 @@
-import SiteTypeSection from "@/components/ui/site-type-section";
+import SiteTypeSection from "@/components/shared/site-type-section/site-type-section";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 

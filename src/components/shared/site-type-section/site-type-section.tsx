@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Container from "./container";
+import Container from "../../ui/container";
 import * as motion from "motion/react-client";
-import GooeyWhiteButton from "./gooey-white-button";
+import GooeyWhiteButton from "../../ui/gooey-white-button";
 
 interface SiteTypeSectionProps {
   title: string | React.ReactNode;
