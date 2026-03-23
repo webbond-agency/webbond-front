@@ -53,6 +53,39 @@ const Services = ({
       className={twMerge("pt-10 lg:pt-20 pb-[90px] lg:pb-[148px]", className)}
     >
       <Container className="relative">
+        <div className="flex flex-col md:flex-row-reverse md:justify-between md:items-end gap-6 mb-6 md:mb-[58px]">
+          {_title ? (
+            <motion.h2
+              initial={{ opacity: 0, x: 10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.6 }}
+              className="font-manrope text-[36px] lg:text-[48px] xl:text-[64px] font-light uppercase text-white leading-[120%] text-right"
+            >
+              {_title}
+            </motion.h2>
+          ) : null}
+          {_description ? (
+            <div className="relative flex">
+              <motion.div
+                initial={{ scaleY: 0 }}
+                whileInView={{ scaleY: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="w-[2px] h-auto bg-[linear-gradient(0deg,_#ffffff_0%,_#0a0704_100%)] opacity-32 rounded-full"
+              />
+              <motion.p
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.6 }}
+                className="ml-auto pl-[20px] md:max-w-[400px] font-montserrat font-light text-[14px] lg:text-[18px] text-white leading-[120%] will-change-transform"
+              >
+                {_description}
+              </motion.p>
+            </div>
+          ) : null}
+        </div>
         <motion.ul
           variants={containerVariants}
           initial="hidden"
@@ -78,7 +111,11 @@ const Services = ({
                 >
                   {service.description?.map((item, idx) => (
                     <li key={idx} className="relative pl-[10px] lg:pl-[14px]">
-                      <span className="absolute left-0 top-[7px] w-0.5 h-0.5 rounded-full bg-white" />
+                      {service &&
+                      service.description &&
+                      service.description?.length > 1 ? (
+                        <span className="absolute left-0 top-[7px] w-0.5 h-0.5 rounded-full bg-white" />
+                      ) : null}
                       <p className="text-[12px] leading-[108%] lg:text-base font-light font-montserrat text-white">
                         {item.text}
                       </p>
