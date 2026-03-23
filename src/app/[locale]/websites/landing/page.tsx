@@ -4,11 +4,13 @@ import Cta from "@/components/landing-page/cta/cta";
 import OrderLanding from "@/components/landing-page/order-landing/order-landing";
 import ContactsContainer from "@/components/contacts/contacts-container";
 import ServicesLanding from "@/components/landing-page/services-landing/services-landing";
+import Packages from "@/components/landing-page/packages/packages";
 
 export default function LandingPage() {
   return (
     <div className="pt-15 sm:pt-20 md:pt-[110px]">
       <Hero />
+      <Packages />
       <ServicesLanding />
       <OrderLanding />
       <Faq />

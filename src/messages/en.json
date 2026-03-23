@@ -345,6 +345,49 @@
       "listTitleThree": "Effective advertising",
       "listDescriptionThree": "Perfect for ad campaigns on Google, Facebook, Instagram, and TikTok."
     },
+    "Packages": {
+      "title": "<gray>Choose the right</gray> solution for your project,</gray> that works for your business",
+      "description": "We offer fixed packages with clearly defined content, so you know exactly what you get – with no hidden costs.",
+      "pdv": "*VAT is not included in the price",
+      "listOne": {
+        "title": "Basic package",
+        "subtitleOne": "What the package includes:",
+        "listOne": {
+          "itemOne": "Unique design with 6–8 blocks in pure code",
+          "itemTwo": "Basic SEO",
+          "itemThree": "Integration with e-mail or Telegram bot for receiving inquiries",
+          "itemFour": "Fully responsive for all devices",
+          "itemFive": "Speed optimization and basic analytics"
+        },
+        "subtitleTwo": "Benefit for the client:",
+        "listTwo": {
+          "itemOne": "Fast launch and collection of leads or sales of one product",
+          "itemTwo": "Easy management via admin panel without dependency on developers",
+          "itemThree": "Payment only for the domain after launch"
+        }
+      },
+      "listTwo": {
+        "title": "Premium package",
+        "subtitleOne": "What the package includes:",
+        "listOne": {
+          "itemOne": "Everything from the basic package",
+          "itemTwo": "Setup of e-mail marketing with personalized emails and receipts",
+          "itemThree": "Integration of payment systems, calendar/booking, CRM, and Google reviews",
+          "itemFour": "Advanced animations and interactive elements, custom development of blocks for your product or service",
+          "itemFive": "Advanced SEO for better visibility on Google",
+          "itemSix": "Analytics setup"
+        },
+        "subtitleTwo": "Benefit for the client:",
+        "listTwo": {
+          "itemOne": "Comprehensive sales tool",
+          "itemTwo": "Maximum conversion of visitors into customers",
+          "itemThree": "Automation of communication and payments",
+          "itemFour": "Ready for scaling the business and increasing sales"
+        }
+      },
+      "button": "Order a landing page",
+      "price": "*The price may vary up or down depending on your individual needs"
+    },
     "Services": {
       "title": "What are our landing pages made of?",
       "description": "We create tailored landing pages that combine design, development, marketing, and SEO, so your customers get the best experience and your campaigns convert.",

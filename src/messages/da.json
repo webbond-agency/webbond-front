@@ -344,6 +344,49 @@
       "listTitleThree": "Effektiv reklame",
       "listDescriptionThree": "Perfekt til annoncekampagner på Google, Facebook, Instagram og TikTok."
     },
+    "Packages": {
+      "title": "<gray>Vælg den rette</gray> løsning til dit projekt,</gray> der arbejder for din virksomhed",
+      "description": "Vi tilbyder faste pakker med klart defineret indhold, så du ved præcis, hvad du får – uden skjulte omkostninger.",
+      "pdv": "*moms er ikke inkluderet i prisen",
+      "listOne": {
+        "title": "Basispakke",
+        "subtitleOne": "Hvad inkluderer pakken:",
+        "listOne": {
+          "itemOne": "Unikt design med 6–8 blokke på ren kode",
+          "itemTwo": "Basis SEO",
+          "itemThree": "Integration med e-mail eller Telegram-bot til modtagelse af forespørgsler",
+          "itemFour": "Fuldt responsivt til alle enheder",
+          "itemFive": "Hastighedsoptimering og grundlæggende analytics"
+        },
+        "subtitleTwo": "Fordel for kunden:",
+        "listTwo": {
+          "itemOne": "Hurtig lancering og indsamling af leads eller salg af ét produkt",
+          "itemTwo": "Nem administration via adminpanel uden afhængighed af udviklere",
+          "itemThree": "Betaling kun for domænet efter lancering"
+        }
+      },
+      "listTwo": {
+        "title": "Premiumpakke",
+        "subtitleOne": "Hvad inkluderer pakken:",
+        "listOne": {
+          "itemOne": "Alt fra basispakken",
+          "itemTwo": "Opsætning af e-mail marketing med personlige mails og kvitteringer",
+          "itemThree": "Integration af betalingssystemer, kalender/booking, CRM og Google anmeldelser",
+          "itemFour": "Avancerede animationer og interaktive elementer, custom udvikling af blokke til produkt eller service",
+          "itemFive": "Udvidet SEO for bedre synlighed i Google",
+          "itemSix": "Opsætning af analytics"
+        },
+        "subtitleTwo": "Fordel for kunden:",
+        "listTwo": {
+          "itemOne": "Kompleks værktøj til salg",
+          "itemTwo": "Maksimal konvertering af besøgende til kunder",
+          "itemThree": "Automatisering af kommunikation og betalinger",
+          "itemFour": "Klar til skalering af forretningen og øget salg"
+        }
+      },
+      "button": "Bestil en landingpage",
+      "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
+    },
     "Services": {
       "title": "Hvad består vores landingpages af?",
       "description": "Vi skaber skræddersyede landingpages, der kombinerer design, udvikling, marketing og SEO, så dine kunder får den bedste oplevelse og dine kampagner konverterer.",
@@ -445,6 +488,7 @@
       "listTitleThree": "Integrationer og funktioner",
       "listDescriptionThree": "Nem integration af email, betalingsmetoder, kalkulatorer og andre værktøjer, der gør din hjemmeside komplet og brugbar."
     },
+
     "Services": {
       "title": "Hvad indeholder vores hjemmesider?",
       "description": "Vi udvikler komplette hjemmesider med flot design, fleksible funktioner, booking systemer, kontaktformularer og integrerede værktøjer, så din virksomhed kan vokse online og administreres nemt.",
