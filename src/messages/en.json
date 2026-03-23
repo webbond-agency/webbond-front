@@ -428,6 +428,9 @@
       "listTitleThree": "Integrations and features",
       "listDescriptionThree": "Easy integration of email, payment methods, calculators, and other tools that make your website complete and practical."
     },
+    "Order": {
+      "button": "Order your website now"
+    },
     "Questions": {
       "title": "FREQUENTLY ASKED QUESTIONS",
       "seeMore": "See other questions",

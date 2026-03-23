@@ -1,6 +1,7 @@
 import Hero from "@/components/webshop-page/hero/hero";
 import Faq from "@/components/webshop-page/faq/faq";
 import Cta from "@/components/webshop-page/cta/cta";
+import ContactsContainer from "@/components/contacts/contacts-container";
 
 export default function LandingPage() {
   return (
@@ -8,6 +9,7 @@ export default function LandingPage() {
       <Hero />
       <Faq />
       <Cta />
+      <ContactsContainer />
     </div>
   );
 }

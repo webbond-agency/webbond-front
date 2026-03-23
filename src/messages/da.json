@@ -427,6 +427,9 @@
       "listTitleThree": "Integrationer og funktioner",
       "listDescriptionThree": "Nem integration af email, betalingsmetoder, kalkulatorer og andre værktøjer, der gør din hjemmeside komplet og brugbar."
     },
+    "Order": {
+      "button": "Bestil din hjemmeside nu"
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",
