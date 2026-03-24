@@ -262,7 +262,10 @@
   "Breadcrumbs": {
     "home": "Home",
     "cases": "Cases",
-    "websites": "Websites"
+    "websites": "Websites",
+    "landing": "Landing pages",
+    "multipage": "Website",
+    "webshop": "Webshop"
   },
 
   "WebSitesPage": {
