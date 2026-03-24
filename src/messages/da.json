@@ -631,6 +631,37 @@
       "listTitleThree": "Vækst og skalering",
       "listDescriptionThree": "Skab vækst og flere salg uden ekstra personale eller tid på administration."
     },
+    "Packages": {
+      "title": "<gray>VÆLG DEN RETTE</gray>",
+      "description": "Én samlet premium-pakke med alt, hvad du behøver for en automatiseret webshop der sælger døgnet rundt.",
+      "pdv": "*moms er ikke inkluderet i prisen",
+      "cardTitle": "Premium webshop",
+      "subtitleIncluded": "Hvad er inkluderet:",
+      "included": {
+        "itemOne": "Automatiseret ordrebehandling og salgsproces",
+        "itemTwo": "Fuldt administrationspanel til produkter, kategorier og beskrivelser",
+        "itemThree": "Unikt design baseret på målgruppeanalyse",
+        "itemFour": "Fuld marketingstruktur og SEO-optimering",
+        "itemFive": "Flersproget webshop",
+        "itemSix": "Integration med CRM og betalingssystemer",
+        "itemSeven": "E-mail marketing og automatiserede kampagner",
+        "itemEight": "Avanceret salgs- og brugeranalyse",
+        "itemNine": "Høj ydeevne og optimering af indlæsningstid",
+        "itemTen": "Sikkerhed og backup",
+        "itemEleven": "Træning og support til ejeren",
+        "itemTwelve": "Betaling kun for domæne"
+      },
+      "subtitleBenefits": "Fordele for din virksomhed:",
+      "benefits": {
+        "itemOne": "Sælger 24/7 uden behov for ekstra salgsafdeling",
+        "itemTwo": "Automatiserede processer fra ordre til betaling",
+        "itemThree": "Fuldt ejerskab og kontrol over webshoppen",
+        "itemFour": "Skalerbar og fleksibel struktur",
+        "itemFive": "Maksimering af konverteringer og salg"
+      },
+      "button": "Bestil Webshop",
+      "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
+    },
     "Services": {
       "title": "Hvad indeholder vores webshops?",
       "description": "Vi udvikler avancerede webshops som komplette salgsplatforme — designet til automatiserede processer, høj konvertering og fuld kontrol for virksomhedsejeren. Webshoppen arbejder 24/7 og kræver ikke et ekstra salgs- eller supportteam.",

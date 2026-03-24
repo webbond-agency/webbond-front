@@ -631,6 +631,37 @@
       "listTitleThree": "Growth and scaling",
       "listDescriptionThree": "Create growth and more sales without extra staff or time spent on administration."
     },
+    "Packages": {
+      "title": "<gray>CHOOSE THE RIGHT</gray>",
+      "description": "One complete premium package with everything you need for an automated webshop that sells around the clock.",
+      "pdv": "*VAT is not included in the price",
+      "cardTitle": "Premium webshop",
+      "subtitleIncluded": "What is included:",
+      "included": {
+        "itemOne": "Automated order processing and sales flow",
+        "itemTwo": "Full admin panel for products, categories, and descriptions",
+        "itemThree": "Unique design based on target audience analysis",
+        "itemFour": "Full marketing structure and SEO optimization",
+        "itemFive": "Multilingual webshop",
+        "itemSix": "Integration with CRM and payment systems",
+        "itemSeven": "E-mail marketing and automated campaigns",
+        "itemEight": "Advanced sales and user analytics",
+        "itemNine": "High performance and loading time optimization",
+        "itemTen": "Security and backup",
+        "itemEleven": "Training and support for the owner",
+        "itemTwelve": "Payment only for the domain"
+      },
+      "subtitleBenefits": "Benefits for your business:",
+      "benefits": {
+        "itemOne": "Sells 24/7 without the need for an extra sales department",
+        "itemTwo": "Automated processes from order to payment",
+        "itemThree": "Full ownership and control over the webshop",
+        "itemFour": "Scalable and flexible structure",
+        "itemFive": "Maximizing conversions and sales"
+      },
+      "button": "Order webshop",
+      "price": "*The price may vary up or down depending on your individual needs"
+    },
     "Services": {
       "title": "What do our webshops include?",
       "description": "We develop advanced webshops as complete sales platforms — designed for automated processes, high conversion, and full control for the business owner. The webshop works 24/7 and does not require an extra sales or support team.",
