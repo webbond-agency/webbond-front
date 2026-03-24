@@ -489,6 +489,49 @@
       "listTitleThree": "Integrations and features",
       "listDescriptionThree": "Easy integration of email, payment methods, calculators, and other tools that make your website complete and practical."
     },
+    "Packages": {
+      "title": "<gray>Choose the right</gray> solution for your project",
+      "description": "We develop complete websites with great design and flexible systems — tailored to your business and ready to grow online.",
+      "pdv": "*VAT is not included in the price",
+      "listOne": {
+        "title": "Basic package",
+        "subtitleOne": "What the package includes:",
+        "listOne": {
+          "itemOne": "Unique design with multiple pages and 6–10 content blocks in pure code",
+          "itemTwo": "Basic SEO for multi-page websites",
+          "itemThree": "Integration with e-mail or a Telegram bot for receiving inquiries",
+          "itemFour": "Fully responsive for all devices",
+          "itemFive": "Speed optimization and basic analytics"
+        },
+        "subtitleTwo": "Benefit for the client:",
+        "listTwo": {
+          "itemOne": "Clear structure with multiple pages for services, about, and contact",
+          "itemTwo": "Easy management via admin panel without dependency on developers",
+          "itemThree": "Ready for more pages and extensions without starting from scratch"
+        }
+      },
+      "listTwo": {
+        "title": "Premium package",
+        "subtitleOne": "What the package includes:",
+        "listOne": {
+          "itemOne": "Everything from the basic package",
+          "itemTwo": "Setup of e-mail marketing with personalized emails and receipts",
+          "itemThree": "Integration of payment systems, calendar/booking, CRM, and Google reviews",
+          "itemFour": "Advanced animations and interactive elements, custom development of sections for products or services",
+          "itemFive": "Advanced SEO for better visibility on Google across pages",
+          "itemSix": "Analytics setup and tracking on key conversion points"
+        },
+        "subtitleTwo": "Benefit for the client:",
+        "listTwo": {
+          "itemOne": "Complete digital solution for lead generation and sales",
+          "itemTwo": "Maximum conversion across multiple landing-style pages on the site",
+          "itemThree": "Automation of communication and payments",
+          "itemFour": "Ready for scaling, more languages, and increased revenue"
+        }
+      },
+      "button": "Order your website",
+      "price": "*The price may vary up or down depending on your individual needs"
+    },
     "Services": {
       "title": "What do our websites include?",
       "description": "We develop complete websites with great design, flexible features, booking systems, contact forms, and integrated tools, so your business can grow online and be managed easily.",

@@ -488,6 +488,49 @@
       "listTitleThree": "Integrationer og funktioner",
       "listDescriptionThree": "Nem integration af email, betalingsmetoder, kalkulatorer og andre værktøjer, der gør din hjemmeside komplet og brugbar."
     },
+    "Packages": {
+      "title": "<gray>Vælg den rette</gray> løsning til dit projekt",
+      "description": "Vi udvikler komplette hjemmesider med flot design og fleksible systemer — skræddersyet til din virksomhed og klar til at vokse online.",
+      "pdv": "*moms er ikke inkluderet i prisen",
+      "listOne": {
+        "title": "Basispakke",
+        "subtitleOne": "Hvad inkluderer pakken:",
+        "listOne": {
+          "itemOne": "Unikt design med flere sider og 6–10 indholdsblokke på ren kode",
+          "itemTwo": "Basis SEO til flersidede websites",
+          "itemThree": "Integration med e-mail eller Telegram-bot til modtagelse af forespørgsler",
+          "itemFour": "Fuldt responsivt til alle enheder",
+          "itemFive": "Hastighedsoptimering og grundlæggende analytics"
+        },
+        "subtitleTwo": "Fordel for kunden:",
+        "listTwo": {
+          "itemOne": "Tydelig struktur med flere sider til services, om os og kontakt",
+          "itemTwo": "Nem administration via adminpanel uden afhængighed af udviklere",
+          "itemThree": "Klar til flere sider og udvidelser uden at starte forfra"
+        }
+      },
+      "listTwo": {
+        "title": "Premiumpakke",
+        "subtitleOne": "Hvad inkluderer pakken:",
+        "listOne": {
+          "itemOne": "Alt fra basispakken",
+          "itemTwo": "Opsætning af e-mail marketing med personlige mails og kvitteringer",
+          "itemThree": "Integration af betalingssystemer, kalender/booking, CRM og Google anmeldelser",
+          "itemFour": "Avancerede animationer og interaktive elementer, custom udvikling af sektioner til produkter eller tjenester",
+          "itemFive": "Udvidet SEO for bedre synlighed i Google på tværs af sider",
+          "itemSix": "Opsætning af analytics og sporingspunkter på vigtige konverteringer"
+        },
+        "subtitleTwo": "Fordel for kunden:",
+        "listTwo": {
+          "itemOne": "Komplet digital løsning til leadgenerering og salg",
+          "itemTwo": "Maksimal konvertering på tværs af flere landingsider på sitet",
+          "itemThree": "Automatisering af kommunikation og betalinger",
+          "itemFour": "Klar til skalering, flere sprog og øget omsætning"
+        }
+      },
+      "button": "Bestil din hjemmeside",
+      "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
+    },
 
     "Services": {
       "title": "Hvad indeholder vores hjemmesider?",
