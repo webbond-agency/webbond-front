@@ -260,7 +260,10 @@
   "Breadcrumbs": {
     "home": "Hjem",
     "cases": "Cases",
-    "websites": "Websites"
+    "websites": "Websites",
+    "landing": "Landingpages",
+    "multipage": "Hjemmeside",
+    "webshop": "Webshop"
   },
 
   "WebSitesPage": {
