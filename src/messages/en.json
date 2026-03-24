@@ -490,43 +490,51 @@
       "listDescriptionThree": "Easy integration of email, payment methods, calculators, and other tools that make your website complete and practical."
     },
     "Packages": {
-      "title": "<gray>Choose the right</gray> solution for your project",
-      "description": "We develop complete websites with great design and flexible systems — tailored to your business and ready to grow online.",
+      "title": "<gray>CHOOSE THE RIGHT</gray>",
+      "description": "Two clear packages — you know exactly what your company gets and what benefits come with it.",
       "pdv": "*VAT is not included in the price",
       "listOne": {
         "title": "Basic package",
-        "subtitleOne": "What the package includes:",
+        "subtitleOne": "What the company gets:",
         "listOne": {
-          "itemOne": "Unique design with multiple pages and 6–10 content blocks in pure code",
-          "itemTwo": "Basic SEO for multi-page websites",
-          "itemThree": "Integration with e-mail or a Telegram bot for receiving inquiries",
-          "itemFour": "Fully responsive for all devices",
-          "itemFive": "Speed optimization and basic analytics"
+          "itemOne": "Unique design for each page that highlights the brand and target audience.",
+          "itemTwo": "5–7 pages with room for a detailed presentation of products and services.",
+          "itemThree": "Clean code for fast loading and stability, independent of platforms.",
+          "itemFour": "Responsive design for all devices and multilingual support.",
+          "itemFive": "Admin panel with full access: 90% of changes can be made on your own without a developer.",
+          "itemSix": "Image optimization for fast loading.",
+          "itemSeven": "Integration of basic contact forms and basic analytics.",
+          "itemEight": "Warranty on the website after launch."
         },
-        "subtitleTwo": "Benefit for the client:",
+        "subtitleTwo": "Benefits for the company:",
         "listTwo": {
-          "itemOne": "Clear structure with multiple pages for services, about, and contact",
-          "itemTwo": "Easy management via admin panel without dependency on developers",
-          "itemThree": "Ready for more pages and extensions without starting from scratch"
+          "itemOne": "The website works as a sales tool thanks to the detailed page structure.",
+          "itemTwo": "More pages = more entry points on Google = more customers.",
+          "itemThree": "Independence from developers – changes can easily be made via the admin panel.",
+          "itemFour": "Clean code and marketing structure increase conversion and efficiency."
         }
       },
       "listTwo": {
         "title": "Premium package",
-        "subtitleOne": "What the package includes:",
+        "subtitleOne": "What the company gets:",
         "listOne": {
-          "itemOne": "Everything from the basic package",
-          "itemTwo": "Setup of e-mail marketing with personalized emails and receipts",
-          "itemThree": "Integration of payment systems, calendar/booking, CRM, and Google reviews",
-          "itemFour": "Advanced animations and interactive elements, custom development of sections for products or services",
-          "itemFive": "Advanced SEO for better visibility on Google across pages",
-          "itemSix": "Analytics setup and tracking on key conversion points"
+          "itemOne": "Everything from the basic package, plus:",
+          "itemTwo": "10+ pages with extra blocks for products, services, and integrations.",
+          "itemThree": "Connection and setup of SEO for top rankings on Google.",
+          "itemFour": "Integration of e-mail marketing with personalized emails and receipts after purchase.",
+          "itemFive": "Integration of payment systems, CRM, calendars/bookings, and Google reviews for full automation.",
+          "itemSix": "Custom-developed blocks, advanced animations, and interactive elements.",
+          "itemSeven": "Multilingual support and technical internal linking for SEO.",
+          "itemEight": "Admin panel with full control – 90% of editing can be done without a developer.",
+          "itemNine": "Warranty on the website after launch."
         },
-        "subtitleTwo": "Benefit for the client:",
+        "subtitleTwo": "Benefits for the company:",
         "listTwo": {
-          "itemOne": "Complete digital solution for lead generation and sales",
-          "itemTwo": "Maximum conversion across multiple landing-style pages on the site",
-          "itemThree": "Automation of communication and payments",
-          "itemFour": "Ready for scaling, more languages, and increased revenue"
+          "itemOne": "A complete sales tool – from inquiry to automatic processing and payment.",
+          "itemTwo": "Maximum conversion thanks to marketing structure and SEO optimization.",
+          "itemThree": "Independence and control – the company manages content and processes itself.",
+          "itemFour": "More pages = more Google entry points = more customers and sales.",
+          "itemFive": "Guarantee of stable operation and professional support."
         }
       },
       "button": "Order your website",

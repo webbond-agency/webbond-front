@@ -489,46 +489,54 @@
       "listDescriptionThree": "Nem integration af email, betalingsmetoder, kalkulatorer og andre værktøjer, der gør din hjemmeside komplet og brugbar."
     },
     "Packages": {
-      "title": "<gray>Vælg den rette</gray> løsning til dit projekt",
-      "description": "Vi udvikler komplette hjemmesider med flot design og fleksible systemer — skræddersyet til din virksomhed og klar til at vokse online.",
+      "title": "<gray>VÆLG DEN RETTE</gray>",
+      "description": "To tydelige pakker — du ved præcis, hvad din virksomhed får, og hvilke fordele der følger med.",
       "pdv": "*moms er ikke inkluderet i prisen",
       "listOne": {
         "title": "Basispakke",
-        "subtitleOne": "Hvad inkluderer pakken:",
+        "subtitleOne": "Hvad virksomheden får:",
         "listOne": {
-          "itemOne": "Unikt design med flere sider og 6–10 indholdsblokke på ren kode",
-          "itemTwo": "Basis SEO til flersidede websites",
-          "itemThree": "Integration med e-mail eller Telegram-bot til modtagelse af forespørgsler",
-          "itemFour": "Fuldt responsivt til alle enheder",
-          "itemFive": "Hastighedsoptimering og grundlæggende analytics"
+          "itemOne": "Unikt design til hver side, der fremhæver brandet og målgruppen.",
+          "itemTwo": "5–7 sider med mulighed for detaljeret præsentation af produkter og tjenester.",
+          "itemThree": "Ren kode for hurtig indlæsning og stabilitet, uafhængig af platforme.",
+          "itemFour": "Responsivt design til alle enheder og flersproget support.",
+          "itemFive": "Adminpanel med fuld adgang: 90 % af ændringer kan foretages selv uden udvikler.",
+          "itemSix": "Optimering af billeder for hurtig indlæsning.",
+          "itemSeven": "Integration af basale kontaktformularer og grundlæggende analytics.",
+          "itemEight": "Garanti på websitet efter lancering."
         },
-        "subtitleTwo": "Fordel for kunden:",
+        "subtitleTwo": "Fordele for virksomheden:",
         "listTwo": {
-          "itemOne": "Tydelig struktur med flere sider til services, om os og kontakt",
-          "itemTwo": "Nem administration via adminpanel uden afhængighed af udviklere",
-          "itemThree": "Klar til flere sider og udvidelser uden at starte forfra"
+          "itemOne": "Hjemmesiden fungerer som et salgsinstrument takket være den detaljerede sideopbygning.",
+          "itemTwo": "Flere sider = flere indgange i Google = flere kunder.",
+          "itemThree": "Uafhængighed fra udviklere – ændringer kan nemt foretages via adminpanelet.",
+          "itemFour": "Ren kode og marketingstruktur øger konvertering og effektivitet."
         }
       },
       "listTwo": {
         "title": "Premiumpakke",
-        "subtitleOne": "Hvad inkluderer pakken:",
+        "subtitleOne": "Hvad virksomheden får:",
         "listOne": {
-          "itemOne": "Alt fra basispakken",
-          "itemTwo": "Opsætning af e-mail marketing med personlige mails og kvitteringer",
-          "itemThree": "Integration af betalingssystemer, kalender/booking, CRM og Google anmeldelser",
-          "itemFour": "Avancerede animationer og interaktive elementer, custom udvikling af sektioner til produkter eller tjenester",
-          "itemFive": "Udvidet SEO for bedre synlighed i Google på tværs af sider",
-          "itemSix": "Opsætning af analytics og sporingspunkter på vigtige konverteringer"
+          "itemOne": "Alt fra basispakken, plus:",
+          "itemTwo": "10+ sider med ekstra blokke til produkter, tjenester og integrationer.",
+          "itemThree": "Tilslutning og opsætning af SEO for topplaceringer i Google.",
+          "itemFour": "Integration af e-mail marketing med personlige mails og kvittering efter køb.",
+          "itemFive": "Integration af betalingssystemer, CRM, kalendere/bookings og Google-anmeldelser for fuld automatisering.",
+          "itemSix": "Custom udviklede blokke, avancerede animationer og interaktive elementer.",
+          "itemSeven": "Flersproget support og teknisk intern linking for SEO.",
+          "itemEight": "Adminpanel med fuld kontrol – 90 % af redigeringerne kan foretages uden udvikler.",
+          "itemNine": "Garanti på websitet efter lancering."
         },
-        "subtitleTwo": "Fordel for kunden:",
+        "subtitleTwo": "Fordele for virksomheden:",
         "listTwo": {
-          "itemOne": "Komplet digital løsning til leadgenerering og salg",
-          "itemTwo": "Maksimal konvertering på tværs af flere landingsider på sitet",
-          "itemThree": "Automatisering af kommunikation og betalinger",
-          "itemFour": "Klar til skalering, flere sprog og øget omsætning"
+          "itemOne": "Et komplet salgsinstrument – fra forespørgsel til automatisk behandling og betaling.",
+          "itemTwo": "Maksimal konvertering takket være marketingstruktur og SEO-optimering.",
+          "itemThree": "Uafhængighed og kontrol – virksomheden styrer selv indhold og processer.",
+          "itemFour": "Flere sider = flere Google-indgange = flere kunder og salg.",
+          "itemFive": "Garanti for stabil drift og professionel support."
         }
       },
-      "button": "Bestil din hjemmeside",
+      "button": "Bestil Hjemmeside",
       "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
     },
 
