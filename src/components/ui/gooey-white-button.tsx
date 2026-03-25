@@ -1,4 +1,5 @@
 "use client";
+
 import { cn } from "@/lib/utils";
 import { m, Variants } from "framer-motion";
 import { Loader2 } from "lucide-react";
@@ -14,7 +15,7 @@ interface GooeyWhiteButtonProps {
   className?: string;
   icon?: React.ReactNode;
   onClick?: () => void;
-  width?: number; // Fixed width in px (optional)
+  width?: number;
   height?: number;
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
@@ -37,7 +38,9 @@ const GooeyWhiteButton = ({
   centerText = false,
 }: GooeyWhiteButtonProps) => {
   const containerRef = useRef<HTMLButtonElement>(null);
+
   const [width, setWidth] = useState(initialWidth || 236);
+  const [isReady, setIsReady] = useState(false); // 👈 новий state
 
   useLayoutEffect(() => {
     if (!containerRef.current) return;
@@ -46,6 +49,7 @@ const GooeyWhiteButton = ({
       for (const entry of entries) {
         if (entry.contentRect) {
           setWidth(entry.contentRect.width);
+          setIsReady(true); // 👈 показуємо тільки після вимірювання
         }
       }
     });
@@ -55,15 +59,11 @@ const GooeyWhiteButton = ({
   }, []);
 
   const radius = height / 2;
-  const bridgeWidth = height * 1.327; // Пропорция из оригинала (69/52)
+  const bridgeWidth = height * 1.327;
   const mainBodyRight = width - bridgeWidth;
   const circleX = width - radius;
   const circleY = radius;
 
-  // Рассчитываем путь для SVG маски
-  // Основано на оригинальном пути, где:
-  // bridgeWidth = 69 (236 - 167)
-  // radius = 26 (52 / 2)
   const pathData = `
     M${mainBodyRight} 0
     C${mainBodyRight + 7.356} 0 ${mainBodyRight + 13.997} 3.0548 ${
@@ -80,9 +80,9 @@ const GooeyWhiteButton = ({
     C${mainBodyRight + 35.644} ${height} ${mainBodyRight + 29.003} ${
       height - 3.0552
     } ${mainBodyRight + 24.274} ${height - 7.9653}
-    C${mainBodyRight + 22.807} ${height - 9.4884} ${mainBodyRight + 20.193} ${
-      height - 9.4884
-    } ${mainBodyRight + 18.726} ${height - 7.9653}
+    C${mainBodyRight + 22.807} ${height - 9.4884} ${
+      mainBodyRight + 20.193
+    } ${height - 9.4884} ${mainBodyRight + 18.726} ${height - 7.9653}
     C${mainBodyRight + 13.997} ${height - 3.0552} ${
       mainBodyRight + 7.356
     } ${height} ${mainBodyRight} ${height}
@@ -101,15 +101,17 @@ const GooeyWhiteButton = ({
       initial="initial"
       whileHover={disabled || isLoading ? "initial" : "hover"}
       className={cn(
-        "group relative flex w-full cursor-pointer items-center overflow-visible bg-transparent transition-all will-change-transform",
-        !disabled && !isLoading && "active:scale-95",
+        "group relative flex w-full items-center overflow-visible bg-transparent will-change-transform transition-all",
+        !disabled && !isLoading && "cursor-pointer active:scale-95",
         (disabled || isLoading) &&
           "cursor-not-allowed opacity-50 grayscale-[0.5]",
+        "transition-opacity duration-700",
+        isReady ? "opacity-100" : "opacity-0",
         className,
       )}
       style={{ width: initialWidth, height }}
     >
-      {/* Динамический фон отрисованный напрямую в SVG с поддержкой Gooey эффекта */}
+      {/* SVG фон */}
       <svg
         className="pointer-events-none absolute inset-0 z-0"
         width={width}
@@ -132,6 +134,7 @@ const GooeyWhiteButton = ({
             />
           </filter>
         </defs>
+
         <g filter="url(#goo-filter-white)">
           <path d={pathData} fill="white" />
           <m.circle
@@ -145,12 +148,11 @@ const GooeyWhiteButton = ({
         </g>
       </svg>
 
-      {/* Слой контента */}
+      {/* Контент */}
       <div className="relative z-10 flex h-full w-full items-center">
-        {/* {centerText && <div style={{ width: height }} className="shrink-0" />} */}
         <span
           className={cn(
-            "flex-1 leading-none flex items-center",
+            "flex flex-1 items-center leading-none",
             centerText ? "justify-center" : "pl-6",
           )}
         >

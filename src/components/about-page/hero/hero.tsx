@@ -1,8 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Container from "@/components/ui/container";
-import GooeyWhiteButton from "@/components/ui/gooey-white-button";
 import HeroGlobe from "@/components/websites-page/hero/hero-globe";
+import HeroModal from "./hero-modal";
 
 export default async function Hero() {
   const t = await getTranslations("AboutPage.Hero");
@@ -53,13 +53,7 @@ export default async function Hero() {
           </p>
         </div>
         <div className="flex flex-col gap-6 md:flex-row md:justify-between md:items-end mt-6 md:mt-2">
-          <GooeyWhiteButton
-            text={t("button")}
-            // onClick={() => setIsFeedbackOpen(true)}
-            className="text-center w-full text-[14px] font-montserrat font-light text-black"
-            width={313}
-            height={52}
-          />
+          <HeroModal buttonText={t("button")} />
           <p className="md:max-w-[318px] font-montserrat text-[14px] font-light text-white leading-[120%] md:text-right">
             {t("description")}
           </p>
