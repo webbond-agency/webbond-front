@@ -1,16 +1,14 @@
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Container from "@/components/ui/container";
-import GooeyWhiteButton from "@/components/ui/gooey-white-button";
 import HeroGlobe from "@/components/websites-page/hero/hero-globe";
+import HeroModal from "@/components/about-page/hero/hero-modal";
 
-export default async function Hero() {
-  const t = await getTranslations("WebSitesPage.Hero");
+export default function Hero() {
+  const t = useTranslations("WebSitesPage.Hero");
 
   return (
-    <section
-      className="relative pt-[97px] lg:pt-[166px] pb-[129px] lg:pb-[227px]"
-    >
+    <section className="relative pt-[97px] lg:pt-[166px] pb-[129px] lg:pb-[227px]">
       <div className="absolute top-[-960px] left-[-800px] xl:top-[-1060px] w-[1192px] ">
         <Image
           width={1192}
@@ -21,17 +19,18 @@ export default async function Hero() {
           className="select-none pointer-events-none"
         />
       </div>
-      <div className="absolute -z-10 top-[-40px] left-[-803px] lg:top-[19px] lg:left-[-633px] w-[1238px] aspect-square mix-blend-hard-light">
-        <Image
-          width={1238}
-          height={1238}
-          src="/webpages-hero-decor.webp"
-          alt="webpages-hero-decor"
-          sizes="1238px"
-          className="select-none pointer-events-none"
-        />
-      </div>
-      <Container>
+
+      <Container className="relative">
+        <div className="absolute -z-10 top-[-125px] left-[-812px] lg:top-[-155px] lg:left-[-633px] w-[1238px] aspect-square mix-blend-hard-light">
+          <Image
+            width={1238}
+            height={1238}
+            src="/webpages-hero-decor.webp"
+            alt="webpages-hero-decor"
+            sizes="1238px"
+            className="select-none pointer-events-none"
+          />
+        </div>
         <h1 className="md:max-w-[440px] lg:max-w-[660px] mb-2.5 lg:mb-[15px] font-manrope text-[40px] lg:text-[64px] leading-[120%] text-white uppercase font-light">
           {t("title")}
         </h1>
@@ -52,13 +51,7 @@ export default async function Hero() {
               {t("description")}
             </p>
           </div>
-          <GooeyWhiteButton
-            text={t("button")}
-            // onClick={() => setIsFeedbackOpen(true)}
-            className="text-center w-full text-[14px] font-montserrat font-light text-black"
-            width={313}
-            height={52}
-          />
+          <HeroModal buttonText={t("button")} />
         </div>
       </Container>
       <HeroGlobe />
