@@ -390,6 +390,9 @@
       "button": "Bestil en landingpage",
       "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
     },
+    "Cases": {
+      "title": "<gray>Landingpages,</gray> der har hjulpet vores kunder med at sælge"
+    },
     "Services": {
       "title": "Hvad består vores landingpages af?",
       "description": "Vi skaber skræddersyede landingpages, der kombinerer design, udvikling, marketing og SEO, så dine kunder får den bedste oplevelse og dine kampagner konverterer.",

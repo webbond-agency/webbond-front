@@ -16,10 +16,15 @@ interface CasesSliderProps {
 }
 
 const CasesSlider = ({ cases }: CasesSliderProps) => {
+  const normalizedCases =
+    cases.length > 0 && cases.length < 3
+      ? Array.from({ length: 3 }, (_, i) => cases[i % cases.length])
+      : cases;
+
   return (
     <Carousel>
       <CarouselContent>
-        {cases.map((caseItem) => {
+        {normalizedCases.map((caseItem, idx) => {
           const imageUrl = caseItem.homepageImage
             ? urlForImage(caseItem.homepageImage).width(860).height(747).url()
             : caseItem.hero.image
@@ -32,7 +37,10 @@ const CasesSlider = ({ cases }: CasesSliderProps) => {
             caseItem.title;
 
           return (
-            <CarouselItem key={caseItem.id} className="basis-full sm:basis-1/2">
+            <CarouselItem
+              key={`${caseItem.id}-${idx}`}
+              className="basis-full sm:basis-1/2"
+            >
               <Link href={`/cases/${caseItem.slug}`}>
                 <div className="relative w-full max-w-[430px] min-h-[387px] rounded-[13px] p-[15px] flex flex-col">
                   <Image

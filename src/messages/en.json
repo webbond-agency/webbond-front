@@ -391,6 +391,9 @@
       "button": "Order a landing page",
       "price": "*The price may vary up or down depending on your individual needs"
     },
+    "Cases": {
+      "title": "<gray>Landing pages,</gray> that helped our clients sell"
+    },
     "Services": {
       "title": "What are our landing pages made of?",
       "description": "We create tailored landing pages that combine design, development, marketing, and SEO, so your customers get the best experience and your campaigns convert.",
