@@ -731,9 +731,11 @@
   },
 
   "AboutPage": {
-    "title": "We help businesses grow through well-thought-out digital solutions",
-    "description": "We combine technical development, design, and marketing into a single process, so digital solutions truly support the business: attracting customers, simplifying processes, and scaling with the company.",
-    "button": "Book a consultation",
-    "descriptionTwo": "<gray>We are a digital agency that</gray> works with <gray>companies that</gray> value results, <gray>structure, and</gray> long-term value — not just a <gray>website</gray> or advertising."
+    "Hero": {
+      "title": "We help businesses grow through well-thought-out digital solutions",
+      "description": "We combine technical development, design, and marketing into a single process, so digital solutions truly support the business: attracting customers, simplifying processes, and scaling with the company.",
+      "button": "Book a consultation",
+      "descriptionTwo": "<gray>We are a digital agency that</gray> works with <gray>companies that</gray> value results, <gray>structure, and</gray> long-term value — not just a <gray>website</gray> or advertising."
+    }
   }
 }

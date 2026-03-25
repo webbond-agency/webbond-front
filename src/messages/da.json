@@ -731,9 +731,11 @@
   },
 
   "AboutPage": {
-    "title": "Vi hjælper virksomheder med at vokse gennem gennemtænkte digitale løsninger",
-    "description": "Vi kombinerer teknisk udvikling, design og marketing i én proces, så digitale løsninger virkelig understøtter virksomheden: tiltrækker kunder, forenkler processer og skalerer med virksomheden.",
-    "button": "Book en konsultation",
-    "descriptionTwo": "<gray>Vi er et digitalt bureau, der</gray> arbejder med <gray>virksomheder, der</gray> værdsætter resultater, <gray>struktur og</gray> langsigtet værdi — ikke kun et <gray>website</gray> eller reklame."
+    "Hero": {
+      "title": "Vi hjælper virksomheder med at vokse gennem gennemtænkte digitale løsninger",
+      "description": "Vi kombinerer teknisk udvikling, design og marketing i én proces, så digitale løsninger virkelig understøtter virksomheden: tiltrækker kunder, forenkler processer og skalerer med virksomheden.",
+      "button": "Book en konsultation",
+      "descriptionTwo": "<gray>Vi er et digitalt bureau, der</gray> arbejder med <gray>virksomheder, der</gray> værdsætter resultater, <gray>struktur og</gray> langsigtet værdi — ikke kun et <gray>website</gray> eller reklame."
+    }
   }
 }
