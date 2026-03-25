@@ -20,7 +20,7 @@ export default async function LandingPage({
   const { locale } = await params;
   const t = await getTranslations("Breadcrumbs");
 
-  const landingCases = await fetchSanityData<CaseWithLanguage>(
+  const landingCases = await fetchSanityData<CaseWithLanguage[]>(
     casesBySiteTypeQuery,
     {
       lang: locale,
