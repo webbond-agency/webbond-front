@@ -546,6 +546,9 @@
       "button": "Order your website",
       "price": "*The price may vary up or down depending on your individual needs"
     },
+    "Cases": {
+      "title": "<gray>Websites,</gray> that have helped our clients"
+    },
     "Services": {
       "title": "What do our websites include?",
       "description": "We develop complete websites with great design, flexible features, booking systems, contact forms, and integrated tools, so your business can grow online and be managed easily.",

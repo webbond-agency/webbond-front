@@ -545,6 +545,9 @@
       "button": "Bestil Hjemmeside",
       "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
     },
+    "Cases": {
+      "title": "<gray>Hjemmesider,</gray> der har hjulpet vores kunder"
+    },
 
     "Services": {
       "title": "Hvad indeholder vores hjemmesider?",
