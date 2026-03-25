@@ -671,6 +671,9 @@
       "button": "Order webshop",
       "price": "*The price may vary up or down depending on your individual needs"
     },
+    "Cases": {
+      "title": "<gray>Webshops</gray> from our customers that generate revenue 24/7"
+    },
     "Services": {
       "title": "What do our webshops include?",
       "description": "We develop advanced webshops as complete sales platforms — designed for automated processes, high conversion, and full control for the business owner. The webshop works 24/7 and does not require an extra sales or support team.",
