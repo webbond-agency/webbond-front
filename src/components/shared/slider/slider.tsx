@@ -63,7 +63,7 @@ const CasesSlider = ({ cases }: CasesSliderProps) => {
           className="static translate-y-0 w-[36px] md:w-[44px] h-[36px] md:h-[44px] rounded-full bg-white transition-colors cursor-pointer"
         />
       </div>
-      <CarouselContent>
+      <CarouselContent className="md:ml-0 md:gap-5">
         {normalizedCases.map((caseItem, idx) => {
           const imageUrl = caseItem.homepageImage
             ? urlForImage(caseItem.homepageImage).width(1000).height(1200).url()
@@ -79,7 +79,7 @@ const CasesSlider = ({ cases }: CasesSliderProps) => {
           return (
             <CarouselItem
               key={`${caseItem.id}-${idx}`}
-              className="basis-full sm:basis-1/2 md:basis-[290px] lg:basis-[380px] xl:basis-[472px] sm:pl-5"
+              className="basis-full sm:basis-1/2 md:basis-[290px] lg:basis-[380px] xl:basis-[472px] md:pl-0"
             >
               <Link href={`/cases/${caseItem.slug}`}>
                 <div className="relative w-full md:w-[290px] lg:w-[380px] xl:w-[472px] min-h-[387px] md:min-h-[420px] xl:min-h-[600px] rounded-[20px] p-[16px] xl:p-[24px] flex flex-col group overflow-hidden will-change-transform transform-gpu">
