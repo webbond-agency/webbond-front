@@ -1,8 +1,14 @@
+import CasesSlider from "@/components/cases/cases-slider";
 import Container from "@/components/ui/container";
 import * as motion from "motion/react-client";
+import { CaseWithLanguage } from "@/types/case";
 import { useTranslations } from "next-intl";
 
-export default function Cases() {
+interface CasesProps {
+  cases: CaseWithLanguage[];
+}
+
+export default function Cases({ cases }: CasesProps) {
   const t = useTranslations("LandingPage.Cases");
 
   return (
@@ -19,6 +25,7 @@ export default function Cases() {
             gray: (chunks) => <span className="text-[#818181]">{chunks}</span>,
           })}
         </motion.h2>
+        <CasesSlider cases={cases} />
       </Container>
     </section>
   );

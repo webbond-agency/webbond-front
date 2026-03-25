@@ -41,7 +41,7 @@ export default async function LandingPage({
       <Hero />
       <Breadcrumbs steps={breadcrumbSteps} className="py-10 lg:pt-0 lg:pb-20" />
       <Packages />
-      <Cases />
+      <Cases cases={landingCases} />
       <ServicesLanding />
       <OrderLanding />
       <Faq />
