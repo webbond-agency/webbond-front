@@ -19,17 +19,18 @@ export default function Hero() {
           className="select-none pointer-events-none"
         />
       </div>
-      <div className="absolute -z-10 top-[-40px] left-[-803px] lg:top-[19px] lg:left-[-633px] w-[1238px] aspect-square mix-blend-hard-light">
-        <Image
-          width={1238}
-          height={1238}
-          src="/webpages-hero-decor.webp"
-          alt="webpages-hero-decor"
-          sizes="1238px"
-          className="select-none pointer-events-none"
-        />
-      </div>
-      <Container>
+
+      <Container className="relative">
+        <div className="absolute -z-10 top-[-125px] left-[-812px] lg:top-[-155px] lg:left-[-633px] w-[1238px] aspect-square mix-blend-hard-light">
+          <Image
+            width={1238}
+            height={1238}
+            src="/webpages-hero-decor.webp"
+            alt="webpages-hero-decor"
+            sizes="1238px"
+            className="select-none pointer-events-none"
+          />
+        </div>
         <h1 className="md:max-w-[440px] lg:max-w-[660px] mb-2.5 lg:mb-[15px] font-manrope text-[40px] lg:text-[64px] leading-[120%] text-white uppercase font-light">
           {t("title")}
         </h1>
