@@ -28,8 +28,6 @@ export default async function LandingPage({
     },
   );
 
-  console.log(landingCases);
-
   const breadcrumbSteps = [
     { label: `${t("home")}`, href: `/` },
     { label: t("websites"), href: `/websites` },
