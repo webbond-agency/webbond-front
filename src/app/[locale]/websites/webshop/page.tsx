@@ -5,11 +5,28 @@ import ContactsContainer from "@/components/contacts/contacts-container";
 import OrderWebshop from "@/components/webshop-page/order-webshop/order-webshop";
 import ServicesWebshop from "@/components/webshop-page/services-webshop/services-webshop";
 import Packages from "@/components/webshop-page/packages/packages";
+import Cases from "@/components/webshop-page/cases/cases";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getTranslations } from "next-intl/server";
+import { fetchSanityData } from "@/utils/fetchSanityData";
+import { CaseWithLanguage } from "@/types/case";
+import { casesBySiteTypeQuery } from "@/lib/queries";
 
-export default async function WebshopPage() {
+export default async function WebshopPage({
+  params,
+}: {
+  params: Promise<{ slug: string; locale: string }>;
+}) {
+  const { locale } = await params;
   const t = await getTranslations("Breadcrumbs");
+
+  const webshopCases = await fetchSanityData<CaseWithLanguage[]>(
+    casesBySiteTypeQuery,
+    {
+      lang: locale,
+      siteType: "webshop",
+    },
+  );
 
   const breadcrumbSteps = [
     { label: `${t("home")}`, href: `/` },
@@ -22,6 +39,7 @@ export default async function WebshopPage() {
       <Hero />
       <Breadcrumbs steps={breadcrumbSteps} className="py-10 lg:pt-0 lg:pb-20" />
       <Packages />
+      <Cases cases={webshopCases} />
       <ServicesWebshop />
       <OrderWebshop />
       <Faq />

@@ -12,7 +12,7 @@ interface CasesProps {
 }
 
 export default function Cases({ cases }: CasesProps) {
-  const t = useTranslations("MultiPagePage.Cases");
+  const t = useTranslations("WebshopPage.Cases");
 
   return (
     <section className="pb-[148px]">
@@ -36,6 +36,7 @@ export default function Cases({ cases }: CasesProps) {
             gray: (chunks) => <span className="text-[#818181]">{chunks}</span>,
           })}
         </motion.h2>
+
         <CasesSlider cases={cases} />
       </Container>
     </section>

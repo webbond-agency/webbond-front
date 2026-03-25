@@ -671,6 +671,9 @@
       "button": "Bestil Webshop",
       "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
     },
+    "Cases": {
+      "title": "<gray>Webshops</gray> fra vores kunder, der genererer indtægt 24/7"
+    },
     "Services": {
       "title": "Hvad indeholder vores webshops?",
       "description": "Vi udvikler avancerede webshops som komplette salgsplatforme — designet til automatiserede processer, høj konvertering og fuld kontrol for virksomhedsejeren. Webshoppen arbejder 24/7 og kræver ikke et ekstra salgs- eller supportteam.",
