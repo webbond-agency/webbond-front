@@ -79,10 +79,10 @@ const CasesSlider = ({ cases }: CasesSliderProps) => {
           return (
             <CarouselItem
               key={`${caseItem.id}-${idx}`}
-              className="basis-full sm:basis-1/2 md:basis-[290px] lg:basis-[380px] xl:basis-[472px] md:pl-0"
+              className="basis-full sm:basis-1/2 md:basis-[290px] lg:basis-[380px] xl:basis-[495px] md:pl-0"
             >
               <Link href={`/cases/${caseItem.slug}`}>
-                <div className="relative w-full md:w-[290px] lg:w-[380px] xl:w-[472px] min-h-[387px] md:min-h-[420px] xl:min-h-[600px] rounded-[20px] p-[16px] xl:p-[24px] flex flex-col group overflow-hidden will-change-transform transform-gpu">
+                <div className="relative w-full md:w-[290px] lg:w-[380px] xl:w-[495px] min-h-[387px] md:min-h-[420px] xl:min-h-[600px] rounded-[20px] p-[16px] xl:p-[24px] flex flex-col group overflow-hidden will-change-transform transform-gpu">
                   <Image
                     src={imageUrl}
                     alt={imageAlt}
@@ -109,7 +109,7 @@ const CasesSlider = ({ cases }: CasesSliderProps) => {
                   <h2 className="relative z-10 font-manrope font-light text-[20px] md:text-[24px] xl:text-[28px] leading-[120%] text-white uppercase mb-[12px] xl:mb-[18px] max-w-[191px]">
                     {caseItem.title}
                   </h2>
-                  <p className="relative z-10 font-montserrat font-light text-[9px] md:text-[10px] leading-[120%] text-[#bdbdbd] max-w-[191px] line-clamp-6">
+                  <p className="relative z-10 font-montserrat font-light text-[9px] md:text-[10px] leading-[120%] text-[#bdbdbd] max-w-[131px] xl:max-w-[191px] line-clamp-6">
                     {caseItem.hero.description}
                   </p>
                   {caseItem.hero.tags &&
