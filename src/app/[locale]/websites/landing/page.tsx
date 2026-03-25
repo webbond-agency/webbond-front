@@ -10,6 +10,7 @@ import { getTranslations } from "next-intl/server";
 import { fetchSanityData } from "@/utils/fetchSanityData";
 import { CaseWithLanguage } from "@/types/case";
 import { casesBySiteTypeQuery } from "@/lib/queries";
+import Cases from "@/components/landing-page/cases/cases";
 
 export default async function LandingPage({
   params,
@@ -40,6 +41,7 @@ export default async function LandingPage({
       <Hero />
       <Breadcrumbs steps={breadcrumbSteps} className="py-10 lg:pt-0 lg:pb-20" />
       <Packages />
+      <Cases />
       <ServicesLanding />
       <OrderLanding />
       <Faq />
