@@ -79,7 +79,7 @@ const CasesSlider = ({ cases }: CasesSliderProps) => {
           return (
             <CarouselItem
               key={`${caseItem.id}-${idx}`}
-              className="basis-full sm:basis-1/2 md:basis-[290px] lg:basis-[380px] xl:basis-[495px] md:pl-0"
+              className="basis-full max-w-[360px] sm:max-w-none sm:basis-1/2 md:basis-[290px] lg:basis-[380px] xl:basis-[495px] md:pl-0"
             >
               <Link href={`/cases/${caseItem.slug}`}>
                 <div className="relative w-full md:w-[290px] lg:w-[380px] xl:w-[495px] min-h-[387px] md:min-h-[420px] xl:min-h-[600px] rounded-[20px] p-[16px] xl:p-[24px] flex flex-col group overflow-hidden will-change-transform transform-gpu">
