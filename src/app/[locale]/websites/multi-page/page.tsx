@@ -5,11 +5,27 @@ import OrderMultipage from "@/components/multipage-page/order-multipage/order-mu
 import ContactsContainer from "@/components/contacts/contacts-container";
 import ServicesMultipage from "@/components/multipage-page/services-multipage/services-multipage";
 import Packages from "@/components/multipage-page/packages/packages";
+import Cases from "@/components/multipage-page/cases/cases";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getTranslations } from "next-intl/server";
+import { fetchSanityData } from "@/utils/fetchSanityData";
+import { CaseWithLanguage } from "@/types/case";
+import { casesBySiteTypeQuery } from "@/lib/queries";
 
-export default async function MultiPagePage() {
+export default async function MultiPagePage({
+  params,
+}: {
+  params: Promise<{ slug: string; locale: string }>;
+}) {
+  const { locale } = await params;
   const t = await getTranslations("Breadcrumbs");
+  const multiPageCases = await fetchSanityData<CaseWithLanguage[]>(
+    casesBySiteTypeQuery,
+    {
+      lang: locale,
+      siteType: "website",
+    },
+  );
 
   const breadcrumbSteps = [
     { label: `${t("home")}`, href: `/` },
@@ -22,6 +38,7 @@ export default async function MultiPagePage() {
       <Hero />
       <Breadcrumbs steps={breadcrumbSteps} className="py-10 lg:pt-0 lg:pb-20" />
       <Packages />
+      <Cases cases={multiPageCases} />
       <ServicesMultipage />
       <OrderMultipage />
       <Faq />
