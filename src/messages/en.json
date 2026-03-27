@@ -848,6 +848,12 @@
         "question": "Is SEO included in the price?",
         "answer": "Basic SEO structure is included in all websites. Ongoing SEO and marketing are offered as separate services."
       }
+    },
+    "Cta": {
+      "title": "ABOUT PRICING",
+      "description": "All prices are stated as \"starting from\", since each solution is tailored to the company's needs and level of automation.",
+      "question": "Not sure which solution is the best fit for your business?",
+      "button": "Book a free needs analysis"
     }
   }
 }
