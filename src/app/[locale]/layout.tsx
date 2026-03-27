@@ -132,9 +132,12 @@ export default async function RootLayout({
         <ScrollProvider />
         <NextIntlClientProvider>
           <FramerMotionProvider>
-            <Header />
-            <main className="overflow-x-clip">{children}</main>
-            <Footer />
+            <div className="overflow-y-hidden">
+              {" "}
+              <Header />
+              <main className="overflow-x-clip">{children}</main>
+              <Footer />
+            </div>
           </FramerMotionProvider>
         </NextIntlClientProvider>
       </body>
