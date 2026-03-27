@@ -848,6 +848,12 @@
         "question": "Er SEO inkluderet i prisen?",
         "answer": "Grundlæggende SEO-struktur er inkluderet i alle websites. Løbende SEO og markedsføring tilbydes som separate services."
       }
+    },
+    "Cta": {
+      "title": "OM PRISER",
+      "description": "Alle priser er angivet som \"fra pris\", da hver løsning tilpasses virksomhedens behov og niveau af automatisering.",
+      "question": "Er du i tvivl om, hvilken løsning der passer bedst til din forretning?",
+      "button": "Book gratis behovsanalyse"
     }
   }
 }
