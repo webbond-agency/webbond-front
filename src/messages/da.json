@@ -773,6 +773,37 @@
     }
   },
 
+  "BusinessModelPage": {
+    "Questions": {
+      "title": "OFTE STILLEDE SPØRGSMÅL",
+      "seeMore": "Se andre spørgsmål",
+      "q1": {
+        "question": "Hvad er inkluderet i pakken?",
+        "answer": "Fuldstændigt website på ren kode, tilpasset design, logo, SEO-struktur til Google, formularer, e-mail-integration, booking/kalender (efter behov), CRM-integration og video-instruktioner."
+      },
+      "q2": {
+        "question": "Er der ekstra betalinger eller abonnementer?",
+        "answer": "Nej. Éngangsbetaling, alt inkluderet. Ekstra kun for domæne."
+      },
+      "q3": {
+        "question": "Er logo inkluderet?",
+        "answer": "Ja. Logo oprettes til dit website og digital brug og er inkluderet i pakken."
+      },
+      "q4": {
+        "question": "Er analytics og GDPR inkluderet?",
+        "answer": "Ja. Google Analytics, GTM, cookie-filer og GDPR-kompatibilitet er opsat."
+      },
+      "q5": {
+        "question": "Kan jeg starte reklamekampagner straks efter lancering?",
+        "answer": "Ja. Sitet er klar til at modtage henvendelser og kampagner."
+      },
+      "q6": {
+        "question": "Er der support efter lancering?",
+        "answer": "Ja. Video-instruktioner og support er tilgængelig under og efter lancering."
+      }
+    }
+  },
+
   "PricePage": {
     "Hero": {
       "subtitle": "Faste pakker. Klare rammer. Fokus på effektivitet og vækst.",

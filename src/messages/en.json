@@ -773,6 +773,37 @@
     }
   },
 
+  "BusinessModelPage": {
+    "Questions": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "seeMore": "See other questions",
+      "q1": {
+        "question": "What is included in the package?",
+        "answer": "A complete website in pure code, custom design, logo, SEO structure for Google, forms, email integration, booking/calendar (as needed), CRM integration, and video instructions."
+      },
+      "q2": {
+        "question": "Are there extra payments or subscriptions?",
+        "answer": "No. One-time payment, everything included. Extra costs only for the domain."
+      },
+      "q3": {
+        "question": "Is logo design included?",
+        "answer": "Yes. A logo is created for your website and digital use and is included in the package."
+      },
+      "q4": {
+        "question": "Are analytics and GDPR included?",
+        "answer": "Yes. Google Analytics, GTM, cookie files, and GDPR compatibility are set up."
+      },
+      "q5": {
+        "question": "Can I start advertising campaigns immediately after launch?",
+        "answer": "Yes. The site is ready to receive inquiries and run campaigns."
+      },
+      "q6": {
+        "question": "Is support available after launch?",
+        "answer": "Yes. Video instructions and support are available during and after launch."
+      }
+    }
+  },
+
   "PricePage": {
     "Hero": {
       "subtitle": "Fixed packages. Clear scope. Focus on efficiency and growth.",
