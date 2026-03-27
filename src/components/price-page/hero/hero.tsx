@@ -8,7 +8,7 @@ export default async function Hero() {
   const t = await getTranslations("PricePage.Hero");
 
   return (
-    <section className="relative pt-[72px] lg:pt-[84px] pb-[72px] lg:pb-[144px]">
+    <section className="relative pt-[72px] lg:pt-[84px] pb-25 lg:pb-[115px]">
       <div className="absolute top-[-960px] left-[-800px] xl:top-[-1060px] w-[1192px] ">
         <Image
           width={1192}
