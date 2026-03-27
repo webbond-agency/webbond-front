@@ -801,6 +801,11 @@
         "question": "Is support available after launch?",
         "answer": "Yes. Video instructions and support are available during and after launch."
       }
+    },
+    "Cta": {
+      "title": "CAN'T FIND AN ANSWER TO YOUR QUESTION?",
+      "description": "Read more details about the business solution and the site's capabilities in our blog.",
+      "button": "You can see details about the solution"
     }
   },
 
