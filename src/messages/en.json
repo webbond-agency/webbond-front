@@ -739,6 +739,30 @@
       "description": "We combine technical development, design, and marketing into a single process, so digital solutions truly support the business: attracting customers, simplifying processes, and scaling with the company.",
       "button": "Book a consultation",
       "descriptionTwo": "<gray>We are a digital agency that</gray> works with <gray>companies that</gray> value results, <gray>structure, and</gray> long-term value — not just a <gray>website</gray> or advertising."
+    },
+    "Questions": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "seeMore": "See other questions",
+      "q1": {
+        "question": "How does the collaboration start?",
+        "answer": "It starts with an initial conversation where we discuss your business, goals, and current situation. After that, we prepare a solution and a scope of work. Implementation starts only when both parties have a clear understanding of the task."
+      },
+      "q2": {
+        "question": "Do you provide a warranty for your work?",
+        "answer": "Yes. We provide a warranty for the technical part of the project and ensure that the implemented solutions work correctly within the agreed scope."
+      },
+      "q3": {
+        "question": "How long does a project take?",
+        "answer": "The timeline depends on complexity and scope. After the initial clarification, we provide a realistic timeframe and follow the agreed plan."
+      },
+      "q4": {
+        "question": "Can the product be further developed after launch?",
+        "answer": "Yes. We design solutions with future development in mind, so the product can be scaled and expanded as needed."
+      },
+      "q5": {
+        "question": "Is design included?",
+        "answer": "Yes, design is included in all packages."
+      }
     }
   },
 
