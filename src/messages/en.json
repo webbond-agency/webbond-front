@@ -267,7 +267,8 @@
     "multipage": "Website",
     "webshop": "Webshop",
     "about": "About us",
-    "blog": "Blog"
+    "blog": "Blog",
+    "price": "Prices"
   },
 
   "WebSitesPage": {
@@ -745,6 +746,20 @@
     "Hero": {
       "title": "Blog",
       "description": "<gray>Insights, case studies and practical</gray> articles about <gray>websites</gray>, digital systems, marketing and business development."
+    }
+  },
+
+  "PricePage": {
+    "Hero": {
+      "subtitle": "Fixed packages. Clear scope. Focus on efficiency and growth.",
+      "title": "Digital business solutions with clear pricing",
+      "description": "<gray>We don't just build websites</gray> - we <gray>automate your</gray> business and save <gray>you time.</gray> For companies and entrepreneurs in Denmark.",
+      "button": "Book a free needs analysis",
+      "list": {
+        "title": "WHAT ARE YOU PAYING FOR?",
+        "listItemOne": "You pay for less manual work, faster processes, and more time for your business.",
+        "listItemTwo": "All solutions are built as sales and automation tools - not as \"pretty websites\"."
+      }
     }
   }
 }

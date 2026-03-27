@@ -265,7 +265,8 @@
     "multipage": "Hjemmeside",
     "webshop": "Webshop",
     "about": "Om os",
-    "blog": "Blog"
+    "blog": "Blog",
+    "price": "Priser"
   },
 
   "WebSitesPage": {
@@ -745,6 +746,20 @@
     "Hero": {
       "title": "Blog",
       "description": "<gray>Indsigter, cases og praktiske</gray> artikler om <gray>websites</gray>, digitale systemer, marketing og forretningsudvikling."
+    }
+  },
+
+  "PricePage": {
+    "Hero": {
+      "subtitle": "Faste pakker. Klare rammer. Fokus på effektivitet og vækst.",
+      "title": "Digitale forretningslø sninger med klare priser",
+      "description": "<gray>Vi udvikler ikke bare hjemmesider</gray> – vi <gray>automatiserer din</gray> forretning og sparer <gray>dig tid.</gray> Til virksomheder og iværksættere i Danmark.",
+      "button": "Book gratis behovsanalyse",
+      "list": {
+        "title": "HVAD BETALER DU FOR?",
+        "listItemOne": "Du betaler for mindre manuelt arbejde, hurtigere processer og mere tid til din forretning.",
+        "listItemTwo": "Alle løsninger er bygget som salgs- og automatiseringsværktøjer – ikke som “flotte hjemmesider”."
+      }
     }
   }
 }
