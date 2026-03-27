@@ -739,6 +739,30 @@
       "description": "Vi kombinerer teknisk udvikling, design og marketing i én proces, så digitale løsninger virkelig understøtter virksomheden: tiltrækker kunder, forenkler processer og skalerer med virksomheden.",
       "button": "Book en konsultation",
       "descriptionTwo": "<gray>Vi er et digitalt bureau, der</gray> arbejder med <gray>virksomheder, der</gray> værdsætter resultater, <gray>struktur og</gray> langsigtet værdi — ikke kun et <gray>website</gray> eller reklame."
+    },
+    "Questions": {
+      "title": "OFTE STILLEDE SPØRGSMÅL",
+      "seeMore": "Se andre spørgsmål",
+      "q1": {
+        "question": "Hvordan starter samarbejdet?",
+        "answer": "Det starter med en indledende samtale, hvor vi drøfter din virksomhed, mål og nuværende situation. Derefter udarbejder vi en løsning og et arbejdsomfang. Først når begge parter har en klar forståelse af opgaven, starter implementeringen."
+      },
+      "q2": {
+        "question": "Giver I garanti for jeres arbejde?",
+        "answer": "Ja. Vi giver garanti for den tekniske del af projektet og sikrer, at de gennemførte løsninger fungerer korrekt inden for de aftalte rammer."
+      },
+      "q3": {
+        "question": "Hvor lang tid tager et projekt?",
+        "answer": "Tidsrammen afhænger af kompleksitet og omfang. Efter indledende afklaring giver vi et realistisk tidsperspektiv og følger den aftalte plan."
+      },
+      "q4": {
+        "question": "Kan produktet videreudvikles efter lancering?",
+        "answer": "Ja. Vi designer løsninger med fremtidig udvikling for øje, så produktet kan skaleres og udvides efter behov."
+      },
+      "q5": {
+        "question": "Er design inkluderet?",
+        "answer": "Ja, design er inkluderet i alle pakker."
+      }
     }
   },
 
