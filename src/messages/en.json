@@ -760,6 +760,34 @@
         "listItemOne": "You pay for less manual work, faster processes, and more time for your business.",
         "listItemTwo": "All solutions are built as sales and automation tools - not as \"pretty websites\"."
       }
+    },
+    "Questions": {
+      "title": "FAQ",
+      "seeMore": "See other questions",
+      "q1": {
+        "question": "Do you provide a warranty for your solutions?",
+        "answer": "Yes. We provide a warranty for the technical solution after delivery. Any issues that arise are fixed at no extra cost within the agreed period."
+      },
+      "q2": {
+        "question": "Can I pay in installments?",
+        "answer": "Yes, that is possible. Typically, 50% is paid at project start and 50% on delivery. Other payment models can be agreed individually."
+      },
+      "q3": {
+        "question": "Are there any hidden costs?",
+        "answer": "No. All prices and services are agreed in advance. Extra features or changes are always agreed separately."
+      },
+      "q4": {
+        "question": "Why do prices start from a specific level?",
+        "answer": "Because each solution is tailored to the company's needs and level of automation. The final price depends on features, integrations, and project scope."
+      },
+      "q5": {
+        "question": "How long does it take to get a finished solution?",
+        "answer": "The timeline depends on project complexity. Landing pages: 2-4 weeks. Websites and webshops: 4-8 weeks."
+      },
+      "q6": {
+        "question": "Is SEO included in the price?",
+        "answer": "Basic SEO structure is included in all websites. Ongoing SEO and marketing are offered as separate services."
+      }
     }
   }
 }

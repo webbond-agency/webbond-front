@@ -760,6 +760,34 @@
         "listItemOne": "Du betaler for mindre manuelt arbejde, hurtigere processer og mere tid til din forretning.",
         "listItemTwo": "Alle løsninger er bygget som salgs- og automatiseringsværktøjer – ikke som “flotte hjemmesider”."
       }
+    },
+    "Questions": {
+      "title": "FAQ",
+      "seeMore": "Se andre spørgsmål",
+      "q1": {
+        "question": "Giver I garanti på jeres løsninger?",
+        "answer": "Ja. Vi yder garanti på den tekniske løsning efter levering. Eventuelle fejl, der opstår, udbedres uden ekstra omkostninger inden for den aftalte periode."
+      },
+      "q2": {
+        "question": "Kan man betale i rater?",
+        "answer": "Ja, det er muligt. Typisk betales 50 % ved opstart og 50 % ved levering. Andre betalingsmodeller kan aftales individuelt."
+      },
+      "q3": {
+        "question": "Er der skjulte omkostninger?",
+        "answer": "Nej. Alle priser og ydelser aftales på forhånd. Ekstra funktioner eller ændringer aftales altid separat."
+      },
+      "q4": {
+        "question": "Hvorfor starter priserne fra et bestemt niveau?",
+        "answer": "Fordi hver løsning tilpasses virksomhedens behov og niveau af automatisering. Den endelige pris afhænger af funktioner, integrationer og projektets omfang."
+      },
+      "q5": {
+        "question": "Hvor lang tid tager det at få en færdig løsning?",
+        "answer": "Tidsrammen afhænger af projektets kompleksitet. Landing pages: 2-4 uger. Websites og webshops: 4-8 uger."
+      },
+      "q6": {
+        "question": "Er SEO inkluderet i prisen?",
+        "answer": "Grundlæggende SEO-struktur er inkluderet i alle websites. Løbende SEO og markedsføring tilbydes som separate services."
+      }
     }
   }
 }
