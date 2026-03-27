@@ -738,5 +738,12 @@
       "button": "Book a consultation",
       "descriptionTwo": "<gray>We are a digital agency that</gray> works with <gray>companies that</gray> value results, <gray>structure, and</gray> long-term value — not just a <gray>website</gray> or advertising."
     }
+  },
+
+  "BlogPage": {
+    "Hero": {
+      "title": "Blog",
+      "description": "<gray>Insights, case studies and practical</gray> articles about <gray>websites</gray>, digital systems, marketing and business development."
+    }
   }
 }
