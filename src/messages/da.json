@@ -801,6 +801,11 @@
         "question": "Er der support efter lancering?",
         "answer": "Ja. Video-instruktioner og support er tilgængelig under og efter lancering."
       }
+    },
+    "Cta": {
+      "title": "KAN DU IKKE FINDE SVAR PÅ DIT SPØRGSMÅL?",
+      "description": "Læs mere detaljeret om forretningsløsningen og sitets muligheder i vores blog.",
+      "button": "Du kan se detaljer om løsningen"
     }
   },
 
