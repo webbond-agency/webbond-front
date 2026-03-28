@@ -12,6 +12,8 @@ export type PriceCardProps = {
   href: string;
   premiumDecor: boolean;
   fullWidth?: boolean;
+  /** У сітці (grid) — на всю ширину комірки; у flex-рядку — md:w-1/2 */
+  gridCell?: boolean;
 };
 
 export default function PriceCard({
@@ -23,9 +25,13 @@ export default function PriceCard({
   href,
   premiumDecor,
   fullWidth,
+  gridCell,
 }: PriceCardProps) {
+  const widthClass =
+    fullWidth || gridCell ? "relative w-full" : "relative md:w-1/2";
+
   return (
-    <div className={fullWidth ? "relative w-full" : "relative md:w-1/2"}>
+    <div className={widthClass}>
       {premiumDecor ? (
         <div className="pointer-events-none absolute inset-0 -z-20 overflow-hidden rounded-[12px] bg-black backdrop-blur-[32px]">
           <div className="absolute -z-10 top-0 right-0 w-[213px] h-[154px] lg:w-[590px] lg:h-[337px]">

@@ -26,7 +26,9 @@ export default function PriceCardHeadingAnimated({
   const parenPart = idx === -1 ? null : priceAmount.slice(idx);
 
   return (
-    <div className={fullWidth ? "md:text-center" : ""}>
+    <div
+      className={`flex flex-col justify-between flex-1${fullWidth ? "md:text-center" : ""}`}
+    >
       <motion.h3
         initial={{ opacity: 0, y: 14 }}
         whileInView={{ opacity: 1, y: 0 }}
