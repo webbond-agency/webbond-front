@@ -870,6 +870,51 @@
         }
       }
     },
+    "AdditionalServices": {
+      "title": "SUPPLERENDE",
+      "seo": {
+        "name": "SEO",
+        "priceFrom": "fra.",
+        "priceAmount": "6.000kr (800€)",
+        "description": "LANGSIGTET SYNLIGHED OG STABIL KUNDESTRØM VIA GOOGLE.",
+        "button": "Mere om SEO"
+      },
+      "logo": {
+        "name": "LOGO DESIGN",
+        "priceFrom": "fra.",
+        "priceAmount": "3.000kr (400€)",
+        "description": "VISUEL IDENTITET, DER SKABER GENKENDELSE OG TROVÆRDIGHED.",
+        "button": "Mere om logo design"
+      },
+      "googleAds": {
+        "name": "GOOGLE ADS",
+        "priceFrom": "fra.",
+        "priceAmount": "3.750kr (600€)",
+        "description": "KONTROLLERET ANNONCERING MED HURTIGE RESULTATER.",
+        "button": "Mere om Google Ads"
+      },
+      "metaAds": {
+        "name": "FACEBOOK & INSTAGRAM ADS",
+        "priceFrom": "fra.",
+        "priceAmount": "3.750kr (600€)",
+        "description": "ANNONCEOPSÆTNING MED FOKUS PÅ SALG OG LEADS.",
+        "button": "Mere om Meta Ads"
+      },
+      "motion": {
+        "name": "MOTION DESIGN",
+        "priceFrom": "fra.",
+        "priceAmount": "2.000kr (250€)",
+        "description": "ANIMERET INDHOLD TIL WEBSITES, ANNONCER OG SOCIALE MEDIER.",
+        "button": "Mere om motion design"
+      },
+      "calculators": {
+        "name": "KALKULATORER & INTERAKTIVE LØSNINGER",
+        "priceFrom": "fra.",
+        "priceAmount": "4.500kr (600€)",
+        "description": "VÆRKTØJER DER ØGER KONVERTERING OG SPARER TID.",
+        "button": "Mere om kalkulatorer"
+      }
+    },
     "Questions": {
       "title": "FAQ",
       "seeMore": "Se andre spørgsmål",

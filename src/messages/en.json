@@ -870,6 +870,51 @@
         }
       }
     },
+    "AdditionalServices": {
+      "title": "SUPPLEMENTARY SERVICES",
+      "seo": {
+        "name": "SEO",
+        "priceFrom": "from",
+        "priceAmount": "6,000 DKK (€800)",
+        "description": "Long-term visibility and a steady flow of customers via Google.",
+        "button": "More about SEO"
+      },
+      "logo": {
+        "name": "LOGO DESIGN",
+        "priceFrom": "from",
+        "priceAmount": "3,000 DKK (€400)",
+        "description": "Visual identity that builds recognition and credibility.",
+        "button": "More about logo design"
+      },
+      "googleAds": {
+        "name": "GOOGLE ADS",
+        "priceFrom": "from",
+        "priceAmount": "3,750 DKK (€600)",
+        "description": "Controlled advertising with fast results.",
+        "button": "More about Google Ads"
+      },
+      "metaAds": {
+        "name": "FACEBOOK & INSTAGRAM ADS",
+        "priceFrom": "from",
+        "priceAmount": "3,750 DKK (€600)",
+        "description": "Ad setup focused on sales and leads.",
+        "button": "More about Meta Ads"
+      },
+      "motion": {
+        "name": "MOTION DESIGN",
+        "priceFrom": "from",
+        "priceAmount": "2,000 DKK (€250)",
+        "description": "Animated content for websites, ads, and social media.",
+        "button": "More about motion design"
+      },
+      "calculators": {
+        "name": "CALCULATORS & INTERACTIVE SOLUTIONS",
+        "priceFrom": "from",
+        "priceAmount": "4,500 DKK (€600)",
+        "description": "Tools that boost conversion and save time.",
+        "button": "More about calculators"
+      }
+    },
     "Questions": {
       "title": "FAQ",
       "seeMore": "See other questions",
