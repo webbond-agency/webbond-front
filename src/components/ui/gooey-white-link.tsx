@@ -17,6 +17,7 @@ interface GooeyWhiteLinkProps {
   width?: number;
   height?: number;
   target?: string;
+  centerText?: boolean;
 }
 
 const MotionLink = m(Link);
@@ -29,6 +30,7 @@ const GooeyWhiteLink = ({
   height = 52,
   icon,
   target,
+  centerText = false,
 }: GooeyWhiteLinkProps) => {
   const containerRef = useRef<HTMLAnchorElement>(null);
   const [width, setWidth] = useState(initialWidth || 236);
@@ -86,7 +88,7 @@ const GooeyWhiteLink = ({
       whileHover="hover"
       className={cn(
         "group relative inline-flex items-center overflow-visible bg-transparent transition-all will-change-transform active:scale-95 no-underline decoration-transparent",
-        className
+        className,
       )}
       style={{ width: initialWidth || "100%", height }}
     >
@@ -128,7 +130,12 @@ const GooeyWhiteLink = ({
 
       {/* Content Layer */}
       <div className="relative z-10 flex h-full w-full items-center pointer-events-none">
-        <span className="flex-1 leading-none flex items-center pl-9 text-black">
+        <span
+          className={cn(
+            "flex flex-1 items-center leading-none text-black",
+            centerText ? "justify-center" : "pl-6",
+          )}
+        >
           {text}
         </span>
         <div

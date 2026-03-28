@@ -821,6 +821,55 @@
         "listItemTwo": "Alle løsninger er bygget som salgs- og automatiseringsværktøjer – ikke som “flotte hjemmesider”."
       }
     },
+    "BasicPrices": {
+      "title": "<gray>WEBSITES &</gray> DIGITALE LØSNINGER",
+      "descriptionOne": "Hjemmesider udviklet til virksomheder – klar til kunder, leads og betaling fra dag ét.",
+      "descriptionTwo": "Alle pakker har et fast omfang, klar struktur og aftalte tidsrammer.",
+      "landing": {
+        "title": "LANDING PAGES",
+        "basic": {
+          "name": "Basis Landing Page",
+          "priceFrom": "fra.",
+          "priceAmount": "18.750kr (2500€)",
+          "description": "EFFEKTIV LØSNING TIL ÉT PRODUKT, ÉN SERVICE ELLER ÉN KAMPAGNE.",
+          "button": "Mere om landing pages"
+        },
+        "premium": {
+          "name": "Premium Landing Page",
+          "priceFrom": "fra.",
+          "priceAmount": "26.250kr (3500€)",
+          "description": "KOMPLET SALGS- OG AUTOMATISERINGSVÆRKTØJ MED BETALING, BOOKING OG INTEGRATIONER.",
+          "button": "Mere om landing pages"
+        }
+      },
+      "multipage": {
+        "title": "HJEMMESIDER (MULTI-PAGE)",
+        "basic": {
+          "name": "Basis Website",
+          "priceFrom": "fra.",
+          "priceAmount": "37.500kr (5000€)",
+          "description": "PROFESSIONEL HJEMMESIDE, DER SKABER TILLID OG SYNLIGHED I GOOGLE.",
+          "button": "Mere om websites"
+        },
+        "premium": {
+          "name": "Premium Website",
+          "priceFrom": "fra.",
+          "priceAmount": "60.000kr (8000€)",
+          "description": "AUTOMATISERET FORRETNINGSSYSTEM FRA FORESPØRGSEL TIL BETALING.",
+          "button": "Mere om websites"
+        }
+      },
+      "webshop": {
+        "title": "WEBSHOP",
+        "solution": {
+          "name": "Webshop-Løsning",
+          "priceFrom": "fra.",
+          "priceAmount": "60.000 kr (10.000 €)",
+          "description": "AUTOMATISERET E-COMMERCE LØSNING, DER SÆLGER 24/7.",
+          "button": "Mere om webshop"
+        }
+      }
+    },
     "Questions": {
       "title": "FAQ",
       "seeMore": "Se andre spørgsmål",
