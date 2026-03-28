@@ -1,7 +1,7 @@
 import GooeyWhiteLink from "@/components/ui/gooey-white-link";
 import Image from "next/image";
 
-import PriceLine from "./price-line";
+import PriceCardHeadingAnimated from "./price-card-heading-animated";
 
 export type PriceCardProps = {
   name: string;
@@ -59,16 +59,12 @@ export default function PriceCard({
         </div>
       ) : null}
       <div className="relative flex h-full min-h-[260px] flex-col justify-between overflow-hidden rounded-[12px] bg-white/3 px-5 py-6 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] lg:px-8 lg:py-10">
-        <div className={fullWidth ? "md:text-center" : ""}>
-          <h3
-            className={`mb-3 font-manrope text-[20px] lg:text-[32px] font-light uppercase leading-[120%] text-white lg:mb-4 `}
-          >
-            {name}
-          </h3>
-          <div className={fullWidth ? "md:flex md:justify-center" : ""}>
-            <PriceLine from={priceFrom} amount={priceAmount} />
-          </div>
-        </div>
+        <PriceCardHeadingAnimated
+          name={name}
+          priceFrom={priceFrom}
+          priceAmount={priceAmount}
+          fullWidth={fullWidth}
+        />
         <div
           className={`mt-6 px-4 lg:mt-8 lg:px-5 py-4 lg:py-8  rounded-[12px] bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.32)] backdrop-blur-[10px]`}
         >
