@@ -28,7 +28,21 @@ export default function PriceCard({
     <div className={fullWidth ? "relative w-full" : "relative md:w-1/2"}>
       {premiumDecor ? (
         <div className="pointer-events-none absolute inset-0 -z-20 overflow-hidden rounded-[12px] bg-black backdrop-blur-[32px]">
-          <div className="absolute top-[-110px] left-[-260px] h-[907px] w-[907px] mix-blend-hard-light sm:top-[-450px] sm:left-[-600px] sm:h-[1907px] sm:w-[1907px]">
+          <div className="absolute -z-10 top-0 right-0 w-[213px] h-[154px] lg:w-[590px] lg:h-[337px]">
+            <Image
+              src="/price-page-card-shadow-mob.webp"
+              alt="price-page-card-shadow"
+              className="object-cover lg:hidden"
+              fill
+            />
+            <Image
+              src="/price-page-card-shadow-desk.webp"
+              alt="price-page-card-shadow"
+              fill
+              className="object-cover hidden lg:block"
+            />
+          </div>
+          <div className="absolute top-[-70px] left-[-260px] h-[907px] w-[907px] mix-blend-hard-light sm:top-[-450px] sm:left-[-600px] sm:h-[1907px] sm:w-[1907px]">
             <Image
               src="/landing-page-packages-decor-mob.webp"
               alt=""
@@ -47,9 +61,7 @@ export default function PriceCard({
       <div className="relative flex h-full min-h-[260px] flex-col justify-between overflow-hidden rounded-[12px] bg-white/3 px-5 py-6 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] lg:px-8 lg:py-10">
         <div className={fullWidth ? "md:text-center" : ""}>
           <h3
-            className={`mb-3 font-manrope text-[16px] font-light uppercase leading-[120%] text-white lg:mb-4 lg:text-[24px] ${
-              fullWidth ? "md:mx-auto md:max-w-4xl" : ""
-            }`}
+            className={`mb-3 font-manrope text-[20px] lg:text-[32px] font-light uppercase leading-[120%] text-white lg:mb-4 `}
           >
             {name}
           </h3>
@@ -58,12 +70,10 @@ export default function PriceCard({
           </div>
         </div>
         <div
-          className={`mt-6 p-4 lg:mt-8 lg:p-5 ${
-            fullWidth ? "md:mx-auto md:max-w-4xl" : ""
-          } rounded-[12px] bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.32)] backdrop-blur-[10px]`}
+          className={`mt-6 px-4 lg:mt-8 lg:px-5 py-4 lg:py-8  rounded-[12px] bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.32)] backdrop-blur-[10px]`}
         >
           <p
-            className={`font-montserrat text-[11px] font-light uppercase leading-[120%] text-white lg:text-[14px] ${
+            className={`font-manrope text-[16px] font-light uppercase leading-[120%] text-white lg:text-[24px] ${
               fullWidth ? "md:text-center" : ""
             }`}
           >
@@ -78,8 +88,9 @@ export default function PriceCard({
           <GooeyWhiteLink
             href={href}
             text={button}
-            className="w-full font-montserrat text-[14px] font-light text-black md:max-w-md"
+            className="w-full font-montserrat text-[14px] font-light text-black"
             height={52}
+            centerText
           />
         </div>
       </div>
