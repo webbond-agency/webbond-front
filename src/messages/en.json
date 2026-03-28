@@ -871,7 +871,8 @@
       }
     },
     "AdditionalServices": {
-      "title": "SUPPLEMENTARY SERVICES",
+      "title": "<gray>SUPPLEMENTARY</gray> SERVICES",
+      "description": "These services support your digital solutions and can be added as needed.",
       "seo": {
         "name": "SEO",
         "priceFrom": "from",

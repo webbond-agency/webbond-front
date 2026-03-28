@@ -871,7 +871,8 @@
       }
     },
     "AdditionalServices": {
-      "title": "SUPPLERENDE",
+      "title": "<gray>SUPPLERENDE</gray> SERVICES",
+      "description": "Disse ydelser understøtter dine digitale løsninger og kan tilføjes efter behov.",
       "seo": {
         "name": "SEO",
         "priceFrom": "fra.",
