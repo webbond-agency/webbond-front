@@ -821,6 +821,11 @@
         "listItemTwo": "All solutions are built as sales and automation tools - not as \"pretty websites\"."
       }
     },
+    "BasicPrices": {
+      "title": "<gray>WEBSITES &</gray> DIGITAL SOLUTIONS",
+      "descriptionOne": "Websites built for businesses – ready for customers, leads, and payments from day one.",
+      "descriptionTwo": "Every package has a fixed scope, clear structure, and agreed timelines."
+    },
     "Questions": {
       "title": "FAQ",
       "seeMore": "See other questions",

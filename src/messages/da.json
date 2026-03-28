@@ -821,6 +821,11 @@
         "listItemTwo": "Alle løsninger er bygget som salgs- og automatiseringsværktøjer – ikke som “flotte hjemmesider”."
       }
     },
+    "BasicPrices": {
+      "title": "<gray>HJEMMESIDER &</gray> DIGITALE LØSNINGER",
+      "descriptionOne": "Hjemmesider udviklet til virksomheder – klar til kunder, leads og betaling fra dag ét.",
+      "descriptionTwo": "Alle pakker har et fast omfang, klar struktur og aftalte tidsrammer."
+    },
     "Questions": {
       "title": "FAQ",
       "seeMore": "Se andre spørgsmål",
