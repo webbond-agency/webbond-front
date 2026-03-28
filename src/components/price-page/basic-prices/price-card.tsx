@@ -5,7 +5,8 @@ import PriceLine from "./price-line";
 
 export type PriceCardProps = {
   name: string;
-  price: string;
+  priceFrom: string;
+  priceAmount: string;
   description: string;
   button: string;
   href: string;
@@ -15,7 +16,8 @@ export type PriceCardProps = {
 
 export default function PriceCard({
   name,
-  price,
+  priceFrom,
+  priceAmount,
   description,
   button,
   href,
@@ -52,7 +54,7 @@ export default function PriceCard({
             {name}
           </h3>
           <div className={fullWidth ? "md:flex md:justify-center" : ""}>
-            <PriceLine value={price} />
+            <PriceLine from={priceFrom} amount={priceAmount} />
           </div>
         </div>
         <div

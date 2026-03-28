@@ -53,13 +53,14 @@ export default function BasicPrices() {
           </motion.h2>
         </div>
 
-        <div className="flex flex-col gap-16 lg:gap-24">
+        <div className="flex flex-col gap-10 lg:gap-[75px]">
           <div>
             <SectionLabel>{t("landing.title")}</SectionLabel>
             <div className="flex flex-col gap-6 md:flex-row lg:gap-8">
               <PriceCard
                 name={t("landing.basic.name")}
-                price={t("landing.basic.price")}
+                priceFrom={t("landing.basic.priceFrom")}
+                priceAmount={t("landing.basic.priceAmount")}
                 description={t("landing.basic.description")}
                 button={t("landing.basic.button")}
                 href="/websites/landing"
@@ -67,7 +68,8 @@ export default function BasicPrices() {
               />
               <PriceCard
                 name={t("landing.premium.name")}
-                price={t("landing.premium.price")}
+                priceFrom={t("landing.premium.priceFrom")}
+                priceAmount={t("landing.premium.priceAmount")}
                 description={t("landing.premium.description")}
                 button={t("landing.premium.button")}
                 href="/websites/landing"
@@ -77,11 +79,14 @@ export default function BasicPrices() {
           </div>
 
           <div>
-            <SectionLabel>{t("multipage.title")}</SectionLabel>
+            <SectionLabel className="md:justify-end">
+              {t("multipage.title")}
+            </SectionLabel>
             <div className="flex flex-col gap-6 md:flex-row lg:gap-8">
               <PriceCard
                 name={t("multipage.basic.name")}
-                price={t("multipage.basic.price")}
+                priceFrom={t("multipage.basic.priceFrom")}
+                priceAmount={t("multipage.basic.priceAmount")}
                 description={t("multipage.basic.description")}
                 button={t("multipage.basic.button")}
                 href="/websites/multi-page"
@@ -89,7 +94,8 @@ export default function BasicPrices() {
               />
               <PriceCard
                 name={t("multipage.premium.name")}
-                price={t("multipage.premium.price")}
+                priceFrom={t("multipage.premium.priceFrom")}
+                priceAmount={t("multipage.premium.priceAmount")}
                 description={t("multipage.premium.description")}
                 button={t("multipage.premium.button")}
                 href="/websites/multi-page"
@@ -102,7 +108,8 @@ export default function BasicPrices() {
             <SectionLabel>{t("webshop.title")}</SectionLabel>
             <PriceCard
               name={t("webshop.solution.name")}
-              price={t("webshop.solution.price")}
+              priceFrom={t("webshop.solution.priceFrom")}
+              priceAmount={t("webshop.solution.priceAmount")}
               description={t("webshop.solution.description")}
               button={t("webshop.solution.button")}
               href="/websites/webshop"

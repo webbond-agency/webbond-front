@@ -829,13 +829,15 @@
         "title": "LANDING PAGES",
         "basic": {
           "name": "Basis Landing Page",
-          "price": "fra 18.750 kr (2.500 €)",
+          "priceFrom": "fra.",
+          "priceAmount": "18.750kr (2500€)",
           "description": "EFFEKTIV LØSNING TIL ÉT PRODUKT, ÉN SERVICE ELLER ÉN KAMPAGNE.",
           "button": "Mere om landing pages"
         },
         "premium": {
           "name": "Premium Landing Page",
-          "price": "fra 26.250 kr (3.500 €)",
+          "priceFrom": "fra.",
+          "priceAmount": "26.250kr (3500€)",
           "description": "KOMPLET SALGS- OG AUTOMATISERINGSVÆRKTØJ MED BETALING, BOOKING OG INTEGRATIONER.",
           "button": "Mere om landing pages"
         }
@@ -844,13 +846,15 @@
         "title": "HJEMMESIDER (MULTI-PAGE)",
         "basic": {
           "name": "Basis Website",
-          "price": "fra 37.500 kr (5.000 €)",
+          "priceFrom": "fra.",
+          "priceAmount": "37.500kr (5000€)",
           "description": "PROFESSIONEL HJEMMESIDE, DER SKABER TILLID OG SYNLIGHED I GOOGLE.",
           "button": "Mere om websites"
         },
         "premium": {
           "name": "Premium Website",
-          "price": "fra 60.000 kr (8.000 €)",
+          "priceFrom": "fra.",
+          "priceAmount": "60.000kr (8000€)",
           "description": "AUTOMATISERET FORRETNINGSSYSTEM FRA FORESPØRGSEL TIL BETALING.",
           "button": "Mere om websites"
         }
@@ -859,7 +863,8 @@
         "title": "WEBSHOP",
         "solution": {
           "name": "Webshop-Løsning",
-          "price": "fra 60.000 kr (10.000 €)",
+          "priceFrom": "fra.",
+          "priceAmount": "60.000 kr (10.000 €)",
           "description": "AUTOMATISERET E-COMMERCE LØSNING, DER SÆLGER 24/7.",
           "button": "Mere om webshop"
         }
