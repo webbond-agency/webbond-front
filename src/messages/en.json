@@ -824,7 +824,46 @@
     "BasicPrices": {
       "title": "<gray>WEBSITES &</gray> DIGITAL SOLUTIONS",
       "descriptionOne": "Websites built for businesses – ready for customers, leads, and payments from day one.",
-      "descriptionTwo": "Every package has a fixed scope, clear structure, and agreed timelines."
+      "descriptionTwo": "Every package has a fixed scope, clear structure, and agreed timelines.",
+      "landing": {
+        "title": "LANDING PAGES",
+        "basic": {
+          "name": "Basic Landing Page",
+          "price": "from 18,750 DKK (€2,500)",
+          "description": "An effective solution for one product, one service, or one campaign.",
+          "button": "More about landing pages"
+        },
+        "premium": {
+          "name": "Premium Landing Page",
+          "price": "from 26,250 DKK (€3,500)",
+          "description": "A complete sales and automation tool with payment, booking, and integrations.",
+          "button": "More about landing pages"
+        }
+      },
+      "multipage": {
+        "title": "WEBSITES (MULTI-PAGE)",
+        "basic": {
+          "name": "Basic Website",
+          "price": "from 37,500 DKK (€5,000)",
+          "description": "A professional website that builds trust and visibility on Google.",
+          "button": "More about websites"
+        },
+        "premium": {
+          "name": "Premium Website",
+          "price": "from 60,000 DKK (€8,000)",
+          "description": "An automated business system from inquiry to payment.",
+          "button": "More about websites"
+        }
+      },
+      "webshop": {
+        "title": "WEBSHOP",
+        "solution": {
+          "name": "Webshop Solution",
+          "price": "from 60,000 DKK (€10,000)",
+          "description": "An automated e-commerce solution that sells 24/7.",
+          "button": "More about the webshop"
+        }
+      }
     },
     "Questions": {
       "title": "FAQ",
