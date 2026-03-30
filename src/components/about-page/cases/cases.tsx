@@ -28,7 +28,11 @@ export default function Cases() {
             </p>
           </div>
         </div>
-        <Order image="/about-page-cases-image.webp" buttonText={t("button")} />
+        <Order
+          image="/about-page-cases-image.webp"
+          buttonText={t("button")}
+          link="/#cases"
+        />
       </Container>
     </section>
   );
