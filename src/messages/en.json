@@ -740,6 +740,14 @@
       "button": "Book a consultation",
       "descriptionTwo": "<gray>We are a digital agency that</gray> works with <gray>companies that</gray> value results, <gray>structure, and</gray> long-term value — not just a <gray>website</gray> or advertising."
     },
+    "Benefits": {
+      "title": "WHY COMPANIES CHOOSE US",
+      "item1": "We do not just deliver a 'website' - we build digital solutions focused on business goals.",
+      "item2": "We combine technical expertise and strategic marketing in one process.",
+      "item3": "We work calmly, in a structured way, and without unnecessary complexity - essential for B2B projects.",
+      "item4": "Our clients get a team that thinks ahead, not one that only executes tasks.",
+      "button": "Book a consultation"
+    },
     "Cases": {
       "title": "CASES",
       "descriptionLeft": "We have worked with companies of different sizes — from small businesses to international projects.",

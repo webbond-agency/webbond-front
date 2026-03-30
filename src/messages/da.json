@@ -740,6 +740,14 @@
       "button": "Book en konsultation",
       "descriptionTwo": "<gray>Vi er et digitalt bureau, der</gray> arbejder med <gray>virksomheder, der</gray> værdsætter resultater, <gray>struktur og</gray> langsigtet værdi — ikke kun et <gray>website</gray> eller reklame."
     },
+    "Benefits": {
+      "title": "HVORFOR VIRKSOMHEDER VÆLGER OS",
+      "item1": "Vi leverer ikke kun et 'website' - vi bygger digitale løsninger med fokus på forretningsmål.",
+      "item2": "Vi kombinerer teknisk ekspertise og strategisk marketing i samme proces.",
+      "item3": "Vi arbejder roligt, struktureret og uden unødvendig kompleksitet - vigtigt for B2B-projekter.",
+      "item4": "Vores kunder får et team, der tænker fremad, ikke kun udfører opgaver.",
+      "button": "Book en konsultation"
+    },
     "Cases": {
       "title": "CASES",
       "descriptionLeft": "VI HAR ARBEJDET MED VIRKSOMHEDER I FORSKELLIGE STØRRELSER — FRA SMÅ VIRKSOMHEDER TIL INTERNATIONALE PROJEKTER.",
