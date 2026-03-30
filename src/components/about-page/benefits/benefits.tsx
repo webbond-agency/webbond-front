@@ -10,13 +10,28 @@ export default function Benefits() {
 
   return (
     <section className="pb-[180px] lg:pb-[192px]">
-      <Container>
+      <Container className="relative">
+        <motion.div
+          initial={{ opacity: 0, x: -100, rotate: -10 }}
+          whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeOut", delay: 1 }}
+          className="absolute -z-10 top-[10px] right-[-235px] md:top-[-118px] md:left-[-162px]"
+        >
+          <Image
+            width={728}
+            height={728}
+            src="/about-page-benefits-decor.webp"
+            alt="wabout-page-benefits-decor"
+            className="w-[546px] lg:w-[728px] h-auto select-none pointer-events-none"
+          />
+        </motion.div>
         <motion.h2
           initial={{ opacity: 0, x: 10 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="md:ml-auto md:max-w-[500px] lg:max-w-[1000px] mb-6 lg:mb-15 font-light font-manrope text-[36px] lg:text-[64px] leading-[120%] text-white uppercase md:text-right"
+          className="md:ml-auto md:max-w-[500px] lg:max-w-[700px] xl:max-w-[1000px] mb-6 lg:mb-15 font-light font-manrope text-[36px] lg:text-[64px] leading-[120%] text-white uppercase md:text-right"
         >
           {t("title")}
         </motion.h2>
