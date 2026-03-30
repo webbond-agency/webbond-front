@@ -740,6 +740,17 @@
       "button": "Book a consultation",
       "descriptionTwo": "<gray>We are a digital agency that</gray> works with <gray>companies that</gray> value results, <gray>structure, and</gray> long-term value — not just a <gray>website</gray> or advertising."
     },
+    "Values": {
+      "title": "Our values",
+      "card1Title": "PRACTICALITY",
+      "card1Description": "We make decisions that make sense for the business, not just in theory.",
+      "card2Title": "TRANSPARENCY",
+      "card2Description": "The client understands what we do, why, and what result it delivers.",
+      "card3Title": "COLLABORATION",
+      "card3Description": "We work as part of the client's team, without hierarchy and pressure.",
+      "card4Title": "RESPONSIBILITY",
+      "card4Description": "We bring projects to a logical conclusion and remain available after launch."
+    },
     "Benefits": {
       "title": "WHY COMPANIES CHOOSE US",
       "item1": "We do not just deliver a 'website' - we build digital solutions focused on business goals.",
