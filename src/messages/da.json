@@ -740,6 +740,12 @@
       "button": "Book en konsultation",
       "descriptionTwo": "<gray>Vi er et digitalt bureau, der</gray> arbejder med <gray>virksomheder, der</gray> værdsætter resultater, <gray>struktur og</gray> langsigtet værdi — ikke kun et <gray>website</gray> eller reklame."
     },
+    "Cases": {
+      "title": "CASES",
+      "descriptionLeft": "VI HAR ARBEJDET MED VIRKSOMHEDER I FORSKELLIGE STØRRELSER — FRA SMÅ VIRKSOMHEDER TIL INTERNATIONALE PROJEKTER.",
+      "descriptionRight": "I hvert projekt fokuserer vi ikke kun på <gray>design</gray> eller <gray>teknologi</gray>, men på, hvordan <gray>digitale løsninger</gray> påvirker <gray>salg</gray>, <gray>processer</gray> og <gray>forretningsudvikling</gray>.",
+      "button": "Se cases"
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",

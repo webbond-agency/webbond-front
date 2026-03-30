@@ -740,6 +740,12 @@
       "button": "Book a consultation",
       "descriptionTwo": "<gray>We are a digital agency that</gray> works with <gray>companies that</gray> value results, <gray>structure, and</gray> long-term value — not just a <gray>website</gray> or advertising."
     },
+    "Cases": {
+      "title": "CASES",
+      "descriptionLeft": "We have worked with companies of different sizes — from small businesses to international projects.",
+      "descriptionRight": "In every project, we focus not only on <gray>design</gray> or <gray>technology</gray>, but on how <gray>digital solutions</gray> impact <gray>sales</gray>, <gray>processes</gray>, and <gray>business development</gray>.",
+      "button": "See cases"
+    },
     "Questions": {
       "title": "FREQUENTLY ASKED QUESTIONS",
       "seeMore": "See other questions",
