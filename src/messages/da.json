@@ -740,6 +740,26 @@
       "button": "Book en konsultation",
       "descriptionTwo": "<gray>Vi er et digitalt bureau, der</gray> arbejder med <gray>virksomheder, der</gray> værdsætter resultater, <gray>struktur og</gray> langsigtet værdi — ikke kun et <gray>website</gray> eller reklame."
     },
+    "Founders": {
+      "fedorRole": "CO-OWNER & DEVELOPER",
+      "fedorName": "FEDOR",
+      "fedorDescription1": "Fedor har ansvaret for den tekniske del og arkitekturen af produkterne.",
+      "fedorDescription2": "Hans tilgang er logisk, stabil og forudsigelig.",
+      "fedorListTitle": "HAN DESIGNER WEBSITES OG SYSTEMER, SÅ DE:",
+      "fedorItem1": "Er pålidelige fra dag ét",
+      "fedorItem2": "Nemt kan skaleres",
+      "fedorItem3": "Ikke skaber problemer for virksomheden om 1-2 år",
+      "fedorButton": "Læs mere om Fedor",
+      "christinaRole": "CO-OWNER & MARKETING",
+      "christinaName": "CHRISTINA",
+      "christinaDescription1": "Christina har ansvaret for strategi, marketing og forretningslogik i projekterne.",
+      "christinaDescription2": "Hendes fokus er, hvordan digitale løsninger påvirker reelle forretningsmål.",
+      "christinaListTitle": "HUN ARBEJDER MED ANALYSE, POSITIONERING OG SEO, SÅ:",
+      "christinaItem1": "Websitet ikke blot eksisterer",
+      "christinaItem2": "Kunder forstår virksomhedens værdi",
+      "christinaItem3": "Virksomheden får en stabil strøm af henvendelser",
+      "christinaButton": "Læs mere om Christina"
+    },
     "Values": {
       "title": "Vores værdier",
       "card1Title": "PRAKTISKHED",

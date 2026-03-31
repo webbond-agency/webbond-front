@@ -740,6 +740,26 @@
       "button": "Book a consultation",
       "descriptionTwo": "<gray>We are a digital agency that</gray> works with <gray>companies that</gray> value results, <gray>structure, and</gray> long-term value — not just a <gray>website</gray> or advertising."
     },
+    "Founders": {
+      "fedorRole": "CO-OWNER & DEVELOPER",
+      "fedorName": "FEDOR",
+      "fedorDescription1": "Fedor is responsible for the technical side and the architecture of the products.",
+      "fedorDescription2": "His approach is logical, stable, and predictable.",
+      "fedorListTitle": "HE DESIGNS WEBSITES AND SYSTEMS SO THAT THEY:",
+      "fedorItem1": "Are reliable from day one",
+      "fedorItem2": "Can be scaled easily",
+      "fedorItem3": "Do not create problems for the business in 1-2 years",
+      "fedorButton": "Read more about Fedor",
+      "christinaRole": "CO-OWNER & MARKETING",
+      "christinaName": "CHRISTINA",
+      "christinaDescription1": "Christina is responsible for strategy, marketing, and business logic in projects.",
+      "christinaDescription2": "Her focus is on how digital solutions affect real business goals.",
+      "christinaListTitle": "SHE WORKS WITH ANALYSIS, POSITIONING, AND SEO SO THAT:",
+      "christinaItem1": "The website does not just exist",
+      "christinaItem2": "Customers understand the company's value",
+      "christinaItem3": "The business gets a stable flow of inquiries",
+      "christinaButton": "Read more about Christina"
+    },
     "Values": {
       "title": "Our values",
       "card1Title": "PRACTICALITY",
