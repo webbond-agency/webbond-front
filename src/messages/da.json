@@ -758,7 +758,20 @@
       "christinaItem1": "Websitet ikke blot eksisterer",
       "christinaItem2": "Kunder forstår virksomhedens værdi",
       "christinaItem3": "Virksomheden får en stabil strøm af henvendelser",
-      "christinaButton": "Læs mere om Christina"
+      "christinaButton": "Læs mere om Christina",
+      "fedorModalIntro": "Hej, jeg hedder Fedor.",
+      "fedorModalBio": "Jeg har været fascineret af teknologi siden barndommen: som 14-årig byggede jeg elektroniske enheder, programmerede mikrocontrollere og skrev mine første programmer. Denne erfaring hjælper mig med at skabe hjemmesider og digitale løsninger, der kombinerer design, funktionalitet og effektivitet for virksomheder.",
+      "fedorModalItem1": "Uddannet på teknisk universitet med speciale i flyautomatik.",
+      "fedorModalItem2": "Udviklet services til automatisering af forretningsprocesser og digitale produkter for virksomheder i forskellige størrelser.",
+      "fedorModalItem3": "Skabt mobilapps og spil, der demonstrerer mine programmeringsfærdigheder og kreative tilgang.",
+      "fedorModalOutro": "Min tilgang til udvikling er teknisk præcision, struktur og funktionalitet, så virksomheder får digitale løsninger, der virkelig fungerer og giver resultater.",
+      "christinaModalIntro": "Hej, jeg hedder Christina.",
+      "christinaModalBio": "Jeg har en uddannelse i erhvervsøkonomi med speciale i business analytics og har gennemført kurser i marketing og SEO, hvilket har givet mig et solidt fundament for at lede digitale projekter.",
+      "christinaModalItem1": "Arbejdet med internationale brands og store virksomheder, hvor jeg har realiseret komplekse digitale projekter.",
+      "christinaModalItem2": "Udarbejdet marketingstrategier, SEO-optimering og analytiske løsninger, der hjælper virksomheder med at vokse og opnå konkrete resultater.",
+      "christinaModalItem3": "I 2024 grundlagde vi vores Digital Bureau WebBond {} Code-Site.Art for at hjælpe virksomheder med at udvikle deres resultater gennem komplette digitale løsninger.",
+      "christinaModalOutro": "Min tilgang som marketingchef er struktureret, analytisk og resultatorienteret, så virksomheder får effektive løsninger, der virkelig påvirker vækst og udvikling.",
+      "foundersModalLinkedinButton": "Læs mere på LinkedIn"
     },
     "Values": {
       "title": "Vores værdier",
