@@ -66,7 +66,21 @@ export default function Founders() {
                 ))}
               </ul>
             </div>
-            <FoundersModal buttonText={t("fedorButton")} list={fedorModalList} />
+            <FoundersModal
+              buttonText={t("fedorButton")}
+              role={t("fedorRole")}
+              name={t("fedorName")}
+              intro={t("fedorModalIntro")}
+              bio={t("fedorModalBio")}
+              list={fedorModalList}
+              outro={t("fedorModalOutro")}
+              linkedinButtonText={t("foundersModalLinkedinButton")}
+              linkedinHref="https://www.linkedin.com/in/fediralpatov?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+              imageSrc="/about-page-founders-fedor.jpg"
+              imageAlt="fedor"
+              modalTitle={`${t("fedorName")} modal`}
+              closeLabel="Close"
+            />
           </div>
         </div>
 
@@ -110,11 +124,20 @@ export default function Founders() {
                 ))}
               </ul>
             </div>
-            <GooeyWhiteButton
-              text={t("christinaButton")}
-              centerText
-              className="text-center w-full md:w-[313px] text-[14px] font-montserrat font-light text-black"
-              height={52}
+            <FoundersModal
+              buttonText={t("christinaButton")}
+              role={t("christinaRole")}
+              name={t("christinaName")}
+              intro={t("christinaModalIntro")}
+              bio={t("christinaModalBio")}
+              list={christinaModalList}
+              outro={t("christinaModalOutro")}
+              linkedinButtonText={t("foundersModalLinkedinButton")}
+              linkedinHref="https://www.linkedin.com/in/christina-bondarenko-8a3805281?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+              imageSrc="/about-page-founders-christina.webp"
+              imageAlt="christina"
+              modalTitle={`${t("christinaName")} modal`}
+              closeLabel="Close"
             />
           </div>
         </div>

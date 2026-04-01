@@ -9,22 +9,42 @@ import {
 } from "@/components/ui/dialog";
 import GooeyWhiteButton from "@/components/ui/gooey-white-button";
 import { XIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import GooeyWhiteLink from "@/components/ui/gooey-white-link";
 
 interface FoundersModalProps {
   buttonText: string;
+  role: string;
+  name: string;
+  intro: string;
+  bio: string;
   list: string[];
+  outro: string;
+  linkedinButtonText: string;
+  linkedinHref: string;
+  imageSrc: string;
+  imageAlt: string;
+  modalTitle: string;
+  closeLabel: string;
 }
 
 export default function FoundersModal({
   buttonText,
+  role,
+  name,
+  intro,
+  bio,
   list,
+  outro,
+  linkedinButtonText,
+  linkedinHref,
+  imageSrc,
+  imageAlt,
+  modalTitle,
+  closeLabel,
 }: FoundersModalProps) {
   const [isFoundersOpen, setIsFoundersOpen] = useState(false);
 
-  const t = useTranslations("AboutPage.Founders");
   return (
     <>
       <GooeyWhiteButton
@@ -35,14 +55,14 @@ export default function FoundersModal({
         height={52}
       />
       <Dialog open={isFoundersOpen} onOpenChange={setIsFoundersOpen}>
-        <DialogTitle className="sr-only">Founders modal</DialogTitle>
+        <DialogTitle className="sr-only">{modalTitle}</DialogTitle>
         <DialogContent
           showCloseButton={false}
           className="w-[90%] md:w-full md:max-w-[740px] lg:max-w-[1000px] xl:max-w-[1160px] p-[20px] md:p-[30px] lg:p-[40px] [@media(max-height:800px)]:p-[40px] rounded-[12px] border-none max-h-[90vh] overflow-hidden"
         >
           <DialogClose className="z-10 absolute right-[32px] top-[32px] ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground text-white cursor-pointer">
             <XIcon className="h-6 w-6" />
-            <span className="sr-only">Close</span>
+            <span className="sr-only">{closeLabel}</span>
           </DialogClose>
           <div className="relative w-full h-full">
             <div className="absolute -top-5 -left-5 md:top-[-30px] md:left-[-30px] lg:-top-10 lg:-left-10 w-[622px] h-[395px]">
@@ -65,34 +85,29 @@ export default function FoundersModal({
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="md:hidden">
                   <p className="mb-2 lg:mb-4 text-[14px] lg:text-[16px] font-manrope font-light uppercase leading-[120%] text-white">
-                    {t("fedorRole")}
+                    {role}
                   </p>
                   <p className="mb-4 lg:mb-8 text-[40px] lg:text-[64px] font-manrope font-light uppercase leading-[120%] text-white">
-                    {t("fedorName")}
+                    {name}
                   </p>
                 </div>
                 <div className="relative w-full md:w-1/2 h-[320px] sm:h-[350px] md:h-auto rounded-[12px] overflow-hidden">
-                  <Image
-                    src="/about-page-founders-fedor.jpg"
-                    alt="fedor"
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src={imageSrc} alt={imageAlt} fill className="object-cover" />
                 </div>
                 <div className="md:w-1/2">
                   <div className="hidden md:block">
                     <p className="mb-2 lg:mb-4 text-[14px] lg:text-[16px] font-manrope font-light uppercase leading-[120%] text-white">
-                      {t("fedorRole")}
+                      {role}
                     </p>
                     <p className="mb-4 lg:mb-8 text-[40px] lg:text-[64px] font-manrope font-light uppercase leading-[120%] text-white">
-                      {t("fedorName")}
+                      {name}
                     </p>
                   </div>
                   <p className="mb-3 font-montserrat font-light text-[12px] lg:text-[14px] leading-[120%] text-white">
-                    {t("fedorModalIntro")}
+                    {intro}
                   </p>
                   <p className="mb-6 font-montserrat font-light text-[12px] lg:text-[14px] leading-[120%] text-white">
-                    {t("fedorModalBio")}
+                    {bio}
                   </p>
                   <ul className="flex flex-col gap-2.5 p-4 mb-6 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] backdrop-blur-[24px] rounded-[14px]">
                     {list.map((item) => (
@@ -108,11 +123,11 @@ export default function FoundersModal({
                     ))}
                   </ul>
                   <p className="mb-6 font-montserrat font-light text-[12px] lg:text-[14px] leading-[120%] text-white">
-                    {t("fedorModalOutro")}
+                    {outro}
                   </p>
                   <GooeyWhiteLink
-                    text={t("foundersModalLinkedinButton")}
-                    href="https://www.linkedin.com"
+                    text={linkedinButtonText}
+                    href={linkedinHref}
                     linkType="external"
                     className="text-center w-full md:w-[313px] text-[14px] font-montserrat font-light text-black"
                     height={52}
