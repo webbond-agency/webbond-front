@@ -831,6 +831,13 @@
     }
   },
 
+  "ArticlePage": {
+    "ArticleNotFound": {
+      "title": "Artiklen blev ikke fundet",
+      "description": "Siden findes ikke eller er blevet flyttet."
+    }
+  },
+
   "BusinessModelPage": {
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
