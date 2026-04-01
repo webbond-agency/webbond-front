@@ -831,6 +831,13 @@
     }
   },
 
+  "ArticlePage": {
+    "ArticleNotFound": {
+      "title": "Article not found",
+      "description": "This page does not exist or has been moved."
+    }
+  },
+
   "BusinessModelPage": {
     "Questions": {
       "title": "FREQUENTLY ASKED QUESTIONS",
