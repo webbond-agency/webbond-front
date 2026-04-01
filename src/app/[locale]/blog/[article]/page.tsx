@@ -1,6 +1,8 @@
 import { blogPostBySlugQuery } from "@/lib/queries";
 import type { BlogPostBySlug } from "@/types/blog";
 import { fetchSanityData } from "@/utils/fetchSanityData";
+import Hero from "@/components/article-page/hero/hero";
+import { notFound } from "next/navigation";
 
 export default async function ArticlePage({
   params,
@@ -17,9 +19,13 @@ export default async function ArticlePage({
     },
   );
 
+  if (!blogPost) {
+    return <section></section>;
+  }
+
   return (
-    <div className="pt-15 sm:pt-20 md:pt-[110px] overflow-y-clip">
-      {blogPost?.heroTitle}
-    </div>
+    <>
+      <Hero article={blogPost} />
+    </>
   );
 }
