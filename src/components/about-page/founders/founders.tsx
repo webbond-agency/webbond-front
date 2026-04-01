@@ -1,5 +1,5 @@
 import Container from "@/components/ui/container";
-import GooeyWhiteButton from "@/components/ui/gooey-white-button";
+import * as motion from "motion/react-client";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import FoundersModal from "./founders-modal";
@@ -27,15 +27,27 @@ export default function Founders() {
     <section className="pb-[148px] lg:pb-[192px]">
       <Container>
         <div className="flex flex-col gap-10 md:gap-0 md:flex-row-reverse mb-10 md:mb-0">
-          <div className="relative w-full md:w-1/2 h-[302px] sm:h-[350px] md:h-auto">
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="relative w-full md:w-1/2 h-[302px] sm:h-[350px] md:h-auto"
+          >
             <Image
               src="/about-page-founders-fedor.jpg"
               alt="fedor"
               fill
               className="object-cover"
             />
-          </div>
-          <div className="md:w-1/2  md:py-6 xl:py-[49px] md:pr-8">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="md:w-1/2  md:py-6 xl:py-[49px] md:pr-8"
+          >
             <h2 className="mb-2 lg:mb-4 text-[14px] lg:text-[16px] font-manrope font-light uppercase leading-[120%] text-white">
               {t("fedorRole")}
             </h2>
@@ -81,19 +93,31 @@ export default function Founders() {
               modalTitle={`${t("fedorName")} modal`}
               closeLabel="Close"
             />
-          </div>
+          </motion.div>
         </div>
 
         <div className="flex flex-col gap-10 md:gap-0 md:flex-row">
-          <div className="relative w-full md:w-1/2 h-[302px] sm:h-[350px] md:h-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="relative w-full md:w-1/2 h-[302px] sm:h-[350px] md:h-auto"
+          >
             <Image
               src="/about-page-founders-christina.webp"
               alt="fedor"
               fill
               className="object-cover"
             />
-          </div>
-          <div className="md:w-1/2  md:py-6 xl:py-[49px] md:pl-8">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="md:w-1/2  md:py-6 xl:py-[49px] md:pl-8"
+          >
             <h2 className="mb-2 lg:mb-4 text-[14px] lg:text-[16px] font-manrope font-light uppercase leading-[120%] text-white">
               {t("christinaRole")}
             </h2>
@@ -139,7 +163,7 @@ export default function Founders() {
               modalTitle={`${t("christinaName")} modal`}
               closeLabel="Close"
             />
-          </div>
+          </motion.div>
         </div>
       </Container>
     </section>
