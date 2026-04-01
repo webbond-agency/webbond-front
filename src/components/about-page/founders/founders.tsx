@@ -2,6 +2,7 @@ import Container from "@/components/ui/container";
 import GooeyWhiteButton from "@/components/ui/gooey-white-button";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import FoundersModal from "./founders-modal";
 
 export default function Founders() {
   const t = useTranslations("AboutPage.Founders");
@@ -10,6 +11,16 @@ export default function Founders() {
     t("christinaItem1"),
     t("christinaItem2"),
     t("christinaItem3"),
+  ];
+  const fedorModalList = [
+    t("fedorModalItem1"),
+    t("fedorModalItem2"),
+    t("fedorModalItem3"),
+  ];
+  const christinaModalList = [
+    t("christinaModalItem1"),
+    t("christinaModalItem2"),
+    t("christinaModalItem3"),
   ];
 
   return (
@@ -55,12 +66,7 @@ export default function Founders() {
                 ))}
               </ul>
             </div>
-            <GooeyWhiteButton
-              text={t("fedorButton")}
-              centerText
-              className="text-center w-full md:w-[313px] text-[14px] font-montserrat font-light text-black"
-              height={52}
-            />
+            <FoundersModal buttonText={t("fedorButton")} list={fedorModalList} />
           </div>
         </div>
 
