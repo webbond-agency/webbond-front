@@ -1,6 +1,7 @@
 import Container from "@/components/ui/container";
 import type { BlogPostBySlug } from "@/types/blog";
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
 interface HeroProps {
   article: BlogPostBySlug;
@@ -56,19 +57,43 @@ export default function Hero({ article }: HeroProps) {
       ) : null}
       <Container className=" pt-[138px] lg:pt-[158px] pb-6 lg:pb-[43px]">
         <div>
-          <h1 className="md:max-w-[420px] lg:max-w-[628px] mb-4.5 lg:mb-6font-manrope text-[24px] lg:text-[48px] leading-[120%] text-white uppercase font-light">
+          <motion.h1
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="md:max-w-[420px] lg:max-w-[628px] mb-4.5 lg:mb-6font-manrope text-[24px] lg:text-[48px] leading-[120%] text-white uppercase font-light"
+          >
             {article.heroTitle}
-          </h1>
-          <p className="md:max-w-[420px] lg:max-w-[628px] mb-8 lg:mb-9 whitespace-pre-line font-montserrat text-[14px] lg:text-[16px] leading-[120%] text-white font-light">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="md:max-w-[420px] lg:max-w-[628px] mb-8 lg:mb-9 whitespace-pre-line font-montserrat text-[14px] lg:text-[16px] leading-[120%] text-white font-light"
+          >
             {article.heroDescription}
-          </p>
+          </motion.p>
           <div>
-            <span className="inline-block not-last:mr-3 px-7 py-4 rounded-full bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] backdrop-blur-[24px] font-manrope text-[16px] leading-[120%] text-white font-light uppercase">
+            <motion.span
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.6 }}
+              className="inline-block not-last:mr-3 px-7 py-4 rounded-full bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] backdrop-blur-[24px] font-manrope text-[16px] leading-[120%] text-white font-light uppercase"
+            >
               {author}
-            </span>
-            <span className="inline-block not-last:mr-3 px-7 py-4 rounded-full bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] backdrop-blur-[24px] font-manrope text-[14px] lg:text-[16px] leading-[120%] text-white font-light">
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.9 }}
+              className="inline-block not-last:mr-3 px-7 py-4 rounded-full bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] backdrop-blur-[24px] font-manrope text-[14px] lg:text-[16px] leading-[120%] text-white font-light"
+            >
               {formatDate(publishedAt)}
-            </span>
+            </motion.span>
           </div>
         </div>
       </Container>
