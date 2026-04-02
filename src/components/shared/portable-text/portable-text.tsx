@@ -6,38 +6,62 @@ import {
   mergeComponents,
   type PortableTextReactComponents,
 } from "@portabletext/react";
+import { m } from "framer-motion";
 import GooeyWhiteLink from "@/components/ui/gooey-white-link";
 import type { BlogPortableTextValue } from "@/types/portable-text";
 import PtImage from "./pt-image";
 import PtTable from "./pt-table";
 
+/** Однакова поява блоків у зоні видимості */
+const reveal = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.12 },
+  transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const },
+};
+
 function buildComponents(locale: string): Partial<PortableTextReactComponents> {
   return {
     block: {
       normal: ({ children }) => (
-        <p className="mb-3 font-montserrat text-[16px] font-light leading-[160%] text-white/90">
+        <m.p
+          className="mb-3 font-montserrat text-[16px] font-light leading-[160%] text-white/90"
+          {...reveal}
+        >
           {children}
-        </p>
+        </m.p>
       ),
       h2: ({ children }) => (
-        <h2 className="mb-8 not-first:mt-20 font-manrope text-[24px] font-light uppercase leading-[120%] text-white lg:text-[36px]">
+        <m.h2
+          className="mb-8 not-first:mt-20 font-manrope text-[24px] font-light uppercase leading-[120%] text-white lg:text-[36px]"
+          {...reveal}
+        >
           {children}
-        </h2>
+        </m.h2>
       ),
       h3: ({ children }) => (
-        <h3 className="mb-4 mt-6 font-montserrat text-[14px] font-medium leading-[120%] text-white lg:text-[16px]">
+        <m.h3
+          className="mb-4 mt-6 font-montserrat text-[14px] font-medium leading-[120%] text-white lg:text-[16px]"
+          {...reveal}
+        >
           {children}
-        </h3>
+        </m.h3>
       ),
       h4: ({ children }) => (
-        <h4 className="mb-2 mt-5 font-manrope text-[18px] font-light uppercase leading-[120%] text-white">
+        <m.h4
+          className="mb-2 mt-5 font-manrope text-[18px] font-light uppercase leading-[120%] text-white"
+          {...reveal}
+        >
           {children}
-        </h4>
+        </m.h4>
       ),
       blockquote: ({ children }) => (
-        <blockquote className="my-4 border-l-4 border-white/25 pl-4 font-montserrat text-[16px] font-light italic leading-[160%] text-white/85">
+        <m.blockquote
+          className="my-4 border-l-4 border-white/25 pl-4 font-montserrat text-[16px] font-light italic leading-[160%] text-white/85"
+          {...reveal}
+        >
           {children}
-        </blockquote>
+        </m.blockquote>
       ),
     },
     marks: {
@@ -61,8 +85,7 @@ function buildComponents(locale: string): Partial<PortableTextReactComponents> {
         };
         const href = v?.href || "#";
         const blank = Boolean(v?.blank ?? v?.openInNewTab);
-        const isExternal =
-          /^https?:\/\//i.test(href) || href.startsWith("//");
+        const isExternal = /^https?:\/\//i.test(href) || href.startsWith("//");
 
         const target =
           blank && !isExternal
@@ -88,14 +111,20 @@ function buildComponents(locale: string): Partial<PortableTextReactComponents> {
     },
     list: {
       bullet: ({ children }) => (
-        <ul className="mb-3 ml-1 list-disc space-y-1 pl-6 font-montserrat text-[16px] font-light leading-[160%] text-white/90 marker:text-white">
+        <m.ul
+          className="mb-3 ml-1 list-disc space-y-1 pl-6 font-montserrat text-[16px] font-light leading-[160%] text-white/90 marker:text-white"
+          {...reveal}
+        >
           {children}
-        </ul>
+        </m.ul>
       ),
       number: ({ children }) => (
-        <ol className="mb-3 ml-1 list-decimal space-y-1 pl-6 font-montserrat text-[16px] font-light leading-[160%] text-white/90 marker:text-white">
+        <m.ol
+          className="mb-3 ml-1 list-decimal space-y-1 pl-6 font-montserrat text-[16px] font-light leading-[160%] text-white/90 marker:text-white"
+          {...reveal}
+        >
           {children}
-        </ol>
+        </m.ol>
       ),
     },
     listItem: {
@@ -103,8 +132,16 @@ function buildComponents(locale: string): Partial<PortableTextReactComponents> {
       number: ({ children }) => <li>{children}</li>,
     },
     types: {
-      image: ({ value }) => <PtImage value={value} locale={locale} />,
-      tableBlock: ({ value }) => <PtTable value={value} />,
+      image: ({ value }) => (
+        <m.div className="w-full" {...reveal}>
+          <PtImage value={value} locale={locale} />
+        </m.div>
+      ),
+      tableBlock: ({ value }) => (
+        <m.div className="w-full" {...reveal}>
+          <PtTable value={value} />
+        </m.div>
+      ),
     },
   };
 }
