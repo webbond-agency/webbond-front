@@ -5,6 +5,7 @@ import Hero from "@/components/article-page/hero/hero";
 import { getTranslations } from "next-intl/server";
 import ArticleNotFound from "@/components/article-page/article-not-found";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import Faq from "@/components/article-page/faq/faq";
 
 export default async function ArticlePage({
   params,
@@ -38,7 +39,8 @@ export default async function ArticlePage({
   return (
     <>
       <Hero article={blogPost} />
-      <Breadcrumbs steps={breadcrumbSteps} />
+      <Breadcrumbs steps={breadcrumbSteps} className="pb-10 lg:pb-20" />
+      <Faq faq={blogPost.faq} />
     </>
   );
 }
