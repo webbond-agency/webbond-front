@@ -5,10 +5,7 @@ import { twMerge } from "tailwind-merge";
 import { urlForImage } from "@/lib/sanityClient";
 import type { PtImageBlock } from "@/types/portable-text";
 
-function resolveAlt(
-  alt: PtImageBlock["alt"],
-  locale: string,
-): string {
+function resolveAlt(alt: PtImageBlock["alt"], locale: string): string {
   if (!alt) return "";
   if (typeof alt === "string") return alt;
   if (locale === "da") return alt.da ?? alt.en ?? "";
@@ -62,18 +59,15 @@ export default function PtImage({ value, locale = "da" }: PtImageProps) {
   if (!url) return null;
 
   const alt =
-    resolveAlt(value.alt, locale) ||
-    resolveAlt(value.image?.alt, locale) ||
-    "";
+    resolveAlt(value.alt, locale) || resolveAlt(value.image?.alt, locale) || "";
   const orientation = value.orientation ?? "landscape";
   const { w, h } = dimensionsPtImage(value);
-  const caption =
-    typeof value.caption === "string" ? value.caption : undefined;
+  const caption = typeof value.caption === "string" ? value.caption : undefined;
 
   return (
     <figure
       className={twMerge(
-        "my-4 w-full max-w-full",
+        "pt-20 w-full max-w-full",
         orientation === "portrait" ? "mx-auto max-w-md" : "",
       )}
     >

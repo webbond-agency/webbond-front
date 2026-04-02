@@ -61,23 +61,25 @@ function buildComponents(locale: string): Partial<PortableTextReactComponents> {
         };
         const href = v?.href || "#";
         const blank = Boolean(v?.blank ?? v?.openInNewTab);
-        const external = /^https?:\/\//i.test(href);
-        const target = external
-          ? blank
-            ? undefined
-            : "_self"
-          : blank
+        const isExternal =
+          /^https?:\/\//i.test(href) || href.startsWith("//");
+
+        const target =
+          blank && !isExternal
             ? "_blank"
-            : undefined;
+            : !blank && isExternal
+              ? "_self"
+              : undefined;
 
         return (
           <GooeyWhiteLink
             href={href}
-            linkType={external ? "external" : "internal"}
-            target={target}
+            linkType={isExternal ? "external" : "internal"}
+            {...(target ? { target } : {})}
             height={48}
             centerText
-            className="my-8 inline-flex w-full md:w-fit md:min-w-[313px] text-[14px] font-montserrat font-light text-black"
+            fitContent
+            className="my-2 inline-flex w-auto max-w-full text-[14px] font-montserrat font-light text-black"
           >
             {children}
           </GooeyWhiteLink>

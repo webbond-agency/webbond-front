@@ -139,18 +139,18 @@ const GooeyWhiteLink = ({
       </svg>
 
       {/* Content Layer — span, not div: valid inside <p> when link is inline in rich text */}
-      <span className="relative z-10 flex h-full w-full items-center pointer-events-none">
+      <span className="relative z-10 flex h-full w-full min-w-0 flex-nowrap items-center pointer-events-none">
         <span
           className={cn(
-            "flex flex-1 items-center leading-none text-black",
-            centerText ? "justify-center" : "pl-6",
+            "flex flex-1 items-center whitespace-nowrap leading-none text-black",
+            centerText ? "justify-center px-4 sm:px-8" : "pl-6",
           )}
         >
           {children ?? text}
         </span>
         <span
           style={{ width: height }}
-          className="flex shrink-0 items-center justify-center text-black"
+          className="flex shrink-0 items-center justify-center self-stretch text-black"
         >
           {icon || (
             <m.svg
