@@ -835,6 +835,10 @@
     "ArticleNotFound": {
       "title": "Article not found",
       "description": "This page does not exist or has been moved."
+    },
+    "Questions": {
+      "title": "FAQ",
+      "seeMore": "Show all questions"
     }
   },
 
