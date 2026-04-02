@@ -284,7 +284,22 @@ export const blogPostBySlugQuery = `
       hotspot,
       "alt": alt[$lang]
     },
-    "content": content[$lang][],
+    "content": content[$lang][]{
+      ...,
+      _type == "image" => {
+        ...,
+        asset->{
+          _id,
+          url,
+          metadata {
+            dimensions {
+              width,
+              height
+            }
+          }
+        }
+      }
+    },
     "faq": faq[]{
       "question": question[$lang],
       "answer": answer[$lang]

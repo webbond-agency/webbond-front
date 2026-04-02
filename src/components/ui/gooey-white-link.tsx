@@ -11,6 +11,7 @@ const circleVariants: Variants = {
 
 interface GooeyWhiteLinkProps {
   text?: string;
+  children?: React.ReactNode;
   className?: string;
   href: string;
   linkType?: "internal" | "external";
@@ -19,6 +20,8 @@ interface GooeyWhiteLinkProps {
   height?: number;
   target?: string;
   centerText?: boolean;
+  /** Shrink width to content (e.g. inline links in rich text). */
+  fitContent?: boolean;
 }
 
 const MotionLink = m(Link);
@@ -26,6 +29,7 @@ const MotionAnchor = m.a;
 
 const GooeyWhiteLink = ({
   text,
+  children,
   className,
   href,
   linkType = "internal",
@@ -34,6 +38,7 @@ const GooeyWhiteLink = ({
   icon,
   target,
   centerText = false,
+  fitContent = false,
 }: GooeyWhiteLinkProps) => {
   const containerRef = useRef<HTMLAnchorElement>(null);
   const [width, setWidth] = useState(initialWidth || 236);
@@ -85,6 +90,16 @@ const GooeyWhiteLink = ({
     className,
   );
 
+  /** Inline width overrides Tailwind; only set when numeric width or fitContent — otherwise use className (e.g. w-full md:w-[313px]). */
+  const anchorStyle: React.CSSProperties = {
+    height,
+    ...(fitContent
+      ? { width: initialWidth ?? "auto" }
+      : typeof initialWidth === "number"
+        ? { width: initialWidth }
+        : {}),
+  };
+
   const content = (
     <>
       {/* SVG Background */}
@@ -123,17 +138,17 @@ const GooeyWhiteLink = ({
         </g>
       </svg>
 
-      {/* Content Layer */}
-      <div className="relative z-10 flex h-full w-full items-center pointer-events-none">
+      {/* Content Layer — span, not div: valid inside <p> when link is inline in rich text */}
+      <span className="relative z-10 flex h-full w-full items-center pointer-events-none">
         <span
           className={cn(
             "flex flex-1 items-center leading-none text-black",
             centerText ? "justify-center" : "pl-6",
           )}
         >
-          {text}
+          {children ?? text}
         </span>
-        <div
+        <span
           style={{ width: height }}
           className="flex shrink-0 items-center justify-center text-black"
         >
@@ -152,8 +167,8 @@ const GooeyWhiteLink = ({
               />
             </m.svg>
           )}
-        </div>
-      </div>
+        </span>
+      </span>
     </>
   );
 
@@ -166,7 +181,7 @@ const GooeyWhiteLink = ({
       initial="initial"
       whileHover="hover"
       className={baseClassName}
-      style={{ width: initialWidth || "100%", height }}
+      style={anchorStyle}
     >
       {content}
     </MotionAnchor>
@@ -178,7 +193,7 @@ const GooeyWhiteLink = ({
       initial="initial"
       whileHover="hover"
       className={baseClassName}
-      style={{ width: initialWidth || "100%", height }}
+      style={anchorStyle}
     >
       {content}
     </MotionLink>
