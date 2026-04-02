@@ -20,12 +20,12 @@ function buildComponents(locale: string): Partial<PortableTextReactComponents> {
         </p>
       ),
       h2: ({ children }) => (
-        <h2 className="mb-8 mt-8 font-manrope text-[24px] font-light uppercase leading-[120%] text-white lg:text-[36px]">
+        <h2 className="mb-8 not-first:mt-20 font-manrope text-[24px] font-light uppercase leading-[120%] text-white lg:text-[36px]">
           {children}
         </h2>
       ),
       h3: ({ children }) => (
-        <h3 className="mb-2 mt-6 font-manrope text-[20px] font-light uppercase leading-[120%] text-white lg:text-[22px]">
+        <h3 className="mb-4 mt-6 font-montserrat text-[14px] font-medium leading-[120%] text-white lg:text-[16px]">
           {children}
         </h3>
       ),

@@ -1,6 +1,26 @@
 "use client";
 
-import type { PtTableBlock } from "@/types/portable-text";
+import type { PtTableBlock, PtTableCell } from "@/types/portable-text";
+
+function renderCell(
+  cell: PtTableCell | undefined,
+  variant: "th" | "td" = "td",
+) {
+  if (cell == null) return null;
+  if (typeof cell === "string") return cell;
+  const text = cell.text;
+  if (text == null) return null;
+  if (!cell.strong) return text;
+  return (
+    <strong
+      className={`font-montserrat ${
+        variant === "th" ? "font-bold" : "font-semibold text-white"
+      }`}
+    >
+      {text}
+    </strong>
+  );
+}
 
 export default function PtTable({ value }: { value: PtTableBlock }) {
   const rows = value.rows ?? [];
@@ -8,54 +28,55 @@ export default function PtTable({ value }: { value: PtTableBlock }) {
 
   const headerRow = value.hasHeaderRow ? rows[0] : null;
   const bodyRows = value.hasHeaderRow ? rows.slice(1) : rows;
+  const headerHasBottomBorder = Boolean(headerRow && bodyRows.length > 0);
 
   return (
-    <figure className="my-4 w-full">
+    <figure className="my-8 w-full text-center">
       {value.caption ? (
-        <figcaption className="mb-3 text-[14px] font-light text-white/70">
+        <figcaption className="mb-3 text-[12px] lg:text-[16px] font-montserrat font-light text-white">
           {value.caption}
         </figcaption>
       ) : null}
-      <div className="w-full overflow-x-auto rounded-xl border border-white/10">
-        <table className="w-full min-w-[480px] border-collapse text-left text-[14px] font-light leading-[150%]">
+      <div className="w-full min-w-0 overflow-x-auto">
+        <table className="w-full table-fixed border-collapse font-montserrat text-center text-[12px] font-light leading-[150%] lg:text-[14px]">
           {headerRow ? (
-            <thead className="bg-white/5">
+            <thead>
               <tr>
                 {(headerRow.cells ?? []).map((cell, i) => (
                   <th
                     key={i}
                     scope="col"
-                    className="border-b border-white/10 px-4 py-3 font-manrope font-semibold text-white"
+                    className={`min-w-0 break-words px-3 py-6.5 text-center font-montserrat font-medium text-white lg:p-5 md:px-4 ${
+                      headerHasBottomBorder ? "border-b border-white/10" : ""
+                    } ${i > 0 ? "border-l border-white/10" : ""}`}
                   >
-                    {cell?.strong ? (
-                      <strong className="font-bold">{cell?.text}</strong>
-                    ) : (
-                      cell?.text
-                    )}
+                    {renderCell(cell, "th")}
                   </th>
                 ))}
               </tr>
             </thead>
           ) : null}
           <tbody>
-            {bodyRows.map((row, ri) => (
-              <tr key={ri} className="odd:bg-white/[0.02]">
-                {(row.cells ?? []).map((cell, ci) => (
-                  <td
-                    key={ci}
-                    className="border-b border-white/5 px-4 py-3 text-white/90"
-                  >
-                    {cell?.strong ? (
-                      <strong className="font-semibold text-white">
-                        {cell?.text}
-                      </strong>
-                    ) : (
-                      cell?.text
-                    )}
-                  </td>
-                ))}
-              </tr>
-            ))}
+            {bodyRows.map((row, ri) => {
+              const isFirstBodyRow = ri === 0 && !headerRow;
+              const isLastBodyRow = ri === bodyRows.length - 1;
+              return (
+                <tr key={ri}>
+                  {(row.cells ?? []).map((cell, ci) => (
+                    <td
+                      key={ci}
+                      className={`min-w-0 break-words px-3 py-6.5 text-center font-montserrat text-white lg:p-5 md:px-4 ${
+                        !isLastBodyRow ? "border-b border-white/10" : ""
+                      } ${ci > 0 ? "border-l border-white/10" : ""} ${
+                        isFirstBodyRow ? "font-medium" : ""
+                      }`}
+                    >
+                      {renderCell(cell)}
+                    </td>
+                  ))}
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>

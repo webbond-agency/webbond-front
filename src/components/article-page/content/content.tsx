@@ -13,13 +13,13 @@ export default function Content({ article, locale }: ContentProps) {
   if (!content?.length) return null;
 
   return (
-    <section className="flex flex-col py-12 lg:py-14">
-      <Container className="flex flex-col md:flex-row gap-20 md:gap-12">
+    <section className="flex flex-col pb-12 lg:pb-[192px]">
+      <div className="flex flex-col md:flex-row gap-20 md:gap-12">
         <div>
           <BlogPortableTextRenderer value={content} locale={locale} />
         </div>
-        <div className="w-[320px]"></div>
-      </Container>
+        <div className="shrink-0 w-[320px]"></div>
+      </div>
     </section>
   );
 }

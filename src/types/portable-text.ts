@@ -3,11 +3,13 @@ import type { TypedObject } from "@portabletext/types";
 /** Контент статті блогу з Sanity (блоки + кастомні типи). */
 export type BlogPortableTextValue = TypedObject[] | null | undefined;
 
-/** Рядок таблиці (sanity table / tableBlock). */
-export type PtTableCell = {
+/** Комірка: у Studio може бути рядок або об'єкт { text, strong }. */
+export type PtTableCellObject = {
   text?: string;
   strong?: boolean;
 };
+
+export type PtTableCell = PtTableCellObject | string;
 
 export type PtTableRow = {
   cells?: PtTableCell[];
