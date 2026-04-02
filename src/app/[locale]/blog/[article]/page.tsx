@@ -6,6 +6,8 @@ import { getTranslations } from "next-intl/server";
 import ArticleNotFound from "@/components/article-page/article-not-found";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import Faq from "@/components/article-page/faq/faq";
+import Content from "@/components/article-page/content/content";
+import Container from "@/components/ui/container";
 
 export default async function ArticlePage({
   params,
@@ -13,6 +15,7 @@ export default async function ArticlePage({
   params: Promise<{ article: string; locale: string }>;
 }) {
   const t = await getTranslations("Breadcrumbs");
+  const tNotFound = await getTranslations("ArticlePage.ArticleNotFound");
 
   const { article, locale } = await params;
 
@@ -26,7 +29,10 @@ export default async function ArticlePage({
 
   if (!blogPost) {
     return (
-      <ArticleNotFound title={t("title")} description={t("description")} />
+      <ArticleNotFound
+        title={tNotFound("title")}
+        description={tNotFound("description")}
+      />
     );
   }
 
@@ -40,6 +46,11 @@ export default async function ArticlePage({
     <>
       <Hero article={blogPost} />
       <Breadcrumbs steps={breadcrumbSteps} className="pb-10 lg:pb-20" />
+
+      <Container>
+        <Content article={blogPost} locale={locale} />
+      </Container>
+
       <Faq faq={blogPost.faq} />
     </>
   );

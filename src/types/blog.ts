@@ -1,7 +1,5 @@
-import type {
-  PortableTextBlock,
-  SanityImage,
-} from "@/types/case";
+import type { SanityImage } from "@/types/case";
+import type { BlogPortableTextValue } from "@/types/portable-text";
 
 export type BlogPostBySlug = {
   id: string;
@@ -15,7 +13,7 @@ export type BlogPostBySlug = {
   author: string;
   heroDesktopImage?: SanityImage;
   heroMobileImage?: SanityImage;
-  content: PortableTextBlock[];
+  content: BlogPortableTextValue;
   faq?: Array<{
     question: string;
     answer: string;
