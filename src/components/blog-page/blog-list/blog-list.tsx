@@ -14,9 +14,6 @@ interface BlogListProps {
   posts: BlogRecommendedPost[];
 }
 
-/** TEMP: скільки разів повторити список статей для тесту пагінації — прибрати перед релізом */
-const TEMP_POST_CLONE_ROUNDS = 100;
-
 export default function BlogList({ posts }: BlogListProps) {
   const t = useTranslations("BlogPage.list");
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -32,15 +29,6 @@ export default function BlogList({ posts }: BlogListProps) {
     );
   }
 
-  const itemsForPagination = Array.from(
-    { length: TEMP_POST_CLONE_ROUNDS },
-    (_, round) =>
-      posts.map((post) => ({
-        ...post,
-        id: `${post.id}__temp-pag-${round}`,
-      })),
-  ).flat();
-
   return (
     <section
       ref={sectionRef}
@@ -48,7 +36,7 @@ export default function BlogList({ posts }: BlogListProps) {
     >
       <Container>
         <Pagination
-          items={itemsForPagination}
+          items={posts}
           useItemsPerPage={() => itemsPerPage}
           scrollTargetRef={sectionRef}
           renderItems={(currentItems) => (
