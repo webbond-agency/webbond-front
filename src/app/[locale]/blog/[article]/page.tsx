@@ -8,7 +8,8 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import Faq from "@/components/article-page/faq/faq";
 import Content from "@/components/article-page/content/content";
 import Container from "@/components/ui/container";
-import ArticleRecommended from "@/components/article-page/recommended-articles/article-recommended";
+import ArticleRecommendedDesktop from "@/components/article-page/recommended-articles/article-recommended-desktop";
+import ArticleRecommendedMobile from "@/components/article-page/recommended-articles/article-recommended-mobile";
 
 export default async function ArticlePage({
   params,
@@ -53,11 +54,11 @@ export default async function ArticlePage({
       <Container>
         <div className="flex flex-col md:flex-row gap-20 md:gap-12 pb-12 lg:pb-[192px]">
           <Content article={blogPost} locale={locale} />
-          <ArticleRecommended posts={recommendedPosts} />
+          <ArticleRecommendedDesktop posts={recommendedPosts} />
         </div>
       </Container>
-
       <Faq faq={blogPost.faq} />
+      <ArticleRecommendedMobile posts={recommendedPosts} />
     </>
   );
 }

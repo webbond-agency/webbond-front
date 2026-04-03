@@ -1,34 +1,12 @@
 "use client";
 
 import type { BlogRecommendedPost } from "@/types/blog";
-import ArticleCard, {
-  type ArticleCardImage,
-} from "@/components/ui/article-card";
+import ArticleCard from "@/components/ui/article-card";
 import { m } from "framer-motion";
+import { cardImageFromPost } from "./recommended-article-helpers";
 
-interface ArticleRecommendedProps {
+interface ArticleRecommendedDesktopProps {
   posts: BlogRecommendedPost[];
-}
-
-const withQuality100 = (url?: string) => {
-  if (!url) return undefined;
-  try {
-    const parsed = new URL(url);
-    parsed.searchParams.set("q", "100");
-    return parsed.toString();
-  } catch {
-    return url;
-  }
-};
-
-function cardImage(post: BlogRecommendedPost): ArticleCardImage | null {
-  const desktop = post.heroDesktopImage?.asset?.url;
-  const mobile = post.heroMobileImage?.asset?.url;
-  const src = withQuality100(desktop) ?? withQuality100(mobile);
-  if (!src) return null;
-  const alt =
-    post.heroDesktopImage?.alt ?? post.heroMobileImage?.alt ?? post.heroTitle;
-  return { src, alt };
 }
 
 const listVariants = {
@@ -53,7 +31,9 @@ const cardVariants = {
   },
 };
 
-export default function ArticleRecommended({ posts }: ArticleRecommendedProps) {
+export default function ArticleRecommendedDesktop({
+  posts,
+}: ArticleRecommendedDesktopProps) {
   if (!posts.length) return null;
 
   const visible = posts.slice(0, 7);
@@ -71,7 +51,7 @@ export default function ArticleRecommended({ posts }: ArticleRecommendedProps) {
           <m.li key={post.id} variants={cardVariants}>
             <ArticleCard
               href={`/blog/${post.slug}`}
-              image={cardImage(post)}
+              image={cardImageFromPost(post)}
               title={post.heroTitle}
               description={post.heroDescription}
               author={post.author}
