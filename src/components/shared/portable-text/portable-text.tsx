@@ -25,7 +25,7 @@ function buildComponents(locale: string): Partial<PortableTextReactComponents> {
     block: {
       normal: ({ children }) => (
         <m.p
-          className="mb-3 font-montserrat text-[16px] font-light leading-[160%] text-white/90"
+          className="not-last:mb-3 font-montserrat text-[16px] font-light leading-[160%] text-white/90"
           {...reveal}
         >
           {children}
@@ -33,7 +33,7 @@ function buildComponents(locale: string): Partial<PortableTextReactComponents> {
       ),
       h2: ({ children }) => (
         <m.h2
-          className="mb-8 not-first:mt-20 font-manrope text-[24px] font-light uppercase leading-[120%] text-white lg:text-[36px]"
+          className="not-last:mb-8 not-first:mt-20 font-manrope text-[24px] font-light uppercase leading-[120%] text-white lg:text-[36px]"
           {...reveal}
         >
           {children}
@@ -41,7 +41,7 @@ function buildComponents(locale: string): Partial<PortableTextReactComponents> {
       ),
       h3: ({ children }) => (
         <m.h3
-          className="mb-4 mt-6 font-montserrat text-[14px] font-medium leading-[120%] text-white lg:text-[16px]"
+          className="not-last:mb-4 not-first:mt-6 font-montserrat text-[14px] font-medium leading-[120%] text-white lg:text-[16px]"
           {...reveal}
         >
           {children}
@@ -49,7 +49,7 @@ function buildComponents(locale: string): Partial<PortableTextReactComponents> {
       ),
       h4: ({ children }) => (
         <m.h4
-          className="mb-2 mt-5 font-manrope text-[18px] font-light uppercase leading-[120%] text-white"
+          className="not-last:mb-2 not-first:mt-5 font-manrope text-[18px] font-light uppercase leading-[120%] text-white"
           {...reveal}
         >
           {children}
@@ -102,7 +102,7 @@ function buildComponents(locale: string): Partial<PortableTextReactComponents> {
             height={48}
             centerText
             fitContent
-            className="my-2 inline-flex w-auto max-w-full text-[14px] font-montserrat font-light text-black"
+            className="not-last:mb-2 not-first:mt-2 inline-flex w-auto max-w-full text-[14px] font-montserrat font-light text-black"
           >
             {children}
           </GooeyWhiteLink>
@@ -112,7 +112,7 @@ function buildComponents(locale: string): Partial<PortableTextReactComponents> {
     list: {
       bullet: ({ children }) => (
         <m.ul
-          className="mb-3 ml-1 list-disc space-y-1 pl-6 font-montserrat text-[16px] font-light leading-[160%] text-white/90 marker:text-white"
+          className="not-last:mb-3 ml-1 list-disc space-y-1 pl-6 font-montserrat text-[16px] font-light leading-[160%] text-white/90 marker:text-white"
           {...reveal}
         >
           {children}
@@ -120,7 +120,7 @@ function buildComponents(locale: string): Partial<PortableTextReactComponents> {
       ),
       number: ({ children }) => (
         <m.ol
-          className="mb-3 ml-1 list-decimal space-y-1 pl-6 font-montserrat text-[16px] font-light leading-[160%] text-white/90 marker:text-white"
+          className="not-last:mb-3 not-first:mt-3 ml-1 list-decimal space-y-1 pl-6 font-montserrat text-[16px] font-light leading-[160%] text-white/90 marker:text-white"
           {...reveal}
         >
           {children}

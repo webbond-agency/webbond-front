@@ -1,5 +1,6 @@
 import Container from "@/components/ui/container";
 import type { BlogPostBySlug } from "@/types/blog";
+import { formatPublishedDate } from "@/utils/formatPublishedDate";
 import Image from "next/image";
 import * as motion from "motion/react-client";
 
@@ -25,14 +26,6 @@ export default function Hero({ article }: HeroProps) {
   const desktopAlt = article.heroDesktopImage?.alt || article.heroTitle;
   const author = article.author;
   const publishedAt = article.publishedAt;
-
-  const formatDate = (date: string) => {
-    return new Date(date).toLocaleDateString("uk-UA", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-    });
-  };
 
   return (
     <section className="relative mb-12 lg:mb-[90px] min-h-[569px] lg:min-h-[674px]">
@@ -92,7 +85,7 @@ export default function Hero({ article }: HeroProps) {
               transition={{ duration: 0.7, delay: 0.9 }}
               className="inline-block not-last:mr-3 px-7 py-4 rounded-full bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] backdrop-blur-[24px] font-manrope text-[14px] lg:text-[16px] leading-[120%] text-white font-light"
             >
-              {formatDate(publishedAt)}
+              {formatPublishedDate(publishedAt)}
             </motion.span>
           </div>
         </div>

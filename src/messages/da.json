@@ -836,6 +836,7 @@
       "title": "Artiklen blev ikke fundet",
       "description": "Siden findes ikke eller er blevet flyttet."
     },
+    "Recommended": { "showMore": "Læs mere" },
     "Questions": {
       "title": "Ofte stillede spørgsmål",
       "seeMore": "Se andre spørgsmål"
