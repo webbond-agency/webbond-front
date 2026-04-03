@@ -1,14 +1,11 @@
-import Container from "../ui/container";
+import Container from "../../ui/container";
 
-interface ArticleNotFoundProps {
+interface NotFoundProps {
   title: string;
   description: string;
 }
 
-export default function ArticleNotFound({
-  title,
-  description,
-}: ArticleNotFoundProps) {
+export default function NotFound({ title, description }: NotFoundProps) {
   return (
     <section className=" pt-24 pb-16 min-h-dvh">
       <Container className="flex flex-col justify-center items-center">

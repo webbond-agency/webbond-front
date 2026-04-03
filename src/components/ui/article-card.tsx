@@ -105,7 +105,6 @@ export default function ArticleCard({
           <GooeyWhiteButton
             className="text-center w-full text-[14px] font-montserrat font-light text-black"
             height={42}
-            centerText
             text={t("showMore")}
           ></GooeyWhiteButton>
         </div>

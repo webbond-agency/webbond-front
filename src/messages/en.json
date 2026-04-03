@@ -828,6 +828,12 @@
     "Hero": {
       "title": "Blog",
       "description": "<gray>Insights, case studies and practical</gray> articles about <gray>websites</gray>, digital systems, marketing and business development."
+    },
+    "list": {
+      "notFound": {
+        "title": "No articles yet",
+        "description": "Check back soon — we publish new posts as they go live."
+      }
     }
   },
 
