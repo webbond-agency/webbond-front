@@ -1,5 +1,4 @@
 import BlogPortableTextRenderer from "@/components/shared/portable-text/portable-text";
-import Container from "@/components/ui/container";
 import type { BlogPostBySlug } from "@/types/blog";
 
 interface ContentProps {
