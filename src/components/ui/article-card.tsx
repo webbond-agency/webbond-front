@@ -25,7 +25,7 @@ export interface ArticleCardProps {
 }
 
 const cardInnerClass =
-  "flex h-full flex-col overflow-hidden rounded-[12px] bg-white/3 shadow-[inset_2px_-1px_5px_-1px_rgba(255,255,255,0.08)]";
+  "relative flex h-full flex-col overflow-hidden rounded-[12px] bg-white/3 shadow-[inset_2px_-1px_5px_-1px_rgba(255,255,255,0.08)]";
 
 const linkFocusClass =
   "outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0704]";
@@ -42,8 +42,22 @@ export default function ArticleCard({
   const t = useTranslations("ArticlePage.Recommended");
 
   return (
-    <div className="group h-full">
+    <div className="relative group h-full">
       <article className={cn(cardInnerClass, className, "flex flex-col")}>
+        <Image
+          src="/article-page-card-shadow-top.webp"
+          alt="Article Card Background"
+          width={276}
+          height={435}
+          className="absolute -z-10 top-7 left-0 object-cover"
+        />
+        <Image
+          src="/article-page-card-shadow-bottom.webp"
+          alt="Article Card Background"
+          width={312}
+          height={302}
+          className="absolute -z-10 bottom-0 right-0 object-cover"
+        />
         <Link
           href={href}
           className={cn("block rounded-t-[8px]", linkFocusClass)}
