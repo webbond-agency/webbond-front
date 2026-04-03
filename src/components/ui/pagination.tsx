@@ -108,7 +108,7 @@ export default function Pagination<T>({
         {renderItems(currentItems)}
       </div>
       <div
-        className={`${totalPages > 1 ? "flex" : "hidden"} justify-center items-center gap-[15px] mt-8 lg:mt-20 mx-auto`}
+        className={`${totalPages > 1 ? "flex" : "hidden"} justify-center items-center gap-[15px] mt-8 lg:mt-20 mx-auto font-montserrat text-white`}
       >
         <button
           aria-label="left"

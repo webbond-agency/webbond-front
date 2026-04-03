@@ -8,10 +8,14 @@ import { useTranslations } from "next-intl";
 import NotFound from "@/components/shared/not-found/not-found";
 import { useRef } from "react";
 import { useBlogArticlesPerPage } from "@/hooks/use-articles-per-page";
+import * as motion from "motion/react-client";
 
 interface BlogListProps {
   posts: BlogRecommendedPost[];
 }
+
+/** TEMP: скільки разів повторити список статей для тесту пагінації — прибрати перед релізом */
+const TEMP_POST_CLONE_ROUNDS = 100;
 
 export default function BlogList({ posts }: BlogListProps) {
   const t = useTranslations("BlogPage.list");
@@ -28,17 +32,33 @@ export default function BlogList({ posts }: BlogListProps) {
     );
   }
 
+  const itemsForPagination = Array.from(
+    { length: TEMP_POST_CLONE_ROUNDS },
+    (_, round) =>
+      posts.map((post) => ({
+        ...post,
+        id: `${post.id}__temp-pag-${round}`,
+      })),
+  ).flat();
+
   return (
-    <section ref={sectionRef} className="pb-25 lg:pb-[192px]">
+    <section
+      ref={sectionRef}
+      className="pb-25 lg:pb-[192px] scroll-mt-25 lg:scroll-mt-35"
+    >
       <Container>
         <Pagination
-          items={posts}
+          items={itemsForPagination}
           useItemsPerPage={() => itemsPerPage}
           scrollTargetRef={sectionRef}
           renderItems={(currentItems) => (
             <ul className="flex flex-col sm:flex-row sm:flex-wrap gap-5">
               {currentItems.map((post) => (
-                <li
+                <motion.li
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.7, delay: 0.3 }}
                   key={post.id}
                   className="w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-13.33px)]"
                 >
@@ -50,7 +70,7 @@ export default function BlogList({ posts }: BlogListProps) {
                     author={post.author}
                     publishedAt={post.publishedAt}
                   />
-                </li>
+                </motion.li>
               ))}
             </ul>
           )}
