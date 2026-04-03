@@ -836,6 +836,7 @@
       "title": "Article not found",
       "description": "This page does not exist or has been moved."
     },
+    "Recommended": { "showMore": "Read more" },
     "Questions": {
       "title": "FAQ",
       "seeMore": "Show all questions"

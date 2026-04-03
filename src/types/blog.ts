@@ -1,6 +1,18 @@
 import type { SanityImage } from "@/types/case";
 import type { BlogPortableTextValue } from "@/types/portable-text";
 
+/** Дані для картки рекомендованої статті (відповідає blogPostsRecommendedQuery). */
+export type BlogRecommendedPost = {
+  id: string;
+  slug: string;
+  publishedAt: string;
+  heroTitle: string;
+  heroDescription: string;
+  author: string;
+  heroDesktopImage?: SanityImage;
+  heroMobileImage?: SanityImage;
+};
+
 export type BlogPostBySlug = {
   id: string;
   _type: "blogPost";
