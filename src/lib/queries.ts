@@ -311,6 +311,36 @@ export const blogPostBySlugQuery = `
   }
 `;
 
+/** Усі опубліковані пости блогу — сторінка /blog. */
+export const blogPostsAllQuery = `
+  *[_type == "blogPost" && defined(publishedAt)] | order(publishedAt desc) {
+    "id": _id,
+    "slug": slug.current,
+    publishedAt,
+    "heroTitle": heroTitle[$lang],
+    "heroDescription": heroDescription[$lang],
+    "author": author[$lang],
+    "heroDesktopImage": heroDesktopImage{
+      asset->{
+        _id,
+        url
+      },
+      crop,
+      hotspot,
+      "alt": alt[$lang]
+    },
+    "heroMobileImage": heroMobileImage{
+      asset->{
+        _id,
+        url
+      },
+      crop,
+      hotspot,
+      "alt": alt[$lang]
+    }
+  }
+`;
+
 /** Усі пости блогу, крім поточного slug — для рекомендацій на сторінці статті. */
 export const blogPostsRecommendedQuery = `
   *[_type == "blogPost" && slug.current != $excludeSlug && defined(publishedAt)] | order(publishedAt desc) [0..11] {

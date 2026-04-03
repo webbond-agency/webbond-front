@@ -3,7 +3,7 @@ import type { BlogPostBySlug, BlogRecommendedPost } from "@/types/blog";
 import { fetchSanityData } from "@/utils/fetchSanityData";
 import Hero from "@/components/article-page/hero/hero";
 import { getTranslations } from "next-intl/server";
-import ArticleNotFound from "@/components/article-page/article-not-found";
+import ArticleNotFound from "@/components/shared/not-found/not-found";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import Faq from "@/components/article-page/faq/faq";
 import Content from "@/components/article-page/content/content";

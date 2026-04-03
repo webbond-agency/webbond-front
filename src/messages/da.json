@@ -828,6 +828,12 @@
     "Hero": {
       "title": "Blog",
       "description": "<gray>Indsigter, cases og praktiske</gray> artikler om <gray>websites</gray>, digitale systemer, marketing og forretningsudvikling."
+    },
+    "list": {
+      "notFound": {
+        "title": "Ingen artikler endnu",
+        "description": "Kom tilbage senere — vi udgiver nye indlæg, når de er klar."
+      }
     }
   },
 
