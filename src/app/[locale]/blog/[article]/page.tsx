@@ -10,6 +10,8 @@ import Content from "@/components/article-page/content/content";
 import Container from "@/components/ui/container";
 import ArticleRecommendedDesktop from "@/components/article-page/recommended-articles/article-recommended-desktop";
 import ArticleRecommendedMobile from "@/components/article-page/recommended-articles/article-recommended-mobile";
+import { Suspense } from "react";
+import Loader from "@/components/ui/loader";
 
 export default async function ArticlePage({
   params,
@@ -49,16 +51,18 @@ export default async function ArticlePage({
 
   return (
     <>
-      <Hero article={blogPost} />
-      <Breadcrumbs steps={breadcrumbSteps} className="pb-10 lg:pb-20" />
-      <Container>
-        <div className="flex flex-col md:flex-row gap-20 md:gap-12 pb-12 lg:pb-[192px]">
-          <Content article={blogPost} locale={locale} />
-          <ArticleRecommendedDesktop posts={recommendedPosts} />
-        </div>
-      </Container>
-      <Faq faq={blogPost.faq} />
-      <ArticleRecommendedMobile posts={recommendedPosts} />
+      <Suspense fallback={<Loader />}>
+        <Hero article={blogPost} />
+        <Breadcrumbs steps={breadcrumbSteps} className="pb-10 lg:pb-20" />
+        <Container>
+          <div className="flex flex-col md:flex-row gap-20 md:gap-12 pb-12 lg:pb-[192px]">
+            <Content article={blogPost} locale={locale} />
+            <ArticleRecommendedDesktop posts={recommendedPosts} />
+          </div>
+        </Container>
+        <Faq faq={blogPost.faq} />
+        <ArticleRecommendedMobile posts={recommendedPosts} />
+      </Suspense>
     </>
   );
 }
