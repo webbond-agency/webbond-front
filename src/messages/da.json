@@ -850,6 +850,18 @@
   },
 
   "BusinessModelPage": {
+    "Hero": {
+      "title": "Website til din virksomhed, som du har fuld kontrol over",
+      "descriptionOne": "Éngangsbetaling. Ingen abonnementer. Ingen platforme.",
+      "descriptionTwo": "Fuldstændigt website på ren kode, klar til SEO, GDPR og kundehåndtering.",
+      "subtitle": "Nøglefordele:",
+      "listItemOne": "Éngangsinvestering — ingen månedlige betalinger",
+      "listItemTwo": "Fuld ejerskab — websitet tilhører dig",
+      "listItemThree": "Hurtig ydelse og Google-indeksering",
+      "listItemFour": "Brugervenlig admin-panel til redigering af indhold og formularer",
+      "listItemFive": "GDPR-kompatibel fra dag 1",
+      "button": "Se demo af websitet"
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",
