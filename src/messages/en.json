@@ -931,6 +931,35 @@
         ]
       ]
     },
+    "TargetAudience": {
+      "title": "<gray>Who is</gray> the solution for",
+      "items": [
+        {
+          "title": "CONSTRUCTION COMPANIES",
+          "description": "Calculators, forms, portfolio, price lists."
+        },
+        {
+          "title": "REAL ESTATE AGENTS / AGENCIES",
+          "description": "Property database with filtering (city, area, size, number of rooms, price; rental/sale; sorting)."
+        },
+        {
+          "title": "RESTAURANTS AND CAFÉS",
+          "description": "Online booking, menu, contact forms."
+        },
+        {
+          "title": "CLEANING AND SERVICE COMPANIES",
+          "description": "Orders, forms, schedules."
+        },
+        {
+          "title": "MEDICAL AND COSMETIC SERVICES",
+          "description": "Online booking, appointment scheduling, forms, price lists."
+        },
+        {
+          "title": "LOCAL BUSINESSES FOCUSED ON INQUIRIES",
+          "description": "Contact forms, calculators, portfolio, interactive elements tailored to the business."
+        }
+      ]
+    },
     "Questions": {
       "title": "FREQUENTLY ASKED QUESTIONS",
       "seeMore": "See other questions",

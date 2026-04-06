@@ -919,7 +919,35 @@
         ["Klar til lancering", "Kræver tilpasning", "Klar til brug"]
       ]
     },
-    "TargetAudience": { "title": "<gray>Hvem passer</gray> løsningen til" },
+    "TargetAudience": {
+      "title": "<gray>Hvem passer</gray> løsningen til",
+      "items": [
+        {
+          "title": "BYGGEVIRKSOMHEDER",
+          "description": "Kalkulatorer, formularer, portefølje, prislister."
+        },
+        {
+          "title": "EJENDOMSMÆGLERE / AGENTURER",
+          "description": "Ejendomsdatabase med filtrering (by, område, størrelse, antal værelser, pris; udlejning/ salg; sortering)."
+        },
+        {
+          "title": "RESTAURANTER OG CAFÉER",
+          "description": "Online booking, menu, kontaktformularer."
+        },
+        {
+          "title": "RENGØRINGS- OG SERVICEFIRMAER",
+          "description": "Ordrer, formularer, tidsplaner."
+        },
+        {
+          "title": "MEDICINSKE OG KOSMETISKE TJENESTER",
+          "description": "Online booking, tidsbestilling, formularer, prislister."
+        },
+        {
+          "title": "LOKALE VIRKSOMHEDER MED FOKUS PÅ HENVENDELSER",
+          "description": "Kontaktformularer, kalkulatorer, portefølje, interaktive elementer tilpasset forretningen."
+        }
+      ]
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",
