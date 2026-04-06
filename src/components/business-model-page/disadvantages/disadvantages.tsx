@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Container from "@/components/ui/container";
+import * as m from "motion/react-client";
 
 type DisadvantageItem = { text: string; image: string };
 
@@ -12,20 +13,38 @@ export default function Disadvantages() {
     <section className="pb-[148px] lg:pb-[175px]">
       <Container>
         <div className="flex flex-col gap-6 md:flex-row-reverse md:justify-between md:items-end mb-6 lg:mb-12">
-          <h2 className="font-manrope text-[36px] lg:text-[64px] leading-[120%] text-white font-light uppercase md:text-right">
+          <m.h2
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="font-manrope text-[36px] lg:text-[64px] leading-[120%] text-white font-light uppercase md:text-right"
+          >
             {t.rich("title", {
               gray: (chunks) => (
                 <span className="text-[#818181]">{chunks}</span>
               ),
             })}
-          </h2>
+          </m.h2>
 
-          <p className="md:max-w-[266px] md:mb-5 font-montserrat text-[14px] leading-[120%] text-white font-light">
+          <m.p
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            className="md:max-w-[266px] md:mb-5 font-montserrat text-[14px] leading-[120%] text-white font-light"
+          >
             {t("descriptionOne")}
-          </p>
+          </m.p>
         </div>
 
-        <div className="flex flex-col gap-5 sm:flex-row mb-6 lg:mb-7">
+        <m.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="flex flex-col gap-5 sm:flex-row mb-6 lg:mb-7"
+        >
           <div className="flex flex-col gap-5 sm:w-[65.4%]">
             {" "}
             <div className="relative flex items-center gap-5 px-4 py-6 lg:px-8 lg:py-[42px] shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] backdrop-blur-[32px] bg-[linear-gradient(96.69deg,_#0A0705_15.54%,_#450C0F_46.69%,_#0A0705_77.83%)] font-montserrat text-[20px] lg:text-[32px] font-light leading-[120%] uppercase text-white rounded-[12px] overflow-hidden">
@@ -68,17 +87,27 @@ export default function Disadvantages() {
               {items[2].text}
             </p>
           </div>
-        </div>
+        </m.div>
 
         <div className="flex gap-6 lg:gap-9 items-center">
-          <div
+          <m.div
+            initial={{ opacity: 0, x: -130 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.6 }}
             className={`relative flex flex-1 h-px from-[#FFFFFF] to-[#0A0704] bg-linear-to-l`}
           >
             <div className="absolute -top-2 -right-2 rounded-full size-4 bg-[#565656]" />
-          </div>
-          <p className="max-w-[243px] lg:max-w-[439px] font-montserrat text-[14px] leading-[120%] text-white font-light">
+          </m.div>
+          <m.p
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="max-w-[243px] lg:max-w-[439px] font-montserrat text-[14px] leading-[120%] text-white font-light"
+          >
             {t("descriptionTwo")}
-          </p>
+          </m.p>
         </div>
       </Container>
     </section>
