@@ -8,27 +8,55 @@ export default function Hero() {
   const listItems = t.raw("listItems") as string[];
 
   return (
-    <section className="pt-[64px] lg:pt-[102px] pb-[148px] lg:pb-[210px]">
-      <Container>
+    <section className="relative pt-[64px] lg:pt-[102px] pb-[148px] lg:pb-[210px]">
+      <div className="absolute top-[-960px] left-[-800px] xl:top-[-1060px] w-[1192px]">
+        <Image
+          width={1192}
+          height={1205}
+          src="/case-hero-shadow.webp"
+          alt="case-hero-shadow"
+          sizes="(max-width: 1280px) 33vw, 1192px"
+          className="select-none pointer-events-none"
+        />
+      </div>
+      <Container className="relative">
+        <div className="absolute -z-20 top-[-70px] right-[-392px] md:top-[-408px] md:right-[-658px] w-[748px] md:w-[1496px] aspect-square mix-blend-hard-light">
+          <Image
+            src="/business-model-page-hero-decor-top.webp"
+            alt="business-model-hero-decor"
+            width={1496}
+            height={1496}
+            className="select-none pointer-events-none"
+          />
+        </div>
+        <div className="absolute -z-10 bottom-[-123px] left-[-552px] md:bottom-[-973px] md:left-[-1294px] w-[1141px] md:w-[2281px] aspect-square mix-blend-hard-light">
+          <Image
+            src="/business-model-page-hero-decor-bottom.webp"
+            alt="business-model-hero-decor"
+            width={2281}
+            height={2281}
+            className="select-none pointer-events-none "
+          />
+        </div>
         <div className="mb-6 lg:mb-5 flex flex-col gap-6 md:flex-row md:justify-between">
-          <h1 className="md:max-w-[440px] lg:max-w-[540px] xl:max-w-[788px] font-manrope text-[40px] lg:text-[64px] leading-[120%] text-white uppercase font-light">
+          <h1 className="max-w-[320px] md:max-w-[440px] lg:max-w-[540px] xl:max-w-[788px] font-manrope text-[40px] lg:text-[64px] leading-[120%] text-white uppercase font-light">
             {t("title")}
           </h1>
-          <div className="flex items-end relative aspect-[304/154] sm:aspect-none sm:h-[220px] md:h-auto md:w-[304px] p-4 lg:p-8 rounded-[14px] overflow-hidden mix-blend-hard-light">
+          <div className="flex items-end relative aspect-[304/154] sm:aspect-none sm:h-[220px] md:h-auto md:w-[304px] p-4 lg:p-8 rounded-[14px] overflow-hidden bg-black">
             <Image
               src="/business-model-page-hero-image-one.webp"
               alt="business-model-hero-image"
               fill
-              className="-z-10 object-cover scale-145 lg:scale-115 object-[20px_-11px] lg:object-[-10px_-1px]"
+              className="z-10 object-cover scale-145 lg:scale-115 object-[20px_-11px] lg:object-[-10px_-1px] mix-blend-hard-light"
             />
             <Image
               src="/business-model-page-hero-quote.svg"
               alt="business-model-hero-quote"
               width={80}
               height={54}
-              className="absolute top-4 right-4 lg:top-8 lg:right-8"
+              className="z-20 absolute top-4 right-4 lg:top-8 lg:right-8"
             />
-            <p className="max-w-[240px] font-manrope text-[16px] leading-[120%] text-black font-light uppercase">
+            <p className="relative z-20 max-w-[240px] font-manrope text-[16px] leading-[120%] text-black font-light uppercase">
               {t("descriptionOne")}
             </p>
           </div>
