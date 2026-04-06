@@ -883,6 +883,56 @@
       ],
       "descriptionTwo": "Vi tilbyder en anden løsning: Éngangsbetaling — brug websitet som et stabilt forretningsværktøj."
     },
+    "Comparison": {
+      "title": "Vores løsning vs <gray>platforme</gray>",
+      "columns": [
+        {
+          "subtitle": "Kriterium",
+          "items": [
+            "Betalingsmodel",
+            "Ejerskab",
+            "E-mail integration",
+            "Formularer og henvendelser",
+            "SEO og hastighed",
+            "Logo",
+            "Website design",
+            "Cookie og GDPR",
+            "Analytics (GA, GTM)",
+            "Klar til lancering"
+          ]
+        },
+        {
+          "subtitle": "Platforme",
+          "items": [
+            "Abonnementer og ekstra betalinger",
+            "Afhængig af platform",
+            "Plugins / ekstra opsætning",
+            "Via plugins",
+            "Afhænger af plugins",
+            "Ikke inkluderet",
+            "Skabelon / dyr custom",
+            "Betalte løsninger",
+            "Plugins / separat opsætning",
+            "Kræver tilpasning"
+          ]
+        },
+        {
+          "subtitle": "Vores løsning",
+          "items": [
+            "Éngangsbetaling",
+            "Fuld ejerskab",
+            "Opsat og inkluderet",
+            "Inkluderet og fungerende",
+            "Optimeret til Google",
+            "Inkluderet i pakken",
+            "Tilpasset dit brand",
+            "Indbygget",
+            "Opsat og konfigureret",
+            "Klar til brug"
+          ]
+        }
+      ]
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",

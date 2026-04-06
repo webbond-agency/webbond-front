@@ -883,6 +883,56 @@
       ],
       "descriptionTwo": "We offer a different approach: a one-time payment — use the website as a stable business tool."
     },
+    "Comparison": {
+      "title": "Our solution vs <gray>platforms</gray>",
+      "columns": [
+        {
+          "subtitle": "Criterion",
+          "items": [
+            "Payment model",
+            "Ownership",
+            "E-mail integration",
+            "Forms and inquiries",
+            "SEO and speed",
+            "Logo",
+            "Website design",
+            "Cookie and GDPR",
+            "Analytics (GA, GTM)",
+            "Ready for launch"
+          ]
+        },
+        {
+          "subtitle": "Platforms",
+          "items": [
+            "Subscriptions and extra payments",
+            "Dependent on platform",
+            "Plugins / extra setup",
+            "Via plugins",
+            "Depends on plugins",
+            "Not included",
+            "Template / expensive custom",
+            "Paid solutions",
+            "Plugins / separate setup",
+            "Requires customization"
+          ]
+        },
+        {
+          "subtitle": "Our solution",
+          "items": [
+            "One-time payment",
+            "Full ownership",
+            "Set up and included",
+            "Included and working",
+            "Optimized for Google",
+            "Included in the package",
+            "Tailored to your brand",
+            "Built in",
+            "Set up and configured",
+            "Ready to use"
+          ]
+        }
+      ]
+    },
     "Questions": {
       "title": "FREQUENTLY ASKED QUESTIONS",
       "seeMore": "See other questions",
