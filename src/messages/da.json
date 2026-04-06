@@ -883,6 +883,42 @@
       ],
       "descriptionTwo": "Vi tilbyder en anden løsning: Éngangsbetaling — brug websitet som et stabilt forretningsværktøj."
     },
+    "Comparison": {
+      "title": "Vores løsning vs <gray>platforme</gray>",
+      "columnSubtitles": [
+        "Kriterium",
+        "WordPress / Wix / andre platforme",
+        "Vores løsning"
+      ],
+      "rows": [
+        [
+          "Betalingsmodel",
+          "Abonnementer og ekstra betalinger",
+          "Éngangsbetaling"
+        ],
+        ["Ejerskab", "Afhængig af platform", "Fuld ejerskab"],
+        [
+          "E-mail integration",
+          "Plugins / ekstra opsætning",
+          "Opsat og inkluderet"
+        ],
+        [
+          "Formularer og henvendelser",
+          "Via plugins",
+          "Inkluderet og fungerende"
+        ],
+        ["SEO og hastighed", "Afhænger af plugins", "Optimeret til Google"],
+        ["Logo", "Ikke inkluderet", "Inkluderet i pakken"],
+        ["Website design", "Skabelon / dyr custom", "Tilpasset dit brand"],
+        ["Cookie og GDPR", "Betalte løsninger", "Indbygget"],
+        [
+          "Analytics (GA, GTM)",
+          "Plugins / separat opsætning",
+          "Opsat og konfigureret"
+        ],
+        ["Klar til lancering", "Kræver tilpasning", "Klar til brug"]
+      ]
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",
