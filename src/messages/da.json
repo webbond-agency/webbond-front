@@ -864,6 +864,25 @@
       ],
       "button": "Se demo af websitet"
     },
+    "Disadvantages": {
+      "title": "<gray>Hvorfor de fleste websites</gray> skaber afhængighed",
+      "descriptionOne": "WordPress, Wix og andre platforme er nemme i starten, men over tid opstår:",
+      "items": [
+        {
+          "text": "Abonnementer og plugins",
+          "image": "/business-model-page-disadvantages-image-one.webp"
+        },
+        {
+          "text": "Konstant opdatering",
+          "image": "/business-model-page-disadvantages-image-two.webp"
+        },
+        {
+          "text": "Afhængighed af udvikler",
+          "image": "/business-model-page-disadvantages-image-three.webp"
+        }
+      ],
+      "descriptionTwo": "Vi tilbyder en anden løsning: Éngangsbetaling — brug websitet som et stabilt forretningsværktøj."
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",
