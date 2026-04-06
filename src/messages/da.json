@@ -867,9 +867,11 @@
     "Disadvantages": {
       "title": "<gray>Hvorfor de fleste websites</gray> skaber afhængighed",
       "descriptionOne": "WordPress, Wix og andre platforme er nemme i starten, men over tid opstår:",
-      "item1": "Abonnementer og plugins",
-      "item2": "Konstant opdatering",
-      "item3": "Afhængighed af udvikler",
+      "items": [
+        "Abonnementer og plugins",
+        "Konstant opdatering",
+        "Afhængighed af udvikler"
+      ],
       "descriptionTwo": "Vi tilbyder en anden løsning: Éngangsbetaling — brug websitet som et stabilt forretningsværktøj."
     },
     "Questions": {
