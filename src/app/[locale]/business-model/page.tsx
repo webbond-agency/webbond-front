@@ -3,6 +3,7 @@ import Cta from "@/components/business-model-page/cta/cta";
 import Hero from "@/components/business-model-page/hero/hero";
 import Disadvantages from "@/components/business-model-page/disadvantages/disadvantages";
 import Comparison from "@/components/business-model-page/comparison/comparison";
+import TargetAudience from "@/components/business-model-page/target-audience/target-audience";
 
 export default function BusinessModelPage() {
   return (
@@ -10,7 +11,7 @@ export default function BusinessModelPage() {
       <Hero />
       <Disadvantages />
       <Comparison />
-      <Faq />
+      <TargetAudience />
       <Cta />
     </div>
   );

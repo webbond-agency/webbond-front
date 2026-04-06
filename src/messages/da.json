@@ -919,6 +919,7 @@
         ["Klar til lancering", "Kræver tilpasning", "Klar til brug"]
       ]
     },
+    "TargetAudience": { "title": "<gray>Hvem passer</gray> løsningen til" },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",
