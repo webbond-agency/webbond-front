@@ -2,6 +2,7 @@ import Container from "@/components/ui/container";
 import GooeyWhiteLink from "@/components/ui/gooey-white-link";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import * as m from "motion/react-client";
 
 export default function Hero() {
   const t = useTranslations("BusinessModelPage.Hero");
@@ -20,7 +21,13 @@ export default function Hero() {
         />
       </div>
       <Container className="relative">
-        <div className="absolute -z-20 top-[-70px] right-[-392px] md:top-[-408px] md:right-[-658px] w-[748px] md:w-[1496px] aspect-square mix-blend-hard-light">
+        <m.div
+          initial={{ opacity: 0, x: 100, rotate: 10 }}
+          whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeOut", delay: 0.6 }}
+          className="absolute -z-20 top-[-70px] right-[-392px] md:top-[-408px] md:right-[-658px] w-[748px] md:w-[1496px] aspect-square mix-blend-hard-light"
+        >
           <Image
             src="/business-model-page-hero-decor-top.webp"
             alt="business-model-hero-decor"
@@ -28,8 +35,14 @@ export default function Hero() {
             height={1496}
             className="select-none pointer-events-none"
           />
-        </div>
-        <div className="absolute -z-10 bottom-[-123px] left-[-552px] md:bottom-[-973px] md:left-[-1294px] w-[1141px] md:w-[2281px] aspect-square mix-blend-hard-light">
+        </m.div>
+        <m.div
+          initial={{ opacity: 0, x: -100, rotate: 10 }}
+          whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeOut", delay: 1.5 }}
+          className="absolute -z-10 bottom-[-123px] left-[-552px] md:bottom-[-973px] md:left-[-1294px] w-[1141px] md:w-[2281px] aspect-square mix-blend-hard-light"
+        >
           <Image
             src="/business-model-page-hero-decor-bottom.webp"
             alt="business-model-hero-decor"
@@ -37,7 +50,7 @@ export default function Hero() {
             height={2281}
             className="select-none pointer-events-none "
           />
-        </div>
+        </m.div>
         <div className="mb-6 lg:mb-5 flex flex-col gap-6 md:flex-row md:justify-between">
           <h1 className="max-w-[320px] md:max-w-[440px] lg:max-w-[540px] xl:max-w-[788px] font-manrope text-[40px] lg:text-[64px] leading-[120%] text-white uppercase font-light">
             {t("title")}
