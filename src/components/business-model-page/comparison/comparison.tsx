@@ -2,11 +2,15 @@ import Container from "@/components/ui/container";
 import { useTranslations } from "next-intl";
 import * as m from "motion/react-client";
 
-type ComparisonColumn = { subtitle: string; items: string[] };
-
 export default function Comparison() {
   const t = useTranslations("BusinessModelPage.Comparison");
-  const columns = t.raw("columns") as ComparisonColumn[];
+  const columnSubtitles = t.raw("columnSubtitles") as string[];
+  const rows = t.raw("rows") as string[][];
+
+  const columns = columnSubtitles.map((subtitle, colIndex) => ({
+    subtitle,
+    items: rows.map((row) => row[colIndex]),
+  }));
 
   return (
     <section className="pb-[148px] lg:pb-[192px]">
@@ -23,20 +27,17 @@ export default function Comparison() {
           })}
         </m.h2>
 
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-4 lg:gap-6">
+        <div className="flex gap-3">
           {columns.map((column) => (
-            <div
-              key={column.subtitle}
-              className="flex flex-col gap-4 rounded-[12px] px-4 py-6 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] backdrop-blur-[32px] bg-[linear-gradient(180deg,_#0A0705_0%,_#1a0a0c_50%,_#0A0705_100%)] lg:px-5 lg:py-8"
-            >
-              <h3 className="font-manrope text-[16px] font-light uppercase leading-[120%] text-white lg:text-[18px]">
+            <div key={column.subtitle} className="w-1/3 flex flex-col gap-6">
+              <h3 className="min-h-[42px] lg:min-h-[58px] flex items-center justify-center font-manrope text-[12px] font-light uppercase leading-[120%] text-white lg:text-[24px] text-center">
                 {column.subtitle}
               </h3>
-              <ul className="m-0 flex list-none flex-col gap-3 p-0">
+              <ul className="flex-1 flex flex-col gap-4 lg:p-6 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] backdrop-blur-[32px] bg-white/3 px-2 py-4 rounded-[12px]">
                 {column.items.map((line) => (
                   <li
                     key={`${column.subtitle}-${line}`}
-                    className="font-montserrat text-[13px] font-light leading-[133%] text-white lg:text-[14px]"
+                    className="flex items-center justify-center lg:justify-start h-6 font-montserrat text-[8px] lg:text-[14px] font-light leading-[133%] text-white text-center lg:text-left"
                   >
                     {line}
                   </li>

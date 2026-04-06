@@ -885,52 +885,50 @@
     },
     "Comparison": {
       "title": "Our solution vs <gray>platforms</gray>",
-      "columns": [
-        {
-          "subtitle": "Criterion",
-          "items": [
-            "Payment model",
-            "Ownership",
-            "E-mail integration",
-            "Forms and inquiries",
-            "SEO and speed",
-            "Logo",
-            "Website design",
-            "Cookie and GDPR",
-            "Analytics (GA, GTM)",
-            "Ready for launch"
-          ]
-        },
-        {
-          "subtitle": "Platforms",
-          "items": [
-            "Subscriptions and extra payments",
-            "Dependent on platform",
-            "Plugins / extra setup",
-            "Via plugins",
-            "Depends on plugins",
-            "Not included",
-            "Template / expensive custom",
-            "Paid solutions",
-            "Plugins / separate setup",
-            "Requires customization"
-          ]
-        },
-        {
-          "subtitle": "Our solution",
-          "items": [
-            "One-time payment",
-            "Full ownership",
-            "Set up and included",
-            "Included and working",
-            "Optimized for Google",
-            "Included in the package",
-            "Tailored to your brand",
-            "Built in",
-            "Set up and configured",
-            "Ready to use"
-          ]
-        }
+      "columnSubtitles": [
+        "Criterion",
+        "WordPress / Wix / other platforms",
+        "Our solution"
+      ],
+      "rows": [
+        [
+          "Payment model",
+          "Subscriptions and extra payments",
+          "One-time payment"
+        ],
+        ["Ownership", "Dependent on platform", "Full ownership"],
+        [
+          "E-mail integration",
+          "Plugins / extra setup",
+          "Set up and included"
+        ],
+        [
+          "Forms and inquiries",
+          "Via plugins",
+          "Included and working"
+        ],
+        [
+          "SEO and speed",
+          "Depends on plugins",
+          "Optimized for Google"
+        ],
+        ["Logo", "Not included", "Included in the package"],
+        [
+          "Website design",
+          "Template / expensive custom",
+          "Tailored to your brand"
+        ],
+        ["Cookie and GDPR", "Paid solutions", "Built in"],
+        [
+          "Analytics (GA, GTM)",
+          "Plugins / separate setup",
+          "Set up and configured"
+        ],
+        [
+          "Ready for launch",
+          "Requires customization",
+          "Ready to use"
+        ]
       ]
     },
     "Questions": {
