@@ -850,6 +850,20 @@
   },
 
   "BusinessModelPage": {
+    "Hero": {
+      "title": "A website for your business that you fully control",
+      "descriptionOne": "One-time payment. No subscriptions. No platforms.",
+      "descriptionTwo": "A complete website built with clean code, ready for SEO, GDPR, and customer management.",
+      "subtitle": "Key benefits:",
+      "listItems": [
+        "One-time investment — no monthly fees",
+        "Full ownership — the site belongs to you",
+        "Fast performance and Google indexing",
+        "User-friendly admin panel for editing content and forms",
+        "GDPR-compliant from day one"
+      ],
+      "button": "See a demo of the website"
+    },
     "Questions": {
       "title": "FREQUENTLY ASKED QUESTIONS",
       "seeMore": "See other questions",
