@@ -868,9 +868,18 @@
       "title": "<gray>Why most websites</gray> lead to dependency",
       "descriptionOne": "WordPress, Wix, and other platforms are easy at first, but over time you get:",
       "items": [
-        "Subscriptions and plugins",
-        "Constant updates",
-        "Dependency on a developer"
+        {
+          "text": "Subscriptions and plugins",
+          "image": "/business-model-page-disadvantages-image-two.webp"
+        },
+        {
+          "text": "Constant updates",
+          "image": "/business-model-page-disadvantages-image-three.webp"
+        },
+        {
+          "text": "Dependency on a developer",
+          "image": "/business-model-page-disadvantages-image-one.webp"
+        }
       ],
       "descriptionTwo": "We offer a different approach: a one-time payment — use the website as a stable business tool."
     },
