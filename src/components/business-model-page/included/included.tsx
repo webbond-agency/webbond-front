@@ -14,14 +14,20 @@ export default function Included() {
   return (
     <section className="pb-[148px] lg:pb-[192px]">
       <Container className="relative">
-        <div className="-z-10 absolute top-[295px] lg:top-[-402px] right-[-437px] lg:right-[-612px] w-[924px] h-[940px] lg:w-[1849px] lg:h-[1906px] mix-blend-hard-light">
+        <m.div
+          initial={{ opacity: 0, x: 100, rotate: 10 }}
+          whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeOut", delay: 1 }}
+          className="-z-10 absolute top-[295px] lg:top-[-402px] right-[-437px] lg:right-[-612px] w-[924px] h-[940px] lg:w-[1849px] lg:h-[1906px] mix-blend-hard-light"
+        >
           <Image
             src="/business-model-page-included-decor.webp"
             alt="Background"
             fill
             className="object-cover"
           />
-        </div>
+        </m.div>
         <div className="-z-10 lg:hidden absolute bottom-[-85px] lg:top-[-502px] left-[-378px] lg:left-[-612px] w-[609px] h-[578px] lg:w-[1218px] lg:h-[1155px]">
           <Image
             src="/business-model-page-included-shadow-mob.webp"
