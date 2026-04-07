@@ -37,9 +37,9 @@ export default function TargetAudience() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 + index * 0.08 }}
-            className="group py-4 lg:p-3 bg-white"
+            className="group bg-white py-4 md:p-3 md:w-[calc(50%+24rem-20px)] lg:w-[calc(50%+32rem-32px)] xl:w-[calc(50%+40rem-32px)] md:mr-auto md:rounded-r-full"
           >
-            <Container
+            <div
               className={`md:flex items-center justify-between md:gap-12 lg:gap-8 xl:gap-[126px] group-odd:flex-row group-even:flex-row-reverse`}
             >
               <div className="flex items-center justify-between gap-4 mb-4 md:mb-0 md:w-[55%]">
@@ -68,7 +68,7 @@ export default function TargetAudience() {
                   className="md:w-[320px] xl:w-[417px] h-auto object-cover"
                 />
               </div>
-            </Container>
+            </div>
           </m.div>
         ))}
       </div>
