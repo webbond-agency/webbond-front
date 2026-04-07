@@ -12,6 +12,7 @@ export default function BusinessModelPage() {
       <Disadvantages />
       <Comparison />
       <TargetAudience />
+      <Faq />
       <Cta />
     </div>
   );
