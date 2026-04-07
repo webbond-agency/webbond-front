@@ -993,6 +993,15 @@
         }
       ]
     },
+    "Demo": {
+      "title": "<gray>Du styrer</gray> indhold",
+      "listItems": [
+        "Redigerer tekster og billeder",
+        "Opdaterer information",
+        "Video-instruktion viser hele processen med admin-panelet"
+      ],
+      "button": "Se demo af admin-panelet"
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",

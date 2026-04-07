@@ -5,6 +5,7 @@ import Disadvantages from "@/components/business-model-page/disadvantages/disadv
 import Comparison from "@/components/business-model-page/comparison/comparison";
 import TargetAudience from "@/components/business-model-page/target-audience/target-audience";
 import Included from "@/components/business-model-page/included/included";
+import Demo from "@/components/business-model-page/demo/demo";
 
 export default function BusinessModelPage() {
   return (
@@ -14,6 +15,7 @@ export default function BusinessModelPage() {
       <Comparison />
       <TargetAudience />
       <Included />
+      <Demo />
       <Faq />
       <Cta />
     </div>

@@ -956,6 +956,15 @@
         }
       ]
     },
+    "Demo": {
+      "title": "<gray>You control</gray> content",
+      "listItems": [
+        "Edit texts and images",
+        "Update information",
+        "Video tutorial shows the entire process in the admin panel"
+      ],
+      "button": "Watch the admin panel demo"
+    },
     "Questions": {
       "title": "FREQUENTLY ASKED QUESTIONS",
       "seeMore": "See other questions",
