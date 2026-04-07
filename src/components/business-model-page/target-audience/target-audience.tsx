@@ -1,8 +1,14 @@
 import { useTranslations } from "next-intl";
 import Container from "@/components/ui/container";
 import * as m from "motion/react-client";
+import Image from "next/image";
 
-type TargetAudienceItem = { title: string; description: string };
+type TargetAudienceItem = {
+  title: string;
+  description: string;
+  imageDesk: string;
+  imageMob: string;
+};
 
 export default function TargetAudience() {
   const t = useTranslations("BusinessModelPage.TargetAudience");
@@ -22,27 +28,48 @@ export default function TargetAudience() {
             gray: (chunks) => <span className="text-[#818181]">{chunks}</span>,
           })}
         </m.h2>
-
-        <div className="flex flex-col gap-5">
-          {items.map((item, index) => (
-            <m.div
-              key={item.title}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.15 + index * 0.08 }}
-              className=""
-            >
-              <h3 className="mb-3 font-manrope text-[20px] lg:text-[32px] font-light leading-[120%] uppercase text-white">
-                {item.title}
-              </h3>
-              <p className="font-montserrat text-[14px] lg:text-[16px] font-light leading-[133%] text-white/90">
-                {item.description}
-              </p>
-            </m.div>
-          ))}
-        </div>
       </Container>
+      <div className="flex flex-col gap-5">
+        {items.map((item, index) => (
+          <m.div
+            key={item.title}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.15 + index * 0.08 }}
+            className="py-4 lg:py-3 bg-white"
+          >
+            <Container>
+              <div className="hidden md:block">
+                <Image
+                  src={item.imageDesk}
+                  alt=""
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex items-center justify-between mb-4">
+                {" "}
+                <h3 className="max-w-[146px] font-manrope text-[14px] lg:text-[32px] font-light leading-[120%] uppercase text-black">
+                  {item.title}
+                </h3>
+                <p className="max-w-[146px] font-montserrat text-[8px] lg:text-[14px] font-light leading-[120%] text-black">
+                  {item.description}
+                </p>
+              </div>
+              <div className="md:hidden rounded-full overflow-hidden">
+                <Image
+                  src={item.imageMob}
+                  alt=""
+                  width={320}
+                  height={64}
+                  className="w-full h-[64px] object-cover"
+                />
+              </div>
+            </Container>
+          </m.div>
+        ))}
+      </div>
     </section>
   );
 }
