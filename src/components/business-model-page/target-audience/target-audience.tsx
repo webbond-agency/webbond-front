@@ -37,23 +37,16 @@ export default function TargetAudience() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 + index * 0.08 }}
-            className="py-4 lg:py-3 bg-white"
+            className="group py-4 lg:p-3 bg-white"
           >
-            <Container>
-              <div className="hidden md:block">
-                <Image
-                  src={item.imageDesk}
-                  alt=""
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex items-center justify-between mb-4">
-                {" "}
-                <h3 className="max-w-[146px] font-manrope text-[14px] lg:text-[32px] font-light leading-[120%] uppercase text-black">
+            <Container
+              className={`md:flex items-center justify-between md:gap-12 lg:gap-8 xl:gap-[126px] group-odd:flex-row group-even:flex-row-reverse`}
+            >
+              <div className="flex items-center justify-between gap-4 mb-4 md:mb-0 md:w-[55%]">
+                <h3 className="max-w-[146px] md:max-w-[160px] lg:max-w-[421px] font-manrope text-[14px] lg:text-[20px] xl:text-[32px] font-light leading-[120%] uppercase text-black">
                   {item.title}
                 </h3>
-                <p className="max-w-[146px] font-montserrat text-[8px] lg:text-[14px] font-light leading-[120%] text-black">
+                <p className="max-w-[146px] md:max-w-[160px] lg:max-w-[192px] font-montserrat text-[8px] lg:text-[14px] font-light leading-[120%] text-black">
                   {item.description}
                 </p>
               </div>
@@ -64,6 +57,15 @@ export default function TargetAudience() {
                   width={320}
                   height={64}
                   className="w-full h-[64px] object-cover"
+                />
+              </div>
+              <div className="hidden md:block shrink-0">
+                <Image
+                  src={item.imageDesk}
+                  alt=""
+                  width={417}
+                  height={104}
+                  className="md:w-[320px] xl:w-[417px] h-auto object-cover"
                 />
               </div>
             </Container>

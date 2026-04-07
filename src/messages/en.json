@@ -897,21 +897,9 @@
           "One-time payment"
         ],
         ["Ownership", "Dependent on platform", "Full ownership"],
-        [
-          "E-mail integration",
-          "Plugins / extra setup",
-          "Set up and included"
-        ],
-        [
-          "Forms and inquiries",
-          "Via plugins",
-          "Included and working"
-        ],
-        [
-          "SEO and speed",
-          "Depends on plugins",
-          "Optimized for Google"
-        ],
+        ["E-mail integration", "Plugins / extra setup", "Set up and included"],
+        ["Forms and inquiries", "Via plugins", "Included and working"],
+        ["SEO and speed", "Depends on plugins", "Optimized for Google"],
         ["Logo", "Not included", "Included in the package"],
         [
           "Website design",
@@ -924,11 +912,7 @@
           "Plugins / separate setup",
           "Set up and configured"
         ],
-        [
-          "Ready for launch",
-          "Requires customization",
-          "Ready to use"
-        ]
+        ["Ready for launch", "Requires customization", "Ready to use"]
       ]
     },
     "TargetAudience": {
@@ -961,7 +945,7 @@
         {
           "title": "MEDICAL AND COSMETIC SERVICES",
           "description": "Online booking, appointment scheduling, forms, price lists.",
-          "imageDesk": "/business-model-page-target-image-five-mob.webp",
+          "imageDesk": "/business-model-page-target-image-five-desk.webp",
           "imageMob": "/business-model-page-target-image-five-mob.webp"
         },
         {
