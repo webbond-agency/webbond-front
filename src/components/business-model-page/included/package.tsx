@@ -1,7 +1,9 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
+import * as m from "motion/react-client";
 
 type PackageProps = {
+  uniqueKey: string;
   title?: string;
   list?: string[];
   image?: string;
@@ -15,9 +17,17 @@ export default function Package({
   image,
   isImageRight = true,
   imageHeight = 180,
+  uniqueKey,
 }: PackageProps) {
   return (
-    <div className="rounded-[14px] shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] bg-white/3 backdrop-blur-[24px] p-4 lg:p-5">
+    <m.div
+      key={uniqueKey}
+      initial={{ opacity: 0, x: isImageRight ? 100 : -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+      className="rounded-[14px] shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] bg-white/3 backdrop-blur-[24px] p-4 lg:p-5"
+    >
       <div
         className={`flex flex-col gap-6 md:justify-between md:gap-8 ${
           isImageRight ? "md:flex-row" : "md:flex-row-reverse"
@@ -61,6 +71,6 @@ export default function Package({
           </div>
         ) : null}
       </div>
-    </div>
+    </m.div>
   );
 }
