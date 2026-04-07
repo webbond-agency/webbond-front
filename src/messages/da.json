@@ -960,6 +960,40 @@
         }
       ]
     },
+    "included": {
+      "title": "<gray>Business</gray> systempakke",
+      "sections": [
+        {
+          "title": "HVAD ER INKLUDERET",
+          "items": [
+            "Fuldstændigt website på ren kode",
+            "SEO-struktur til Google",
+            "Admin-panel til redigering af tekster, billeder og formularer",
+            "Formularer og kontaktmuligheder",
+            "Integration med e-mail marketing",
+            "Booking / kalender (hvis nødvendigt)",
+            "Mulighed for tilslutning til CRM",
+            "Video-demo og instruktioner"
+          ]
+        },
+        {
+          "title": "WEBSITE DESIGN",
+          "items": [
+            "Tilpasning af design til din forretnings niche",
+            "Farver og skrifttyper tilpasset brand",
+            "Responsivt for mobil og desktop"
+          ]
+        },
+        {
+          "title": "LOGO",
+          "items": [
+            "Oprettelse af grundlæggende digitalt logo",
+            "Integration af logo på sitet",
+            "Logo klar til website, sociale medier og reklame"
+          ]
+        }
+      ]
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",
