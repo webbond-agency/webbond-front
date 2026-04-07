@@ -897,21 +897,9 @@
           "One-time payment"
         ],
         ["Ownership", "Dependent on platform", "Full ownership"],
-        [
-          "E-mail integration",
-          "Plugins / extra setup",
-          "Set up and included"
-        ],
-        [
-          "Forms and inquiries",
-          "Via plugins",
-          "Included and working"
-        ],
-        [
-          "SEO and speed",
-          "Depends on plugins",
-          "Optimized for Google"
-        ],
+        ["E-mail integration", "Plugins / extra setup", "Set up and included"],
+        ["Forms and inquiries", "Via plugins", "Included and working"],
+        ["SEO and speed", "Depends on plugins", "Optimized for Google"],
         ["Logo", "Not included", "Included in the package"],
         [
           "Website design",
@@ -924,11 +912,48 @@
           "Plugins / separate setup",
           "Set up and configured"
         ],
-        [
-          "Ready for launch",
-          "Requires customization",
-          "Ready to use"
-        ]
+        ["Ready for launch", "Requires customization", "Ready to use"]
+      ]
+    },
+    "TargetAudience": {
+      "title": "<gray>Who is</gray> the solution for",
+      "items": [
+        {
+          "title": "CONSTRUCTION COMPANIES",
+          "description": "Calculators, forms, portfolio, price lists.",
+          "imageDesk": "/business-model-page-target-image-one-desk.webp",
+          "imageMob": "/business-model-page-target-image-one-mob.webp"
+        },
+        {
+          "title": "REAL ESTATE AGENTS / AGENCIES",
+          "description": "Property database with filtering (city, area, size, number of rooms, price; rental/sale; sorting).",
+          "imageDesk": "/business-model-page-target-image-two-desk.webp",
+          "imageMob": "/business-model-page-target-image-two-mob.webp"
+        },
+        {
+          "title": "RESTAURANTS AND CAFÉS",
+          "description": "Online booking, menu, contact forms.",
+          "imageDesk": "/business-model-page-target-image-three-desk.webp",
+          "imageMob": "/business-model-page-target-image-three-mob.webp"
+        },
+        {
+          "title": "CLEANING AND SERVICE COMPANIES",
+          "description": "Orders, forms, schedules.",
+          "imageDesk": "/business-model-page-target-image-four-desk.webp",
+          "imageMob": "/business-model-page-target-image-four-mob.webp"
+        },
+        {
+          "title": "MEDICAL AND COSMETIC SERVICES",
+          "description": "Online booking, appointment scheduling, forms, price lists.",
+          "imageDesk": "/business-model-page-target-image-five-desk.webp",
+          "imageMob": "/business-model-page-target-image-five-mob.webp"
+        },
+        {
+          "title": "LOCAL BUSINESSES FOCUSED ON INQUIRIES",
+          "description": "Contact forms, calculators, portfolio, interactive elements tailored to the business.",
+          "imageDesk": "/business-model-page-target-image-six-desk.webp",
+          "imageMob": "/business-model-page-target-image-six-mob.webp"
+        }
       ]
     },
     "Questions": {

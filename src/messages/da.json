@@ -919,6 +919,47 @@
         ["Klar til lancering", "Kræver tilpasning", "Klar til brug"]
       ]
     },
+    "TargetAudience": {
+      "title": "<gray>Hvem passer</gray> løsningen til",
+      "items": [
+        {
+          "title": "BYGGEVIRKSOMHEDER",
+          "description": "Kalkulatorer, formularer, portefølje, prislister.",
+          "imageDesk": "/business-model-page-target-image-one-desk.webp",
+          "imageMob": "/business-model-page-target-image-one-mob.webp"
+        },
+        {
+          "title": "EJENDOMSMÆGLERE / AGENTURER",
+          "description": "Ejendomsdatabase med filtrering (by, område, størrelse, antal værelser, pris; udlejning/salg; sortering).",
+          "imageDesk": "/business-model-page-target-image-two-desk.webp",
+          "imageMob": "/business-model-page-target-image-two-mob.webp"
+        },
+        {
+          "title": "RESTAURANTER OG CAFÉER",
+          "description": "Online booking, menu, kontaktformularer.",
+          "imageDesk": "/business-model-page-target-image-three-desk.webp",
+          "imageMob": "/business-model-page-target-image-three-mob.webp"
+        },
+        {
+          "title": "RENGØRINGS- OG SERVICEFIRMAER",
+          "description": "Ordrer, formularer, tidsplaner.",
+          "imageDesk": "/business-model-page-target-image-four-desk.webp",
+          "imageMob": "/business-model-page-target-image-four-mob.webp"
+        },
+        {
+          "title": "MEDICINSKE OG KOSMETISKE TJENESTER",
+          "description": "Online booking, tidsbestilling, formularer, prislister.",
+          "imageDesk": "/business-model-page-target-image-five-desk.webp",
+          "imageMob": "/business-model-page-target-image-five-mob.webp"
+        },
+        {
+          "title": "LOKALE VIRKSOMHEDER MED FOKUS PÅ HENVENDELSER",
+          "description": "Kontaktformularer, kalkulatorer, portefølje, interaktive elementer tilpasset forretningen.",
+          "imageDesk": "/business-model-page-target-image-six-desk.webp",
+          "imageMob": "/business-model-page-target-image-six-mob.webp"
+        }
+      ]
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",

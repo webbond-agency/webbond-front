@@ -91,9 +91,9 @@ export default function Disadvantages() {
 
         <div className="flex gap-6 lg:gap-9 items-center">
           <m.div
-            initial={{ opacity: 0, x: -130 }}
+            initial={{ opacity: 0, x: -72 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.01 }}
             transition={{ duration: 0.7, delay: 0.6 }}
             className={`relative flex flex-1 h-px from-[#FFFFFF] to-[#0A0704] bg-linear-to-l`}
           >
