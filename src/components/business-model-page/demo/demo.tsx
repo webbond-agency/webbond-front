@@ -13,7 +13,13 @@ export default function Demo() {
       <Container>
         <div className="flex flex-col md:flex-row-reverse gap-6 lg:gap-8 mb-6 lg:mb-8">
           <div className="relative flex flex-col justify-between md:w-[calc(50%-12px)] lg:w-[calc(50%-16px)]">
-            <div className="absolute -z-10 top-[-97px] md:top-[-62px] lg:top-[-55px] left-[-60px] md:left-[-240px] lg:left-[-350px] w-[402px] h-[338px] lg:w-[710px] lg:h-[698px]">
+            <m.div
+              initial={{ opacity: 0, x: 100, rotate: 10 }}
+              whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.2, ease: "easeOut", delay: 1 }}
+              className="absolute -z-10 top-[-97px] md:top-[-62px] lg:top-[-55px] left-[-60px] md:left-[-240px] lg:left-[-350px] w-[402px] h-[338px] lg:w-[710px] lg:h-[698px]"
+            >
               <Image
                 src="/business-model-page-demo-decor-mob.webp"
                 alt="Demo"
@@ -26,9 +32,9 @@ export default function Demo() {
                 fill
                 className="hidden lg:block object-cover"
               />
-            </div>
+            </m.div>
             <m.h2
-              initial={{ opacity: 0, x: 30 }}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.3 }}
@@ -40,7 +46,13 @@ export default function Demo() {
                 ),
               })}
             </m.h2>
-            <ul className="flex flex-col gap-3 md:gap-2.5 lg:gap-3 rounded-[14px] shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] bg-white/3 backdrop-blur-[24px] p-4 md:p-3 lg:p-5">
+            <m.ul
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="flex flex-col gap-3 md:gap-2.5 lg:gap-3 rounded-[14px] shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] bg-white/3 backdrop-blur-[24px] p-4 md:p-3 lg:p-5"
+            >
               {listItems.map((item) => (
                 <li
                   key={item}
@@ -52,9 +64,15 @@ export default function Demo() {
                   </span>
                 </li>
               ))}
-            </ul>
+            </m.ul>
           </div>
-          <div className="relative md:w-[calc(50%-12px)] lg:w-[calc(50%-16px)] rounded-[11px] overflow-hidden">
+          <m.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="relative md:w-[calc(50%-12px)] lg:w-[calc(50%-16px)] rounded-[11px] overflow-hidden"
+          >
             <Image
               src="/business-model-page-demo-image.webp"
               alt="Demo"
@@ -62,9 +80,15 @@ export default function Demo() {
               height={238}
               className="w-full h-auto object-cover"
             />
-          </div>
+          </m.div>
         </div>
-        <div className="flex items-center justify-center">
+        <m.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="flex items-center justify-center"
+        >
           <div className="hidden md:flex items-center justify-center w-[67px] md:w-[121px] rounded-full py-[5px] px-[8px] backdrop-blur-sm bg-white/3 shadow-[inset_2px_-1px_5px_-1px_rgba(255,255,255,0.12)] safari-blur-fix">
             <Image
               src="/mobile-title-banner.png"
@@ -84,7 +108,7 @@ export default function Demo() {
             className="text-center w-full md:w-[277px] text-[14px] font-montserrat font-light text-black"
             height={52}
           />
-        </div>
+        </m.div>
       </Container>
     </section>
   );
