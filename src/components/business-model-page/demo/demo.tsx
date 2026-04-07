@@ -12,13 +12,27 @@ export default function Demo() {
     <section className="pb-[148px] lg:pb-[238px]">
       <Container>
         <div className="flex flex-col md:flex-row-reverse gap-6 lg:gap-8 mb-6 lg:mb-8">
-          <div className="flex flex-col justify-between">
+          <div className="relative flex flex-col justify-between md:w-[calc(50%-12px)] lg:w-[calc(50%-16px)]">
+            <div className="absolute -z-10 top-[-97px] md:top-[-62px] lg:top-[-55px] left-[-60px] md:left-[-240px] lg:left-[-350px] w-[402px] h-[338px] lg:w-[710px] lg:h-[698px]">
+              <Image
+                src="/business-model-page-demo-decor-mob.webp"
+                alt="Demo"
+                fill
+                className="lg:hidden object-cover"
+              />
+              <Image
+                src="/business-model-page-demo-decor.webp"
+                alt="Demo"
+                fill
+                className="hidden lg:block object-cover"
+              />
+            </div>
             <m.h2
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="mb-6 md:mb-4 lg:mb-12 font-manrope text-[36px] lg:text-[42px] xl:text-[64px] leading-[120%] text-white font-light uppercase md:text-right"
+              className="max-w-[220px] md:max-w-none xl:max-w-[342px] lg:ml-auto mb-6 md:mb-4 lg:mb-12 font-manrope text-[36px] lg:text-[42px] xl:text-[64px] leading-[120%] text-white font-light uppercase md:text-right"
             >
               {t.rich("title", {
                 gray: (chunks) => (
@@ -40,7 +54,7 @@ export default function Demo() {
               ))}
             </ul>
           </div>
-          <div className="relative md:w-[calc(50%-12px)] lg:w-[calc(50%-16px)] rounded-[11px] overflow-hidden shrink-0">
+          <div className="relative md:w-[calc(50%-12px)] lg:w-[calc(50%-16px)] rounded-[11px] overflow-hidden">
             <Image
               src="/business-model-page-demo-image.webp"
               alt="Demo"
