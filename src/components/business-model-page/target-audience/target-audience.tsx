@@ -40,9 +40,9 @@ export default function TargetAudience() {
             className="group bg-white py-4 md:p-3 md:w-[calc(50%+24rem-20px)] lg:w-[calc(50%+32rem-32px)] xl:w-[calc(50%+40rem-32px)] md:odd:mr-auto md:even:ml-auto md:odd:rounded-r-full md:even:rounded-l-full"
           >
             <div
-              className={`px-5 md:px-0 lg:px-0 md:group-odd:pl-5 md:group-even:pr-5 lg:group-odd:pl-8 lg:group-even:pr-8 md:flex items-center justify-between md:gap-12 lg:gap-8 xl:gap-[126px] group-odd:flex-row group-even:flex-row-reverse`}
+              className={`md:group-odd:ml-auto md:group-even:mr-auto md:max-w-[728px] lg:max-w-[960px] xl:max-w-[1216px] px-5 md:px-0 lg:px-0 md:group-odd:pl-5 md:group-even:pr-5 lg:group-odd:pl-8 lg:group-even:pr-8 md:flex items-center justify-between md:gap-12 lg:gap-8 xl:gap-[106px] group-odd:flex-row group-even:flex-row-reverse`}
             >
-              <div className="flex items-center justify-between gap-4 mb-4 md:mb-0 md:w-[55%]">
+              <div className="flex items-center justify-between gap-4 lg:gap-7 mb-4 md:mb-0 md:w-[58%]">
                 <h3 className="max-w-[146px] md:max-w-[160px] lg:max-w-[421px] font-manrope text-[14px] lg:text-[20px] xl:text-[32px] font-light leading-[120%] uppercase text-black">
                   {item.title}
                 </h3>
