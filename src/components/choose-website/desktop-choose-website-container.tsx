@@ -1,23 +1,19 @@
-'use client';
+"use client";
 
-import { useState, useRef } from 'react';
-import Image from 'next/image';
-import { useAnimate, m } from 'framer-motion';
-import { WEBSITE_TYPES_MOCK } from './choose-website-mock';
-import GooeyWhiteButton from '../ui/gooey-white-button';
-import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
+import { useState, useRef } from "react";
+import Image from "next/image";
+import { useAnimate, m } from "framer-motion";
+import { WEBSITE_TYPES_MOCK } from "./choose-website-mock";
 
-const FeedbackModal = dynamic(() => import('@/components/feedback-modal'), {
-  ssr: false,
-});
+import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
+import GooeyWhiteLink from "../ui/gooey-white-link";
 
 const DesktopChooseWebsiteContainer = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [scope, animate] = useAnimate();
   const isAnimatingRef = useRef(false);
-  const t = useTranslations('ChooseWebsite');
-  const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
+  const t = useTranslations("ChooseWebsite");
 
   const activeContent = WEBSITE_TYPES_MOCK[activeIndex];
 
@@ -28,18 +24,18 @@ const DesktopChooseWebsiteContainer = () => {
 
     // Animate out content
     await animate(
-      '.animate-content',
+      ".animate-content",
       { opacity: 0, y: 10 },
-      { duration: 0.3, ease: 'easeInOut' },
+      { duration: 0.3, ease: "easeInOut" },
     );
 
     setActiveIndex(index);
 
     // Animate in content
     await animate(
-      '.animate-content',
+      ".animate-content",
       { opacity: 1, y: 0 },
-      { duration: 0.3, ease: 'easeInOut' },
+      { duration: 0.3, ease: "easeInOut" },
     );
 
     isAnimatingRef.current = false;
@@ -49,12 +45,12 @@ const DesktopChooseWebsiteContainer = () => {
     <section ref={scope} className="relative">
       <div className="mb-[40px] lg:mb-[30px] xl:mb-[55px]">
         <h2 className="max-w-[990px] font-manrope font-light text-[42px] lg:text-[48px] xl:text-[64px] leading-[120%] text-white uppercase">
-          {t.rich('title', {
+          {t.rich("title", {
             gray: (chunks) => <span className="text-[#818181]">{chunks}</span>,
           })}
         </h2>
         <p className="font-montserrat font-light text-[12px] lg:text-[13px] xl:text-[14px] lg:mt-[-40px] xl:mt-[-70px] leading-[120%] text-white max-w-[343px] ml-auto">
-          {t('subtitle')}
+          {t("subtitle")}
         </p>
       </div>
 
@@ -66,7 +62,7 @@ const DesktopChooseWebsiteContainer = () => {
               key={item.id}
               onClick={() => handleToggle(index)}
               className={`font-manrope font-light text-[16px] lg:text-[18px] xl:text-[24px] uppercase leading-[120%] rounded-[56px] flex items-center justify-center w-full h-[60px] lg:h-[64px] xl:h-[83px] backdrop-blur-sm shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] cursor-pointer transition-all duration-300 ease-in-out active:scale-[0.95] safari-blur-fix ${
-                isActive ? 'bg-white text-[#0a0705]' : 'bg-white/3 text-white'
+                isActive ? "bg-white text-[#0a0705]" : "bg-white/3 text-white"
               }`}
             >
               <span>{t(`types.${item.id}.label`)}</span>
@@ -118,7 +114,7 @@ const DesktopChooseWebsiteContainer = () => {
                     {t(`types.${activeContent.id}.firstSection.title`)}
                   </h2>
                   <ul className="flex flex-col gap-[10px] xl:gap-[12px] mt-auto">
-                    {['0', '1', '2'].map((key) => (
+                    {["0", "1", "2"].map((key) => (
                       <li
                         className="relative w-full min-h-[50px] xl:min-h-[61px] py-[10px] xl:py-[15px] pl-[44px] xl:pl-[60px] pr-[20px] rounded-[40px] bg-[#0a0705] flex items-center font-montserrat font-light text-[12px] xl:text-[14px] text-white leading-[120%] before:content-[''] before:absolute before:left-[16px] xl:before:left-[24px] before:w-[14px] xl:before:w-[18px] before:h-[14px] xl:before:h-[18px] before:bg-white before:rounded-full"
                         key={`list-1-${key}`}
@@ -141,7 +137,7 @@ const DesktopChooseWebsiteContainer = () => {
                     {t(`types.${activeContent.id}.secondSection.title`)}
                   </h2>
                   <ul className="flex flex-col gap-[10px] xl:gap-[12px] mt-auto">
-                    {['0', '1', '2'].map((key) => (
+                    {["0", "1", "2"].map((key) => (
                       <li
                         className="relative w-full min-h-[50px] xl:min-h-[61px] py-[10px] xl:py-[15px] pl-[44px] xl:pl-[60px] pr-[20px] rounded-[40px] bg-[#0a0705] flex items-center font-montserrat font-light text-[12px] xl:text-[14px] text-white leading-[120%] before:content-[''] before:absolute before:left-[16px] xl:before:left-[24px] before:w-[14px] xl:before:w-[18px] before:h-[14px] xl:before:h-[18px] before:bg-white before:rounded-full"
                         key={`list-2-${key}`}
@@ -184,12 +180,12 @@ const DesktopChooseWebsiteContainer = () => {
           />
         </div>
         <div className="flex-1 h-px bg-linear-to-r from-[#FFFFFF] to-[#0A0704]"></div>
-        <GooeyWhiteButton
-          text={t('buttonStart')}
-          onClick={() => setIsFeedbackOpen(true)}
-          width={267}
+        <GooeyWhiteLink
+          href="/websites"
+          text={t("buttonOrder")}
           height={52}
-          className="mx-auto text-center w-[267px] lg:w-[220px] h-[52px] lg:h-[48px] text-[14px] font-montserrat font-light text-black"
+          width={267}
+          className="block mx-auto text-center w-[267px] lg:w-[220px] h-[52px] lg:h-[48px] text-[14px] font-montserrat font-light text-black"
         />
       </div>
       <div className="animate-content absolute bottom-[50px] left-[-80px] -z-20 w-[600px] h-[600px] pointer-events-none select-none will-change-transform transform-gpu">
@@ -211,7 +207,6 @@ const DesktopChooseWebsiteContainer = () => {
         sizes="(max-width: 1280px) 800px, 1150px"
         className="absolute bottom-[130px] lg:bottom-[-70px] xl:bottom-[15px] left-[-250px] lg:left-[50px] xl:left-[115px] -z-10 max-w-none lg:w-[1050px] lg:h-[1050px] xl:w-[1150px] xl:h-[1150px] pointer-events-none select-none"
       />
-      <FeedbackModal isOpen={isFeedbackOpen} onOpenChange={setIsFeedbackOpen} />
     </section>
   );
 };
