@@ -1002,6 +1002,22 @@
       ],
       "button": "Se demo af admin-panelet"
     },
+    "Price": {
+      "title": "LØSNINGENS PRIS",
+      "note": "(afhænger af niche og integrationer)",
+      "fromLabel": "Pris fra",
+      "toLabel": "til",
+      "fromPrice": "12.000KR",
+      "fromEur": "(1600€)",
+      "toPrice": "22.500 KR",
+      "toEur": "(3000€)",
+      "listItems": [
+        "Éngangsbetaling",
+        "Ingen abonnementer",
+        "Ingen obligatoriske betalinger",
+        "Ekstra kun — domæne"
+      ]
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",
