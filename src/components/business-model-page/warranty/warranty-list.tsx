@@ -79,7 +79,7 @@ export default function WarrantyList() {
           <li
             key={item}
             className={`relative md:w-1/4 md:h-[112px] p-4 xl:p-5 rounded-[12px] backdrop-blur-sm bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] overflow-hidden safari-blur-fix will-change-transform transform-gpu ${
-              index === 1 ? "flex items-end" : ""
+              index === 1 ? "" : ""
             }`}
           >
             <m.p
