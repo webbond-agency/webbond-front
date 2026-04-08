@@ -2,6 +2,7 @@ import Container from "@/components/ui/container";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import HeroModal from "@/components/about-page/hero/hero-modal";
+import * as m from "motion/react-client";
 
 export default function CtaFirst() {
   const t = useTranslations("BusinessModelPage.CtaFirst");
@@ -19,10 +20,22 @@ export default function CtaFirst() {
           />
         </div>
         <div className="flex flex-col gap-6 md:flex-row md:justify-between md:items-center mb-8 lg:mb-16">
-          <h2 className="max-w-[300px] sm:max-w-[400px] lg:max-w-[699px] font-manrope text-[36px] lg:text-[64px] leading-[120%] text-white font-light uppercase">
+          <m.h2
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="max-w-[300px] sm:max-w-[400px] lg:max-w-[699px] font-manrope text-[36px] lg:text-[64px] leading-[120%] text-white font-light uppercase"
+          >
             {t("title")}
-          </h2>
-          <div className="flex md:flex-col gap-6 items-center justify-between">
+          </m.h2>
+          <m.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            className="flex md:flex-col gap-6 items-center justify-between"
+          >
             <div className="flex items-center justify-center w-[121px] rounded-full py-[5px] px-[8px] backdrop-blur-sm bg-white/3 shadow-[inset_2px_-1px_5px_-1px_rgba(255,255,255,0.12)] safari-blur-fix">
               <Image
                 src="/mobile-title-banner.png"
@@ -38,17 +51,29 @@ export default function CtaFirst() {
                 {t("badge")}
               </p>
             </div>
-          </div>
+          </m.div>
         </div>
 
         <div className="flex flex-col gap-6 md:flex-row-reverse md:justify-between md:items-center mb-4 lg:mb-8">
           <HeroModal buttonText={t("button")} />
-          <h3 className="font-manrope text-[20px] lg:text-[24px] leading-[120%] text-white font-light uppercase">
+          <m.h3
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="font-manrope text-[20px] lg:text-[24px] leading-[120%] text-white font-light uppercase"
+          >
             {t("subtitle")}
-          </h3>
+          </m.h3>
         </div>
 
-        <ul className="flex flex-col md:flex-row gap-3 lg:gap-5">
+        <m.ul
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="flex flex-col md:flex-row gap-3 lg:gap-5"
+        >
           {listItems.map((item, index) => (
             <li
               key={index}
@@ -57,7 +82,7 @@ export default function CtaFirst() {
               {item}
             </li>
           ))}
-        </ul>
+        </m.ul>
       </Container>
     </section>
   );
