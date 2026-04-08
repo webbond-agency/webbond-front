@@ -1,17 +1,10 @@
-"use client";
 import FacebookIcon from "./facebook-icon";
 import LinkedinIcon from "./linkedin-icon";
 import TelegramIcon from "./telegram-icon";
 import InstagramIcon from "./instagram-icon";
-import GooeyWhiteButton from "../ui/gooey-white-button";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
-import dynamic from "next/dynamic";
 import Container from "../ui/container";
-
-const FeedbackModal = dynamic(() => import("@/components/feedback-modal"), {
-  ssr: false,
-});
+import GooeyWhiteLink from "../ui/gooey-white-link";
 
 export const links = [
   {
@@ -38,7 +31,6 @@ export const links = [
 
 const ContactsContainer = () => {
   const t = useTranslations("Contacts");
-  const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
 
   return (
     <section className="pb-[36px] md:hidden">
@@ -64,15 +56,11 @@ const ContactsContainer = () => {
             </li>
           ))}
         </ul>
-        <GooeyWhiteButton
+        <GooeyWhiteLink
+          href="/blog"
           text={t("button")}
-          onClick={() => setIsFeedbackOpen(true)}
-          className="mx-auto text-center w-full text-[14px] font-montserrat font-light text-black"
           height={52}
-        />
-        <FeedbackModal
-          isOpen={isFeedbackOpen}
-          onOpenChange={setIsFeedbackOpen}
+          className="mx-auto text-center w-full text-[14px] font-montserrat font-light text-black"
         />
       </Container>
     </section>
