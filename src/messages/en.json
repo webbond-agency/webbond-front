@@ -981,6 +981,15 @@
         "Extra only — domain"
       ]
     },
+    "Warranty": {
+      "title": "<gray>Support and</gray> warranty",
+      "listItems": [
+        "THE WEBSITE FULLY BELONGS TO YOU",
+        "GDPR AND EU REQUIREMENTS COMPLIED WITH",
+        "VIDEO INSTRUCTIONS AND DOCUMENTATION",
+        "SUPPORT DURING AND AFTER LAUNCH"
+      ]
+    },
     "Questions": {
       "title": "FREQUENTLY ASKED QUESTIONS",
       "seeMore": "See other questions",
