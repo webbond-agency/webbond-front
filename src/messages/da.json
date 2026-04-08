@@ -1018,6 +1018,15 @@
         "Ekstra kun — domæne"
       ]
     },
+    "Warranty": {
+      "title": "<gray>Support og</gray> garanti",
+      "listItems": [
+        "SITET TILHØRER FULDT UD DIG",
+        "GDPR OG EU-KRAV OPFYLDT",
+        "VIDEO-INSTRUKTIONER OG DOKUMENTATION",
+        "SUPPORT UNDER OG EFTER LANCERING"
+      ]
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",
