@@ -9,7 +9,15 @@ export default function CtaFirst() {
 
   return (
     <section className="pb-[148px] lg:pb-[290px]">
-      <Container>
+      <Container className="relative">
+        <div className="absolute -z-20 bottom-[-432px] lg:bottom-[-857px] left-[-191px] lg:left-[-72px] w-[743px] h-[643px] lg:w-[1486px] lg:h-[1285px] mix-blend-hard-light">
+          <Image
+            src="/business-model-page-cta-first-decor.webp"
+            alt="cta-first-decor"
+            fill
+            className="object-cover"
+          />
+        </div>
         <div className="flex flex-col gap-6 md:flex-row md:justify-between md:items-center mb-8 lg:mb-16">
           <h2 className="max-w-[300px] sm:max-w-[400px] lg:max-w-[699px] font-manrope text-[36px] lg:text-[64px] leading-[120%] text-white font-light uppercase">
             {t("title")}
