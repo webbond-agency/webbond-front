@@ -990,6 +990,17 @@
         "SUPPORT DURING AND AFTER LAUNCH"
       ]
     },
+    "CtaFirst": {
+      "title": "INVEST ONCE — USE THE WEBSITE FOR MANY YEARS",
+      "subtitle": "YOU GET A TOOL THAT:",
+      "badge": "Website ready in 7-14 days.",
+      "button": "Book a consultation",
+      "listItems": [
+        "DOES NOT REQUIRE SUBSCRIPTIONS",
+        "DOES NOT CREATE DEPENDENCY",
+        "WORKS TO ACQUIRE CUSTOMERS"
+      ]
+    },
     "Questions": {
       "title": "FREQUENTLY ASKED QUESTIONS",
       "seeMore": "See other questions",

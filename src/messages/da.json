@@ -1027,6 +1027,17 @@
         "SUPPORT UNDER OG EFTER LANCERING"
       ]
     },
+    "CtaFirst": {
+      "title": "INVESTÉR ÉN GANG — BRUG SITET I MANGE ÅR",
+      "subtitle": "DU FÅR ET VÆRKTØJ, SOM:",
+      "badge": "Sitet klar på 7-14 dage.",
+      "button": "Book en konsultation",
+      "listItems": [
+        "IKKE KRÆVER ABONNEMENTER",
+        "IKKE SKABER AFHÆNGIGHED",
+        "ARBEJDER PÅ KUNDEANSKAFFELSE"
+      ]
+    },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",
       "seeMore": "Se andre spørgsmål",

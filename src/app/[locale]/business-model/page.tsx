@@ -8,6 +8,7 @@ import Included from "@/components/business-model-page/included/included";
 import Demo from "@/components/business-model-page/demo/demo";
 import Price from "@/components/business-model-page/price/price";
 import Warranty from "@/components/business-model-page/warranty/warranty";
+import CtaFirst from "@/components/business-model-page/cta-first/cta-first";
 
 export default function BusinessModelPage() {
   return (
@@ -20,6 +21,7 @@ export default function BusinessModelPage() {
       <Demo />
       <Price />
       <Warranty />
+      <CtaFirst />
       <Faq />
       <Cta />
     </div>
