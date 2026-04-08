@@ -1002,6 +1002,9 @@
       ],
       "button": "Se demo af admin-panelet"
     },
+    "Steps": {
+      "title": "<gray>Hvordan</gray> vi arbejder"
+    },
     "Price": {
       "title": "LØSNINGENS PRIS",
       "note": "(afhænger af niche og integrationer)",

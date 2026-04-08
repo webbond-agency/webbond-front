@@ -965,6 +965,9 @@
       ],
       "button": "Watch the admin panel demo"
     },
+    "Steps": {
+      "title": "<gray>How</gray> we work"
+    },
     "Price": {
       "title": "SOLUTION PRICE",
       "note": "(depends on niche and integrations)",
