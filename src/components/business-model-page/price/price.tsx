@@ -10,7 +10,13 @@ export default function Price() {
   return (
     <section className="pb-[148px] lg:pb-[192px]">
       <Container className="relative">
-        <div className="absolute -z-10 top-[-70px] left-[calc(50%-225px)] lg:left-[calc(50%-640px)] lg:top-[-192px] w-[449px] lg:w-[1280px]">
+        <m.div
+          initial={{ opacity: 0, y: 130 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, delay: 0.6 }}
+          className="absolute -z-10 top-[-70px] left-[calc(50%-225px)] lg:left-[calc(50%-640px)] lg:top-[-192px] w-[449px] lg:w-[1280px]"
+        >
           <Image
             src="/business-model-page-price-decor.webp"
             alt="Price"
@@ -18,7 +24,7 @@ export default function Price() {
             height={334}
             className="w-[449px] lg:w-[1280px] h-auto object-cover"
           />
-        </div>
+        </m.div>
         <div className="absolute -z-10 top-[-124px] left-[-52px] lg:left-[182px] lg:top-[-254px] w-[563px] h-[623px] lg:w-[1125px] lg:h-[1246px]">
           <Image
             src="/business-model-page-price-shadow.webp"
