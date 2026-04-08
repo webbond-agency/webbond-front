@@ -7,6 +7,7 @@ import TargetAudience from "@/components/business-model-page/target-audience/tar
 import Included from "@/components/business-model-page/included/included";
 import Demo from "@/components/business-model-page/demo/demo";
 import Price from "@/components/business-model-page/price/price";
+import Warranty from "@/components/business-model-page/warranty/warranty";
 
 export default function BusinessModelPage() {
   return (
@@ -18,6 +19,7 @@ export default function BusinessModelPage() {
       <Included />
       <Demo />
       <Price />
+      <Warranty />
       <Faq />
       <Cta />
     </div>
