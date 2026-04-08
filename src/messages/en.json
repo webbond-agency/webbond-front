@@ -965,6 +965,22 @@
       ],
       "button": "Watch the admin panel demo"
     },
+    "Price": {
+      "title": "SOLUTION PRICE",
+      "note": "(depends on niche and integrations)",
+      "fromLabel": "Price from",
+      "toLabel": "to",
+      "fromPrice": "12,000 DKK",
+      "fromEur": "(€1,600)",
+      "toPrice": "22,500 DKK",
+      "toEur": "(€3,000)",
+      "listItems": [
+        "One-time payment",
+        "No subscriptions",
+        "No mandatory payments",
+        "Extra only — domain"
+      ]
+    },
     "Questions": {
       "title": "FREQUENTLY ASKED QUESTIONS",
       "seeMore": "See other questions",
