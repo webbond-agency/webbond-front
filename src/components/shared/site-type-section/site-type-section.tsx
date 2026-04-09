@@ -84,7 +84,6 @@ export default function SiteTypeSection({
           <GooeyWhiteLink
             text={buttonText}
             href={href}
-            linkType="external"
             className="text-center w-full text-[14px] font-montserrat font-light text-black"
             width={313}
             height={52}

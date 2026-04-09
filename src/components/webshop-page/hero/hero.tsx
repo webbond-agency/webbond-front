@@ -1,5 +1,5 @@
 import Container from "@/components/ui/container";
-import GooeyWhiteButton from "@/components/ui/gooey-white-button";
+import HeroModal from "@/components/about-page/hero/hero-modal";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import * as m from "motion/react-client";
@@ -257,15 +257,9 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.6 }}
           className={`flex items-center will-change-opacity transform-gpu`}
         >
-          <GooeyWhiteButton
-            text={t("button")}
-            // onClick={() => setIsFeedbackOpen(true)}
-            className="text-center w-full text-[14px] font-montserrat font-light text-black"
-            width={236}
-            height={52}
-          />
+          <HeroModal buttonText={t("button")} />
           <div
-            className={`hidden sm:flex flex-1 h-px from-[#FFFFFF] to-[#0A0704] bg-linear-to-r`}
+            className={`hidden sm:flex flex-1 h-px from-[#FFFFFF] to-[#0A0704] bg-linear-to-r opacity-32`}
           ></div>
         </m.div>
       </Container>
