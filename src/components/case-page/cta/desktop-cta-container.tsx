@@ -2,12 +2,13 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { CtaActions } from "./cta-action";
 import * as motion from "motion/react-client";
+import Container from "@/components/ui/container";
 
 const DesktopCtaContainer = async () => {
   const t = await getTranslations("CasePage.Cta");
 
   return (
-    <div className="hidden md:block relative px-5 sm:px-8">
+    <Container className="hidden md:block relative">
       <motion.div
         initial={{ opacity: 0, x: -100, rotate: -10 }}
         whileInView={{ opacity: 1, x: 0, rotate: 0 }}
@@ -104,7 +105,7 @@ const DesktopCtaContainer = async () => {
           />
         </motion.div>
       </div>
-    </div>
+    </Container>
   );
 };
 
