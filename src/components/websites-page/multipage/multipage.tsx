@@ -34,6 +34,7 @@ export default function Multipage() {
         imageAlt="Landing page"
         list={list}
         buttonText={t("button")}
+        href="/websites/multipage"
         subtitle={t("subtitle")}
         variant="right"
       />

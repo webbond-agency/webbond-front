@@ -28,6 +28,7 @@ export default function Landing() {
         imageAlt="Landing page"
         list={list}
         buttonText={t("button")}
+        href="/websites/landing"
         subtitle={t("subtitle")}
         variant="left"
       />

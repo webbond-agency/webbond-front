@@ -4,6 +4,7 @@ import { CaseWithLanguage } from "@/types/case";
 import Image from "next/image";
 import { urlForImage } from "@/lib/sanityClient";
 import GooeyWhiteLink from "@/components/ui/gooey-white-link";
+import Container from "@/components/ui/container";
 
 const CasePreview = ({
   imageBlock,
@@ -50,7 +51,7 @@ const CasePreview = ({
     "Case image";
 
   return (
-    <div className="relative px-5 sm:px-8">
+    <Container className="relative">
       <>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -103,7 +104,7 @@ const CasePreview = ({
 
         <div className="hidden sm:flex flex-1 h-px bg-linear-to-r from-[#FFFFFF] to-[#0A0704]"></div>
       </motion.div>
-    </div>
+    </Container>
   );
 };
 

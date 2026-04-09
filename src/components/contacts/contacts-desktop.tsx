@@ -1,24 +1,25 @@
-'use client';
-import GooeyWhiteButton from '../ui/gooey-white-button';
-import { links } from './contacts-container';
-import { useTranslations } from 'next-intl';
-import { m } from 'framer-motion';
-import { useState } from 'react';
-import dynamic from 'next/dynamic';
+"use client";
+import GooeyWhiteButton from "../ui/gooey-white-button";
+import { links } from "./contacts-container";
+import { useTranslations } from "next-intl";
+import { m } from "framer-motion";
+import { useState } from "react";
+import dynamic from "next/dynamic";
+import GooeyWhiteLink from "../ui/gooey-white-link";
 
-const FeedbackModal = dynamic(() => import('@/components/feedback-modal'), {
+const FeedbackModal = dynamic(() => import("@/components/feedback-modal"), {
   ssr: false,
 });
 
 const ContactsDesktop = () => {
-  const t = useTranslations('Contacts');
+  const t = useTranslations("Contacts");
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
 
   return (
     <m.div
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, margin: '-50px' }}
+      viewport={{ once: true, margin: "-50px" }}
       variants={{
         hidden: { opacity: 0 },
         show: {
@@ -38,20 +39,20 @@ const ContactsDesktop = () => {
         transition={{ duration: 0.6 }}
         className="will-change-[opacity,transform] transform-gpu"
       >
-        <GooeyWhiteButton
-          text={t('button')}
-          onClick={() => setIsFeedbackOpen(true)}
-          className="text-center w-full text-[14px] font-montserrat font-light text-black"
-          width={168}
-          height={42}
+        <GooeyWhiteLink
+          href="/blog"
+          text={t("button")}
+          width={178}
+          height={52}
+          className="blocktext-center w-full text-[12px] font-montserrat font-light text-black"
         />
       </m.div>
 
       <div className="flex flex-col lg:flex-row items-center gap-[20px] xl:gap-[72px]">
         {[
-          { text: t('cvr'), isEmail: false },
-          { text: t('city'), isEmail: false },
-          { text: t('email'), isEmail: true },
+          { text: t("cvr"), isEmail: false },
+          { text: t("city"), isEmail: false },
+          { text: t("email"), isEmail: true },
         ].map((item, idx) => (
           <m.div
             key={idx}
@@ -63,7 +64,7 @@ const ContactsDesktop = () => {
             className={`relative font-manrope font-light text-[20px] text-white leading-[120%] will-change-[opacity,transform] transform-gpu ${
               idx < 2
                 ? "xl:before:content-[''] xl:before:block xl:before:absolute xl:before:top-1/2 xl:before:-translate-y-1/2 xl:before:right-[-40px] xl:before:w-[16px] xl:before:h-[16px] xl:before:bg-white xl:before:rounded-full"
-                : ''
+                : ""
             }`}
           >
             {item.isEmail ? (

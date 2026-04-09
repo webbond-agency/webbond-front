@@ -1,16 +1,17 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useRef } from 'react';
-import { cn } from '@/lib/utils';
-import { LazyMotion, domAnimation, m } from 'framer-motion';
-import { navItems } from '@/components/header/navigate-data';
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-import { Link } from '@/i18n/navigation';
-import LocaleSwitcher from '@/components/header/lang-switch';
-import dynamic from 'next/dynamic';
+import { useState, useEffect, useRef } from "react";
+import { cn } from "@/lib/utils";
+import { LazyMotion, domAnimation, m } from "framer-motion";
+import { navItems } from "@/components/header/navigate-data";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { Link } from "@/i18n/navigation";
+import LocaleSwitcher from "@/components/header/lang-switch";
+import dynamic from "next/dynamic";
+import Container from "./container";
 
-const FeedbackModal = dynamic(() => import('@/components/feedback-modal'), {
+const FeedbackModal = dynamic(() => import("@/components/feedback-modal"), {
   ssr: false,
 });
 
@@ -74,7 +75,7 @@ export default function DesktopHeader({ className }: DesktopHeaderProps) {
         initial="initial"
         whileHover="hover"
         className={cn(
-          'relative w-full max-w-[1276px] h-[60px] mx-auto',
+          "relative w-full max-w-[1276px] h-[60px] mx-auto",
           className,
         )}
       >
@@ -186,11 +187,11 @@ export default function DesktopHeader({ className }: DesktopHeaderProps) {
         <div
           className="absolute inset-y-0 left-0 right-[-20px] z-10"
           style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.03)',
-            backdropFilter: 'blur(8px)',
-            WebkitBackdropFilter: 'blur(8px)',
-            maskImage: 'url(#header-mask-dynamic)',
-            WebkitMaskImage: 'url(#header-mask-dynamic)',
+            backgroundColor: "rgba(255, 255, 255, 0.03)",
+            backdropFilter: "blur(8px)",
+            WebkitBackdropFilter: "blur(8px)",
+            maskImage: "url(#header-mask-dynamic)",
+            WebkitMaskImage: "url(#header-mask-dynamic)",
           }}
         />
 
@@ -222,7 +223,7 @@ export default function DesktopHeader({ className }: DesktopHeaderProps) {
         </svg>
 
         {/* Слой контента */}
-        <div className="relative z-10 flex h-full w-full items-center pl-[26px] pr-[12px]">
+        <Container className="relative z-10 flex h-full w-full items-center">
           {/* Левая часть (Динамическая ширина - тянется, на XL фиксированная как раньше) */}
           <div
             className="flex items-center justify-start lg:pr-[20px] xl:pr-[40px]"
@@ -273,7 +274,7 @@ export default function DesktopHeader({ className }: DesktopHeaderProps) {
               </svg>
             </m.div>
           </div>
-        </div>
+        </Container>
       </m.div>
       <FeedbackModal isOpen={isFeedbackOpen} onOpenChange={setIsFeedbackOpen} />
     </LazyMotion>

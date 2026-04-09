@@ -2,12 +2,13 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { CtaActions } from "./cta-action";
 import * as motion from "motion/react-client";
+import Container from "@/components/ui/container";
 
 const CtaContainer = async () => {
   const t = await getTranslations("CasePage.Cta");
 
   return (
-    <div className="md:hidden relative px-5 sm:px-8 lg:pt-[303px] lg:pb-[148px] ">
+    <Container className="md:hidden relative lg:pt-[303px] lg:pb-[148px] ">
       <motion.div
         initial={{ opacity: 0, scale: 0.9, y: 30 }}
         whileInView={{ opacity: 0.9, scale: 1, y: 0 }}
@@ -111,7 +112,7 @@ const CtaContainer = async () => {
           className="absolute w-[370px] h-[290px] top-[180px] left-[450px] max-w-none pointer-events-none -z-20 blur-md select-none"
         />
       </motion.div>
-    </div>
+    </Container>
   );
 };
 

@@ -1,4 +1,5 @@
 import * as motion from "motion/react-client";
+import Container from "@/components/ui/container";
 
 import { CaseWithLanguage } from "@/types/case";
 import Image from "next/image";
@@ -50,7 +51,7 @@ const CaseResult = async ({
     result?.imageMobile?.alt || result?.imageDesktop?.alt || "Case image";
 
   return (
-    <div className="relative px-5 sm:px-8">
+    <Container className="relative">
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -130,7 +131,7 @@ const CaseResult = async ({
           <ResultClientCard result={result} />
         </motion.div>
       </div>
-    </div>
+    </Container>
   );
 };
 

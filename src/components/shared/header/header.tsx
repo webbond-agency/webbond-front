@@ -1,5 +1,5 @@
-import DesktopHeader from "../ui/desktop-header";
-import MobileLaptopHeader from "../ui/mobile-laptop-header";
+import DesktopHeader from "@/components/ui/desktop-header";
+import MobileLaptopHeader from "@/components/ui/mobile-laptop-header";
 
 const Header = () => {
   return (
