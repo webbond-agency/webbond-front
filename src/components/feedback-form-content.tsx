@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
 import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { Input } from "@/components/ui/input";
@@ -14,7 +14,7 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import SuccessModal from "./success-modal";
@@ -28,6 +28,15 @@ interface FeedbackFormContentProps {
   onSuccess?: () => void;
   className?: string;
 }
+
+const INTERESTED_SERVICE_VALUES = [
+  "website",
+  "seo",
+  "logo",
+  "google_ads",
+  "fb_ads",
+  "other",
+] as const;
 
 const FeedbackFormContent = ({
   onSuccess,
@@ -46,41 +55,77 @@ const FeedbackFormContent = ({
     [t],
   );
 
-  const formSchema = z.object({
-    username: z.string().min(2, {
-      message: t("validation.nameMin"),
-    }),
-    phone: z
-      .string()
-      .min(1, { message: t("validation.phoneRequired") })
-      .refine(
-        (value) => {
-          if (!isValidPhoneNumber(value)) return false;
-          // Strict check for Ukraine: +380 XX XXX XX XX is exactly 13 characters
-          if (value.startsWith("+380") && value.length !== 13) return false;
-          return true;
-        },
-        {
-          message: t("validation.phoneInvalid"),
-        },
-      ),
-    email: z.email({
-      message: t("validation.emailInvalid"),
-    }),
-    preferredLanguage: z
-      .string()
-      .refine((v) => ["da", "en", "uk", "ru"].includes(v), {
-        message: t("validation.languageRequired"),
+  const serviceOptions = useMemo(
+    () => [
+      { value: "website", label: t("form.services.website") },
+      { value: "seo", label: t("form.services.seo") },
+      { value: "logo", label: t("form.services.logo") },
+      { value: "google_ads", label: t("form.services.googleAds") },
+      { value: "fb_ads", label: t("form.services.fbAds") },
+      { value: "other", label: t("form.services.other") },
+    ],
+    [t],
+  );
+
+  const formSchema = z
+    .object({
+      username: z.string().min(2, {
+        message: t("validation.nameMin"),
       }),
-    message: z
-      .string()
-      .min(1, {
-        message: t("validation.messageRequired"),
-      })
-      .max(1000, {
+      phone: z
+        .string()
+        .min(1, { message: t("validation.phoneRequired") })
+        .refine(
+          (value) => {
+            if (!isValidPhoneNumber(value)) return false;
+            // Strict check for Ukraine: +380 XX XXX XX XX is exactly 13 characters
+            if (value.startsWith("+380") && value.length !== 13) return false;
+            return true;
+          },
+          {
+            message: t("validation.phoneInvalid"),
+          },
+        ),
+      email: z.email({
+        message: t("validation.emailInvalid"),
+      }),
+      preferredLanguage: z
+        .string()
+        .refine((v) => ["da", "en", "uk", "ru"].includes(v), {
+          message: t("validation.languageRequired"),
+        }),
+      interestedService: z
+        .string()
+        .refine(
+          (v) => (INTERESTED_SERVICE_VALUES as readonly string[]).includes(v),
+          {
+            message: t("validation.serviceRequired"),
+          },
+        ),
+      otherServiceNote: z.string().max(200, {
         message: t("validation.messageMax"),
       }),
-  });
+      message: z
+        .string()
+        .min(1, {
+          message: t("validation.messageRequired"),
+        })
+        .max(1000, {
+          message: t("validation.messageMax"),
+        }),
+    })
+    .superRefine((data, ctx) => {
+      if (
+        data.interestedService === "other" &&
+        data.otherServiceNote.trim().length === 0
+      ) {
+        ctx.addIssue({
+          code: "custom",
+          message: t("validation.otherServiceRequired"),
+          path: ["otherServiceNote"],
+        });
+      }
+    });
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -90,9 +135,23 @@ const FeedbackFormContent = ({
       phone: "",
       email: "",
       preferredLanguage: "",
+      interestedService: "other",
+      otherServiceNote: "",
       message: "",
     },
   });
+
+  const interestedService = useWatch({
+    control: form.control,
+    name: "interestedService",
+  });
+
+  useEffect(() => {
+    if (interestedService !== "other") {
+      form.setValue("otherServiceNote", "");
+      form.clearErrors("otherServiceNote");
+    }
+  }, [interestedService, form]);
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     setSubmissionError(null);
@@ -100,7 +159,14 @@ const FeedbackFormContent = ({
       const languageLabel =
         languageOptions.find((o) => o.value === data.preferredLanguage)
           ?.label ?? data.preferredLanguage;
-      const message = `<b>🔔 Ny anmodning om konsultation</b>\n\n👤 <b>Navn:</b> ${data.username}\n📱 <b>Telefon:</b> <code>${data.phone}</code>\n📧 <b>E-mail:</b> ${data.email}\n🌐 <b>Sprog:</b> ${languageLabel}\n💬 <b>Besked:</b> ${data.message}\n\n<i>🚀 Anmodning fra kontaktformularen</i>`;
+      const serviceLabel =
+        serviceOptions.find((o) => o.value === data.interestedService)?.label ??
+        data.interestedService;
+      const serviceDetail =
+        data.interestedService === "other" && data.otherServiceNote.trim()
+          ? `${serviceLabel}: ${data.otherServiceNote.trim()}`
+          : serviceLabel;
+      const message = `<b>🔔 Ny anmodning om konsultation</b>\n\n👤 <b>Navn:</b> ${data.username}\n📱 <b>Telefon:</b> <code>${data.phone}</code>\n📧 <b>E-mail:</b> ${data.email}\n🌐 <b>Sprog:</b> ${languageLabel}\n🛠 <b>Service:</b> ${serviceDetail}\n💬 <b>Besked:</b> ${data.message}\n\n<i>🚀 Anmodning fra kontaktformularen</i>`;
 
       await sendNotification(message, { parseMode: "HTML" });
 
@@ -194,7 +260,6 @@ const FeedbackFormContent = ({
             </div>
 
             <div className="flex flex-col gap-5 md:flex-row">
-              {" "}
               <FormField
                 control={form.control}
                 name="phone"
@@ -285,6 +350,47 @@ const FeedbackFormContent = ({
                 )}
               />
             </div>
+
+            <FormField
+              control={form.control}
+              name="interestedService"
+              render={({ field }) => (
+                <FormItem>
+                  <p className="mb-2 font-montserrat font-light text-[12px] md:text-[14px] text-white leading-[120%] [@media(max-height:800px)]:text-left">
+                    {t("form.serviceLabel")}
+                  </p>
+                  <FormControl>
+                    <Select
+                      value={field.value}
+                      onValueChange={field.onChange}
+                      options={serviceOptions}
+                      placeholder={t("form.servicePlaceholder")}
+                      triggerClassName="border-white"
+                    />
+                  </FormControl>
+                  <FormMessage className="ml-4" />
+                </FormItem>
+              )}
+            />
+
+            {interestedService === "other" ? (
+              <FormField
+                control={form.control}
+                name="otherServiceNote"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <Input
+                        placeholder={t("form.messagePlaceholder")}
+                        {...field}
+                        className="h-[45px] [@media(max-height:800px)]:h-[46px] md:h-[52px] rounded-[38px] border border-white px-4 font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
+                      />
+                    </FormControl>
+                    <FormMessage className="ml-4" />
+                  </FormItem>
+                )}
+              />
+            ) : null}
 
             <FormField
               control={form.control}

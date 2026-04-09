@@ -236,16 +236,28 @@
         "uk": "Ukrainian",
         "ru": "Russian"
       },
+      "serviceLabel": "Select the service you are interested in",
+      "servicePlaceholder": "Choose a service",
+      "services": {
+        "website": "Website",
+        "seo": "SEO",
+        "logo": "Logo",
+        "googleAds": "Google ADS",
+        "fbAds": "FB ADS",
+        "other": "Other"
+      },
       "submit": "Send Message",
       "loading": "Sending..."
     },
     "validation": {
       "nameMin": "Name must be at least 2 characters",
       "languageRequired": "Please select a language",
+      "serviceRequired": "Please select a service",
       "phoneRequired": "Phone number is required",
       "phoneInvalid": "Invalid phone number",
       "emailInvalid": "Invalid email address",
       "messageRequired": "Message is required",
+      "otherServiceRequired": "Please describe which service you are interested in",
       "messageMax": "Message is too long",
       "submitError": "An error occurred. Please try again later."
     }
