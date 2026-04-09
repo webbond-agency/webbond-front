@@ -135,7 +135,7 @@ const FeedbackFormContent = ({
       phone: "",
       email: "",
       preferredLanguage: "",
-      interestedService: "other",
+      interestedService: "website",
       otherServiceNote: "",
       message: "",
     },
@@ -162,11 +162,10 @@ const FeedbackFormContent = ({
       const serviceLabel =
         serviceOptions.find((o) => o.value === data.interestedService)?.label ??
         data.interestedService;
-      const serviceDetail =
-        data.interestedService === "other" && data.otherServiceNote.trim()
-          ? `${serviceLabel}: ${data.otherServiceNote.trim()}`
-          : serviceLabel;
-      const message = `<b>🔔 Ny anmodning om konsultation</b>\n\n👤 <b>Navn:</b> ${data.username}\n📱 <b>Telefon:</b> <code>${data.phone}</code>\n📧 <b>E-mail:</b> ${data.email}\n🌐 <b>Sprog:</b> ${languageLabel}\n🛠 <b>Service:</b> ${serviceDetail}\n💬 <b>Besked:</b> ${data.message}\n\n<i>🚀 Anmodning fra kontaktformularen</i>`;
+      const otherServiceNoteLine = data.otherServiceNote.trim()
+        ? `\n📝 <b>Andet (præcisering):</b> ${data.otherServiceNote.trim()}`
+        : "";
+      const message = `<b>🔔 Ny anmodning om konsultation</b>\n\n👤 <b>Navn:</b> ${data.username}\n📱 <b>Telefon:</b> <code>${data.phone}</code>\n📧 <b>E-mail:</b> ${data.email}\n🌐 <b>Sprog:</b> ${languageLabel}\n🛠 <b>Service:</b> ${serviceLabel}${otherServiceNoteLine}\n💬 <b>Besked:</b> ${data.message}\n\n<i>🚀 Anmodning fra kontaktformularen</i>`;
 
       await sendNotification(message, { parseMode: "HTML" });
 
