@@ -16,6 +16,7 @@ export default function Webshop() {
       imageAlt="Landing page"
       list={list}
       buttonText={t("button")}
+      href="/websites/webshop"
       subtitle={t("subtitle")}
       variant="left"
     />

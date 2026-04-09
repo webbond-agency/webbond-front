@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Container from "../../ui/container";
 import * as motion from "motion/react-client";
-import GooeyWhiteButton from "../../ui/gooey-white-button";
+import GooeyWhiteLink from "../../ui/gooey-white-link";
 
 interface SiteTypeSectionProps {
   title: string | React.ReactNode;
@@ -10,6 +10,7 @@ interface SiteTypeSectionProps {
   imageAlt: string;
   list: string[];
   buttonText: string;
+  href: string;
   subtitle: string;
   variant: "left" | "right";
 }
@@ -21,6 +22,7 @@ export default function SiteTypeSection({
   imageAlt,
   list,
   buttonText,
+  href,
   subtitle,
   variant = "left",
 }: SiteTypeSectionProps) {
@@ -79,14 +81,14 @@ export default function SiteTypeSection({
           transition={{ duration: 1, delay: 0.6 }}
           className={`flex items-center will-change-opacity transform-gpu ${variant === "left" ? "flex-row-reverse" : "flex-row"}`}
         >
-          <GooeyWhiteButton
+          <GooeyWhiteLink
             text={buttonText}
-            // onClick={() => setIsFeedbackOpen(true)}
+            href={href}
+            linkType="external"
             className="text-center w-full text-[14px] font-montserrat font-light text-black"
             width={313}
             height={52}
           />
-
           <div
             className={`hidden sm:flex flex-1 h-px from-[#FFFFFF] to-[#0A0704] ${variant === "left" ? "bg-linear-to-l" : "bg-linear-to-r"}`}
           ></div>
