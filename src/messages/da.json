@@ -229,15 +229,35 @@
       "phonePlaceholder": "Telefon",
       "emailPlaceholder": "E-mail",
       "messagePlaceholder": "Besked",
+      "languagePlaceholder": "Hvilket sprog foretrækker du at kommunikere på?",
+      "languages": {
+        "da": "Dansk",
+        "en": "Engelsk",
+        "uk": "Ukrainsk",
+        "ru": "Russisk"
+      },
+      "serviceLabel": "Vælg den service, du er interesseret i",
+      "servicePlaceholder": "Vælg service",
+      "services": {
+        "website": "Hjemmeside",
+        "seo": "SEO",
+        "logo": "Logo",
+        "googleAds": "Google ADS",
+        "fbAds": "FB ADS",
+        "other": "Andet"
+      },
       "submit": "Send besked",
       "loading": "Sender..."
     },
     "validation": {
       "nameMin": "Navnet skal være mindst 2 tegn",
+      "languageRequired": "Vælg venligst et sprog",
+      "serviceRequired": "Vælg venligst en service",
       "phoneRequired": "Telefonnummer er påkrævet",
       "phoneInvalid": "Ugyldigt telefonnummer",
       "emailInvalid": "Ugyldig e-mailadresse",
       "messageRequired": "Besked er påkrævet",
+      "otherServiceRequired": "Beskriv venligst hvilken service du er interesseret i",
       "messageMax": "Beskeden er for lang",
       "submitError": "Der opstod en fejl. Prøv venligst igen senere."
     }
