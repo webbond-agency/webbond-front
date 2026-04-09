@@ -1,11 +1,12 @@
-import Image from 'next/image';
-import FooterLogo from './footer-logo';
-import ContactsDesktop from '../contacts/contacts-desktop';
+import Image from "next/image";
+import FooterLogo from "./footer-logo";
+import ContactsDesktop from "../contacts/contacts-desktop";
+import Container from "../ui/container";
 
 const Footer = () => {
   return (
-    <footer className="pb-[20px] sm:pb-[40px] md:pb-[30px] overflow-y-clip md:max-w-[1340px] md:mx-auto md:px-[32px]">
-      <div className="px-[20px] sm:px-[40px] md:px-0 md:pt-0 ">
+    <footer className="pb-[20px] sm:pb-[40px] md:pb-[30px] overflow-y-clip">
+      <Container className=" md:pt-0 ">
         <div className="w-full h-px bg-linear-to-r from-white via-white to-[#686868] mb-[32px] md:mb-[41px] " />
         <ContactsDesktop />
 
@@ -40,7 +41,7 @@ const Footer = () => {
             className="absolute left-[20px] bottom-[20px] mt-auto object-cover opacity-60 mix-blend-overlay pointer-events-none z-20 md:w-[670px] lg:w-[920px] xl:w-[1162px] h-auto"
           />
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };
