@@ -84,7 +84,9 @@ export default function PriceCard({
         </div>
         <div
           className={`relative z-20 mt-6 lg:mt-8 ${
-            fullWidth ? "md:flex md:justify-end" : ""
+            fullWidth
+              ? "md:flex md:justify-end w-full md:w-[312px] lg:w-[400px] xl:w-[526px] ml-auto"
+              : ""
           }`}
         >
           <GooeyWhiteLink
