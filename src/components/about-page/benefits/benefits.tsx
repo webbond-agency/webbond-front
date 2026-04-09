@@ -68,7 +68,7 @@ export default function Benefits() {
         >
           <OrderModal buttonText={t("button")} />
           <div
-            className={`hidden sm:flex flex-1 h-px from-[#FFFFFF] to-[#0A0704] bg-linear-to-r`}
+            className={`hidden sm:flex flex-1 h-px from-[#FFFFFF] to-[#0A0704] bg-linear-to-r opacity-32`}
           ></div>
         </motion.div>
       </Container>
