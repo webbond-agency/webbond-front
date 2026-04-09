@@ -229,11 +229,19 @@
       "phonePlaceholder": "Phone",
       "emailPlaceholder": "E-mail",
       "messagePlaceholder": "Message",
+      "languagePlaceholder": "Which language do you prefer to communicate in?",
+      "languages": {
+        "da": "Danish",
+        "en": "English",
+        "uk": "Ukrainian",
+        "ru": "Russian"
+      },
       "submit": "Send Message",
       "loading": "Sending..."
     },
     "validation": {
       "nameMin": "Name must be at least 2 characters",
+      "languageRequired": "Please select a language",
       "phoneRequired": "Phone number is required",
       "phoneInvalid": "Invalid phone number",
       "emailInvalid": "Invalid email address",

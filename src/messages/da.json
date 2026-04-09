@@ -229,11 +229,19 @@
       "phonePlaceholder": "Telefon",
       "emailPlaceholder": "E-mail",
       "messagePlaceholder": "Besked",
+      "languagePlaceholder": "Hvilket sprog foretrækker du at kommunikere på?",
+      "languages": {
+        "da": "Dansk",
+        "en": "Engelsk",
+        "uk": "Ukrainsk",
+        "ru": "Russisk"
+      },
       "submit": "Send besked",
       "loading": "Sender..."
     },
     "validation": {
       "nameMin": "Navnet skal være mindst 2 tegn",
+      "languageRequired": "Vælg venligst et sprog",
       "phoneRequired": "Telefonnummer er påkrævet",
       "phoneInvalid": "Ugyldigt telefonnummer",
       "emailInvalid": "Ugyldig e-mailadresse",

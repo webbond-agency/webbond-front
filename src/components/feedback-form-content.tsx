@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { Input } from "@/components/ui/input";
+import { Select } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import {
   Form,
@@ -13,11 +14,11 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import SuccessModal from "./success-modal";
-import { ChevronDown, Loader2 } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { m } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { sendNotification } from "@/app/actions/telegram-action";
@@ -34,6 +35,16 @@ const FeedbackFormContent = ({
 }: FeedbackFormContentProps) => {
   const [submissionError, setSubmissionError] = useState<string | null>(null);
   const t = useTranslations("FeedbackModal");
+
+  const languageOptions = useMemo(
+    () => [
+      { value: "da", label: t("form.languages.da") },
+      { value: "en", label: t("form.languages.en") },
+      { value: "uk", label: t("form.languages.uk") },
+      { value: "ru", label: t("form.languages.ru") },
+    ],
+    [t],
+  );
 
   const formSchema = z.object({
     username: z.string().min(2, {
@@ -56,6 +67,11 @@ const FeedbackFormContent = ({
     email: z.email({
       message: t("validation.emailInvalid"),
     }),
+    preferredLanguage: z
+      .string()
+      .refine((v) => ["da", "en", "uk", "ru"].includes(v), {
+        message: t("validation.languageRequired"),
+      }),
     message: z
       .string()
       .min(1, {
@@ -73,6 +89,7 @@ const FeedbackFormContent = ({
       username: "",
       phone: "",
       email: "",
+      preferredLanguage: "",
       message: "",
     },
   });
@@ -80,7 +97,10 @@ const FeedbackFormContent = ({
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     setSubmissionError(null);
     try {
-      const message = `<b>🔔 Ny anmodning om konsultation</b>\n\n👤 <b>Navn:</b> ${data.username}\n📱 <b>Telefon:</b> <code>${data.phone}</code>\n📧 <b>E-mail:</b> ${data.email}\n💬 <b>Besked:</b> ${data.message}\n\n<i>🚀 Anmodning fra kontaktformularen</i>`;
+      const languageLabel =
+        languageOptions.find((o) => o.value === data.preferredLanguage)
+          ?.label ?? data.preferredLanguage;
+      const message = `<b>🔔 Ny anmodning om konsultation</b>\n\n👤 <b>Navn:</b> ${data.username}\n📱 <b>Telefon:</b> <code>${data.phone}</code>\n📧 <b>E-mail:</b> ${data.email}\n🌐 <b>Sprog:</b> ${languageLabel}\n💬 <b>Besked:</b> ${data.message}\n\n<i>🚀 Anmodning fra kontaktformularen</i>`;
 
       await sendNotification(message, { parseMode: "HTML" });
 
@@ -148,7 +168,7 @@ const FeedbackFormContent = ({
                       <Input
                         placeholder={t("form.namePlaceholder")}
                         {...field}
-                        className="h-[45px] [@media(max-height:800px)]:h-[46px] md:h-[52px] rounded-[38px] border border-white px-4 font-montserrat text-[16px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
+                        className="h-[45px] [@media(max-height:800px)]:h-[46px] md:h-[52px] rounded-[38px] border border-white px-4 font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
                       />
                     </FormControl>
                     <FormMessage className="ml-4" />
@@ -164,7 +184,100 @@ const FeedbackFormContent = ({
                       <Input
                         placeholder={t("form.emailPlaceholder")}
                         {...field}
-                        className="h-[45px] [@media(max-height:800px)]:h-[46px] md:h-[52px] rounded-[38px] border border-white px-4 font-montserrat text-[16px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
+                        className="h-[45px] [@media(max-height:800px)]:h-[46px] md:h-[52px] rounded-[38px] border border-white px-4 font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
+                      />
+                    </FormControl>
+                    <FormMessage className="ml-4" />
+                  </FormItem>
+                )}
+              />
+            </div>
+
+            <div className="flex flex-col gap-5 md:flex-row">
+              {" "}
+              <FormField
+                control={form.control}
+                name="phone"
+                render={({ field }) => (
+                  <FormItem className="md:w-[calc(50%-10px)]">
+                    <FormControl>
+                      <div
+                        className={cn(
+                          "relative flex items-center h-[45px] [@media(max-height:800px)]:h-[46px] md:h-[52px] rounded-[38px] border bg-transparent transition-colors overflow-hidden",
+                          form.formState.errors.phone
+                            ? "border-red-500"
+                            : "border-white",
+                        )}
+                      >
+                        <PhoneInput
+                          placeholder="+45"
+                          defaultCountry="DK"
+                          countries={[
+                            "DK",
+                            "UA",
+                            "PL",
+                            "DE",
+                            "FR",
+                            "IT",
+                            "ES",
+                            "RO",
+                            "MD",
+                            "SK",
+                            "HU",
+                            "AT",
+                            "BE",
+                            "BG",
+                            "CY",
+                            "CZ",
+                            "EE",
+                            "FI",
+                            "GR",
+                            "IE",
+                            "LT",
+                            "LU",
+                            "MT",
+                            "NL",
+                            "PT",
+                            "SE",
+                            "SI",
+                            "NO",
+                            "CH",
+                            "GB",
+                            "US",
+                          ]}
+                          international
+                          withCountryCallingCode
+                          limitMaxLength={true}
+                          value={field.value}
+                          onChange={field.onChange}
+                          className="flex h-full w-full items-center font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white/50 
+                            [&>input]:h-full [&>input]:border-none [&>input]:bg-transparent [&>input]:outline-none [&>input]:placeholder:text-white/50 [&>input]:px-4
+                            [&_select]:appearance-none
+                            [&_.PhoneInputCountry]:flex [&_.PhoneInputCountry]:items-center [&_.PhoneInputCountry]:h-full [&_.PhoneInputCountry]:pl-4 [&_.PhoneInputCountry]:pr-[40px] [&_.PhoneInputCountry]:border-r [&_.PhoneInputCountry]:border-white/20 [&_.PhoneInputCountry]:gap-[10px]
+                            [&_.PhoneInputCountryIcon]:w-[32px]! [&_.PhoneInputCountryIcon]:h-[24px]! [&_.PhoneInputCountryIcon]:shadow-none! 
+                            [&_.PhoneInputCountrySelectArrow]:hidden! [&_.PhoneInputCountrySelectArrow]:opacity-0!"
+                        />
+                        <div className="absolute left-[58px] pointer-events-none">
+                          <ChevronDown className="w-6 h-6 text-white" />
+                        </div>
+                      </div>
+                    </FormControl>
+                    <FormMessage className="ml-4" />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="preferredLanguage"
+                render={({ field }) => (
+                  <FormItem className="md:w-[calc(50%-10px)]">
+                    <FormControl>
+                      <Select
+                        value={field.value}
+                        onValueChange={field.onChange}
+                        options={languageOptions}
+                        placeholder={t("form.languagePlaceholder")}
+                        triggerClassName="border-white"
                       />
                     </FormControl>
                     <FormMessage className="ml-4" />
@@ -175,78 +288,6 @@ const FeedbackFormContent = ({
 
             <FormField
               control={form.control}
-              name="phone"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <div
-                      className={cn(
-                        "relative flex items-center h-[45px] [@media(max-height:800px)]:h-[46px] md:h-[52px] rounded-[38px] border bg-transparent transition-colors overflow-hidden",
-                        form.formState.errors.phone
-                          ? "border-red-500"
-                          : "border-white",
-                      )}
-                    >
-                      <PhoneInput
-                        placeholder="+45"
-                        defaultCountry="DK"
-                        countries={[
-                          "DK",
-                          "UA",
-                          "PL",
-                          "DE",
-                          "FR",
-                          "IT",
-                          "ES",
-                          "RO",
-                          "MD",
-                          "SK",
-                          "HU",
-                          "AT",
-                          "BE",
-                          "BG",
-                          "CY",
-                          "CZ",
-                          "EE",
-                          "FI",
-                          "GR",
-                          "IE",
-                          "LT",
-                          "LU",
-                          "MT",
-                          "NL",
-                          "PT",
-                          "SE",
-                          "SI",
-                          "NO",
-                          "CH",
-                          "GB",
-                          "US",
-                        ]}
-                        international
-                        withCountryCallingCode
-                        limitMaxLength={true}
-                        value={field.value}
-                        onChange={field.onChange}
-                        className="flex h-full w-full items-center font-montserrat text-[16px] text-white placeholder:text-white/50 
-                            [&>input]:h-full [&>input]:border-none [&>input]:bg-transparent [&>input]:outline-none [&>input]:placeholder:text-white/50 [&>input]:px-4
-                            [&_select]:appearance-none
-                            [&_.PhoneInputCountry]:flex [&_.PhoneInputCountry]:items-center [&_.PhoneInputCountry]:h-full [&_.PhoneInputCountry]:pl-4 [&_.PhoneInputCountry]:pr-[40px] [&_.PhoneInputCountry]:border-r [&_.PhoneInputCountry]:border-white/20 [&_.PhoneInputCountry]:gap-[10px]
-                            [&_.PhoneInputCountryIcon]:w-[32px]! [&_.PhoneInputCountryIcon]:h-[24px]! [&_.PhoneInputCountryIcon]:shadow-none! 
-                            [&_.PhoneInputCountrySelectArrow]:hidden! [&_.PhoneInputCountrySelectArrow]:opacity-0!"
-                      />
-                      <div className="absolute left-[58px] pointer-events-none">
-                        <ChevronDown className="w-6 h-6 text-white" />
-                      </div>
-                    </div>
-                  </FormControl>
-                  <FormMessage className="ml-4" />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
               name="message"
               render={({ field }) => (
                 <FormItem>
@@ -254,7 +295,7 @@ const FeedbackFormContent = ({
                     <Textarea
                       placeholder={t("form.messagePlaceholder")}
                       {...field}
-                      className="h-[100px] [@media(max-height:800px)]:h-[90px] lg:h-[128px] rounded-[18px] border border-white px-4 py-3 font-montserrat text-[16px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
+                      className="h-[100px] [@media(max-height:800px)]:h-[90px] lg:h-[128px] rounded-[18px] border border-white px-4 py-3 font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
                     />
                   </FormControl>
                   <FormMessage className="ml-4" />
