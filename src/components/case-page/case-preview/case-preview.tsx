@@ -4,6 +4,7 @@ import { CaseWithLanguage } from "@/types/case";
 import Image from "next/image";
 import { urlForImage } from "@/lib/sanityClient";
 import GooeyWhiteLink from "@/components/ui/gooey-white-link";
+import Container from "@/components/ui/container";
 
 const CasePreview = ({
   imageBlock,
@@ -50,7 +51,7 @@ const CasePreview = ({
     "Case image";
 
   return (
-    <div className="relative px-5 sm:px-8">
+    <Container className="relative">
       <>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -97,12 +98,13 @@ const CasePreview = ({
           text={imageBlock?.button.text || "Open website"}
           href={imageBlock?.button.link || "/"}
           target="_blank"
+          centerText
           className="relative z-30 text-center w-full sm:max-w-[350px] lg:w-[236px] h-[48px] lg:h-[52px] text-[14px] font-montserrat font-light text-black"
         />
 
         <div className="hidden sm:flex flex-1 h-px bg-linear-to-r from-[#FFFFFF] to-[#0A0704]"></div>
       </motion.div>
-    </div>
+    </Container>
   );
 };
 

@@ -64,7 +64,7 @@
     "title": "<gray>Choose a website,</gray> that works for your business",
     "subtitle": "Landing pages, websites or webshops — a tool that attracts customers, increases earnings and frees up time to develop your business",
     "buttonOrder": "Order your website",
-    "buttonStart": "Start cooperation",
+    "buttonStart": "Order your website",
     "types": {
       "landingpage": {
         "label": "LANDING PAGE",
@@ -163,7 +163,7 @@
     "cvr": "CVR:44894181",
     "city": "Copenhagen",
     "email": "Email: info@webbond.dk",
-    "button": "Contact Us"
+    "button": "Read our blog"
   },
   "Questions": {
     "title": "Questions and answers",
@@ -229,15 +229,35 @@
       "phonePlaceholder": "Phone",
       "emailPlaceholder": "E-mail",
       "messagePlaceholder": "Message",
+      "languagePlaceholder": "Which language do you prefer to communicate in?",
+      "languages": {
+        "da": "Danish",
+        "en": "English",
+        "uk": "Ukrainian",
+        "ru": "Russian"
+      },
+      "serviceLabel": "Select the service you are interested in",
+      "servicePlaceholder": "Choose a service",
+      "services": {
+        "website": "Website",
+        "seo": "SEO",
+        "logo": "Logo",
+        "googleAds": "Google ADS",
+        "fbAds": "FB ADS",
+        "other": "Other"
+      },
       "submit": "Send Message",
       "loading": "Sending..."
     },
     "validation": {
       "nameMin": "Name must be at least 2 characters",
+      "languageRequired": "Please select a language",
+      "serviceRequired": "Please select a service",
       "phoneRequired": "Phone number is required",
       "phoneInvalid": "Invalid phone number",
       "emailInvalid": "Invalid email address",
       "messageRequired": "Message is required",
+      "otherServiceRequired": "Please describe which service you are interested in",
       "messageMax": "Message is too long",
       "submitError": "An error occurred. Please try again later."
     }
@@ -261,6 +281,924 @@
 
   "Breadcrumbs": {
     "home": "Home",
-    "cases": "Cases"
+    "cases": "Cases",
+    "websites": "Websites",
+    "landing": "Landing pages",
+    "multipage": "Website",
+    "webshop": "Webshop",
+    "about": "About us",
+    "blog": "Blog",
+    "price": "Prices"
+  },
+
+  "WebSitesPage": {
+    "Hero": {
+      "title": "Websites that generate sales, not just traffic",
+      "description": "We help business owners transform their websites into sales tools and lead generation. Clean code, fast performance, strong marketing structure, SEO-ready and full automation from inquiries to payment.",
+      "button": "Order your website"
+    },
+    "Landing": {
+      "title": "<gray>Landing pages –</gray> fast conversion of visitors into customers",
+      "description": "We design and develop unique landing pages in pure code with a focus on sales and lead generation. Marketing structure, target audience analysis, and conversion optimization are included.",
+      "listOne": "Fast launch and lead capture",
+      "listTwo": "Easy management via an admin panel without developer dependency",
+      "listThree": "Design and functionality that maximize sales",
+      "listFour": "You only pay for the domain after launch",
+      "button": "Choose a landing page package",
+      "subtitle": "Benefits for your business"
+    },
+    "Multipage": {
+      "title": "<gray>Websites –</gray> greater opportunities for conversion",
+      "description": "We create user-friendly multi-page websites that help your business grow online. Clean code, flexible features, and an admin panel ensure independence and scalability.",
+      "listOne": "More touchpoints = higher lead generation",
+      "listTwo": "Independence from developers through an admin panel",
+      "listThree": "Option for future SEO and expanding pages",
+      "listFour": "Optimized structure and marketing focus for conversion",
+      "listFive": "Ready to scale and grow",
+      "button": "Choose a website package",
+      "subtitle": "Benefits for your business"
+    },
+    "Webshop": {
+      "title": "<gray>E-commerce –</gray> automated sales directly from your website",
+      "description": "We develop e-commerce solutions that convert visitors into customers. Integration of payment systems, product catalogs, inventory management, personalized email messages, and full automation of the sales process.",
+      "listOne": "Automated sales from the first visit",
+      "listTwo": "Higher conversion through personalized customer experiences",
+      "listThree": "Full control and independence via an admin panel",
+      "listFour": "A scalable solution for a growing business",
+      "button": "Choose an e-commerce package",
+      "subtitle": "Benefits for your business"
+    },
+    "Questions": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "q1": {
+        "question": "What does a professional website cost?",
+        "answer": "Development of basic websites starts from 37,500 DKK (€5,000), premium from 60,000 DKK (€8,000)."
+      },
+      "q2": {
+        "question": "How long does development take?",
+        "answer": "Typically 30–60 business days, depending on the number of pages and features."
+      },
+      "q3": {
+        "question": "Can I change content without a developer?",
+        "answer": "90% of changes can be handled directly via the admin panel."
+      },
+      "q4": {
+        "question": "Do you offer a warranty?",
+        "answer": "We provide a warranty for all our sites."
+      },
+      "q5": {
+        "question": "Is design included?",
+        "answer": "Yes, design is included in all packages."
+      }
+    },
+    "Cta": {
+      "title": "Ready to get your website?",
+      "description": "With our e-commerce solutions we integrate payment, product catalogs and personalized email marketing to automate the entire sales funnel. Everything is scalable, multilingual and optimized for business growth.",
+      "button": "Order your website"
+    }
+  },
+
+  "LandingPage": {
+    "Hero": {
+      "title": "Landing pages that convert",
+      "description": "Focused design that delivers results",
+      "subtitle": "Benefits of a landing page",
+      "button": "Get a quote",
+      "listTitleOne": "Fast results",
+      "listDescriptionOne": "Design that drives conversions",
+      "listTitleTwo": "Maximum conversion",
+      "listDescriptionTwo": "A focus on one action helps the user make decisions quickly.",
+      "listTitleThree": "Effective advertising",
+      "listDescriptionThree": "Perfect for ad campaigns on Google, Facebook, Instagram, and TikTok."
+    },
+    "Packages": {
+      "title": "<gray>Choose the right</gray> solution for your project",
+      "description": "We offer fixed packages with clearly defined content, so you know exactly what you get – with no hidden costs.",
+      "pdv": "*VAT is not included in the price",
+      "listOne": {
+        "title": "Basic package",
+        "subtitleOne": "What the package includes:",
+        "listOne": {
+          "itemOne": "Unique design with 6–8 blocks in pure code",
+          "itemTwo": "Basic SEO",
+          "itemThree": "Integration with e-mail or Telegram bot for receiving inquiries",
+          "itemFour": "Fully responsive for all devices",
+          "itemFive": "Speed optimization and basic analytics"
+        },
+        "subtitleTwo": "Benefit for the client:",
+        "listTwo": {
+          "itemOne": "Fast launch and collection of leads or sales of one product",
+          "itemTwo": "Easy management via admin panel without dependency on developers",
+          "itemThree": "Payment only for the domain after launch"
+        }
+      },
+      "listTwo": {
+        "title": "Premium package",
+        "subtitleOne": "What the package includes:",
+        "listOne": {
+          "itemOne": "Everything from the basic package",
+          "itemTwo": "Setup of e-mail marketing with personalized emails and receipts",
+          "itemThree": "Integration of payment systems, calendar/booking, CRM, and Google reviews",
+          "itemFour": "Advanced animations and interactive elements, custom development of blocks for your product or service",
+          "itemFive": "Advanced SEO for better visibility on Google",
+          "itemSix": "Analytics setup"
+        },
+        "subtitleTwo": "Benefit for the client:",
+        "listTwo": {
+          "itemOne": "Comprehensive sales tool",
+          "itemTwo": "Maximum conversion of visitors into customers",
+          "itemThree": "Automation of communication and payments",
+          "itemFour": "Ready for scaling the business and increasing sales"
+        }
+      },
+      "button": "Order a landing page",
+      "price": "*The price may vary up or down depending on your individual needs"
+    },
+    "Cases": {
+      "title": "<gray>Landing pages,</gray> that helped our clients sell"
+    },
+    "Services": {
+      "title": "What are our landing pages made of?",
+      "description": "We create tailored landing pages that combine design, development, marketing, and SEO, so your customers get the best experience and your campaigns convert.",
+      "listTitleOne": "Design",
+      "listDescriptionOne": "We create unique, sales-ready designs that capture your customers' attention.",
+      "listTitleTwo": "Development",
+      "listDescriptionTwo": "Landing pages are built with clean code, ensuring fast and stable pages without platform dependencies.",
+      "listTitleThree": "Marketing",
+      "listDescriptionThree": "We build the marketing structure so your campaigns convert as effectively as possible.",
+      "listTitleFour": "SEO",
+      "listDescriptionFour": "Landing pages are optimized for search engines so your customers can find you.",
+      "listTitleFive": "Full admin access",
+      "listDescriptionFive": "You can update content, prices, and changes yourself without contacting developers.",
+      "listTitleSix": "Fast development",
+      "listDescriptionSix": "We deliver finished landing pages within 2 weeks, fully responsive with animations and multilingual versions.",
+      "listTitleSeven": "Integrations",
+      "listDescriptionSeven": "We integrate payment methods like Stripe, MobilePay, email marketing, and contact forms."
+    },
+    "Order": {
+      "button": "Order a landing page"
+    },
+    "Questions": {
+      "title": "QUESTIONS AND ANSWERS",
+      "seeMore": "See other questions",
+      "q1": {
+        "question": "What does a landing page cost?",
+        "answer": "The price of a landing page starts from 18,750 DKK (€2,500)."
+      },
+      "q2": {
+        "question": "Is design paid separately?",
+        "answer": "No, payment is all-inclusive — development with design and all elements are included."
+      },
+      "q3": {
+        "question": "Do you offer installment payments?",
+        "answer": "Yes, payment can be split 50/50."
+      },
+      "q4": {
+        "question": "Do you help with the texts?",
+        "answer": "Yes, we help write texts for your landing page."
+      },
+      "q5": {
+        "question": "Do I have to pay extra to maintain the page?",
+        "answer": "No, to maintain the page you only pay for the domain."
+      },
+      "q6": {
+        "question": "What is a domain?",
+        "answer": "A domain is the name of your website."
+      },
+      "q7": {
+        "question": "Can I make changes myself without developers?",
+        "answer": "Yes, you can change the content yourself via the admin panel, which you can access from your phone."
+      },
+      "q8": {
+        "question": "Can I sell one product through the landing page?",
+        "answer": "Yes, you can."
+      },
+      "q9": {
+        "question": "Which payment systems do you use?",
+        "answer": "We can connect the payment systems you need — Stripe, MobilePay, and others."
+      },
+      "q10": {
+        "question": "Do you set up email marketing?",
+        "answer": "Yes, we set up complete email marketing for you and your customers."
+      },
+      "q11": {
+        "question": "How long does development of the landing page take?",
+        "answer": "From 7 days up to 2 weeks."
+      },
+      "q12": {
+        "question": "Is the landing page mobile-friendly?",
+        "answer": "Yes, fully responsive on all devices."
+      },
+      "q13": {
+        "question": "Can I get animations or interactive elements?",
+        "answer": "Yes, we integrate modern animations and interactive elements."
+      },
+      "q14": {
+        "question": "Can I change the languages on the page?",
+        "answer": "Yes, multilingual versions are available."
+      }
+    },
+    "Cta": {
+      "title": "Ready to get your landing page?",
+      "description": "Contact us today, and let us create a landing page that boosts your results",
+      "button": "Order a landing page"
+    }
+  },
+
+  "MultiPagePage": {
+    "Hero": {
+      "title": "Professional multi-page websites",
+      "description": "We create user-friendly multi-page websites that help your business grow online",
+      "subtitle": "Benefits of a professional website",
+      "button": "Get a quote",
+      "listTitleOne": "Detailed presentation of services",
+      "listDescriptionOne": "Present all your products and services on separate pages, so your customers can easily find information.",
+      "listTitleTwo": "SEO and visibility",
+      "listDescriptionTwo": "Faster Google rankings and better visibility, so your website works for you and saves money on advertising.",
+      "listTitleThree": "Integrations and features",
+      "listDescriptionThree": "Easy integration of email, payment methods, calculators, and other tools that make your website complete and practical."
+    },
+    "Packages": {
+      "title": "<gray>CHOOSE THE RIGHT</gray>",
+      "description": "Two clear packages — you know exactly what your company gets and what benefits come with it.",
+      "pdv": "*VAT is not included in the price",
+      "listOne": {
+        "title": "Basic package",
+        "subtitleOne": "What the company gets:",
+        "listOne": {
+          "itemOne": "Unique design for each page that highlights the brand and target audience.",
+          "itemTwo": "5–7 pages with room for a detailed presentation of products and services.",
+          "itemThree": "Clean code for fast loading and stability, independent of platforms.",
+          "itemFour": "Responsive design for all devices and multilingual support.",
+          "itemFive": "Admin panel with full access: 90% of changes can be made on your own without a developer.",
+          "itemSix": "Image optimization for fast loading.",
+          "itemSeven": "Integration of basic contact forms and basic analytics.",
+          "itemEight": "Warranty on the website after launch."
+        },
+        "subtitleTwo": "Benefits for the company:",
+        "listTwo": {
+          "itemOne": "The website works as a sales tool thanks to the detailed page structure.",
+          "itemTwo": "More pages = more entry points on Google = more customers.",
+          "itemThree": "Independence from developers – changes can easily be made via the admin panel.",
+          "itemFour": "Clean code and marketing structure increase conversion and efficiency."
+        }
+      },
+      "listTwo": {
+        "title": "Premium package",
+        "subtitleOne": "What the company gets:",
+        "listOne": {
+          "itemOne": "Everything from the basic package, plus:",
+          "itemTwo": "10+ pages with extra blocks for products, services, and integrations.",
+          "itemThree": "Connection and setup of SEO for top rankings on Google.",
+          "itemFour": "Integration of e-mail marketing with personalized emails and receipts after purchase.",
+          "itemFive": "Integration of payment systems, CRM, calendars/bookings, and Google reviews for full automation.",
+          "itemSix": "Custom-developed blocks, advanced animations, and interactive elements.",
+          "itemSeven": "Multilingual support and technical internal linking for SEO.",
+          "itemEight": "Admin panel with full control – 90% of editing can be done without a developer.",
+          "itemNine": "Warranty on the website after launch."
+        },
+        "subtitleTwo": "Benefits for the company:",
+        "listTwo": {
+          "itemOne": "A complete sales tool – from inquiry to automatic processing and payment.",
+          "itemTwo": "Maximum conversion thanks to marketing structure and SEO optimization.",
+          "itemThree": "Independence and control – the company manages content and processes itself.",
+          "itemFour": "More pages = more Google entry points = more customers and sales.",
+          "itemFive": "Guarantee of stable operation and professional support."
+        }
+      },
+      "button": "Order your website",
+      "price": "*The price may vary up or down depending on your individual needs"
+    },
+    "Cases": {
+      "title": "<gray>Websites,</gray> that have helped our clients"
+    },
+    "Services": {
+      "title": "What do our websites include?",
+      "description": "We develop complete websites with great design, flexible features, booking systems, contact forms, and integrated tools, so your business can grow online and be managed easily.",
+      "listTitleOne": "Design",
+      "listDescriptionOne": "Individual design for each page that matches your brand and target audience.",
+      "listTitleTwo": "Development",
+      "listDescriptionTwo": "Clean and flexible code ensures fast updates, stability, and quick loading.",
+      "listTitleThree": "SEO and marketing",
+      "listDescriptionThree": "Optimized for search engines and integrated with marketing tools such as email and social media.",
+      "listTitleFour": "Integrations",
+      "listDescriptionFour": "Email marketing, payment methods, calculators, booking systems, contact forms, and all required analytics tools can be tailored to your needs.",
+      "listTitleFive": "Administration",
+      "listDescriptionFive": "Full access to update content, prices, and pages without help from developers.",
+      "listTitleSix": "Fast delivery and responsive design",
+      "listDescriptionSix": "Websites are delivered quickly, with responsive design for all devices and multilingual versions."
+    },
+    "Order": {
+      "button": "Order your website now"
+    },
+    "Questions": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "seeMore": "See other questions",
+      "q1": {
+        "question": "What does it cost to develop a website?",
+        "answer": "Development of a complete website starts from approx. 37,500 DKK (€5,000) and includes design, SEO, marketing structure, all integrations, admin panel and warranty – everything is delivered turnkey."
+      },
+      "q2": {
+        "question": "How long does development take?",
+        "answer": "Depends on the number of pages; typically between 30 and 60 business days or more."
+      },
+      "q3": {
+        "question": "Do you offer a warranty on your services?",
+        "answer": "Yes, payment can be split 50/50."
+      },
+      "q4": {
+        "question": "What does it cost to maintain the website after launch?",
+        "answer": "After launch you only pay for the domain."
+      },
+      "q5": {
+        "question": "Do I need to involve developers if I want to change something?",
+        "answer": "90% of changes you can make yourself through the admin panel we develop for you."
+      },
+      "q6": {
+        "question": "Can I receive inquiries from the website on my email?",
+        "answer": "Yes, all inquiries are sent directly to your email."
+      },
+      "q7": {
+        "question": "Can I get to the top of Google with this website?",
+        "answer": "With complete SEO and a multi-page website, it is possible to achieve high rankings in search results."
+      },
+      "q8": {
+        "question": "Do you offer help with text, images and other content?",
+        "answer": "Yes, we help with text, images and other relevant content."
+      },
+      "q9": {
+        "question": "Can we meet offline?",
+        "answer": "Yes, if you are located in Copenhagen or other parts of Denmark, it is possible."
+      },
+      "q10": {
+        "question": "Do you integrate booking systems?",
+        "answer": "Yes, we set up complete email marketing for you and your customers."
+      },
+      "q11": {
+        "question": "Do you offer a contract?",
+        "answer": "Yes, we draw up a contract for all our customers."
+      },
+      "q12": {
+        "question": "Is design included in the price?",
+        "answer": "Yes, design is included in the price as part of the complete package."
+      }
+    },
+    "Cta": {
+      "title": "Ready to get your website?",
+      "description": "Contact us today and get a professional website",
+      "button": "Order a Website"
+    }
+  },
+
+  "WebshopPage": {
+    "Hero": {
+      "title": "A webshop that sells 24/7 without a sales department",
+      "description": "You get neither a template nor a platform, but a webshop developed in pure code with full control through an admin panel. This is an investment in automated sales — not an expense. All processes are automated from order to payment.",
+      "subtitle": "Benefits of a webshop",
+      "button": "Order your webshop",
+      "listTitleOne": "Full ownership and control",
+      "listDescriptionOne": "Own your webshop completely and do not depend on platforms or developers.",
+      "listTitleTwo": "Process automation",
+      "listDescriptionTwo": "Automated processes handle everything from orders to payments.",
+      "listTitleThree": "Growth and scaling",
+      "listDescriptionThree": "Create growth and more sales without extra staff or time spent on administration."
+    },
+    "Packages": {
+      "title": "<gray>CHOOSE THE RIGHT</gray>",
+      "description": "One complete premium package with everything you need for an automated webshop that sells around the clock.",
+      "pdv": "*VAT is not included in the price",
+      "cardTitle": "Premium webshop",
+      "subtitleIncluded": "What is included:",
+      "included": {
+        "itemOne": "Automated order processing and sales flow",
+        "itemTwo": "Full admin panel for products, categories, and descriptions",
+        "itemThree": "Unique design based on target audience analysis",
+        "itemFour": "Full marketing structure and SEO optimization",
+        "itemFive": "Multilingual webshop",
+        "itemSix": "Integration with CRM and payment systems",
+        "itemSeven": "E-mail marketing and automated campaigns",
+        "itemEight": "Advanced sales and user analytics",
+        "itemNine": "High performance and loading time optimization",
+        "itemTen": "Security and backup",
+        "itemEleven": "Training and support for the owner",
+        "itemTwelve": "Payment only for the domain"
+      },
+      "subtitleBenefits": "Benefits for your business:",
+      "benefits": {
+        "itemOne": "Sells 24/7 without the need for an extra sales department",
+        "itemTwo": "Automated processes from order to payment",
+        "itemThree": "Full ownership and control over the webshop",
+        "itemFour": "Scalable and flexible structure",
+        "itemFive": "Maximizing conversions and sales"
+      },
+      "button": "Order webshop",
+      "price": "*The price may vary up or down depending on your individual needs"
+    },
+    "Cases": {
+      "title": "<gray>Webshops</gray> from our customers that generate revenue 24/7"
+    },
+    "Services": {
+      "title": "What do our webshops include?",
+      "description": "We develop advanced webshops as complete sales platforms — designed for automated processes, high conversion, and full control for the business owner. The webshop works 24/7 and does not require an extra sales or support team.",
+      "listTitleOne": "Product and content management",
+      "listDescriptionOne": "The owner can manage products, prices, categories, and campaigns via the admin panel — without extra fees or developers.",
+      "listTitleTwo": "Automated sales flow",
+      "listDescriptionTwo": "A fully automated process from order and payment to confirmation emails and stock status — without manual handling.",
+      "listTitleThree": "CRM, payments & integrations",
+      "listDescriptionThree": "Integration with CRM systems, payment solutions, email marketing, and analytics for full business control.",
+      "listTitleFour": "Design & user experience",
+      "listDescriptionFour": "Unique design based on target audience analysis, customer journey, and buying psychology for maximum trust and sales.",
+      "listTitleFive": "Technical development",
+      "listDescriptionFive": "The webshop is built in clean, scalable code with high performance, fast loading, and stable operation without unnecessary errors or platform lock-in.",
+      "listTitleSix": "Scaling & growth",
+      "listDescriptionSix": "The webshop is ready to grow: more products, markets, languages, and integrations without technical limitations.",
+      "listTitleSeven": "Ownership & warranty",
+      "listDescriptionSeven": "You own the webshop 100% from day one, with no subscriptions or vendor lock-in. We provide a warranty for the solution's stability and functionality."
+    },
+    "Order": {
+      "button": "Order webshop"
+    },
+    "Questions": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "seeMore": "See other questions",
+      "q1": {
+        "question": "What does a webshop cost?",
+        "answer": "The price starts from 75,000 DKK (€10,000) (incl. SEO) *VAT is not included in the price. The final price depends on the number of products, categories, integrations and functionality. More complex webshops can cost more."
+      },
+      "q2": {
+        "question": "How long does development of a webshop take?",
+        "answer": "Development typically takes 30–60 business days. The timeframe depends on the project's complexity, the number of products and specific business requirements."
+      },
+      "q3": {
+        "question": "Do I have to pay continuously after launch?",
+        "answer": "No. After launch you only pay for the domain. There are no fixed monthly payments to platforms or developers."
+      },
+      "q4": {
+        "question": "Can the webshop be integrated with CRM systems?",
+        "answer": "Yes. We integrate the webshop with CRM systems, payment solutions, email marketing and analytics for full automation of sales processes."
+      },
+      "q5": {
+        "question": "Is design included in the price?",
+        "answer": "Yes. Design is always included. We develop a unique, tailor-made design based on target audience analysis and business goals."
+      },
+      "q6": {
+        "question": "Do you offer a warranty on your webshops?",
+        "answer": "Yes. We provide a warranty on our work, so you can be sure the webshop works stably and correctly after launch."
+      }
+    },
+    "Cta": {
+      "title": "Ready to get your automated webshop?",
+      "description": "Contact us today and get a professional webshop that sells 24/7 without extra staff.",
+      "button": "Order your webshop"
+    }
+  },
+
+  "AboutPage": {
+    "Hero": {
+      "title": "We help businesses grow through well-thought-out digital solutions",
+      "description": "We combine technical development, design, and marketing into a single process, so digital solutions truly support the business: attracting customers, simplifying processes, and scaling with the company.",
+      "button": "Book a consultation",
+      "descriptionTwo": "<gray>We are a digital agency that</gray> works with <gray>companies that</gray> value results, <gray>structure, and</gray> long-term value — not just a <gray>website</gray> or advertising."
+    },
+    "Founders": {
+      "fedorRole": "CO-OWNER & DEVELOPER",
+      "fedorName": "FEDOR",
+      "fedorDescription1": "Fedor is responsible for the technical side and the architecture of the products.",
+      "fedorDescription2": "His approach is logical, stable, and predictable.",
+      "fedorListTitle": "HE DESIGNS WEBSITES AND SYSTEMS SO THAT THEY:",
+      "fedorItem1": "Are reliable from day one",
+      "fedorItem2": "Can be scaled easily",
+      "fedorItem3": "Do not create problems for the business in 1-2 years",
+      "fedorButton": "Read more about Fedor",
+      "christinaRole": "CO-OWNER & MARKETING",
+      "christinaName": "CHRISTINA",
+      "christinaDescription1": "Christina is responsible for strategy, marketing, and business logic in projects.",
+      "christinaDescription2": "Her focus is on how digital solutions affect real business goals.",
+      "christinaListTitle": "SHE WORKS WITH ANALYSIS, POSITIONING, AND SEO SO THAT:",
+      "christinaItem1": "The website does not just exist",
+      "christinaItem2": "Customers understand the company's value",
+      "christinaItem3": "The business gets a stable flow of inquiries",
+      "christinaButton": "Read more about Christina",
+      "fedorModalIntro": "Hi, my name is Fedor.",
+      "fedorModalBio": "I have been fascinated by technology since childhood: at 14, I was building electronic devices, programming microcontrollers, and writing my first programs. This experience helps me create websites and digital solutions that combine design, functionality, and efficiency for businesses.",
+      "fedorModalItem1": "Graduated from a technical university with a specialization in flight automation.",
+      "fedorModalItem2": "Developed services for automating business processes and digital products for companies of different sizes.",
+      "fedorModalItem3": "Created mobile apps and games that demonstrate my programming skills and creative approach.",
+      "fedorModalOutro": "My approach to development is technical precision, structure, and functionality, so businesses get digital solutions that truly work and deliver results.",
+      "christinaModalIntro": "Hi, my name is Christina.",
+      "christinaModalBio": "I have a degree in business economics with a specialization in business analytics and have completed courses in marketing and SEO, which has given me a solid foundation for leading digital projects.",
+      "christinaModalItem1": "Worked with international brands and large companies, where I delivered complex digital projects.",
+      "christinaModalItem2": "Developed marketing strategies, SEO optimization, and analytical solutions that help businesses grow and achieve concrete results.",
+      "christinaModalItem3": "In 2024, we founded our Digital Bureau WebBond '{' '}' Code-Site.Art to help businesses develop their results through complete digital solutions.",
+      "christinaModalOutro": "My approach as Head of Marketing is structured, analytical, and results-oriented, so businesses get effective solutions that truly impact growth and development.",
+      "foundersModalLinkedinButton": "Read more on LinkedIn"
+    },
+    "Values": {
+      "title": "Our values",
+      "card1Title": "PRACTICALITY",
+      "card1Description": "We make decisions that make sense for the business, not just in theory.",
+      "card2Title": "TRANSPARENCY",
+      "card2Description": "The client understands what we do, why, and what result it delivers.",
+      "card3Title": "COLLABORATION",
+      "card3Description": "We work as part of the client's team, without hierarchy and pressure.",
+      "card4Title": "RESPONSIBILITY",
+      "card4Description": "We bring projects to a logical conclusion and remain available after launch."
+    },
+    "Benefits": {
+      "title": "WHY COMPANIES CHOOSE US",
+      "item1": "We do not just deliver a 'website' - we build digital solutions focused on business goals.",
+      "item2": "We combine technical expertise and strategic marketing in one process.",
+      "item3": "We work calmly, in a structured way, and without unnecessary complexity - essential for B2B projects.",
+      "item4": "Our clients get a team that thinks ahead, not one that only executes tasks.",
+      "button": "Book a consultation"
+    },
+    "Cases": {
+      "title": "CASES",
+      "descriptionLeft": "We have worked with companies of different sizes — from small businesses to international projects.",
+      "descriptionRight": "<gray>In every project, we don’t focus only</gray> on <gray>design or technology,</gray> but on how <gray>digital solutions</gray> impact sales, processes <gray>and</gray> business development.",
+      "button": "See cases"
+    },
+    "Questions": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "seeMore": "See other questions",
+      "q1": {
+        "question": "How does the collaboration start?",
+        "answer": "It starts with an initial conversation where we discuss your business, goals, and current situation. After that, we prepare a solution and a scope of work. Implementation starts only when both parties have a clear understanding of the task."
+      },
+      "q2": {
+        "question": "Do you provide a warranty for your work?",
+        "answer": "Yes. We provide a warranty for the technical part of the project and ensure that the implemented solutions work correctly within the agreed scope."
+      },
+      "q3": {
+        "question": "How long does a project take?",
+        "answer": "The timeline depends on complexity and scope. After the initial clarification, we provide a realistic timeframe and follow the agreed plan."
+      },
+      "q4": {
+        "question": "Can the product be further developed after launch?",
+        "answer": "Yes. We design solutions with future development in mind, so the product can be scaled and expanded as needed."
+      },
+      "q5": {
+        "question": "Is design included?",
+        "answer": "Yes, design is included in all packages."
+      }
+    }
+  },
+
+  "BlogPage": {
+    "Hero": {
+      "title": "Blog",
+      "description": "<gray>Insights, case studies and practical</gray> articles about <gray>websites</gray>, digital systems, marketing and business development."
+    },
+    "list": {
+      "notFound": {
+        "title": "No articles yet",
+        "description": "Check back soon — we publish new posts as they go live."
+      }
+    }
+  },
+
+  "ArticlePage": {
+    "ArticleNotFound": {
+      "title": "Article not found",
+      "description": "This page does not exist or has been moved."
+    },
+    "Recommended": { "showMore": "Read more" },
+    "Questions": {
+      "title": "FAQ",
+      "seeMore": "Show all questions"
+    }
+  },
+
+  "BusinessModelPage": {
+    "Hero": {
+      "title": "A website for your business that you fully control",
+      "descriptionOne": "One-time payment. No subscriptions. No platforms.",
+      "descriptionTwo": "A complete website built with clean code, ready for SEO, GDPR, and customer management.",
+      "subtitle": "Key benefits:",
+      "listItems": [
+        "One-time investment — no monthly fees",
+        "Full ownership — the site belongs to you",
+        "Fast performance and Google indexing",
+        "User-friendly admin panel for editing content and forms",
+        "GDPR-compliant from day one"
+      ],
+      "button": "See a demo of the website"
+    },
+    "Disadvantages": {
+      "title": "<gray>Why most websites</gray> lead to dependency",
+      "descriptionOne": "WordPress, Wix, and other platforms are easy at first, but over time you get:",
+      "items": [
+        {
+          "text": "Subscriptions and plugins",
+          "image": "/business-model-page-disadvantages-image-two.webp"
+        },
+        {
+          "text": "Constant updates",
+          "image": "/business-model-page-disadvantages-image-three.webp"
+        },
+        {
+          "text": "Dependency on a developer",
+          "image": "/business-model-page-disadvantages-image-one.webp"
+        }
+      ],
+      "descriptionTwo": "We offer a different approach: a one-time payment — use the website as a stable business tool."
+    },
+    "Comparison": {
+      "title": "Our solution vs <gray>platforms</gray>",
+      "columnSubtitles": [
+        "Criterion",
+        "WordPress / Wix / other platforms",
+        "Our solution"
+      ],
+      "rows": [
+        [
+          "Payment model",
+          "Subscriptions and extra payments",
+          "One-time payment"
+        ],
+        ["Ownership", "Dependent on platform", "Full ownership"],
+        ["E-mail integration", "Plugins / extra setup", "Set up and included"],
+        ["Forms and inquiries", "Via plugins", "Included and working"],
+        ["SEO and speed", "Depends on plugins", "Optimized for Google"],
+        ["Logo", "Not included", "Included in the package"],
+        [
+          "Website design",
+          "Template / expensive custom",
+          "Tailored to your brand"
+        ],
+        ["Cookie and GDPR", "Paid solutions", "Built in"],
+        [
+          "Analytics (GA, GTM)",
+          "Plugins / separate setup",
+          "Set up and configured"
+        ],
+        ["Ready for launch", "Requires customization", "Ready to use"]
+      ]
+    },
+    "TargetAudience": {
+      "title": "<gray>Who is</gray> the solution for",
+      "items": [
+        {
+          "title": "CONSTRUCTION COMPANIES",
+          "description": "Calculators, forms, portfolio, price lists.",
+          "imageDesk": "/business-model-page-target-image-one-desk.webp",
+          "imageMob": "/business-model-page-target-image-one-mob.webp"
+        },
+        {
+          "title": "REAL ESTATE AGENTS / AGENCIES",
+          "description": "Property database with filtering (city, area, size, number of rooms, price; rental/sale; sorting).",
+          "imageDesk": "/business-model-page-target-image-two-desk.webp",
+          "imageMob": "/business-model-page-target-image-two-mob.webp"
+        },
+        {
+          "title": "RESTAURANTS AND CAFÉS",
+          "description": "Online booking, menu, contact forms.",
+          "imageDesk": "/business-model-page-target-image-three-desk.webp",
+          "imageMob": "/business-model-page-target-image-three-mob.webp"
+        },
+        {
+          "title": "CLEANING AND SERVICE COMPANIES",
+          "description": "Orders, forms, schedules.",
+          "imageDesk": "/business-model-page-target-image-four-desk.webp",
+          "imageMob": "/business-model-page-target-image-four-mob.webp"
+        },
+        {
+          "title": "MEDICAL AND COSMETIC SERVICES",
+          "description": "Online booking, appointment scheduling, forms, price lists.",
+          "imageDesk": "/business-model-page-target-image-five-desk.webp",
+          "imageMob": "/business-model-page-target-image-five-mob.webp"
+        },
+        {
+          "title": "LOCAL BUSINESSES FOCUSED ON INQUIRIES",
+          "description": "Contact forms, calculators, portfolio, interactive elements tailored to the business.",
+          "imageDesk": "/business-model-page-target-image-six-desk.webp",
+          "imageMob": "/business-model-page-target-image-six-mob.webp"
+        }
+      ]
+    },
+    "Demo": {
+      "title": "<gray>You control</gray> content",
+      "listItems": [
+        "Edit texts and images",
+        "Update information",
+        "Video tutorial shows the entire process in the admin panel"
+      ],
+      "button": "Watch the admin panel demo"
+    },
+    "Steps": {
+      "title": "<gray>How</gray> we work"
+    },
+    "Price": {
+      "title": "SOLUTION PRICE",
+      "note": "(depends on niche and integrations)",
+      "fromLabel": "Price from",
+      "toLabel": "to",
+      "fromPrice": "12,000 DKK",
+      "fromEur": "(€1,600)",
+      "toPrice": "22,500 DKK",
+      "toEur": "(€3,000)",
+      "listItems": [
+        "One-time payment",
+        "No subscriptions",
+        "No mandatory payments",
+        "Extra only — domain"
+      ]
+    },
+    "Warranty": {
+      "title": "<gray>Support and</gray> warranty",
+      "listItems": [
+        "THE WEBSITE FULLY BELONGS TO YOU",
+        "GDPR AND EU REQUIREMENTS COMPLIED WITH",
+        "VIDEO INSTRUCTIONS AND DOCUMENTATION",
+        "SUPPORT DURING AND AFTER LAUNCH"
+      ]
+    },
+    "CtaFirst": {
+      "title": "INVEST ONCE — USE THE WEBSITE FOR MANY YEARS",
+      "subtitle": "YOU GET A TOOL THAT:",
+      "badge": "Website ready in 7-14 days.",
+      "button": "Book a consultation",
+      "listItems": [
+        "DOES NOT REQUIRE SUBSCRIPTIONS",
+        "DOES NOT CREATE DEPENDENCY",
+        "WORKS TO ACQUIRE CUSTOMERS"
+      ]
+    },
+    "Questions": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "seeMore": "See other questions",
+      "q1": {
+        "question": "What is included in the package?",
+        "answer": "A complete website in pure code, custom design, logo, SEO structure for Google, forms, email integration, booking/calendar (as needed), CRM integration, and video instructions."
+      },
+      "q2": {
+        "question": "Are there extra payments or subscriptions?",
+        "answer": "No. One-time payment, everything included. Extra costs only for the domain."
+      },
+      "q3": {
+        "question": "Is logo design included?",
+        "answer": "Yes. A logo is created for your website and digital use and is included in the package."
+      },
+      "q4": {
+        "question": "Are analytics and GDPR included?",
+        "answer": "Yes. Google Analytics, GTM, cookie files, and GDPR compatibility are set up."
+      },
+      "q5": {
+        "question": "Can I start advertising campaigns immediately after launch?",
+        "answer": "Yes. The site is ready to receive inquiries and run campaigns."
+      },
+      "q6": {
+        "question": "Is support available after launch?",
+        "answer": "Yes. Video instructions and support are available during and after launch."
+      }
+    },
+    "Cta": {
+      "title": "CAN'T FIND AN ANSWER TO YOUR QUESTION?",
+      "description": "Read more details about the business solution and the site's capabilities in our blog.",
+      "button": "You can see details about the solution"
+    }
+  },
+
+  "PricePage": {
+    "Hero": {
+      "subtitle": "Fixed packages. Clear scope. Focus on efficiency and growth.",
+      "title": "Digital business solutions with clear pricing",
+      "description": "<gray>We don't just build websites</gray> - we <gray>automate your</gray> business and save <gray>you time.</gray> For companies and entrepreneurs in Denmark.",
+      "button": "Book a free needs analysis",
+      "list": {
+        "title": "WHAT ARE YOU PAYING FOR?",
+        "listItemOne": "You pay for less manual work, faster processes, and more time for your business.",
+        "listItemTwo": "All solutions are built as sales and automation tools - not as \"pretty websites\"."
+      }
+    },
+    "BasicPrices": {
+      "title": "<gray>WEBSITES &</gray> DIGITAL SOLUTIONS",
+      "descriptionOne": "Websites built for businesses – ready for customers, leads, and payments from day one.",
+      "descriptionTwo": "Every package has a fixed scope, clear structure, and agreed timelines.",
+      "landing": {
+        "title": "LANDING PAGES",
+        "basic": {
+          "name": "Basic Landing Page",
+          "priceFrom": "from",
+          "priceAmount": "18,750 DKK (€2,500)",
+          "description": "An effective solution for one product, one service, or one campaign.",
+          "button": "More about landing pages"
+        },
+        "premium": {
+          "name": "Premium Landing Page",
+          "priceFrom": "from",
+          "priceAmount": "26,250 DKK (€3,500)",
+          "description": "A complete sales and automation tool with payment, booking, and integrations.",
+          "button": "More about landing pages"
+        }
+      },
+      "multipage": {
+        "title": "WEBSITES (MULTI-PAGE)",
+        "basic": {
+          "name": "Basic Website",
+          "priceFrom": "from",
+          "priceAmount": "37,500 DKK (€5,000)",
+          "description": "A professional website that builds trust and visibility on Google.",
+          "button": "More about websites"
+        },
+        "premium": {
+          "name": "Premium Website",
+          "priceFrom": "from",
+          "priceAmount": "60,000 DKK (€8,000)",
+          "description": "An automated business system from inquiry to payment.",
+          "button": "More about websites"
+        }
+      },
+      "webshop": {
+        "title": "WEBSHOP",
+        "solution": {
+          "name": "Webshop Solution",
+          "priceFrom": "from",
+          "priceAmount": "60,000 DKK (€10,000)",
+          "description": "An automated e-commerce solution that sells 24/7.",
+          "button": "More about the webshop"
+        }
+      }
+    },
+    "AdditionalServices": {
+      "title": "<gray>SUPPLEMENTARY</gray> SERVICES",
+      "description": "These services support your digital solutions and can be added as needed.",
+      "seo": {
+        "name": "SEO",
+        "priceFrom": "from",
+        "priceAmount": "6,000 DKK (€800)",
+        "description": "Long-term visibility and a steady flow of customers via Google.",
+        "button": "More about SEO"
+      },
+      "logo": {
+        "name": "LOGO DESIGN",
+        "priceFrom": "from",
+        "priceAmount": "3,000 DKK (€400)",
+        "description": "Visual identity that builds recognition and credibility.",
+        "button": "More about logo design"
+      },
+      "googleAds": {
+        "name": "GOOGLE ADS",
+        "priceFrom": "from",
+        "priceAmount": "3,750 DKK (€600)",
+        "description": "Controlled advertising with fast results.",
+        "button": "More about Google Ads"
+      },
+      "metaAds": {
+        "name": "FACEBOOK & INSTAGRAM ADS",
+        "priceFrom": "from",
+        "priceAmount": "3,750 DKK (€600)",
+        "description": "Ad setup focused on sales and leads.",
+        "button": "More about Meta Ads"
+      },
+      "motion": {
+        "name": "MOTION DESIGN",
+        "priceFrom": "from",
+        "priceAmount": "2,000 DKK (€250)",
+        "description": "Animated content for websites, ads, and social media.",
+        "button": "More about motion design"
+      },
+      "calculators": {
+        "name": "CALCULATORS & INTERACTIVE SOLUTIONS",
+        "priceFrom": "from",
+        "priceAmount": "4,500 DKK (€600)",
+        "description": "Tools that boost conversion and save time.",
+        "button": "More about calculators"
+      }
+    },
+    "Questions": {
+      "title": "FAQ",
+      "seeMore": "See other questions",
+      "q1": {
+        "question": "Do you provide a warranty for your solutions?",
+        "answer": "Yes. We provide a warranty for the technical solution after delivery. Any issues that arise are fixed at no extra cost within the agreed period."
+      },
+      "q2": {
+        "question": "Can I pay in installments?",
+        "answer": "Yes, that is possible. Typically, 50% is paid at project start and 50% on delivery. Other payment models can be agreed individually."
+      },
+      "q3": {
+        "question": "Are there any hidden costs?",
+        "answer": "No. All prices and services are agreed in advance. Extra features or changes are always agreed separately."
+      },
+      "q4": {
+        "question": "Why do prices start from a specific level?",
+        "answer": "Because each solution is tailored to the company's needs and level of automation. The final price depends on features, integrations, and project scope."
+      },
+      "q5": {
+        "question": "How long does it take to get a finished solution?",
+        "answer": "The timeline depends on project complexity. Landing pages: 2-4 weeks. Websites and webshops: 4-8 weeks."
+      },
+      "q6": {
+        "question": "Is SEO included in the price?",
+        "answer": "Basic SEO structure is included in all websites. Ongoing SEO and marketing are offered as separate services."
+      }
+    },
+    "Cta": {
+      "title": "ABOUT PRICING",
+      "description": "All prices are stated as \"starting from\", since each solution is tailored to the company's needs and level of automation.",
+      "question": "Not sure which solution is the best fit for your business?",
+      "button": "Book a free needs analysis"
+    }
   }
 }

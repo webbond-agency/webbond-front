@@ -64,7 +64,7 @@
     "title": "<gray>Vælg et website,</gray> der arbejder for din virksomhed",
     "subtitle": "Landingpages, hjemmesider eller webshops — et værktøj, der tiltrækker kunder, øger indtjeningen og frigør tid til at udvikle din virksomhed",
     "buttonOrder": "Bestil din hjemmeside",
-    "buttonStart": "Start samarbejdet",
+    "buttonStart": "Bestil din hjemmeside",
     "types": {
       "landingpage": {
         "label": "LANDINGPAGE",
@@ -155,7 +155,7 @@
     "subtitle": "Se hvad vores kunder siger om os, og gennemgå vores anmeldelser"
   },
   "Business": {
-    "title": "Tag din virksomhed <gray>til</gray> næste <gray>niveau med</gray> WebBond <gray>'{ }' CodeSite.</gray> Art",
+    "title": "Tag din virksomhed <gray>til</gray> næste <gray>niveau med</gray> WebBond <gray>'{}' CodeSite.</gray> Art",
     "description": "Din ambition, vores ekspertise — sammen gør vi din virksomhed synlig, effektiv og profitabel",
     "button": "Start samarbejdet"
   },
@@ -163,7 +163,7 @@
     "cvr": "CVR:44894181",
     "city": "København",
     "email": "Email: info@webbond.dk",
-    "button": "Kontakt Os"
+    "button": "Læs vores blog"
   },
   "Questions": {
     "title": "Spørgsmål og svar",
@@ -229,15 +229,35 @@
       "phonePlaceholder": "Telefon",
       "emailPlaceholder": "E-mail",
       "messagePlaceholder": "Besked",
+      "languagePlaceholder": "Hvilket sprog foretrækker du at kommunikere på?",
+      "languages": {
+        "da": "Dansk",
+        "en": "Engelsk",
+        "uk": "Ukrainsk",
+        "ru": "Russisk"
+      },
+      "serviceLabel": "Vælg den service, du er interesseret i",
+      "servicePlaceholder": "Vælg service",
+      "services": {
+        "website": "Hjemmeside",
+        "seo": "SEO",
+        "logo": "Logo",
+        "googleAds": "Google ADS",
+        "fbAds": "FB ADS",
+        "other": "Andet"
+      },
       "submit": "Send besked",
       "loading": "Sender..."
     },
     "validation": {
       "nameMin": "Navnet skal være mindst 2 tegn",
+      "languageRequired": "Vælg venligst et sprog",
+      "serviceRequired": "Vælg venligst en service",
       "phoneRequired": "Telefonnummer er påkrævet",
       "phoneInvalid": "Ugyldigt telefonnummer",
       "emailInvalid": "Ugyldig e-mailadresse",
       "messageRequired": "Besked er påkrævet",
+      "otherServiceRequired": "Beskriv venligst hvilken service du er interesseret i",
       "messageMax": "Beskeden er for lang",
       "submitError": "Der opstod en fejl. Prøv venligst igen senere."
     }
@@ -259,6 +279,963 @@
   },
   "Breadcrumbs": {
     "home": "Hjem",
-    "cases": "Cases"
+    "cases": "Cases",
+    "websites": "Websites",
+    "landing": "Landingpages",
+    "multipage": "Hjemmeside",
+    "webshop": "Webshop",
+    "about": "Om os",
+    "blog": "Blog",
+    "price": "Priser"
+  },
+
+  "WebSitesPage": {
+    "Hero": {
+      "title": "Sider, der skaber salg, ikke kun trafik",
+      "description": "Vi hjælper virksomhedsejere med at omdanne deres websites til salgsværktøjer og leadgenerering. Ren kode, hurtig ydeevne, stærk marketingstruktur, SEO-klar og fuld automatisering fra forespørgsler til betaling.",
+      "button": "Bestil din hjemmeside"
+    },
+    "Landing": {
+      "title": "<gray>Landingpages –</gray> hurtig konvertering af besøgende til kunder",
+      "description": "Vi designer og udvikler unikke landingpages på ren kode med fokus på salg og leadgenerering. Marketingstruktur, analyse af målgruppe og optimering af konvertering er inkluderet.",
+      "listOne": "Hurtig lancering og opsamling af leads",
+      "listTwo": "Nem administration via adminpanel uden udviklerafhængighed",
+      "listThree": "Design og funktionalitet, der maksimerer salg",
+      "listFour": "Betaling kun for domæne efter lancering",
+      "button": "Vælg landingpage-pakke",
+      "subtitle": "Fordele for virksomheden"
+    },
+    "Multipage": {
+      "title": "<gray>Hjemmesider –</gray> større muligheder for konvertering",
+      "description": "Vi skaber brugervenlige websites med flere sider, der hjælper din virksomhed med at vokse online. Ren kode, fleksible funktioner og adminpanel sikrer uafhængighed og skalerbarhed.",
+      "listOne": "Flere kontaktpunkter = højere leadgenerering",
+      "listTwo": "Uafhængighed af udviklere gennem adminpanel",
+      "listThree": "Mulighed for fremtidig SEO og udvidelse af sider",
+      "listFour": "Optimeret struktur og marketingfokus for konvertering",
+      "listFive": "Klar til skalering og vækst",
+      "button": "Vælg hjemmeside-pakke",
+      "subtitle": "Fordele for virksomheden"
+    },
+    "Webshop": {
+      "title": "<gray>E-commerce –</gray> automatiseret salg direkte fra din hjemmeside",
+      "description": "Vi udvikler e-commerce løsninger, der konverterer besøgende til kunder. Integration af betalingssystemer, produktkataloger, lagerstyring, personaliserede e-mailbeskeder og fuld automatisering af salgsprocessen.",
+      "listOne": "Automatiseret salg fra første besøg",
+      "listTwo": "Højere konvertering gennem personaliserede kundeoplevelser",
+      "listThree": "Fuld kontrol og uafhængighed via adminpanel",
+      "listFour": "Skalerbar løsning til voksende forretning",
+      "button": "Vælg e-commerce pakke",
+      "subtitle": "Fordele for virksomheden"
+    },
+    "Questions": {
+      "title": "OFTE STILLEDE SPØRGSMÅL",
+      "seeMore": "Se andre spørgsmål",
+      "q1": {
+        "question": "Hvad koster et professionelt website?",
+        "answer": "Udvikling af basale websites starter fra 37.500 kr (5.000 €), premium fra 60.000 kr (8.000 €)."
+      },
+      "q2": {
+        "question": "Hvor lang tid tager udviklingen?",
+        "answer": "Typisk 30–60 arbejdsdage, afhængigt af antal sider og funktioner."
+      },
+      "q3": {
+        "question": "Kan jeg ændre indhold uden udvikler?",
+        "answer": "90% af ændringer kan håndteres direkte via adminpanel."
+      },
+      "q4": {
+        "question": "Tilbyder I garanti?",
+        "answer": "Vi giver garanti på alle vores sites."
+      },
+      "q5": {
+        "question": "Er design inkluderet?",
+        "answer": "Ja, design er inkluderet i alle pakker."
+      }
+    },
+    "Cta": {
+      "title": "Klar til at få din hjemmeside?",
+      "description": "Med vores e-commerce løsninger integrerer vi betaling, produktkataloger og personaliseret e-mail marketing for at automatisere hele salgstragten. Alt er skalerbart,  lersproget og optimeret til at vækste forretningen.",
+      "button": "Bestil din hjemmeside"
+    }
+  },
+
+  "LandingPage": {
+    "Hero": {
+      "title": "Landingpages, der konverterer",
+      "description": "Fokuseret design, der skaber resultater",
+      "subtitle": "Fordele ved en landingpage",
+      "button": "Få et tilbud",
+      "listTitleOne": "Hurtigt resultat",
+      "listDescriptionOne": "Landingpagen kan lanceres hurtigt og begynder straks at generere leads og salg.",
+      "listTitleTwo": "Maksimal konvertering",
+      "listDescriptionTwo": "Fokus på én handling hjælper brugeren med hurtigt at træffe beslutninger.",
+      "listTitleThree": "Effektiv reklame",
+      "listDescriptionThree": "Perfekt til annoncekampagner på Google, Facebook, Instagram og TikTok."
+    },
+    "Packages": {
+      "title": "<gray>Vælg den rette</gray> løsning til dit projekt",
+      "description": "Vi tilbyder faste pakker med klart defineret indhold, så du ved præcis, hvad du får – uden skjulte omkostninger.",
+      "pdv": "*moms er ikke inkluderet i prisen",
+      "listOne": {
+        "title": "Basispakke",
+        "subtitleOne": "Hvad inkluderer pakken:",
+        "listOne": {
+          "itemOne": "Unikt design med 6–8 blokke på ren kode",
+          "itemTwo": "Basis SEO",
+          "itemThree": "Integration med e-mail eller Telegram-bot til modtagelse af forespørgsler",
+          "itemFour": "Fuldt responsivt til alle enheder",
+          "itemFive": "Hastighedsoptimering og grundlæggende analytics"
+        },
+        "subtitleTwo": "Fordel for kunden:",
+        "listTwo": {
+          "itemOne": "Hurtig lancering og indsamling af leads eller salg af ét produkt",
+          "itemTwo": "Nem administration via adminpanel uden afhængighed af udviklere",
+          "itemThree": "Betaling kun for domænet efter lancering"
+        }
+      },
+      "listTwo": {
+        "title": "Premiumpakke",
+        "subtitleOne": "Hvad inkluderer pakken:",
+        "listOne": {
+          "itemOne": "Alt fra basispakken",
+          "itemTwo": "Opsætning af e-mail marketing med personlige mails og kvitteringer",
+          "itemThree": "Integration af betalingssystemer, kalender/booking, CRM og Google anmeldelser",
+          "itemFour": "Avancerede animationer og interaktive elementer, custom udvikling af blokke til produkt eller service",
+          "itemFive": "Udvidet SEO for bedre synlighed i Google",
+          "itemSix": "Opsætning af analytics"
+        },
+        "subtitleTwo": "Fordel for kunden:",
+        "listTwo": {
+          "itemOne": "Kompleks værktøj til salg",
+          "itemTwo": "Maksimal konvertering af besøgende til kunder",
+          "itemThree": "Automatisering af kommunikation og betalinger",
+          "itemFour": "Klar til skalering af forretningen og øget salg"
+        }
+      },
+      "button": "Bestil en landingpage",
+      "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
+    },
+    "Cases": {
+      "title": "<gray>Landingpages,</gray> der har hjulpet vores kunder med at sælge"
+    },
+    "Services": {
+      "title": "Hvad består vores landingpages af?",
+      "description": "Vi skaber skræddersyede landingpages, der kombinerer design, udvikling, marketing og SEO, så dine kunder får den bedste oplevelse og dine kampagner konverterer.",
+      "listTitleOne": "Design",
+      "listDescriptionOne": "Vi skaber unikke og salgsklare designs, der fanger dine kunders opmærksomhed.",
+      "listTitleTwo": "Udvikling",
+      "listDescriptionTwo": "Landingpages bygges med ren kode, hvilket sikrer hurtige og stabile sider uden afhængighed af platforme.",
+      "listTitleThree": "Marketing",
+      "listDescriptionThree": "Vi udvikler marketingstrukturen, så dine kampagner konverterer bedst muligt.",
+      "listTitleFour": "SEO",
+      "listDescriptionFour": "Landingpages optimeres til søgemaskiner, så du bliver fundet af dine kunder.",
+      "listTitleFive": "Fuld adgang til admin",
+      "listDescriptionFive": "Du kan selv ændre indhold, priser og opdateringer uden at kontakte udviklere.",
+      "listTitleSix": "Hurtig udvikling",
+      "listDescriptionSix": "Vi leverer færdige landingpages inden for 2 uger, fuldt responsive med animationer og flersprogede versioner.",
+      "listTitleSeven": "Integrationer",
+      "listDescriptionSeven": "Vi integrerer betalingsmetoder som Stripe, MobilePay, e-mail marketing og kontaktformularer."
+    },
+    "Order": {
+      "button": "Bestil en landingpage"
+    },
+    "Questions": {
+      "title": "SPØRGSMÅL OG SVAR",
+      "seeMore": "Se andre spørgsmål",
+      "q1": {
+        "question": "Hvad koster en landingpage?",
+        "answer": "Prisen på en landingpage starter fra 18.750 kr (2500€)."
+      },
+      "q2": {
+        "question": "Skal designet betales separat?",
+        "answer": "Nej, betalingen er samlet — udvikling med design og alle elementer er inkluderet."
+      },
+      "q3": {
+        "question": "Tilbyder I delbetaling?",
+        "answer": "Ja, betalingen kan opdeles 50/50."
+      },
+      "q4": {
+        "question": "Hjælper I med teksterne?",
+        "answer": "Ja, vi hjælper med at skrive tekster til din landingpage."
+      },
+      "q5": {
+        "question": "Skal jeg betale ekstra for at vedligeholde siden?",
+        "answer": "Nej, for at vedligeholde siden skal du kun betale for domænet."
+      },
+      "q6": {
+        "question": "Hvad er et domæne?",
+        "answer": "Et domæne er navnet på din hjemmeside."
+      },
+      "q7": {
+        "question": "Kan jeg selv lave ændringer uden udviklere?",
+        "answer": "Ja, du kan selv ændre indholdet via adminpanelet, som du har adgang til fra din telefon."
+      },
+      "q8": {
+        "question": "Kan jeg sælge ét produkt via landingpagen?",
+        "answer": "Ja, det kan du."
+      },
+      "q9": {
+        "question": "Hvilke betalingssystemer bruger I?",
+        "answer": "Vi kan tilslutte de betalingssystemer, du har brug for — Stripe, MobilePay og andre."
+      },
+      "q10": {
+        "question": "Tilpasser I e-mail marketing?",
+        "answer": "Ja, vi opsætter komplet e-mail marketing til dig og dine kunder."
+      },
+      "q11": {
+        "question": "Hvor lang tid tager udviklingen af landingpagen?",
+        "answer": "Fra 7 dage op til 2 uger."
+      },
+      "q12": {
+        "question": "Er landingpagen mobilvenlig?",
+        "answer": "Ja, fuldt responsiv på alle enheder."
+      },
+      "q13": {
+        "question": "Kan jeg få animationer eller interaktive elementer?",
+        "answer": "Ja, vi integrerer moderne animationer og interaktive elementer."
+      },
+      "q14": {
+        "question": "Kan jeg ændre sprogene på siden?",
+        "answer": "Ja, flersprogede versioner er tilgængelige."
+      }
+    },
+    "Cta": {
+      "title": "Klar til at få din landingpage?",
+      "description": "Kontakt os i dag, og lad os skabe en landingpage, der øger dine resultater",
+      "button": "Bestil en landingpage"
+    }
+  },
+
+  "MultiPagePage": {
+    "Hero": {
+      "title": "Professionelle websites med mange sider",
+      "description": "Vi skaber brugervenlige websites med flere sider, der hjælper din virksomhed med at vokse online",
+      "subtitle": "Fordele ved en professionel hjemmeside",
+      "button": "Få et tilbud",
+      "listTitleOne": "Detaljeret præsentation af services",
+      "listDescriptionOne": "Præsenter alle dine produkter og tjenester på separate sider, så dine kunder nemt kan finde information.",
+      "listTitleTwo": "SEO og synlighed",
+      "listDescriptionTwo": "Hurtigere placering i Google og bedre synlighed, så din hjemmeside arbejder for dig og sparer penge på annoncering.",
+      "listTitleThree": "Integrationer og funktioner",
+      "listDescriptionThree": "Nem integration af email, betalingsmetoder, kalkulatorer og andre værktøjer, der gør din hjemmeside komplet og brugbar."
+    },
+    "Packages": {
+      "title": "<gray>VÆLG DEN RETTE</gray>",
+      "description": "To tydelige pakker — du ved præcis, hvad din virksomhed får, og hvilke fordele der følger med.",
+      "pdv": "*moms er ikke inkluderet i prisen",
+      "listOne": {
+        "title": "Basispakke",
+        "subtitleOne": "Hvad virksomheden får:",
+        "listOne": {
+          "itemOne": "Unikt design til hver side, der fremhæver brandet og målgruppen.",
+          "itemTwo": "5–7 sider med mulighed for detaljeret præsentation af produkter og tjenester.",
+          "itemThree": "Ren kode for hurtig indlæsning og stabilitet, uafhængig af platforme.",
+          "itemFour": "Responsivt design til alle enheder og flersproget support.",
+          "itemFive": "Adminpanel med fuld adgang: 90 % af ændringer kan foretages selv uden udvikler.",
+          "itemSix": "Optimering af billeder for hurtig indlæsning.",
+          "itemSeven": "Integration af basale kontaktformularer og grundlæggende analytics.",
+          "itemEight": "Garanti på websitet efter lancering."
+        },
+        "subtitleTwo": "Fordele for virksomheden:",
+        "listTwo": {
+          "itemOne": "Hjemmesiden fungerer som et salgsinstrument takket være den detaljerede sideopbygning.",
+          "itemTwo": "Flere sider = flere indgange i Google = flere kunder.",
+          "itemThree": "Uafhængighed fra udviklere – ændringer kan nemt foretages via adminpanelet.",
+          "itemFour": "Ren kode og marketingstruktur øger konvertering og effektivitet."
+        }
+      },
+      "listTwo": {
+        "title": "Premiumpakke",
+        "subtitleOne": "Hvad virksomheden får:",
+        "listOne": {
+          "itemOne": "Alt fra basispakken, plus:",
+          "itemTwo": "10+ sider med ekstra blokke til produkter, tjenester og integrationer.",
+          "itemThree": "Tilslutning og opsætning af SEO for topplaceringer i Google.",
+          "itemFour": "Integration af e-mail marketing med personlige mails og kvittering efter køb.",
+          "itemFive": "Integration af betalingssystemer, CRM, kalendere/bookings og Google-anmeldelser for fuld automatisering.",
+          "itemSix": "Custom udviklede blokke, avancerede animationer og interaktive elementer.",
+          "itemSeven": "Flersproget support og teknisk intern linking for SEO.",
+          "itemEight": "Adminpanel med fuld kontrol – 90 % af redigeringerne kan foretages uden udvikler.",
+          "itemNine": "Garanti på websitet efter lancering."
+        },
+        "subtitleTwo": "Fordele for virksomheden:",
+        "listTwo": {
+          "itemOne": "Et komplet salgsinstrument – fra forespørgsel til automatisk behandling og betaling.",
+          "itemTwo": "Maksimal konvertering takket være marketingstruktur og SEO-optimering.",
+          "itemThree": "Uafhængighed og kontrol – virksomheden styrer selv indhold og processer.",
+          "itemFour": "Flere sider = flere Google-indgange = flere kunder og salg.",
+          "itemFive": "Garanti for stabil drift og professionel support."
+        }
+      },
+      "button": "Bestil Hjemmeside",
+      "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
+    },
+    "Cases": {
+      "title": "<gray>Hjemmesider,</gray> der har hjulpet vores kunder"
+    },
+
+    "Services": {
+      "title": "Hvad indeholder vores hjemmesider?",
+      "description": "Vi udvikler komplette hjemmesider med flot design, fleksible funktioner, booking systemer, kontaktformularer og integrerede værktøjer, så din virksomhed kan vokse online og administreres nemt.",
+      "listTitleOne": "Design",
+      "listDescriptionOne": "Individuelt design til hver side, der matcher din virksomheds brand og målgruppe.",
+      "listTitleTwo": "Udvikling",
+      "listDescriptionTwo": "Ren og fleksibel kode sikrer hurtig opdatering, stabilitet og hurtig indlæsning.",
+      "listTitleThree": "SEO og marketing",
+      "listDescriptionThree": "Optimeret for søgemaskiner og integreret med marketingværktøjer som email og sociale medier.",
+      "listTitleFour": "Integrationer",
+      "listDescriptionFour": "Email-marketing, betalingsmetoder, kalkulatorer, booking-systemer, kontaktformularer og alle nødvendige analyseværktøjer kan tilpasses dine behov.",
+      "listTitleFive": "Administration",
+      "listDescriptionFive": "Fuld adgang til at ændre indhold, priser og sider uden hjælp fra udviklere.",
+      "listTitleSix": "Hurtig levering og responsivt design",
+      "listDescriptionSix": "Websites leveres hurtigt, med responsivt design til alle enheder og flersprogede versioner."
+    },
+    "Order": {
+      "button": "Bestil din hjemmeside nu"
+    },
+    "Questions": {
+      "title": "OFTE STILLEDE SPØRGSMÅL",
+      "seeMore": "Se andre spørgsmål",
+      "q1": {
+        "question": "Hvad koster det at udvikle en hjemmeside?",
+        "answer": "Udvikling af en komplet hjemmeside starter fra ca. 37.500 kr (5000€) og inkluderer design, SEO, marketingstruktur, alle integrationer, adminpanel og garanti – alt leveres turnkey."
+      },
+      "q2": {
+        "question": "Hvor lang tid tager udviklingen?",
+        "answer": "Afhænger af antallet af sider; typisk mellem 30 og 60 arbejdsdage eller mere."
+      },
+      "q3": {
+        "question": "Giver I garanti på jeres tjenester?",
+        "answer": "Ja, betalingen kan opdeles 50/50."
+      },
+      "q4": {
+        "question": "Hvad koster det at vedligeholde hjemmesiden efter lancering?",
+        "answer": "Efter lancering skal du kun betale for domænet."
+      },
+      "q5": {
+        "question": "Skal jeg involvere udviklere, hvis jeg vil ændre noget?",
+        "answer": "90% af ændringer kan du selv foretage gennem det adminpanel, vi udvikler til dig."
+      },
+      "q6": {
+        "question": "Kan jeg modtage henvendelser fra hjemmesiden på min email?",
+        "answer": "Ja, alle henvendelser sendes direkte til din email."
+      },
+      "q7": {
+        "question": "Kan jeg komme i top 1 på Google med denne hjemmeside?",
+        "answer": "Med komplet SEO og en flersidet hjemmeside er det muligt at opnå høje placeringer på søgeresultaterne."
+      },
+      "q8": {
+        "question": "Tilbyder I hjælp med tekst, billeder og andet indhold?",
+        "answer": "Ja, vi hjælper med tekst, billeder og andet relevant indhold."
+      },
+      "q9": {
+        "question": "Kan vi mødes offline?",
+        "answer": "Ja, hvis du befinder dig lokalt i København eller andre dele af Danmark, er det muligt."
+      },
+      "q10": {
+        "question": "Integrerer I booking-systemer?",
+        "answer": "Ja, vi opsætter komplet e-mail marketing til dig og dine kunder."
+      },
+      "q11": {
+        "question": "Tilbyder I kontrakt?",
+        "answer": "Ja, vi udarbejder en kontrakt for alle vores kunder."
+      },
+      "q12": {
+        "question": "Er design inkluderet i prisen?",
+        "answer": "Ja, design er inkluderet i prisen som en del af hele pakken."
+      }
+    },
+    "Cta": {
+      "title": "Klar til at få din hjemmeside?",
+      "description": "Kontakt os i dag, og få en professionel hjemmeside",
+      "button": "Bestil Hjemmeside"
+    }
+  },
+
+  "WebshopPage": {
+    "Hero": {
+      "title": "Webshop, der sælger 24/7 uden salgsafdeling",
+      "description": "Du får ikke en skabelon og ikke en platform, men en webshop udviklet i ren kode med fuld kontrol via adminpanel. Det er en investering i automatiserede salg — ikke en udgift. Alle processer er automatiseret fra ordre til betaling.",
+      "subtitle": "Fordele ved Webshop",
+      "button": "Bestil din Webshop",
+      "listTitleOne": "Fuld ejerskab og kontrol",
+      "listDescriptionOne": "Ejer din webshop fuldt ud og afhænger ikke af platforme eller udviklere.",
+      "listTitleTwo": "Automatisering af processer",
+      "listDescriptionTwo": "Automatiserede processer håndterer alt fra ordrer til betalinger.",
+      "listTitleThree": "Vækst og skalering",
+      "listDescriptionThree": "Skab vækst og flere salg uden ekstra personale eller tid på administration."
+    },
+    "Packages": {
+      "title": "<gray>VÆLG DEN RETTE</gray>",
+      "description": "Én samlet premium-pakke med alt, hvad du behøver for en automatiseret webshop der sælger døgnet rundt.",
+      "pdv": "*moms er ikke inkluderet i prisen",
+      "cardTitle": "Premium webshop",
+      "subtitleIncluded": "Hvad er inkluderet:",
+      "included": {
+        "itemOne": "Automatiseret ordrebehandling og salgsproces",
+        "itemTwo": "Fuldt administrationspanel til produkter, kategorier og beskrivelser",
+        "itemThree": "Unikt design baseret på målgruppeanalyse",
+        "itemFour": "Fuld marketingstruktur og SEO-optimering",
+        "itemFive": "Flersproget webshop",
+        "itemSix": "Integration med CRM og betalingssystemer",
+        "itemSeven": "E-mail marketing og automatiserede kampagner",
+        "itemEight": "Avanceret salgs- og brugeranalyse",
+        "itemNine": "Høj ydeevne og optimering af indlæsningstid",
+        "itemTen": "Sikkerhed og backup",
+        "itemEleven": "Træning og support til ejeren",
+        "itemTwelve": "Betaling kun for domæne"
+      },
+      "subtitleBenefits": "Fordele for din virksomhed:",
+      "benefits": {
+        "itemOne": "Sælger 24/7 uden behov for ekstra salgsafdeling",
+        "itemTwo": "Automatiserede processer fra ordre til betaling",
+        "itemThree": "Fuldt ejerskab og kontrol over webshoppen",
+        "itemFour": "Skalerbar og fleksibel struktur",
+        "itemFive": "Maksimering af konverteringer og salg"
+      },
+      "button": "Bestil Webshop",
+      "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
+    },
+    "Cases": {
+      "title": "<gray>Webshops</gray> fra vores kunder, der genererer indtægt 24/7"
+    },
+    "Services": {
+      "title": "Hvad indeholder vores webshops?",
+      "description": "Vi udvikler avancerede webshops som komplette salgsplatforme — designet til automatiserede processer, høj konvertering og fuld kontrol for virksomhedsejeren. Webshoppen arbejder 24/7 og kræver ikke et ekstra salgs- eller supportteam.",
+      "listTitleOne": "Produkt- og indholdsstyring",
+      "listDescriptionOne": "Ejeren kan selv administrere produkter, priser, kategorier og kampagner via adminpanel — uden ekstra betaling eller udviklere.",
+      "listTitleTwo": "Automatiseret salgsflow",
+      "listDescriptionTwo": "Fuldt automatiseret proces fra ordre, betaling, bekræftelse, e-mails og lagerstatus — uden manuel håndtering.",
+      "listTitleThree": "CRM, betalinger & integrationer",
+      "listDescriptionThree": "Integration med CRM-systemer, betalingsløsninger, e-mail marketing og analytics for fuld forretningskontrol.",
+      "listTitleFour": "Design & brugeroplevelse",
+      "listDescriptionFour": "Unikt design baseret på analyse af målgruppe, kunderejse samt købspsykologi for maksimal tillid og salg.",
+      "listTitleFive": "Teknisk udvikling",
+      "listDescriptionFive": "Webshoppen bygges i ren, skalerbar kode med høj ydeevne, hurtig indlæsning og stabil drift uden unødige fejl eller platforme.",
+      "listTitleSix": "Skalering & vækst",
+      "listDescriptionSix": "Webshoppen er klar til vækst: flere produkter, markeder, sprog og integrationer uden tekniske begrænsninger.",
+      "listTitleSeven": "Ejerskab & garanti",
+      "listDescriptionSeven": "Du ejer webshoppen 100% fra dag ét uden abonnementer eller kundelås. Vi leverer garanti på løsningens stabilitet og funktion."
+    },
+    "Order": {
+      "button": "Bestil Webshop"
+    },
+    "Questions": {
+      "title": "OFTE STILLEDE SPØRGSMÅL",
+      "seeMore": "Se andre spørgsmål",
+      "q1": {
+        "question": "Hvad koster en webshop?",
+        "answer": "Prisen starter fra 75.000 kr (10.000 €) (inkl. SEO) *moms er ikke inkluderet i prisen. Den endelige pris afhænger af antallet af produkter, kategorier, integrationer og funktionalitet. Mere komplekse webshops kan koste mere."
+      },
+      "q2": {
+        "question": "Hvor lang tid tager udviklingen af en webshop?",
+        "answer": "Udviklingen tager typisk 30–60 arbejdsdage. Tidsrammen afhænger af projektets kompleksitet, antallet af produkter og specifikke forretningskrav."
+      },
+      "q3": {
+        "question": "Skal jeg betale løbende efter lanceringen?",
+        "answer": "Nej. Efter lancering betaler du kun for domænet. Der er ingen faste månedlige betalinger til platforme eller udviklere."
+      },
+      "q4": {
+        "question": "Kan webshoppen integreres med CRM-systemer?",
+        "answer": "Ja. Vi integrerer webshoppen med CRM-systemer, betalingsløsninger, e-mail marketing og analytics for fuld automatisering af salgsprocesser."
+      },
+      "q5": {
+        "question": "Er design inkluderet i prisen?",
+        "answer": "Ja. Design er altid inkluderet. Vi udvikler et unikt, skræddersyet design baseret på målgruppeanalyse og forretningsmål."
+      },
+      "q6": {
+        "question": "Giver I garanti på jeres webshops?",
+        "answer": "Ja. Vi yder garanti på vores arbejde, så du er sikker på, at webshoppen fungerer stabilt og korrekt efter lancering."
+      }
+    },
+    "Cta": {
+      "title": "Klar til at få din automatiserede webshop?",
+      "description": "Kontakt os i dag, og få en professionel webshop, der sælger 24/7 uden ekstra personale.",
+      "button": "Bestil din Webshop"
+    }
+  },
+
+  "AboutPage": {
+    "Hero": {
+      "title": "Vi hjælper virksomheder med at vokse gennem gennemtænkte digitale løsninger",
+      "description": "Vi kombinerer teknisk udvikling, design og marketing i én proces, så digitale løsninger virkelig understøtter virksomheden: tiltrækker kunder, forenkler processer og skalerer med virksomheden.",
+      "button": "Book en konsultation",
+      "descriptionTwo": "<gray>Vi er et digitalt bureau, der</gray> arbejder med <gray>virksomheder, der</gray> værdsætter resultater, <gray>struktur og</gray> langsigtet værdi — ikke kun et <gray>website</gray> eller reklame."
+    },
+    "Founders": {
+      "fedorRole": "CO-OWNER & DEVELOPER",
+      "fedorName": "FEDOR",
+      "fedorDescription1": "Fedor har ansvaret for den tekniske del og arkitekturen af produkterne.",
+      "fedorDescription2": "Hans tilgang er logisk, stabil og forudsigelig.",
+      "fedorListTitle": "HAN DESIGNER WEBSITES OG SYSTEMER, SÅ DE:",
+      "fedorItem1": "Er pålidelige fra dag ét",
+      "fedorItem2": "Nemt kan skaleres",
+      "fedorItem3": "Ikke skaber problemer for virksomheden om 1-2 år",
+      "fedorButton": "Læs mere om Fedor",
+      "christinaRole": "CO-OWNER & MARKETING",
+      "christinaName": "CHRISTINA",
+      "christinaDescription1": "Christina har ansvaret for strategi, marketing og forretningslogik i projekterne.",
+      "christinaDescription2": "Hendes fokus er, hvordan digitale løsninger påvirker reelle forretningsmål.",
+      "christinaListTitle": "HUN ARBEJDER MED ANALYSE, POSITIONERING OG SEO, SÅ:",
+      "christinaItem1": "Websitet ikke blot eksisterer",
+      "christinaItem2": "Kunder forstår virksomhedens værdi",
+      "christinaItem3": "Virksomheden får en stabil strøm af henvendelser",
+      "christinaButton": "Læs mere om Christina",
+      "fedorModalIntro": "Hej, jeg hedder Fedor.",
+      "fedorModalBio": "Jeg har været fascineret af teknologi siden barndommen: som 14-årig byggede jeg elektroniske enheder, programmerede mikrocontrollere og skrev mine første programmer. Denne erfaring hjælper mig med at skabe hjemmesider og digitale løsninger, der kombinerer design, funktionalitet og effektivitet for virksomheder.",
+      "fedorModalItem1": "Uddannet på teknisk universitet med speciale i flyautomatik.",
+      "fedorModalItem2": "Udviklet services til automatisering af forretningsprocesser og digitale produkter for virksomheder i forskellige størrelser.",
+      "fedorModalItem3": "Skabt mobilapps og spil, der demonstrerer mine programmeringsfærdigheder og kreative tilgang.",
+      "fedorModalOutro": "Min tilgang til udvikling er teknisk præcision, struktur og funktionalitet, så virksomheder får digitale løsninger, der virkelig fungerer og giver resultater.",
+      "christinaModalIntro": "Hej, jeg hedder Christina.",
+      "christinaModalBio": "Jeg har en uddannelse i erhvervsøkonomi med speciale i business analytics og har gennemført kurser i marketing og SEO, hvilket har givet mig et solidt fundament for at lede digitale projekter.",
+      "christinaModalItem1": "Arbejdet med internationale brands og store virksomheder, hvor jeg har realiseret komplekse digitale projekter.",
+      "christinaModalItem2": "Udarbejdet marketingstrategier, SEO-optimering og analytiske løsninger, der hjælper virksomheder med at vokse og opnå konkrete resultater.",
+      "christinaModalItem3": "I 2024 grundlagde vi vores Digital Bureau WebBond '{' '}' Code-Site.Art for at hjælpe virksomheder med at udvikle deres resultater gennem komplette digitale løsninger.",
+      "christinaModalOutro": "Min tilgang som marketingchef er struktureret, analytisk og resultatorienteret, så virksomheder får effektive løsninger, der virkelig påvirker vækst og udvikling.",
+      "foundersModalLinkedinButton": "Læs mere på LinkedIn"
+    },
+    "Values": {
+      "title": "Vores værdier",
+      "card1Title": "PRAKTISKHED",
+      "card1Description": "Vi tager beslutninger, der giver mening for forretningen, ikke kun i teorien.",
+      "card2Title": "GENNEMSIGTIGHED",
+      "card2Description": "Kunden forstår, hvad vi laver, hvorfor og hvilket resultat det giver.",
+      "card3Title": "SAMARBEJDE",
+      "card3Description": "Vi arbejder som en del af kundens team, uden hierarki og pres.",
+      "card4Title": "ANSVAR",
+      "card4Description": "Vi fører projekter til logisk resultat og forbliver tilgængelige efter lancering."
+    },
+    "Benefits": {
+      "title": "HVORFOR VIRKSOMHEDER VÆLGER OS",
+      "item1": "Vi leverer ikke kun et 'website' - vi bygger digitale løsninger med fokus på forretningsmål.",
+      "item2": "Vi kombinerer teknisk ekspertise og strategisk marketing i samme proces.",
+      "item3": "Vi arbejder roligt, struktureret og uden unødvendig kompleksitet - vigtigt for B2B-projekter.",
+      "item4": "Vores kunder får et team, der tænker fremad, ikke kun udfører opgaver.",
+      "button": "Book en konsultation"
+    },
+    "Cases": {
+      "title": "CASES",
+      "descriptionLeft": "VI HAR ARBEJDET MED VIRKSOMHEDER I FORSKELLIGE STØRRELSER — FRA SMÅ VIRKSOMHEDER TIL INTERNATIONALE PROJEKTER.",
+      "descriptionRight": "<gray>I hvert projekt fokuserer vi ikke</gray> kun på <gray>design eller teknologi,</gray> men på, hvordan <gray>digitale løsninger</gray> påvirker salg, processer <gray>og</gray> forretningsudvikling.",
+      "button": "Se cases"
+    },
+    "Questions": {
+      "title": "OFTE STILLEDE SPØRGSMÅL",
+      "seeMore": "Se andre spørgsmål",
+      "q1": {
+        "question": "Hvordan starter samarbejdet?",
+        "answer": "Det starter med en indledende samtale, hvor vi drøfter din virksomhed, mål og nuværende situation. Derefter udarbejder vi en løsning og et arbejdsomfang. Først når begge parter har en klar forståelse af opgaven, starter implementeringen."
+      },
+      "q2": {
+        "question": "Giver I garanti for jeres arbejde?",
+        "answer": "Ja. Vi giver garanti for den tekniske del af projektet og sikrer, at de gennemførte løsninger fungerer korrekt inden for de aftalte rammer."
+      },
+      "q3": {
+        "question": "Hvor lang tid tager et projekt?",
+        "answer": "Tidsrammen afhænger af kompleksitet og omfang. Efter indledende afklaring giver vi et realistisk tidsperspektiv og følger den aftalte plan."
+      },
+      "q4": {
+        "question": "Kan produktet videreudvikles efter lancering?",
+        "answer": "Ja. Vi designer løsninger med fremtidig udvikling for øje, så produktet kan skaleres og udvides efter behov."
+      },
+      "q5": {
+        "question": "Er design inkluderet?",
+        "answer": "Ja, design er inkluderet i alle pakker."
+      }
+    }
+  },
+
+  "BlogPage": {
+    "Hero": {
+      "title": "Blog",
+      "description": "<gray>Indsigter, cases og praktiske</gray> artikler om <gray>websites</gray>, digitale systemer, marketing og forretningsudvikling."
+    },
+    "list": {
+      "notFound": {
+        "title": "Ingen artikler endnu",
+        "description": "Kom tilbage senere — vi udgiver nye indlæg, når de er klar."
+      }
+    }
+  },
+
+  "ArticlePage": {
+    "ArticleNotFound": {
+      "title": "Artiklen blev ikke fundet",
+      "description": "Siden findes ikke eller er blevet flyttet."
+    },
+    "Recommended": { "showMore": "Læs mere" },
+    "Questions": {
+      "title": "Ofte stillede spørgsmål",
+      "seeMore": "Se andre spørgsmål"
+    }
+  },
+
+  "BusinessModelPage": {
+    "Hero": {
+      "title": "Website til din virksomhed, som du har fuld kontrol over",
+      "descriptionOne": "Éngangsbetaling. Ingen abonnementer. Ingen platforme.",
+      "descriptionTwo": "Fuldstændigt website på ren kode, klar til SEO, GDPR og kundehåndtering.",
+      "subtitle": "Nøglefordele:",
+      "listItems": [
+        "Éngangsinvestering — ingen månedlige betalinger",
+        "Fuld ejerskab — websitet tilhører dig",
+        "Hurtig ydelse og Google-indeksering",
+        "Brugervenlig admin-panel til redigering af indhold og formularer",
+        "GDPR-kompatibel fra dag 1"
+      ],
+      "button": "Se demo af websitet"
+    },
+    "Disadvantages": {
+      "title": "<gray>Hvorfor de fleste websites</gray> skaber afhængighed",
+      "descriptionOne": "WordPress, Wix og andre platforme er nemme i starten, men over tid opstår:",
+      "items": [
+        {
+          "text": "Abonnementer og plugins",
+          "image": "/business-model-page-disadvantages-image-one.webp"
+        },
+        {
+          "text": "Konstant opdatering",
+          "image": "/business-model-page-disadvantages-image-two.webp"
+        },
+        {
+          "text": "Afhængighed af udvikler",
+          "image": "/business-model-page-disadvantages-image-three.webp"
+        }
+      ],
+      "descriptionTwo": "Vi tilbyder en anden løsning: Éngangsbetaling — brug websitet som et stabilt forretningsværktøj."
+    },
+    "Comparison": {
+      "title": "Vores løsning vs <gray>platforme</gray>",
+      "columnSubtitles": [
+        "Kriterium",
+        "WordPress / Wix / andre platforme",
+        "Vores løsning"
+      ],
+      "rows": [
+        [
+          "Betalingsmodel",
+          "Abonnementer og ekstra betalinger",
+          "Éngangsbetaling"
+        ],
+        ["Ejerskab", "Afhængig af platform", "Fuld ejerskab"],
+        [
+          "E-mail integration",
+          "Plugins / ekstra opsætning",
+          "Opsat og inkluderet"
+        ],
+        [
+          "Formularer og henvendelser",
+          "Via plugins",
+          "Inkluderet og fungerende"
+        ],
+        ["SEO og hastighed", "Afhænger af plugins", "Optimeret til Google"],
+        ["Logo", "Ikke inkluderet", "Inkluderet i pakken"],
+        ["Website design", "Skabelon / dyr custom", "Tilpasset dit brand"],
+        ["Cookie og GDPR", "Betalte løsninger", "Indbygget"],
+        [
+          "Analytics (GA, GTM)",
+          "Plugins / separat opsætning",
+          "Opsat og konfigureret"
+        ],
+        ["Klar til lancering", "Kræver tilpasning", "Klar til brug"]
+      ]
+    },
+    "TargetAudience": {
+      "title": "<gray>Hvem passer</gray> løsningen til",
+      "items": [
+        {
+          "title": "BYGGEVIRKSOMHEDER",
+          "description": "Kalkulatorer, formularer, portefølje, prislister.",
+          "imageDesk": "/business-model-page-target-image-one-desk.webp",
+          "imageMob": "/business-model-page-target-image-one-mob.webp"
+        },
+        {
+          "title": "EJENDOMSMÆGLERE / AGENTURER",
+          "description": "Ejendomsdatabase med filtrering (by, område, størrelse, antal værelser, pris; udlejning/salg; sortering).",
+          "imageDesk": "/business-model-page-target-image-two-desk.webp",
+          "imageMob": "/business-model-page-target-image-two-mob.webp"
+        },
+        {
+          "title": "RESTAURANTER OG CAFÉER",
+          "description": "Online booking, menu, kontaktformularer.",
+          "imageDesk": "/business-model-page-target-image-three-desk.webp",
+          "imageMob": "/business-model-page-target-image-three-mob.webp"
+        },
+        {
+          "title": "RENGØRINGS- OG SERVICEFIRMAER",
+          "description": "Ordrer, formularer, tidsplaner.",
+          "imageDesk": "/business-model-page-target-image-four-desk.webp",
+          "imageMob": "/business-model-page-target-image-four-mob.webp"
+        },
+        {
+          "title": "MEDICINSKE OG KOSMETISKE TJENESTER",
+          "description": "Online booking, tidsbestilling, formularer, prislister.",
+          "imageDesk": "/business-model-page-target-image-five-desk.webp",
+          "imageMob": "/business-model-page-target-image-five-mob.webp"
+        },
+        {
+          "title": "LOKALE VIRKSOMHEDER MED FOKUS PÅ HENVENDELSER",
+          "description": "Kontaktformularer, kalkulatorer, portefølje, interaktive elementer tilpasset forretningen.",
+          "imageDesk": "/business-model-page-target-image-six-desk.webp",
+          "imageMob": "/business-model-page-target-image-six-mob.webp"
+        }
+      ]
+    },
+    "included": {
+      "title": "<gray>Business</gray> systempakke",
+      "sections": [
+        {
+          "items": [
+            "Fuldstændigt website på ren kode",
+            "SEO-struktur til Google",
+            "Admin-panel til redigering af tekster, billeder og formularer",
+            "Formularer og kontaktmuligheder",
+            "Integration med e-mail marketing",
+            "Booking / kalender (hvis nødvendigt)",
+            "Mulighed for tilslutning til CRM",
+            "Video-demo og instruktioner"
+          ]
+        },
+        {
+          "title": "WEBSITE DESIGN",
+          "items": [
+            "Tilpasning af design til din forretnings niche",
+            "Farver og skrifttyper tilpasset brand",
+            "Responsivt for mobil og desktop"
+          ]
+        },
+        {
+          "title": "LOGO",
+          "items": [
+            "Oprettelse af grundlæggende digitalt logo",
+            "Integration af logo på sitet",
+            "Logo klar til website, sociale medier og reklame"
+          ]
+        }
+      ]
+    },
+    "Demo": {
+      "title": "<gray>Du styrer</gray> indhold",
+      "listItems": [
+        "Redigerer tekster og billeder",
+        "Opdaterer information",
+        "Video-instruktion viser hele processen med admin-panelet"
+      ],
+      "button": "Se demo af admin-panelet"
+    },
+    "Steps": {
+      "title": "<gray>Hvordan</gray> vi arbejder"
+    },
+    "Price": {
+      "title": "LØSNINGENS PRIS",
+      "note": "(afhænger af niche og integrationer)",
+      "fromLabel": "Pris fra",
+      "toLabel": "til",
+      "fromPrice": "12.000KR",
+      "fromEur": "(1600€)",
+      "toPrice": "22.500 KR",
+      "toEur": "(3000€)",
+      "listItems": [
+        "Éngangsbetaling",
+        "Ingen abonnementer",
+        "Ingen obligatoriske betalinger",
+        "Ekstra kun — domæne"
+      ]
+    },
+    "Warranty": {
+      "title": "<gray>Support og</gray> garanti",
+      "listItems": [
+        "SITET TILHØRER FULDT UD DIG",
+        "GDPR OG EU-KRAV OPFYLDT",
+        "VIDEO-INSTRUKTIONER OG DOKUMENTATION",
+        "SUPPORT UNDER OG EFTER LANCERING"
+      ]
+    },
+    "CtaFirst": {
+      "title": "INVESTÉR ÉN GANG — BRUG SITET I MANGE ÅR",
+      "subtitle": "DU FÅR ET VÆRKTØJ, SOM:",
+      "badge": "Sitet klar på 7-14 dage.",
+      "button": "Book en konsultation",
+      "listItems": [
+        "IKKE KRÆVER ABONNEMENTER",
+        "IKKE SKABER AFHÆNGIGHED",
+        "ARBEJDER PÅ KUNDEANSKAFFELSE"
+      ]
+    },
+    "Questions": {
+      "title": "OFTE STILLEDE SPØRGSMÅL",
+      "seeMore": "Se andre spørgsmål",
+      "q1": {
+        "question": "Hvad er inkluderet i pakken?",
+        "answer": "Fuldstændigt website på ren kode, tilpasset design, logo, SEO-struktur til Google, formularer, e-mail-integration, booking/kalender (efter behov), CRM-integration og video-instruktioner."
+      },
+      "q2": {
+        "question": "Er der ekstra betalinger eller abonnementer?",
+        "answer": "Nej. Éngangsbetaling, alt inkluderet. Ekstra kun for domæne."
+      },
+      "q3": {
+        "question": "Er logo inkluderet?",
+        "answer": "Ja. Logo oprettes til dit website og digital brug og er inkluderet i pakken."
+      },
+      "q4": {
+        "question": "Er analytics og GDPR inkluderet?",
+        "answer": "Ja. Google Analytics, GTM, cookie-filer og GDPR-kompatibilitet er opsat."
+      },
+      "q5": {
+        "question": "Kan jeg starte reklamekampagner straks efter lancering?",
+        "answer": "Ja. Sitet er klar til at modtage henvendelser og kampagner."
+      },
+      "q6": {
+        "question": "Er der support efter lancering?",
+        "answer": "Ja. Video-instruktioner og support er tilgængelig under og efter lancering."
+      }
+    },
+    "Cta": {
+      "title": "KAN DU IKKE FINDE SVAR PÅ DIT SPØRGSMÅL?",
+      "description": "Læs mere detaljeret om forretningsløsningen og sitets muligheder i vores blog.",
+      "button": "Du kan se detaljer om løsningen"
+    }
+  },
+
+  "PricePage": {
+    "Hero": {
+      "subtitle": "Faste pakker. Klare rammer. Fokus på effektivitet og vækst.",
+      "title": "Digitale forretningslø sninger med klare priser",
+      "description": "<gray>Vi udvikler ikke bare hjemmesider</gray> – vi <gray>automatiserer din</gray> forretning og sparer <gray>dig tid.</gray> Til virksomheder og iværksættere i Danmark.",
+      "button": "Book gratis behovsanalyse",
+      "list": {
+        "title": "HVAD BETALER DU FOR?",
+        "listItemOne": "Du betaler for mindre manuelt arbejde, hurtigere processer og mere tid til din forretning.",
+        "listItemTwo": "Alle løsninger er bygget som salgs- og automatiseringsværktøjer – ikke som “flotte hjemmesider”."
+      }
+    },
+    "BasicPrices": {
+      "title": "<gray>WEBSITES &</gray> DIGITALE LØSNINGER",
+      "descriptionOne": "Hjemmesider udviklet til virksomheder – klar til kunder, leads og betaling fra dag ét.",
+      "descriptionTwo": "Alle pakker har et fast omfang, klar struktur og aftalte tidsrammer.",
+      "landing": {
+        "title": "LANDING PAGES",
+        "basic": {
+          "name": "Basis Landing Page",
+          "priceFrom": "fra.",
+          "priceAmount": "18.750kr (2500€)",
+          "description": "EFFEKTIV LØSNING TIL ÉT PRODUKT, ÉN SERVICE ELLER ÉN KAMPAGNE.",
+          "button": "Mere om landing pages"
+        },
+        "premium": {
+          "name": "Premium Landing Page",
+          "priceFrom": "fra.",
+          "priceAmount": "26.250kr (3500€)",
+          "description": "KOMPLET SALGS- OG AUTOMATISERINGSVÆRKTØJ MED BETALING, BOOKING OG INTEGRATIONER.",
+          "button": "Mere om landing pages"
+        }
+      },
+      "multipage": {
+        "title": "HJEMMESIDER (MULTI-PAGE)",
+        "basic": {
+          "name": "Basis Website",
+          "priceFrom": "fra.",
+          "priceAmount": "37.500kr (5000€)",
+          "description": "PROFESSIONEL HJEMMESIDE, DER SKABER TILLID OG SYNLIGHED I GOOGLE.",
+          "button": "Mere om websites"
+        },
+        "premium": {
+          "name": "Premium Website",
+          "priceFrom": "fra.",
+          "priceAmount": "60.000kr (8000€)",
+          "description": "AUTOMATISERET FORRETNINGSSYSTEM FRA FORESPØRGSEL TIL BETALING.",
+          "button": "Mere om websites"
+        }
+      },
+      "webshop": {
+        "title": "WEBSHOP",
+        "solution": {
+          "name": "Webshop-Løsning",
+          "priceFrom": "fra.",
+          "priceAmount": "60.000 kr (10.000 €)",
+          "description": "AUTOMATISERET E-COMMERCE LØSNING, DER SÆLGER 24/7.",
+          "button": "Mere om webshop"
+        }
+      }
+    },
+    "AdditionalServices": {
+      "title": "<gray>SUPPLERENDE</gray> SERVICES",
+      "description": "Disse ydelser understøtter dine digitale løsninger og kan tilføjes efter behov.",
+      "seo": {
+        "name": "SEO",
+        "priceFrom": "fra.",
+        "priceAmount": "6.000kr (800€)",
+        "description": "LANGSIGTET SYNLIGHED OG STABIL KUNDESTRØM VIA GOOGLE.",
+        "button": "Mere om SEO"
+      },
+      "logo": {
+        "name": "LOGO DESIGN",
+        "priceFrom": "fra.",
+        "priceAmount": "3.000kr (400€)",
+        "description": "VISUEL IDENTITET, DER SKABER GENKENDELSE OG TROVÆRDIGHED.",
+        "button": "Mere om logo design"
+      },
+      "googleAds": {
+        "name": "GOOGLE ADS",
+        "priceFrom": "fra.",
+        "priceAmount": "3.750kr (600€)",
+        "description": "KONTROLLERET ANNONCERING MED HURTIGE RESULTATER.",
+        "button": "Mere om Google Ads"
+      },
+      "metaAds": {
+        "name": "FACEBOOK & INSTAGRAM ADS",
+        "priceFrom": "fra.",
+        "priceAmount": "3.750kr (600€)",
+        "description": "ANNONCEOPSÆTNING MED FOKUS PÅ SALG OG LEADS.",
+        "button": "Mere om Meta Ads"
+      },
+      "motion": {
+        "name": "MOTION DESIGN",
+        "priceFrom": "fra.",
+        "priceAmount": "2.000kr (250€)",
+        "description": "ANIMERET INDHOLD TIL WEBSITES, ANNONCER OG SOCIALE MEDIER.",
+        "button": "Mere om motion design"
+      },
+      "calculators": {
+        "name": "KALKULATORER & INTERAKTIVE LØSNINGER",
+        "priceFrom": "fra.",
+        "priceAmount": "4.500kr (600€)",
+        "description": "VÆRKTØJER DER ØGER KONVERTERING OG SPARER TID.",
+        "button": "Mere om kalkulatorer"
+      }
+    },
+    "Questions": {
+      "title": "FAQ",
+      "seeMore": "Se andre spørgsmål",
+      "q1": {
+        "question": "Giver I garanti på jeres løsninger?",
+        "answer": "Ja. Vi yder garanti på den tekniske løsning efter levering. Eventuelle fejl, der opstår, udbedres uden ekstra omkostninger inden for den aftalte periode."
+      },
+      "q2": {
+        "question": "Kan man betale i rater?",
+        "answer": "Ja, det er muligt. Typisk betales 50 % ved opstart og 50 % ved levering. Andre betalingsmodeller kan aftales individuelt."
+      },
+      "q3": {
+        "question": "Er der skjulte omkostninger?",
+        "answer": "Nej. Alle priser og ydelser aftales på forhånd. Ekstra funktioner eller ændringer aftales altid separat."
+      },
+      "q4": {
+        "question": "Hvorfor starter priserne fra et bestemt niveau?",
+        "answer": "Fordi hver løsning tilpasses virksomhedens behov og niveau af automatisering. Den endelige pris afhænger af funktioner, integrationer og projektets omfang."
+      },
+      "q5": {
+        "question": "Hvor lang tid tager det at få en færdig løsning?",
+        "answer": "Tidsrammen afhænger af projektets kompleksitet. Landing pages: 2-4 uger. Websites og webshops: 4-8 uger."
+      },
+      "q6": {
+        "question": "Er SEO inkluderet i prisen?",
+        "answer": "Grundlæggende SEO-struktur er inkluderet i alle websites. Løbende SEO og markedsføring tilbydes som separate services."
+      }
+    },
+    "Cta": {
+      "title": "OM PRISER",
+      "description": "Alle priser er angivet som \"fra pris\", da hver løsning tilpasses virksomhedens behov og niveau af automatisering.",
+      "question": "Er du i tvivl om, hvilken løsning der passer bedst til din forretning?",
+      "button": "Book gratis behovsanalyse"
+    }
   }
 }

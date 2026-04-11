@@ -1,5 +1,6 @@
 import Image from "next/image";
 import * as motion from "motion/react-client";
+import Container from "@/components/ui/container";
 
 import { CaseWithLanguage } from "@/types/case";
 import { urlForImage } from "@/lib/sanityClient";
@@ -30,7 +31,7 @@ const CaseHeroMobile = ({ currentCase }: { currentCase: CaseWithLanguage }) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1.5, delay: 0.5 }}
-        className="absolute inset-x-0 h-[414px] top-[-60px] sm:top-[-80px] will-change-[opacity,transform] w-full mx-auto max-w-[560px] lg:max-w-[680px] xl:max-w-[728px] rounded-b-[14px] overflow-hidden"
+        className="absolute inset-x-0 h-[414px] top-[-60px] sm:top-[-80px] will-change-[opacity,transform] rounded-b-[14px] overflow-hidden"
       >
         <Image
           src={imageUrl}
@@ -42,7 +43,7 @@ const CaseHeroMobile = ({ currentCase }: { currentCase: CaseWithLanguage }) => {
           className="w-full h-full min-h-[414px] object-cover"
         />
       </motion.div>
-      <div className="px-5 sm:px-10 pt-[394px]">
+      <Container className="pt-[394px]">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col relative gap-[18px] max-w-[320px] lg:max-w-[320px] xl:max-w-[327px] z-10">
             <h1 className=" font-manrope text-[36px] leading-[120%] text-white uppercase font-light">
@@ -89,7 +90,7 @@ const CaseHeroMobile = ({ currentCase }: { currentCase: CaseWithLanguage }) => {
             className="pointer-events-none contrast-125 saturate-150 select-none transparent"
           />
         </motion.div>
-      </div>
+      </Container>
     </div>
   );
 };

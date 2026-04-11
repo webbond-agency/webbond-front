@@ -11,29 +11,39 @@ const circleVariants: Variants = {
 
 interface GooeyWhiteLinkProps {
   text?: string;
+  children?: React.ReactNode;
   className?: string;
   href: string;
+  linkType?: "internal" | "external";
   icon?: React.ReactNode;
   width?: number;
   height?: number;
   target?: string;
+  centerText?: boolean;
+  /** Shrink width to content (e.g. inline links in rich text). */
+  fitContent?: boolean;
 }
 
 const MotionLink = m(Link);
+const MotionAnchor = m.a;
 
 const GooeyWhiteLink = ({
   text,
+  children,
   className,
   href,
+  linkType = "internal",
   width: initialWidth,
   height = 52,
   icon,
   target,
+  centerText = false,
+  fitContent = false,
 }: GooeyWhiteLinkProps) => {
   const containerRef = useRef<HTMLAnchorElement>(null);
   const [width, setWidth] = useState(initialWidth || 236);
 
-  const isExternal = href.startsWith("http") || href.startsWith("//");
+  const isExternal = linkType === "external";
 
   const externalProps = isExternal
     ? { target: "_blank", rel: "noopener noreferrer nofollow" }
@@ -75,21 +85,23 @@ const GooeyWhiteLink = ({
     C0 11.6406 ${radius - 14.3594} 0 ${radius} 0
     H${mainBodyRight}Z
   `;
+  const baseClassName = cn(
+    "group relative inline-flex items-center overflow-visible bg-transparent transition-all will-change-transform active:scale-95 no-underline decoration-transparent text-inherit visited:text-inherit hover:text-inherit",
+    className,
+  );
 
-  return (
-    <MotionLink
-      ref={containerRef}
-      href={href}
-      {...externalProps}
-      {...(target && { target })}
-      initial="initial"
-      whileHover="hover"
-      className={cn(
-        "group relative inline-flex items-center overflow-visible bg-transparent transition-all will-change-transform active:scale-95 no-underline decoration-transparent",
-        className
-      )}
-      style={{ width: initialWidth || "100%", height }}
-    >
+  /** Inline width overrides Tailwind; only set when numeric width or fitContent — otherwise use className (e.g. w-full md:w-[313px]). */
+  const anchorStyle: React.CSSProperties = {
+    height,
+    ...(fitContent
+      ? { width: initialWidth ?? "auto" }
+      : typeof initialWidth === "number"
+        ? { width: initialWidth }
+        : {}),
+  };
+
+  const content = (
+    <>
       {/* SVG Background */}
       <svg
         className="pointer-events-none absolute inset-0 z-0"
@@ -126,14 +138,19 @@ const GooeyWhiteLink = ({
         </g>
       </svg>
 
-      {/* Content Layer */}
-      <div className="relative z-10 flex h-full w-full items-center pointer-events-none">
-        <span className="flex-1 leading-none flex items-center pl-9 text-black">
-          {text}
+      {/* Content Layer — span, not div: valid inside <p> when link is inline in rich text */}
+      <span className="relative z-10 flex h-full w-full min-w-0 flex-nowrap items-center pointer-events-none">
+        <span
+          className={cn(
+            "flex flex-1 items-center whitespace-nowrap leading-none text-black",
+            centerText ? "justify-center px-4 sm:px-8" : "pl-6",
+          )}
+        >
+          {children ?? text}
         </span>
-        <div
+        <span
           style={{ width: height }}
-          className="flex shrink-0 items-center justify-center text-black"
+          className="flex shrink-0 items-center justify-center self-stretch text-black"
         >
           {icon || (
             <m.svg
@@ -150,8 +167,35 @@ const GooeyWhiteLink = ({
               />
             </m.svg>
           )}
-        </div>
-      </div>
+        </span>
+      </span>
+    </>
+  );
+
+  return isExternal ? (
+    <MotionAnchor
+      ref={containerRef}
+      href={href}
+      {...externalProps}
+      {...(target && { target })}
+      initial="initial"
+      whileHover="hover"
+      className={baseClassName}
+      style={anchorStyle}
+    >
+      {content}
+    </MotionAnchor>
+  ) : (
+    <MotionLink
+      ref={containerRef}
+      href={href}
+      {...(target && { target })}
+      initial="initial"
+      whileHover="hover"
+      className={baseClassName}
+      style={anchorStyle}
+    >
+      {content}
     </MotionLink>
   );
 };

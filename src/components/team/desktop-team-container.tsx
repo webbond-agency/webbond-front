@@ -1,25 +1,18 @@
-'use client';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel';
-import Image from 'next/image';
-import { TEAM_DATA } from './team-data';
-import GooeyWhiteButton from '../ui/gooey-white-button';
-import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
-import { useState } from 'react';
+} from "@/components/ui/carousel";
+import Image from "next/image";
+import { TEAM_DATA } from "./team-data";
 
-const FeedbackModal = dynamic(() => import('@/components/feedback-modal'), {
-  ssr: false,
-});
+import { useTranslations } from "next-intl";
+import GooeyWhiteLink from "../ui/gooey-white-link";
 
 const DesktopTeamContainer = () => {
-  const t = useTranslations('Team');
-  const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
+  const t = useTranslations("Team");
 
   return (
     <section className="relative pb-[191px]">
@@ -45,13 +38,14 @@ const DesktopTeamContainer = () => {
       <Carousel>
         <div className="flex items-center mb-[60px] lg:mb-[80px] xl:mb-[132px]">
           <h2 className="max-w-[300px] lg:max-w-[375px] relative text-[45px] lg:text-[56px] xl:text-[64px] font-manrope font-light uppercase text-white leading-[120%] before:content-[''] before:block before:absolute before:top-1/2 before:-translate-y-1/2 before:right-[-30px] md:before:right-[-46px] before:w-[12px] md:before:w-[20px] before:h-[12px] md:before:h-[20px] before:bg-white before:rounded-full">
-            {t('title')}
+            {t("title")}
           </h2>
-          <GooeyWhiteButton
-            text={t('buttonAbout')}
-            onClick={() => setIsFeedbackOpen(true)}
-            width={236}
+
+          <GooeyWhiteLink
+            href="/about"
+            text={t("buttonAbout")}
             height={52}
+            width={236}
             className="ml-[80px] lg:ml-[84px] text-center w-[160px] md:w-[200px] lg:w-[220px] xl:w-[236px] h-[40px] md:h-[44px] lg:h-[48px] xl:h-[52px] text-[12px] md:text-[14px] font-montserrat font-light text-black"
           />
           {/* Custom Navigation Buttons */}
@@ -95,7 +89,6 @@ const DesktopTeamContainer = () => {
           </CarouselContent>
         </div>
       </Carousel>
-      <FeedbackModal isOpen={isFeedbackOpen} onOpenChange={setIsFeedbackOpen} />
     </section>
   );
 };

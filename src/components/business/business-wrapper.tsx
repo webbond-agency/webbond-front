@@ -1,17 +1,20 @@
-'use client';
-import { useIsMobile } from '@/hooks/use-mobile';
-import BusinessContainer from './business-container';
-import DesktopBusinessContainer from './desktop-bisines-container';
+"use client";
+
+import { useTranslations } from "next-intl";
+
+import CtaWrapper from "@/components/shared/cta/cta-wrapper";
 
 const BusinessWrapper = () => {
-  const isMobile = useIsMobile();
-
-  if (isMobile === undefined) return null;
+  const t = useTranslations("Business");
 
   return (
-    <section>
-      {isMobile ? <BusinessContainer /> : <DesktopBusinessContainer />}
-    </section>
+    <CtaWrapper
+      title={t.rich("title", {
+        gray: (chunks) => <span className="text-[#999]">{chunks}</span>,
+      })}
+      description={t("description")}
+      buttonText={t("button")}
+    />
   );
 };
 

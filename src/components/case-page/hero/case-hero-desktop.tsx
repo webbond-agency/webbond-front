@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Container from "@/components/ui/container";
 import { CaseWithLanguage } from "@/types/case";
 import { urlForImage } from "@/lib/sanityClient";
 import * as motion from "motion/react-client";
@@ -29,7 +29,7 @@ const CaseHeroDesktop = ({
   const imageAlt = hero.image?.alt || homepageImage?.alt || title;
 
   return (
-    <div className="hidden md:block pt-[45px] xl:pt-[87px] pb-[93px] lg:pb-[150px] relative px-[20px] sm:px-[32px]">
+    <Container className="hidden md:block pt-[45px] xl:pt-[87px] pb-[93px] lg:pb-[150px] relative">
       <div className="flex flex-col gap-[110px] relative z-10">
         <div className="flex flex-col relative gap-[18px] max-w-[320px] lg:max-w-[320px] xl:max-w-[327px] z-10">
           <h1 className=" font-manrope text-[36px] lg:text-[40px] leading-[120%] text-white uppercase font-light">
@@ -104,7 +104,7 @@ const CaseHeroDesktop = ({
           className="pointer-events-none contrast-150 saturate-150 select-none"
         />
       </motion.div>
-    </div>
+    </Container>
   );
 };
 

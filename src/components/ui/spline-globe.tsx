@@ -1,9 +1,9 @@
-'use client';
-import { Suspense, useRef, useEffect, useState } from 'react';
-import dynamic from 'next/dynamic';
-import Image from 'next/image';
+"use client";
+import { Suspense, useRef, useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+import Image from "next/image";
 
-const Spline = dynamic(() => import('@splinetool/react-spline'), {
+const Spline = dynamic(() => import("@splinetool/react-spline"), {
   ssr: false,
   loading: () => <div className="w-full h-full bg-transparent" />,
 });
@@ -55,12 +55,12 @@ export default function SplineGlobe({
   // 3. Page Visibility API: Паузим, если вкладка не активна
   useEffect(() => {
     const handleVisibilityChange = () => {
-      setIsPageVisible(document.visibilityState === 'visible');
+      setIsPageVisible(document.visibilityState === "visible");
     };
 
-    window.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener("visibilitychange", handleVisibilityChange);
     return () =>
-      window.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener("visibilitychange", handleVisibilityChange);
   }, []);
 
   // 4. Логика отслеживания бездействия пользователя
@@ -93,12 +93,12 @@ export default function SplineGlobe({
     };
 
     const events = [
-      'mousemove',
-      'mousedown',
-      'keydown',
-      'touchstart',
-      'scroll',
-      'wheel',
+      "mousemove",
+      "mousedown",
+      "keydown",
+      "touchstart",
+      "scroll",
+      "wheel",
     ];
     events.forEach((event) =>
       window.addEventListener(event, throttledHandler, {
@@ -137,7 +137,7 @@ export default function SplineGlobe({
         splineRef.current.setPaused(false);
       }
     } catch (e) {
-      console.warn('Spline setPaused failed:', e);
+      console.warn("Spline setPaused failed:", e);
     }
   }, [isVisible, isInViewport, isPageVisible, isIdle, isSplineReady]);
 
@@ -159,9 +159,9 @@ export default function SplineGlobe({
       {/* Заглушка для Мобильных устройств */}
       <div
         className={`absolute right-[40%] top-[50px] w-[360px] h-[813px] transition-opacity duration-1000 md:hidden ${
-          !showPlaceholder ? 'opacity-0 pointer-events-none' : 'opacity-100'
+          !showPlaceholder ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
-        style={{ display: shouldHideAll ? 'none' : undefined }}
+        style={{ display: shouldHideAll ? "none" : undefined }}
       >
         <Image
           src="/mobile-globus.webp"
@@ -178,12 +178,12 @@ export default function SplineGlobe({
 
       {/* Заглушка для Десктопа */}
       <div
-        className={`absolute inset-0 top-[45px] w-full h-full transition-opacity duration-1000 hidden md:flex items-center justify-center ${
-          !showPlaceholder ? 'opacity-0 pointer-events-none' : 'opacity-100'
+        className={`absolute inset-0 top-11 -left-10 w-full h-full transition-opacity duration-1000 hidden md:flex items-center justify-center ${
+          !showPlaceholder ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
-        style={{ display: shouldHideAll ? 'none' : undefined }}
+        style={{ display: shouldHideAll ? "none" : undefined }}
       >
-        <div className="relative w-[83%] h-[83%]">
+        <div className="relative w-full h-full lg:w-[87%] lg:h-[87%]">
           <Image
             src="/desktop-globus.webp"
             alt="Globe placeholder desktop"
@@ -200,16 +200,16 @@ export default function SplineGlobe({
       {isActivated && (
         <div
           className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
-            isSplineReady && !showPlaceholder ? 'opacity-100' : 'opacity-0'
+            isSplineReady && !showPlaceholder ? "opacity-100" : "opacity-0"
           }`}
           style={{
-            maskImage: 'radial-gradient(circle, black 50%, transparent 100%)',
+            maskImage: "radial-gradient(circle, black 50%, transparent 100%)",
             WebkitMaskImage:
-              'radial-gradient(circle, black 50%, transparent 100%)',
-            display: shouldHideAll ? 'none' : 'block',
+              "radial-gradient(circle, black 50%, transparent 100%)",
+            display: shouldHideAll ? "none" : "block",
           }}
         >
-          <Suspense fallback={<div className="w-full h-full bg-transparent" />}>
+          <Suspense fallback={<div className="w-full h-auto bg-transparent" />}>
             <Spline
               scene="https://prod.spline.design/S6FngPEV2SNfSBPp/scene.splinecode"
               onLoad={handleOnLoad}
