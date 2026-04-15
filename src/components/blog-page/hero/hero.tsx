@@ -15,6 +15,8 @@ export default async function Hero() {
           src="/case-hero-shadow.webp"
           alt="case-hero-shadow"
           sizes="(max-width: 1280px) 33vw, 1192px"
+          priority
+          fetchPriority="high"
           className="select-none pointer-events-none"
         />
       </div>

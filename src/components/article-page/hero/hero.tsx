@@ -36,6 +36,8 @@ export default function Hero({ article }: HeroProps) {
           alt={mobileAlt}
           fill
           quality={100}
+          priority
+          fetchPriority="high"
           className="object-cover md:hidden -z-20"
         />
       ) : null}
@@ -45,6 +47,8 @@ export default function Hero({ article }: HeroProps) {
           alt={desktopAlt}
           fill
           quality={100}
+          priority
+          fetchPriority="high"
           className="hidden object-cover md:block -z-20"
         />
       ) : null}

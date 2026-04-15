@@ -15,6 +15,8 @@ export default function Hero() {
           height={1205}
           src="/case-hero-shadow.webp"
           alt="case-hero-shadow"
+          priority
+          fetchPriority="high"
           sizes="(max-width: 1280px) 33vw, 1192px"
           className="select-none pointer-events-none"
         />
@@ -28,6 +30,8 @@ export default function Hero() {
             src="/webpages-hero-decor.webp"
             alt="webpages-hero-decor"
             sizes="1238px"
+            priority
+            fetchPriority="high"
             className="select-none pointer-events-none"
           />
         </div>
