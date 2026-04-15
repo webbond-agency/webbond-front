@@ -15,6 +15,8 @@ export default async function Hero() {
           height={1205}
           src="/case-hero-shadow.webp"
           alt="case-hero-shadow"
+          priority
+          fetchPriority="high"
           sizes="(max-width: 1280px) 33vw, 1192px"
           className="select-none pointer-events-none"
         />
@@ -28,6 +30,8 @@ export default async function Hero() {
             src="/webpages-hero-decor.webp"
             alt="webpages-hero-decor"
             sizes="1238px"
+            priority
+            fetchPriority="high"
             className="select-none pointer-events-none"
           />
         </div>
@@ -43,6 +47,8 @@ export default async function Hero() {
             alt="mobile-title-banner badge"
             width={103}
             height={56}
+            priority
+            fetchPriority="high"
             className="w-full h-auto"
           />
         </div>
@@ -55,6 +61,8 @@ export default async function Hero() {
                 alt="about-hero-decor"
                 width={486}
                 height={123}
+                priority
+                fetchPriority="high"
                 className="absolute top-[-17px] left-0 -z-10 w-[486px] h-[123px]"
               />
               <div className="w-[2px] h-auto bg-[linear-gradient(0deg,_#ffffff_0%,_#0a0704_100%)] opacity-32 rounded-full" />

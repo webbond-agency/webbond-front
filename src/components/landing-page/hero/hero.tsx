@@ -16,6 +16,8 @@ export default function Hero() {
           src="/case-hero-shadow.webp"
           alt="landing-hero-shadow"
           sizes="(max-width: 1280px) 33vw, 1192px"
+          priority
+          fetchPriority="high"
           className="select-none pointer-events-none"
         />
       </div>
@@ -26,6 +28,8 @@ export default function Hero() {
           src="/landing-hero-shadow-mobile.webp"
           alt="landing-hero-shadow"
           sizes="(max-width: 1280px) 33vw, 1128px"
+          priority
+          fetchPriority="high"
           className="select-none pointer-events-none"
         />
       </div>
@@ -44,6 +48,8 @@ export default function Hero() {
             src="/landing-hero-decor.webp"
             alt="landing-hero-decor"
             sizes="1632px"
+            priority
+            fetchPriority="high"
             className="select-none pointer-events-none w-[1632px] md:w-[1454px] h-auto"
           />
         </m.div>
@@ -60,6 +66,8 @@ export default function Hero() {
             alt="mobile-title-banner badge"
             width={103}
             height={56}
+            priority
+            fetchPriority="high"
             className="w-full h-auto"
           />
         </div>

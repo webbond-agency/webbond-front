@@ -17,6 +17,8 @@ export default function Hero() {
           src="/case-hero-shadow.webp"
           alt="case-hero-shadow"
           sizes="(max-width: 1280px) 33vw, 1192px"
+          priority
+          fetchPriority="high"
           className="select-none pointer-events-none"
         />
       </div>
@@ -48,6 +50,8 @@ export default function Hero() {
             alt="business-model-hero-decor"
             width={2281}
             height={2281}
+            priority
+            fetchPriority="high"
             className="select-none pointer-events-none "
           />
         </m.div>
@@ -60,6 +64,8 @@ export default function Hero() {
               src="/business-model-page-hero-image-one.webp"
               alt="business-model-hero-image"
               fill
+              priority
+              fetchPriority="high"
               className="z-10 object-cover scale-145 lg:scale-115 object-[20px_-11px] lg:object-[-10px_-1px] mix-blend-hard-light"
             />
             <Image
@@ -67,6 +73,8 @@ export default function Hero() {
               alt="business-model-hero-quote"
               width={80}
               height={54}
+              priority
+              fetchPriority="high"
               className="z-20 absolute top-4 right-4 lg:top-8 lg:right-8"
             />
             <p className="relative z-20 max-w-[240px] font-manrope text-[16px] leading-[120%] text-black font-light uppercase">
@@ -102,6 +110,8 @@ export default function Hero() {
                 alt="business-model-hero-image"
                 width={120}
                 height={120}
+                priority
+                fetchPriority="high"
                 className="z-10 absolute top-[calc(50%-56px)] lg:top-[calc(50%-89px)] xl:top-[calc(50%-114px)] left-[calc(50%-60px)] lg:left-[calc(50%-91px)] xl:left-[calc(50%-114px)] w-30 lg:w-[228px] h-auto object-cover"
               />
             </div>
@@ -117,6 +127,8 @@ export default function Hero() {
               src="/business-model-page-hero-image-three.webp"
               alt="business-model-hero-image"
               fill
+              priority
+              fetchPriority="high"
               className="object-cover"
             />
             <GooeyWhiteLink
