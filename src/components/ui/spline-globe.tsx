@@ -186,12 +186,12 @@ export default function SplineGlobe({
 
   return (
     <div ref={containerRef} className="w-full h-full relative">
-      {/* Заглушка для Мобильных устройств (LCP-изображение, поэтому priority) */}
+      {/* Заглушка для Мобильных устройств (LCP-изображение: рендерим сразу,
+          без display:none-гейта от JS, иначе LCP откладывается до гидрации) */}
       <div
         className={`absolute right-[40%] top-[50px] w-[360px] h-[813px] transition-opacity duration-1000 md:hidden ${
           !showPlaceholder ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
-        style={{ display: shouldHideAll ? "none" : undefined }}
       >
         <Image
           src="/mobile-globus.webp"
@@ -211,7 +211,6 @@ export default function SplineGlobe({
         className={`absolute inset-0 top-11 -left-10 w-full h-full transition-opacity duration-1000 hidden md:flex items-center justify-center ${
           !showPlaceholder ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
-        style={{ display: shouldHideAll ? "none" : undefined }}
       >
         <div className="relative w-full h-full lg:w-[87%] lg:h-[87%]">
           <Image
