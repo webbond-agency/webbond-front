@@ -976,6 +976,39 @@
         }
       ]
     },
+    "included": {
+      "title": "<gray>Business</gray> system package",
+      "sections": [
+        {
+          "items": [
+            "Complete website built in pure code",
+            "SEO structure for Google",
+            "Admin panel for editing texts, images, and forms",
+            "Forms and contact options",
+            "Email marketing integration",
+            "Booking / calendar (if needed)",
+            "Option to connect CRM",
+            "Video demo and instructions"
+          ]
+        },
+        {
+          "title": "WEBSITE DESIGN",
+          "items": [
+            "Design adapted to your business niche",
+            "Brand-matched colors and fonts",
+            "Responsive for mobile and desktop"
+          ]
+        },
+        {
+          "title": "LOGO",
+          "items": [
+            "Creation of a basic digital logo",
+            "Logo integration on the website",
+            "Logo ready for website, social media, and advertising"
+          ]
+        }
+      ]
+    },
     "Demo": {
       "title": "<gray>You control</gray> content",
       "listItems": [

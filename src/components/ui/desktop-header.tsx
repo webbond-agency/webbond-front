@@ -66,7 +66,7 @@ export default function DesktopHeader({ className }: DesktopHeaderProps) {
 
   const currentPath = getPath(width);
   const circleCx = 932 + (width - 1216);
-  const leftSectionWidth = 887 + (width - 1216);
+  const leftSectionWidth = 987 + (width - 1216);
 
   return (
     <LazyMotion features={domAnimation}>
@@ -75,7 +75,7 @@ export default function DesktopHeader({ className }: DesktopHeaderProps) {
         initial="initial"
         whileHover="hover"
         className={cn(
-          "relative w-full max-w-[1276px] h-[60px] mx-auto",
+          "relative w-full lg:max-w-[960px] xl:max-w-[1216px] h-[60px] mx-auto",
           className,
         )}
       >
@@ -223,11 +223,11 @@ export default function DesktopHeader({ className }: DesktopHeaderProps) {
         </svg>
 
         {/* Слой контента */}
-        <Container className="relative z-10 flex h-full w-full items-center">
+        <Container className="relative z-10 flex h-full w-full items-center lg:px-4">
           {/* Левая часть (Динамическая ширина - тянется, на XL фиксированная как раньше) */}
           <div
-            className="flex items-center justify-start lg:pr-[20px] xl:pr-[40px]"
-            style={{ width: `${leftSectionWidth}px` }}
+            className="flex items-center justify-start lg:pr-[20px] xl:pr-[40px] lg:w-[650px] xl:w-[897px]"
+            // style={{ width: `${leftSectionWidth}px` }}
           >
             <Link href="/#hero" className="shrink-0">
               <Image

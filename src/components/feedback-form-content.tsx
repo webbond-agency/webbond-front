@@ -204,143 +204,170 @@ const FeedbackFormContent = ({
           />
         </div>
 
-        <m.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="flex flex-col items-center [@media(max-height:800px)]:items-start will-change-[opacity,transform] transform-gpu"
+        <div
+          className="[@media(max-height:800px)]:max-h-[calc(90dvh-80px)] [@media(max-height:800px)]:overflow-y-auto [@media(max-height:800px)]:overflow-x-hidden scrollbar scrollbar-w-[2px] scrollbar-thumb-rounded-full pr-1
+          scrollbar-track-rounded-full scrollbar-thumb-white/30 scrollbar-track-transparent"
         >
-          <h2 className="mb-[24px] [@media(max-height:800px)]:mb-[20px] font-manrope font-light text-[40px] [@media(max-height:800px)]:text-[32px] md:text-[48px] lg:text-[64px] uppercase text-white leading-[120%] [@media(max-height:800px)]:text-left">
-            {t("title")}
-          </h2>
-          <p className="mb-[24px] [@media(max-height:800px)]:mb-[20px] font-montserrat font-light text-[12px] md:text-[14px] text-white leading-[120%] [@media(max-height:800px)]:text-left">
-            {t("description")}
-          </p>
-        </m.div>
-
-        <Form {...form}>
-          <form
-            onSubmit={form.handleSubmit(onSubmit)}
-            className="space-y-5 [@media(max-height:800px)]:space-y-5 w-full"
+          <m.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="flex flex-col items-center [@media(max-height:800px)]:items-start will-change-[opacity,transform] transform-gpu"
           >
-            <div className="flex flex-col gap-5 md:flex-row">
-              <FormField
-                control={form.control}
-                name="username"
-                render={({ field }) => (
-                  <FormItem className="md:w-[calc(50%-10px)]">
-                    <FormControl>
-                      <Input
-                        placeholder={t("form.namePlaceholder")}
-                        {...field}
-                        className="h-[45px] [@media(max-height:800px)]:h-[46px] md:h-[52px] rounded-[38px] border border-white px-4 font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
-                      />
-                    </FormControl>
-                    <FormMessage className="ml-4" />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem className="md:w-[calc(50%-10px)]">
-                    <FormControl>
-                      <Input
-                        placeholder={t("form.emailPlaceholder")}
-                        {...field}
-                        className="h-[45px] [@media(max-height:800px)]:h-[46px] md:h-[52px] rounded-[38px] border border-white px-4 font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
-                      />
-                    </FormControl>
-                    <FormMessage className="ml-4" />
-                  </FormItem>
-                )}
-              />
-            </div>
+            <h2 className="mb-[24px] [@media(max-height:800px)]:mb-[20px] font-manrope font-light text-[40px] [@media(max-height:800px)]:text-[32px] md:text-[48px] lg:text-[64px] uppercase text-white leading-[120%] [@media(max-height:800px)]:text-left">
+              {t("title")}
+            </h2>
+            <p className="mb-[24px] [@media(max-height:800px)]:mb-[20px] font-montserrat font-light text-[12px] md:text-[14px] text-white leading-[120%] [@media(max-height:800px)]:text-left">
+              {t("description")}
+            </p>
+          </m.div>
 
-            <div className="flex flex-col gap-5 md:flex-row">
-              <FormField
-                control={form.control}
-                name="phone"
-                render={({ field }) => (
-                  <FormItem className="md:w-[calc(50%-10px)]">
-                    <FormControl>
-                      <div
-                        className={cn(
-                          "relative flex items-center h-[45px] [@media(max-height:800px)]:h-[46px] md:h-[52px] rounded-[38px] border bg-transparent transition-colors overflow-hidden",
-                          form.formState.errors.phone
-                            ? "border-red-500"
-                            : "border-white",
-                        )}
-                      >
-                        <PhoneInput
-                          placeholder="+45"
-                          defaultCountry="DK"
-                          countries={[
-                            "DK",
-                            "UA",
-                            "PL",
-                            "DE",
-                            "FR",
-                            "IT",
-                            "ES",
-                            "RO",
-                            "MD",
-                            "SK",
-                            "HU",
-                            "AT",
-                            "BE",
-                            "BG",
-                            "CY",
-                            "CZ",
-                            "EE",
-                            "FI",
-                            "GR",
-                            "IE",
-                            "LT",
-                            "LU",
-                            "MT",
-                            "NL",
-                            "PT",
-                            "SE",
-                            "SI",
-                            "NO",
-                            "CH",
-                            "GB",
-                            "US",
-                          ]}
-                          international
-                          withCountryCallingCode
-                          limitMaxLength={true}
-                          value={field.value}
-                          onChange={field.onChange}
-                          className="flex h-full w-full items-center font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white/50 
+          <Form {...form}>
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="space-y-5 [@media(max-height:800px)]:space-y-5 w-full"
+            >
+              <div className="flex flex-col gap-5 md:flex-row">
+                <FormField
+                  control={form.control}
+                  name="username"
+                  render={({ field }) => (
+                    <FormItem className="md:w-[calc(50%-10px)]">
+                      <FormControl>
+                        <Input
+                          placeholder={t("form.namePlaceholder")}
+                          {...field}
+                          className="h-[45px] md:h-[52px] rounded-[38px] border border-white px-4 font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
+                        />
+                      </FormControl>
+                      <FormMessage className="ml-4" />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem className="md:w-[calc(50%-10px)]">
+                      <FormControl>
+                        <Input
+                          placeholder={t("form.emailPlaceholder")}
+                          {...field}
+                          className="h-[45px] md:h-[52px] rounded-[38px] border border-white px-4 font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
+                        />
+                      </FormControl>
+                      <FormMessage className="ml-4" />
+                    </FormItem>
+                  )}
+                />
+              </div>
+
+              <div className="flex flex-col gap-5 md:flex-row">
+                <FormField
+                  control={form.control}
+                  name="phone"
+                  render={({ field }) => (
+                    <FormItem className="md:w-[calc(50%-10px)]">
+                      <FormControl>
+                        <div
+                          className={cn(
+                            "relative flex items-center h-[45px] md:h-[52px] rounded-[38px] border bg-transparent transition-colors overflow-hidden",
+                            form.formState.errors.phone
+                              ? "border-red-500"
+                              : "border-white",
+                          )}
+                        >
+                          <PhoneInput
+                            placeholder="+45"
+                            defaultCountry="DK"
+                            countries={[
+                              "DK",
+                              "UA",
+                              "PL",
+                              "DE",
+                              "FR",
+                              "IT",
+                              "ES",
+                              "RO",
+                              "MD",
+                              "SK",
+                              "HU",
+                              "AT",
+                              "BE",
+                              "BG",
+                              "CY",
+                              "CZ",
+                              "EE",
+                              "FI",
+                              "GR",
+                              "IE",
+                              "LT",
+                              "LU",
+                              "MT",
+                              "NL",
+                              "PT",
+                              "SE",
+                              "SI",
+                              "NO",
+                              "CH",
+                              "GB",
+                              "US",
+                            ]}
+                            international
+                            withCountryCallingCode
+                            limitMaxLength={true}
+                            value={field.value}
+                            onChange={field.onChange}
+                            className="flex h-full w-full items-center font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white/50 
                             [&>input]:h-full [&>input]:border-none [&>input]:bg-transparent [&>input]:outline-none [&>input]:placeholder:text-white/50 [&>input]:px-4
                             [&_select]:appearance-none
                             [&_.PhoneInputCountry]:flex [&_.PhoneInputCountry]:items-center [&_.PhoneInputCountry]:h-full [&_.PhoneInputCountry]:pl-4 [&_.PhoneInputCountry]:pr-[40px] [&_.PhoneInputCountry]:border-r [&_.PhoneInputCountry]:border-white/20 [&_.PhoneInputCountry]:gap-[10px]
                             [&_.PhoneInputCountryIcon]:w-[32px]! [&_.PhoneInputCountryIcon]:h-[24px]! [&_.PhoneInputCountryIcon]:shadow-none! 
                             [&_.PhoneInputCountrySelectArrow]:hidden! [&_.PhoneInputCountrySelectArrow]:opacity-0!"
-                        />
-                        <div className="absolute left-[58px] pointer-events-none">
-                          <ChevronDown className="w-6 h-6 text-white" />
+                          />
+                          <div className="absolute left-[58px] pointer-events-none">
+                            <ChevronDown className="w-6 h-6 text-white" />
+                          </div>
                         </div>
-                      </div>
-                    </FormControl>
-                    <FormMessage className="ml-4" />
-                  </FormItem>
-                )}
-              />
+                      </FormControl>
+                      <FormMessage className="ml-4" />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="preferredLanguage"
+                  render={({ field }) => (
+                    <FormItem className="md:w-[calc(50%-10px)]">
+                      <FormControl>
+                        <Select
+                          value={field.value}
+                          onValueChange={field.onChange}
+                          options={languageOptions}
+                          placeholder={t("form.languagePlaceholder")}
+                          triggerClassName="border-white"
+                        />
+                      </FormControl>
+                      <FormMessage className="ml-4" />
+                    </FormItem>
+                  )}
+                />
+              </div>
+
               <FormField
                 control={form.control}
-                name="preferredLanguage"
+                name="interestedService"
                 render={({ field }) => (
-                  <FormItem className="md:w-[calc(50%-10px)]">
+                  <FormItem>
+                    <p className="mb-2 font-montserrat font-light text-[12px] md:text-[14px] text-white leading-[120%] [@media(max-height:800px)]:text-left">
+                      {t("form.serviceLabel")}
+                    </p>
                     <FormControl>
                       <Select
                         value={field.value}
                         onValueChange={field.onChange}
-                        options={languageOptions}
-                        placeholder={t("form.languagePlaceholder")}
+                        options={serviceOptions}
+                        placeholder={t("form.servicePlaceholder")}
                         triggerClassName="border-white"
                       />
                     </FormControl>
@@ -348,81 +375,61 @@ const FeedbackFormContent = ({
                   </FormItem>
                 )}
               />
-            </div>
 
-            <FormField
-              control={form.control}
-              name="interestedService"
-              render={({ field }) => (
-                <FormItem>
-                  <p className="mb-2 font-montserrat font-light text-[12px] md:text-[14px] text-white leading-[120%] [@media(max-height:800px)]:text-left">
-                    {t("form.serviceLabel")}
-                  </p>
-                  <FormControl>
-                    <Select
-                      value={field.value}
-                      onValueChange={field.onChange}
-                      options={serviceOptions}
-                      placeholder={t("form.servicePlaceholder")}
-                      triggerClassName="border-white"
-                    />
-                  </FormControl>
-                  <FormMessage className="ml-4" />
-                </FormItem>
-              )}
-            />
+              {interestedService === "other" ? (
+                <FormField
+                  control={form.control}
+                  name="otherServiceNote"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <Input
+                          placeholder={t("form.messagePlaceholder")}
+                          {...field}
+                          className="h-[45px] md:h-[52px] rounded-[38px] border border-white px-4 font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
+                        />
+                      </FormControl>
+                      <FormMessage className="ml-4" />
+                    </FormItem>
+                  )}
+                />
+              ) : null}
 
-            {interestedService === "other" ? (
               <FormField
                 control={form.control}
-                name="otherServiceNote"
+                name="message"
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input
+                      <Textarea
                         placeholder={t("form.messagePlaceholder")}
                         {...field}
-                        className="h-[45px] [@media(max-height:800px)]:h-[46px] md:h-[52px] rounded-[38px] border border-white px-4 font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
+                        className="h-[100px] [@media(max-height:800px)]:h-[90px] lg:h-[128px] rounded-[18px] border border-white px-4 py-3 font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
                       />
                     </FormControl>
                     <FormMessage className="ml-4" />
                   </FormItem>
                 )}
               />
-            ) : null}
-
-            <FormField
-              control={form.control}
-              name="message"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <Textarea
-                      placeholder={t("form.messagePlaceholder")}
-                      {...field}
-                      className="h-[100px] [@media(max-height:800px)]:h-[90px] lg:h-[128px] rounded-[18px] border border-white px-4 py-3 font-montserrat text-[12px] lg:text-[14px] text-white placeholder:text-white focus-visible:border-red-200 focus-visible:ring-0"
-                    />
-                  </FormControl>
-                  <FormMessage className="ml-4" />
-                </FormItem>
+              {submissionError && (
+                <p className="text-red-500 text-[14px] font-montserrat text-center animate-in fade-in slide-in-from-top-1 duration-300">
+                  {submissionError}
+                </p>
               )}
-            />
-            {submissionError && (
-              <p className="text-red-500 text-[14px] font-montserrat text-center animate-in fade-in slide-in-from-top-1 duration-300">
-                {submissionError}
-              </p>
-            )}
-            <GooeyWhiteButton
-              type="submit"
-              text={t("form.submit")}
-              loadingText={t("form.loading")}
-              disabled={form.formState.isSubmitting || !form.formState.isValid}
-              isLoading={form.formState.isSubmitting}
-              className="mx-auto text-center w-full text-[14px] font-montserrat font-light text-black"
-              height={52}
-            />
-          </form>
-        </Form>
+              <GooeyWhiteButton
+                type="submit"
+                text={t("form.submit")}
+                loadingText={t("form.loading")}
+                disabled={
+                  form.formState.isSubmitting || !form.formState.isValid
+                }
+                isLoading={form.formState.isSubmitting}
+                className="mx-auto text-center w-full text-[14px] font-montserrat font-light text-black"
+                height={52}
+              />
+            </form>
+          </Form>
+        </div>
       </div>
     </>
   );

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin 'tailwind-scrollbar' {
+  nocompatible: true;
+  preferredstrategy: "pseudoelements";
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -123,6 +127,7 @@
 @layer base {
   html {
     /* scroll-behavior: smooth; */
+    scrollbar-gutter: stable;
   }
 
   * {
@@ -131,6 +136,11 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  body[data-scroll-locked] {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
   }
 }
 
