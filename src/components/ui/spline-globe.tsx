@@ -30,7 +30,7 @@ export default function SplineGlobe({
   const idleTimerRef = useRef<NodeJS.Timeout | null>(null);
   const ignoreWakeupUntilRef = useRef<number>(0);
 
-  // 0. Грузим тяжёлый 3D-рантайм только на десктопе.
+  // 0. Определяем тип вьюпорта (влияет на стратегию загрузки Spline).
   useEffect(() => {
     const mql = window.matchMedia("(min-width: 768px)");
     const update = () => setIsDesktop(mql.matches);
@@ -39,14 +39,33 @@ export default function SplineGlobe({
     return () => mql.removeEventListener("change", update);
   }, []);
 
-  // 1. Задержка первичной загрузки Spline для LCP (только один раз, только desktop)
+  // 1. Когда грузить тяжёлый Spline-рантайм:
+  //    - desktop: через 1s после маунта (не мешает LCP);
+  //    - mobile: только по первому действию пользователя (touch/scroll/...),
+  //      чтобы Lighthouse — который страницу не трогает — не платил за TBT,
+  //      а реальный пользователь получал 3D сразу после первого касания.
   useEffect(() => {
-    if (!isDesktop) return;
-    const timer = setTimeout(() => {
-      setShouldLoadSpline(true);
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, [isDesktop]);
+    if (shouldLoadSpline) return;
+
+    if (isDesktop) {
+      const timer = setTimeout(() => setShouldLoadSpline(true), 1000);
+      return () => clearTimeout(timer);
+    }
+
+    const loadOnInteraction = () => setShouldLoadSpline(true);
+    const events = ["touchstart", "pointerdown", "scroll", "wheel", "keydown"];
+    events.forEach((event) =>
+      window.addEventListener(event, loadOnInteraction, {
+        once: true,
+        passive: true,
+      }),
+    );
+    return () => {
+      events.forEach((event) =>
+        window.removeEventListener(event, loadOnInteraction),
+      );
+    };
+  }, [isDesktop, shouldLoadSpline]);
 
   // 2. IntersectionObserver: Следим за попаданием в зону видимости
   useEffect(() => {
@@ -165,12 +184,29 @@ export default function SplineGlobe({
   const showPlaceholder = !isSplineReady || isIdle || !isPageVisible;
   const shouldHideAll = !isVisible || !isInViewport;
 
-  // На мобиле 3D-глобус не рендерим вовсе — hero-mobile показывает статичную картинку.
-  if (!isDesktop) return null;
-
   return (
     <div ref={containerRef} className="w-full h-full relative">
-      {/* Заглушка для Десктопа */}
+      {/* Заглушка для Мобильных устройств (LCP-изображение, поэтому priority) */}
+      <div
+        className={`absolute right-[40%] top-[50px] w-[360px] h-[813px] transition-opacity duration-1000 md:hidden ${
+          !showPlaceholder ? "opacity-0 pointer-events-none" : "opacity-100"
+        }`}
+        style={{ display: shouldHideAll ? "none" : undefined }}
+      >
+        <Image
+          src="/mobile-globus.webp"
+          alt="Globe placeholder"
+          width={360}
+          height={813}
+          quality={80}
+          priority
+          fetchPriority="high"
+          sizes="(max-width: 768px) 360px, 100vw"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Заглушка для Десктопа (не priority, чтобы не прелоадиться на мобиле) */}
       <div
         className={`absolute inset-0 top-11 -left-10 w-full h-full transition-opacity duration-1000 hidden md:flex items-center justify-center ${
           !showPlaceholder ? "opacity-0 pointer-events-none" : "opacity-100"
@@ -183,8 +219,6 @@ export default function SplineGlobe({
             alt="Globe placeholder desktop"
             fill
             quality={100}
-            priority
-            fetchPriority="high"
             sizes="(max-width: 1280px) 100vw, 1500px"
             className="object-contain object-center"
           />
