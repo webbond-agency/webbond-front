@@ -6,10 +6,11 @@ import AboutDesktopContainer from './about-desktop-container';
 const AboutWrapper = () => {
   const isMobile = useIsMobile();
 
-  // Mobile-first SSR so content is in the HTML and doesn't all mount after hydration.
+  if (isMobile === undefined) return null;
+
   return (
     <section>
-      {isMobile === false ? <AboutDesktopContainer /> : <AboutContainer />}
+      {isMobile ? <AboutContainer /> : <AboutDesktopContainer />}
     </section>
   );
 };

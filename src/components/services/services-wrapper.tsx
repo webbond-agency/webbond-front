@@ -6,11 +6,11 @@ import ServicesContainer from './services-container';
 const ServicesWrapper = () => {
   const isMobile = useIsMobile();
 
-  // Mobile-first SSR: render content on the server (undefined | true -> mobile)
-  // so it's in the HTML for SEO and doesn't all mount at once after hydration.
+  if (isMobile === undefined) return null;
+
   return (
     <section>
-      {isMobile === false ? <DesktopServicesContainer /> : <ServicesContainer />}
+      {isMobile ? <ServicesContainer /> : <DesktopServicesContainer />}
     </section>
   );
 };
