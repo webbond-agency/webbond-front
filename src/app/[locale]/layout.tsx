@@ -118,12 +118,6 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="https://cdn.sanity.io" />
         <link rel="preconnect" href="https://prod.spline.design" />
         <link rel="dns-prefetch" href="https://prod.spline.design" />
-        <link
-          rel="preload"
-          as="fetch"
-          href="https://prod.spline.design/S6FngPEV2SNfSBPp/scene.splinecode"
-          crossOrigin="anonymous"
-        />
         <GoogleTagManager gtmId={GTM_ID} />
       </head>
       <body

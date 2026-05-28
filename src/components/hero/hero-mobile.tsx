@@ -1,11 +1,8 @@
 'use client';
 import { useTranslations } from 'next-intl';
 
-import { useRef } from 'react';
-import { useInView } from 'framer-motion';
 import Image from 'next/image';
 import GooeyWhiteButton from '../ui/gooey-white-button';
-import SplineGlobe from '../ui/spline-globe';
 import dynamic from 'next/dynamic';
 import { useState } from 'react';
 
@@ -14,19 +11,26 @@ const FeedbackModal = dynamic(() => import('@/components/feedback-modal'), {
 });
 
 const HeroMobile = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(containerRef, { amount: 0 });
   const t = useTranslations('Hero');
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
 
   return (
-    <section
-      ref={containerRef}
-      className="px-[20px] sm:px-[40px] pt-[45px] sm:pt-[80px] pb-[148px] relative overflow-hidden"
-    >
-      {/* Используем scale, чтобы "зумировать" сцену */}
+    <section className="px-[20px] sm:px-[40px] pt-[45px] sm:pt-[80px] pb-[148px] relative overflow-hidden">
+      {/* Static globe on mobile: the 3D Spline runtime is too heavy for phones. */}
       <div className="absolute top-[-110px] -right-[77%] w-[150%] h-[120%] z-0 pointer-events-none scale-[1.1] origin-top-right">
-        <SplineGlobe isVisible={isInView} />
+        <div className="absolute right-[40%] top-[50px] w-[360px] h-[813px]">
+          <Image
+            src="/mobile-globus.webp"
+            alt=""
+            width={360}
+            height={813}
+            quality={80}
+            priority
+            fetchPriority="high"
+            sizes="360px"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
       <div className="relative z-10">
         <p className="mb-[74px] max-w-[206px] sm:max-w-[300px] ml-auto text-[12px] sm:text-[14px] leading-[120%] font-light font-montserrat text-right text-white">

@@ -9,9 +9,12 @@ const HeroMobile = dynamic(() => import('./hero-mobile'), { ssr: true });
 const HeroContainer = () => {
   const isMobile = useIsMobile();
 
-  if (isMobile === undefined) return <div className="min-h-screen" />;
-
-  return <section>{isMobile ? <HeroMobile /> : <HeroDesktop />}</section>;
+  // SSR and first client paint render the mobile hero so the LCP content
+  // (H1 + static globe) is present in the initial HTML. Desktop swaps in
+  // after hydration. undefined | true -> mobile, false -> desktop.
+  return (
+    <section>{isMobile === false ? <HeroDesktop /> : <HeroMobile />}</section>
+  );
 };
 
 export default HeroContainer;

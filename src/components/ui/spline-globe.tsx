@@ -15,6 +15,7 @@ export default function SplineGlobe({
 }) {
   const [shouldLoadSpline, setShouldLoadSpline] = useState(false);
   const [isSplineReady, setIsSplineReady] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
   const splineRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -29,13 +30,23 @@ export default function SplineGlobe({
   const idleTimerRef = useRef<NodeJS.Timeout | null>(null);
   const ignoreWakeupUntilRef = useRef<number>(0);
 
-  // 1. Задержка первичной загрузки Spline для LCP (только один раз)
+  // 0. Грузим тяжёлый 3D-рантайм только на десктопе.
   useEffect(() => {
+    const mql = window.matchMedia("(min-width: 768px)");
+    const update = () => setIsDesktop(mql.matches);
+    update();
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, []);
+
+  // 1. Задержка первичной загрузки Spline для LCP (только один раз, только desktop)
+  useEffect(() => {
+    if (!isDesktop) return;
     const timer = setTimeout(() => {
       setShouldLoadSpline(true);
     }, 1000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [isDesktop]);
 
   // 2. IntersectionObserver: Следим за попаданием в зону видимости
   useEffect(() => {
@@ -154,28 +165,11 @@ export default function SplineGlobe({
   const showPlaceholder = !isSplineReady || isIdle || !isPageVisible;
   const shouldHideAll = !isVisible || !isInViewport;
 
+  // На мобиле 3D-глобус не рендерим вовсе — hero-mobile показывает статичную картинку.
+  if (!isDesktop) return null;
+
   return (
     <div ref={containerRef} className="w-full h-full relative">
-      {/* Заглушка для Мобильных устройств */}
-      <div
-        className={`absolute right-[40%] top-[50px] w-[360px] h-[813px] transition-opacity duration-1000 md:hidden ${
-          !showPlaceholder ? "opacity-0 pointer-events-none" : "opacity-100"
-        }`}
-        style={{ display: shouldHideAll ? "none" : undefined }}
-      >
-        <Image
-          src="/mobile-globus.webp"
-          alt="Globe placeholder"
-          width={360}
-          height={813}
-          quality={80}
-          priority
-          fetchPriority="high"
-          sizes="(max-width: 768px) 360px, 100vw"
-          className="w-full h-full object-cover"
-        />
-      </div>
-
       {/* Заглушка для Десктопа */}
       <div
         className={`absolute inset-0 top-11 -left-10 w-full h-full transition-opacity duration-1000 hidden md:flex items-center justify-center ${
