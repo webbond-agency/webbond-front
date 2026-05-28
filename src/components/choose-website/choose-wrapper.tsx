@@ -6,14 +6,13 @@ import DesktopChooseWebsiteContainer from './desktop-choose-website-container';
 const ChooseWrapper = () => {
   const isMobile = useIsMobile();
 
-  if (isMobile === undefined) return null;
-
+  // Mobile-first SSR so content is in the HTML and doesn't all mount after hydration.
   return (
     <section>
-      {isMobile ? (
-        <ChooseWebsiteContainer />
-      ) : (
+      {isMobile === false ? (
         <DesktopChooseWebsiteContainer />
+      ) : (
+        <ChooseWebsiteContainer />
       )}
     </section>
   );

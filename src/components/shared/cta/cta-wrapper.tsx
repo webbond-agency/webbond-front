@@ -22,8 +22,6 @@ const CtaWrapper = ({
 }: CtaWrapperProps) => {
   const isMobile = useIsMobile();
 
-  if (isMobile === undefined) return null;
-
   const commonProps = {
     title,
     description,
@@ -32,10 +30,11 @@ const CtaWrapper = ({
     onButtonClick,
   };
 
-  return isMobile ? (
-    <CtaContainer {...commonProps} />
-  ) : (
+  // Mobile-first SSR so content is in the HTML and doesn't mount only after hydration.
+  return isMobile === false ? (
     <CtaDesktop {...commonProps} />
+  ) : (
+    <CtaContainer {...commonProps} />
   );
 };
 

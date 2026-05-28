@@ -6,10 +6,11 @@ import TeamContainer from './team-container';
 const TeamWrapper = () => {
   const isMobile = useIsMobile();
 
-  if (isMobile === undefined) return null;
-
+  // Mobile-first SSR so content is in the HTML and doesn't all mount after hydration.
   return (
-    <section>{isMobile ? <TeamContainer /> : <DesktopTeamContainer />}</section>
+    <section>
+      {isMobile === false ? <DesktopTeamContainer /> : <TeamContainer />}
+    </section>
   );
 };
 

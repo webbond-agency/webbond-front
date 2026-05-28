@@ -11,11 +11,14 @@ interface CasesWrapperProps {
 const CasesWrapper = ({ cases }: CasesWrapperProps) => {
   const isMobile = useIsMobile();
 
-  if (isMobile === undefined) return null;
-
+  // Mobile-first SSR so content is in the HTML and doesn't all mount after hydration.
   return (
     <section>
-      {isMobile ? <CasesContainer cases={cases} /> : <DesktopCasesContainer cases={cases} />}
+      {isMobile === false ? (
+        <DesktopCasesContainer cases={cases} />
+      ) : (
+        <CasesContainer cases={cases} />
+      )}
     </section>
   );
 };
