@@ -35,7 +35,7 @@ const QuestionsAndAnswersContainer = ({
         height={1477}
         sizes="(max-width: 1582px) 100vw, 1582px"
         quality={100}
-        priority
+        loading="lazy"
         className="absolute top-[-120px] left-[-440px] max-w-none -z-10 pointer-events-none opacity-60 transform-gpu"
       />
       {/* radial shadow right*/}

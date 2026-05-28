@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Inter, Manrope } from "next/font/google";
+import { Montserrat, Manrope } from "next/font/google";
 import "./globals.css";
 import { routing } from "@/i18n/routing";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -9,23 +9,17 @@ import { FramerMotionProvider } from "@/components/ui/framer-motion-provider";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import ScrollProvider from "@/utils/scrollProvider";
-import { GoogleTagManager } from "@next/third-parties/google";
+import DeferredGTM from "@/components/deferred-gtm";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
-  subsets: ["latin", "cyrillic"],
-  display: "swap",
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin", "cyrillic"],
+  subsets: ["latin"],
   display: "swap",
 });
 
 const manrope = Manrope({
   variable: "--font-manrope",
-  subsets: ["latin", "cyrillic"],
+  subsets: ["latin"],
   display: "swap",
 });
 
@@ -118,12 +112,12 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="https://cdn.sanity.io" />
         <link rel="preconnect" href="https://prod.spline.design" />
         <link rel="dns-prefetch" href="https://prod.spline.design" />
-        <GoogleTagManager gtmId={GTM_ID} />
       </head>
       <body
-        className={`${montserrat.variable} ${inter.variable} ${manrope.variable} antialiased`}
+        className={`${montserrat.variable} ${manrope.variable} antialiased`}
       >
         <ScrollProvider />
+        <DeferredGTM gtmId={GTM_ID} />
         <NextIntlClientProvider>
           <FramerMotionProvider>
             <div className="overflow-y-hidden">
