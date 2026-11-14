@@ -38,7 +38,7 @@ const HeroDesktop = () => {
             </h1>
             <div className="flex items-center justify-center mt-auto mb-[50px] lg:mb-[25px] xl:mb-[50px] ml-[23px] rounded-[37px] w-[121px] h-fit py-[9px] px-[14px] backdrop-blur-sm bg-white/3 shadow-[inset_2px_-1px_5px_-1px_rgba(255,255,255,0.12)] safari-blur-fix">
               <Image
-                src="/mobile-title-banner.png"
+                src="/mobile-title-banner-n.png"
                 alt="mobile-title-banner badge"
                 width={93}
                 height={50}

@@ -70,7 +70,7 @@ const CtaContainer = ({
             className="absolute right-0 -top-15 flex items-center justify-center rounded-[37px] w-[84px] py-[6px] px-[9px] backdrop-blur-[32px] bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] safari-blur-fix"
           >
             <Image
-              src="/mobile-title-banner.png"
+              src="/mobile-title-banner-n.png"
               alt="mobile-title-banner badge"
               width={64}
               height={34}

@@ -33,13 +33,12 @@ const Footer = () => {
             quality={80}
             className="object-cover opacity-40 mix-blend-overlay pointer-events-none saturate-150 contrast-150 z-10 rounded-[12px]"
           />
-          <Image
-            src="/desktop-footer-text.svg"
-            alt="Desktop Footer Text"
-            width={1162}
-            height={241}
-            className="absolute left-[20px] bottom-[20px] mt-auto object-cover opacity-60 mix-blend-overlay pointer-events-none z-20 md:w-[670px] lg:w-[920px] xl:w-[1162px] h-auto"
-          />
+          <span
+            aria-hidden="true"
+            className="absolute left-[20px] bottom-[10px] mt-auto pointer-events-none z-20 font-manrope font-semibold uppercase leading-none text-white opacity-60 mix-blend-overlay tracking-[0.06em] text-[120px] lg:text-[170px] xl:text-[210px]"
+          >
+            WEBBOND
+          </span>
         </div>
       </Container>
     </footer>

@@ -40,7 +40,7 @@ export default function Hero() {
         </h1>
         <div className="flex items-center justify-center w-[67px] lg:w-[121px] mb-6 lg:mb-20 rounded-full py-[5px] px-[8px] backdrop-blur-sm bg-white/3 shadow-[inset_2px_-1px_5px_-1px_rgba(255,255,255,0.12)] safari-blur-fix">
           <Image
-            src="/mobile-title-banner.png"
+            src="/mobile-title-banner-n.png"
             alt="mobile-title-banner badge"
             width={103}
             height={56}

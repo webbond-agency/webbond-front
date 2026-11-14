@@ -41,7 +41,7 @@ const HeroMobile = () => {
           </h1>
           <div className="absolute bottom-[10px] right-[12px] flex items-center justify-center rounded-[20px] w-[67px] py-1 px-[7px] backdrop-blur-[17.71900749206543px] bg-white/3 shadow-[inset_2px_-1px_5px_-1px_rgba(255,255,255,0.12)] safari-blur-fix">
             <Image
-              src="/mobile-title-banner.png"
+              src="/mobile-title-banner-n.png"
               alt="mobile-title-banner badge"
               width={51}
               height={27}

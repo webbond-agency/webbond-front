@@ -172,7 +172,7 @@ const DesktopChooseWebsiteContainer = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center justify-center rounded-[37px] w-[121px] py-[9px] px-[14px] backdrop-blur-[32px] bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)]">
           <Image
-            src="/mobile-title-banner.png"
+            src="/mobile-title-banner-n.png"
             alt="mobile-title-banner badge"
             width={93}
             height={50}

@@ -70,7 +70,7 @@ const AboutDesktopContainer = () => {
         className="mb-[29px] ml-auto flex items-center justify-center rounded-[37px] w-[100px] lg:w-[121px] py-[9px] px-[14px] backdrop-blur-sm bg-white/3 shadow-[inset_3px_-1px_9px_-1px_rgba(255,255,255,0.12)] safari-blur-fix will-change-[opacity,transform] transform-gpu"
       >
         <Image
-          src="/mobile-title-banner.png"
+          src="/mobile-title-banner-n.png"
           alt="mobile-title-banner badge"
           width={93}
           height={50}

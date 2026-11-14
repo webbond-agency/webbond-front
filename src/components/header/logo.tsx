@@ -1,5 +1,4 @@
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 
 const Logo = ({
@@ -10,22 +9,16 @@ const Logo = ({
   onClick?: () => void;
 }) => {
   return (
-    <Link href="/#hero" className="flex items-center shrink-0">
-      <Image
-        src="/logo-mobile.svg"
-        alt="Logo"
-        width={121}
-        height={20}
-        className={cn('lg:hidden', className)}
-        onClick={onClick}
-      />
-      <Image
-        src="/logo-desktop.svg"
-        alt="Logo"
-        width={121}
-        height={20}
-        className={cn('hidden lg:block', className)}
-      />
+    <Link
+      href="/#hero"
+      onClick={onClick}
+      aria-label="WebBond"
+      className={cn(
+        'shrink-0 font-manrope font-semibold uppercase leading-none text-white text-[18px] tracking-[0.18em]',
+        className,
+      )}
+    >
+      WEBBOND
     </Link>
   );
 };

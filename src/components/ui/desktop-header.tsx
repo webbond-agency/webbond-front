@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { navItems } from "@/components/header/navigate-data";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import LocaleSwitcher from "@/components/header/lang-switch";
 import dynamic from "next/dynamic";
@@ -229,14 +228,12 @@ export default function DesktopHeader({ className }: DesktopHeaderProps) {
             className="flex items-center justify-start lg:pr-[20px] xl:pr-[40px] lg:w-[650px] xl:w-[897px]"
             // style={{ width: `${leftSectionWidth}px` }}
           >
-            <Link href="/#hero" className="shrink-0">
-              <Image
-                src="/desktop-logo.svg"
-                alt="Logo"
-                width={244}
-                height={14}
-                className="w-[234px] h-[14px] xl:w-[244px] xl:h-[14px]"
-              />
+            <Link
+              href="/#hero"
+              aria-label="WebBond"
+              className="shrink-0 font-manrope font-semibold uppercase leading-none text-white text-[18px] xl:text-[20px] tracking-[0.18em]"
+            >
+              WEBBOND
             </Link>
             {/* Nav */}
             <nav className="flex items-center ml-[30px] mr-[20px] lg:ml-auto lg:mr-0 lg:gap-4 xl:gap-8">
