@@ -60,14 +60,14 @@ export default function Included() {
             uniqueKey="first"
             title={firstSection?.title}
             list={firstSection?.items}
-            image="/business-model-page-included-image-one.webp"
+            image="/business-model-page-included-image-one-n.webp"
             imageHeight={252}
           />
           <Package
             uniqueKey="second"
             title={secondSection?.title}
             list={secondSection?.items}
-            image="/business-model-page-included-image-two.webp"
+            image="/business-model-page-included-image-two-n.webp"
             imageHeight={252}
             isImageRight={false}
           />
@@ -75,7 +75,7 @@ export default function Included() {
             uniqueKey="third"
             title={thirdSection?.title}
             list={thirdSection?.items}
-            image="/business-model-page-included-image-three.webp"
+            image="/business-model-page-included-image-three-n.webp"
             imageHeight={252}
           />
         </div>

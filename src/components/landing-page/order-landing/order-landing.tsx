@@ -9,7 +9,7 @@ export default function OrderLanding() {
     <>
       <section className="pb-[148px]">
         <Container>
-          <Order image="/landing-page-order.webp" buttonText={t("button")} />
+          <Order image="/landing-page-order-n.webp" buttonText={t("button")} />
         </Container>
       </section>
     </>

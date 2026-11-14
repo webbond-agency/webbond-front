@@ -70,8 +70,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: process.env.NEXT_PUBLIC_BASE_URL
-          ? `${process.env.NEXT_PUBLIC_BASE_URL}/Opengraph.webp`
-          : "/Opengraph.webp",
+          ? `${process.env.NEXT_PUBLIC_BASE_URL}/Opengraph-n.webp`
+          : "/Opengraph-n.webp",
         width: 1200,
         height: 630,
         alt: "WebBond — Digital Agency",

@@ -54,7 +54,7 @@ export async function generateMetadata() {
       url: baseUrl,
       images: [
         {
-          url: `${baseUrl}/Opengraph.webp`,
+          url: `${baseUrl}/Opengraph-n.webp`,
           width: 1200,
           height: 630,
           alt: "WebBond — Digital Agency",

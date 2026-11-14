@@ -124,7 +124,7 @@ export default function Hero() {
 
           <div className="relative h-[210px] md:h-auto md:w-[39.4%] lg:w-[31.4%] xl:w-[46%] rounded-[14px] overflow-hidden">
             <Image
-              src="/business-model-page-hero-image-three.webp"
+              src="/business-model-page-hero-image-three-n.webp"
               alt="business-model-hero-image"
               fill
               priority

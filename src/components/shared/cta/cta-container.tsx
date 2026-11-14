@@ -43,7 +43,7 @@ const CtaContainer = ({
           className="relative w-full h-[437px] will-change-transform"
         >
           <Image
-            src="/Business-phone.png"
+            src="/Business-phone-n.png"
             alt="business-left-decor"
             width={320}
             height={437}

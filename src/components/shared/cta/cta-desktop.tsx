@@ -43,7 +43,7 @@ const CtaDesktop = ({
           className="absolute -z-10 max-w-none top-[-240px] xl:top-[-180px] left-[-280px] xl:left-[-170px] origin-top-left pointer-events-none select-none will-change-transform transform-gpu"
         >
           <Image
-            src="/Business-phone.png"
+            src="/Business-phone-n.png"
             alt="business-left-decor"
             width={500}
             height={700}

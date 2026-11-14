@@ -74,7 +74,7 @@ export default function Demo() {
             className="relative md:w-[calc(50%-12px)] lg:w-[calc(50%-16px)] rounded-[11px] overflow-hidden"
           >
             <Image
-              src="/business-model-page-demo-image.webp"
+              src="/business-model-page-demo-image-n.webp"
               alt="Demo"
               width={320}
               height={238}

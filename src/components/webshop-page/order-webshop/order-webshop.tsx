@@ -9,7 +9,7 @@ export default function OrderMultipage() {
     <>
       <section className="pb-[148px]">
         <Container>
-          <Order image="/webshop-page-order.webp" buttonText={t("button")} />
+          <Order image="/webshop-page-order-n.webp" buttonText={t("button")} />
         </Container>
       </section>
     </>
