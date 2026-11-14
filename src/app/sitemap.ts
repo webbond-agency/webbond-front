@@ -1,6 +1,5 @@
 import { routing } from '@/i18n/routing';
 import { MetadataRoute } from 'next';
-import { CASES_MOCK_DATA } from '@/components/cases/cases-mock-data';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || '';
@@ -20,15 +19,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
   );
 
-  // Динамические страницы кейсов
-  const casesUrls: MetadataRoute.Sitemap = locales.flatMap((locale) =>
-    CASES_MOCK_DATA.map((item) => ({
-      url: `${baseUrl}/${locale}/cases/${item.id}`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    })),
-  );
-
-  return [...urls, ...casesUrls];
+  return [...urls];
 }

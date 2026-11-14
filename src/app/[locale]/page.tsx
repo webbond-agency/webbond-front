@@ -1,9 +1,6 @@
 import dynamic from "next/dynamic";
 import HeroContainer from "@/components/hero/hero-container";
-import { casesOnHomepageQuery } from "@/lib/queries";
-import { fetchSanityData } from "@/utils/fetchSanityData";
 import { setRequestLocale } from "next-intl/server";
-import { CaseWithLanguage } from "@/types/case";
 import Container from "@/components/ui/container";
 
 // Heavy containers/sections loaded dynamically
@@ -15,9 +12,6 @@ const ChooseWrapper = dynamic(
   () => import("@/components/choose-website/choose-wrapper"),
   { ssr: true },
 );
-const CasesWrapper = dynamic(() => import("@/components/cases/cases-wrapper"), {
-  ssr: true,
-});
 const AboutWrapper = dynamic(() => import("@/components/about/about-wrapper"), {
   ssr: true,
 });
@@ -79,13 +73,6 @@ export default async function Home({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const casesList = await fetchSanityData<CaseWithLanguage[]>(
-    casesOnHomepageQuery,
-    {
-      lang: locale,
-    },
-  );
-
   return (
     <Container className="pt-[60px] sm:pt-[80px] md:pt-[110px] overflow-y-clip">
       <div id="hero">
@@ -96,9 +83,6 @@ export default async function Home({
       </div>
       <div id="prices">
         <ChooseWrapper />
-      </div>
-      <div id="cases">
-        <CasesWrapper cases={casesList} />
       </div>
       <div id="about">
         <AboutWrapper />

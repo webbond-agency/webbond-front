@@ -3,8 +3,7 @@
     "home": "HOME",
     "services": "SERVICES",
     "prices": "PRICES",
-    "about": "ABOUT",
-    "cases": "CASES"
+    "about": "ABOUT"
   },
   "Hero": {
     "subtitle": "EVERYTHING FOR YOUR BUSINESS:",
@@ -128,13 +127,8 @@
       }
     }
   },
-  "Cases": {
-    "title": "<gray>Cases</gray> WebBond '{ }' CodeSite.Art",
-    "subtitle": "Companies that have entrusted us with their business",
-    "button": "Get a quote"
-  },
   "About": {
-    "title": "About WebBond '{ }' Code.Site.Art",
+    "title": "About WebBond",
     "description": "<gray>We combine creativity, code and strategy in one partnership</gray> to <gray>make</gray> your business stronger and more successful",
     "resultsTitle": "Results you get in cooperation with us:",
     "growthTitle": "Visibility:",
@@ -155,7 +149,7 @@
     "subtitle": "See what our customers say about us, and browse our reviews"
   },
   "Business": {
-    "title": "Take your business <gray>to</gray> the next <gray>level with</gray> WebBond <gray>'{ }' CodeSite.</gray> Art",
+    "title": "Take your business <gray>to</gray> the next <gray>level with</gray> WebBond",
     "description": "Your ambition, our expertise — together we make your business visible, effective and profitable",
     "button": "Start cooperation"
   },
@@ -414,9 +408,6 @@
       "button": "Order a landing page",
       "price": "*The price may vary up or down depending on your individual needs"
     },
-    "Cases": {
-      "title": "<gray>Landing pages,</gray> that helped our clients sell"
-    },
     "Services": {
       "title": "What are our landing pages made of?",
       "description": "We create tailored landing pages that combine design, development, marketing, and SEO, so your customers get the best experience and your campaigns convert.",
@@ -569,9 +560,6 @@
       "button": "Order your website",
       "price": "*The price may vary up or down depending on your individual needs"
     },
-    "Cases": {
-      "title": "<gray>Websites,</gray> that have helped our clients"
-    },
     "Services": {
       "title": "What do our websites include?",
       "description": "We develop complete websites with great design, flexible features, booking systems, contact forms, and integrated tools, so your business can grow online and be managed easily.",
@@ -694,9 +682,6 @@
       "button": "Order webshop",
       "price": "*The price may vary up or down depending on your individual needs"
     },
-    "Cases": {
-      "title": "<gray>Webshops</gray> from our customers that generate revenue 24/7"
-    },
     "Services": {
       "title": "What do our webshops include?",
       "description": "We develop advanced webshops as complete sales platforms — designed for automated processes, high conversion, and full control for the business owner. The webshop works 24/7 and does not require an extra sales or support team.",
@@ -761,15 +746,6 @@
       "descriptionTwo": "<gray>We are a digital agency that</gray> works with <gray>companies that</gray> value results, <gray>structure, and</gray> long-term value — not just a <gray>website</gray> or advertising."
     },
     "Founders": {
-      "fedorRole": "CO-OWNER & DEVELOPER",
-      "fedorName": "FEDOR",
-      "fedorDescription1": "Fedor is responsible for the technical side and the architecture of the products.",
-      "fedorDescription2": "His approach is logical, stable, and predictable.",
-      "fedorListTitle": "HE DESIGNS WEBSITES AND SYSTEMS SO THAT THEY:",
-      "fedorItem1": "Are reliable from day one",
-      "fedorItem2": "Can be scaled easily",
-      "fedorItem3": "Do not create problems for the business in 1-2 years",
-      "fedorButton": "Read more about Fedor",
       "christinaRole": "CO-OWNER & MARKETING",
       "christinaName": "CHRISTINA",
       "christinaDescription1": "Christina is responsible for strategy, marketing, and business logic in projects.",
@@ -779,17 +755,11 @@
       "christinaItem2": "Customers understand the company's value",
       "christinaItem3": "The business gets a stable flow of inquiries",
       "christinaButton": "Read more about Christina",
-      "fedorModalIntro": "Hi, my name is Fedor.",
-      "fedorModalBio": "I have been fascinated by technology since childhood: at 14, I was building electronic devices, programming microcontrollers, and writing my first programs. This experience helps me create websites and digital solutions that combine design, functionality, and efficiency for businesses.",
-      "fedorModalItem1": "Graduated from a technical university with a specialization in flight automation.",
-      "fedorModalItem2": "Developed services for automating business processes and digital products for companies of different sizes.",
-      "fedorModalItem3": "Created mobile apps and games that demonstrate my programming skills and creative approach.",
-      "fedorModalOutro": "My approach to development is technical precision, structure, and functionality, so businesses get digital solutions that truly work and deliver results.",
       "christinaModalIntro": "Hi, my name is Christina.",
       "christinaModalBio": "I have a degree in business economics with a specialization in business analytics and have completed courses in marketing and SEO, which has given me a solid foundation for leading digital projects.",
       "christinaModalItem1": "Worked with international brands and large companies, where I delivered complex digital projects.",
       "christinaModalItem2": "Developed marketing strategies, SEO optimization, and analytical solutions that help businesses grow and achieve concrete results.",
-      "christinaModalItem3": "In 2024, we founded our Digital Bureau WebBond '{' '}' Code-Site.Art to help businesses develop their results through complete digital solutions.",
+      "christinaModalItem3": "In 2024, we founded our Digital Bureau WebBond to help businesses develop their results through complete digital solutions.",
       "christinaModalOutro": "My approach as Head of Marketing is structured, analytical, and results-oriented, so businesses get effective solutions that truly impact growth and development.",
       "foundersModalLinkedinButton": "Read more on LinkedIn"
     },
@@ -811,12 +781,6 @@
       "item3": "We work calmly, in a structured way, and without unnecessary complexity - essential for B2B projects.",
       "item4": "Our clients get a team that thinks ahead, not one that only executes tasks.",
       "button": "Book a consultation"
-    },
-    "Cases": {
-      "title": "CASES",
-      "descriptionLeft": "We have worked with companies of different sizes — from small businesses to international projects.",
-      "descriptionRight": "<gray>In every project, we don’t focus only</gray> on <gray>design or technology,</gray> but on how <gray>digital solutions</gray> impact sales, processes <gray>and</gray> business development.",
-      "button": "See cases"
     },
     "Questions": {
       "title": "FREQUENTLY ASKED QUESTIONS",

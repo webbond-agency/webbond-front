@@ -68,7 +68,7 @@ export default function FoundersModal({
             <div className="absolute -top-5 -left-5 md:top-[-30px] md:left-[-30px] lg:-top-10 lg:-left-10 w-[622px] h-[395px]">
               <Image
                 src="/about-page-founders-modal-shadow-top.webp"
-                alt="fedor"
+                alt=""
                 fill
                 className="object-cover"
               />
@@ -76,7 +76,7 @@ export default function FoundersModal({
             <div className="absolute -bottom-5 -left-5 md:tbottom[-30px] md:left-[-30px] lg:-bottom-10 lg:-left-10 w-[1084px] h-[232px]">
               <Image
                 src="/about-page-founders-modal-shadow-bottom.webp"
-                alt="fedor"
+                alt=""
                 fill
                 className="object-cover"
               />

@@ -3,8 +3,7 @@
     "home": "HJEM",
     "services": "SERVICES",
     "prices": "PRISER",
-    "about": "OM OS",
-    "cases": "CASES"
+    "about": "OM OS"
   },
   "Hero": {
     "subtitle": "ALT TIL DIN VIRKSOMHED:",
@@ -128,13 +127,8 @@
       }
     }
   },
-  "Cases": {
-    "title": "<gray>Cases</gray> WebBond '{ }' CodeSite.Art",
-    "subtitle": "Virksomheder, der har betroet os deres forretning",
-    "button": "Få et tilbud"
-  },
   "About": {
-    "title": "Om WebBond '{ }' Code.Site.Art",
+    "title": "Om WebBond",
     "description": "<gray>Vi kombinerer kreativitet, kode og strategi i ét partnerskab</gray> for at <gray>gøre</gray> din virksomhed stærkere og mere succesfuld",
     "resultsTitle": "Resultater, du får i samarbejde med os:",
     "growthTitle": "Synlighed:",
@@ -155,7 +149,7 @@
     "subtitle": "Se hvad vores kunder siger om os, og gennemgå vores anmeldelser"
   },
   "Business": {
-    "title": "Tag din virksomhed <gray>til</gray> næste <gray>niveau med</gray> WebBond <gray>'{}' CodeSite.</gray> Art",
+    "title": "Tag din virksomhed <gray>til</gray> næste <gray>niveau med</gray> WebBond",
     "description": "Din ambition, vores ekspertise — sammen gør vi din virksomhed synlig, effektiv og profitabel",
     "button": "Start samarbejdet"
   },
@@ -413,9 +407,6 @@
       "button": "Bestil en landingpage",
       "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
     },
-    "Cases": {
-      "title": "<gray>Landingpages,</gray> der har hjulpet vores kunder med at sælge"
-    },
     "Services": {
       "title": "Hvad består vores landingpages af?",
       "description": "Vi skaber skræddersyede landingpages, der kombinerer design, udvikling, marketing og SEO, så dine kunder får den bedste oplevelse og dine kampagner konverterer.",
@@ -568,9 +559,6 @@
       "button": "Bestil Hjemmeside",
       "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
     },
-    "Cases": {
-      "title": "<gray>Hjemmesider,</gray> der har hjulpet vores kunder"
-    },
 
     "Services": {
       "title": "Hvad indeholder vores hjemmesider?",
@@ -694,9 +682,6 @@
       "button": "Bestil Webshop",
       "price": "*Prisen kan variere op eller ned afhængigt af dine individuelle behov"
     },
-    "Cases": {
-      "title": "<gray>Webshops</gray> fra vores kunder, der genererer indtægt 24/7"
-    },
     "Services": {
       "title": "Hvad indeholder vores webshops?",
       "description": "Vi udvikler avancerede webshops som komplette salgsplatforme — designet til automatiserede processer, høj konvertering og fuld kontrol for virksomhedsejeren. Webshoppen arbejder 24/7 og kræver ikke et ekstra salgs- eller supportteam.",
@@ -761,15 +746,6 @@
       "descriptionTwo": "<gray>Vi er et digitalt bureau, der</gray> arbejder med <gray>virksomheder, der</gray> værdsætter resultater, <gray>struktur og</gray> langsigtet værdi — ikke kun et <gray>website</gray> eller reklame."
     },
     "Founders": {
-      "fedorRole": "CO-OWNER & DEVELOPER",
-      "fedorName": "FEDOR",
-      "fedorDescription1": "Fedor har ansvaret for den tekniske del og arkitekturen af produkterne.",
-      "fedorDescription2": "Hans tilgang er logisk, stabil og forudsigelig.",
-      "fedorListTitle": "HAN DESIGNER WEBSITES OG SYSTEMER, SÅ DE:",
-      "fedorItem1": "Er pålidelige fra dag ét",
-      "fedorItem2": "Nemt kan skaleres",
-      "fedorItem3": "Ikke skaber problemer for virksomheden om 1-2 år",
-      "fedorButton": "Læs mere om Fedor",
       "christinaRole": "CO-OWNER & MARKETING",
       "christinaName": "CHRISTINA",
       "christinaDescription1": "Christina har ansvaret for strategi, marketing og forretningslogik i projekterne.",
@@ -779,17 +755,11 @@
       "christinaItem2": "Kunder forstår virksomhedens værdi",
       "christinaItem3": "Virksomheden får en stabil strøm af henvendelser",
       "christinaButton": "Læs mere om Christina",
-      "fedorModalIntro": "Hej, jeg hedder Fedor.",
-      "fedorModalBio": "Jeg har været fascineret af teknologi siden barndommen: som 14-årig byggede jeg elektroniske enheder, programmerede mikrocontrollere og skrev mine første programmer. Denne erfaring hjælper mig med at skabe hjemmesider og digitale løsninger, der kombinerer design, funktionalitet og effektivitet for virksomheder.",
-      "fedorModalItem1": "Uddannet på teknisk universitet med speciale i flyautomatik.",
-      "fedorModalItem2": "Udviklet services til automatisering af forretningsprocesser og digitale produkter for virksomheder i forskellige størrelser.",
-      "fedorModalItem3": "Skabt mobilapps og spil, der demonstrerer mine programmeringsfærdigheder og kreative tilgang.",
-      "fedorModalOutro": "Min tilgang til udvikling er teknisk præcision, struktur og funktionalitet, så virksomheder får digitale løsninger, der virkelig fungerer og giver resultater.",
       "christinaModalIntro": "Hej, jeg hedder Christina.",
       "christinaModalBio": "Jeg har en uddannelse i erhvervsøkonomi med speciale i business analytics og har gennemført kurser i marketing og SEO, hvilket har givet mig et solidt fundament for at lede digitale projekter.",
       "christinaModalItem1": "Arbejdet med internationale brands og store virksomheder, hvor jeg har realiseret komplekse digitale projekter.",
       "christinaModalItem2": "Udarbejdet marketingstrategier, SEO-optimering og analytiske løsninger, der hjælper virksomheder med at vokse og opnå konkrete resultater.",
-      "christinaModalItem3": "I 2024 grundlagde vi vores Digital Bureau WebBond '{' '}' Code-Site.Art for at hjælpe virksomheder med at udvikle deres resultater gennem komplette digitale løsninger.",
+      "christinaModalItem3": "I 2024 grundlagde vi vores Digital Bureau WebBond for at hjælpe virksomheder med at udvikle deres resultater gennem komplette digitale løsninger.",
       "christinaModalOutro": "Min tilgang som marketingchef er struktureret, analytisk og resultatorienteret, så virksomheder får effektive løsninger, der virkelig påvirker vækst og udvikling.",
       "foundersModalLinkedinButton": "Læs mere på LinkedIn"
     },
@@ -811,12 +781,6 @@
       "item3": "Vi arbejder roligt, struktureret og uden unødvendig kompleksitet - vigtigt for B2B-projekter.",
       "item4": "Vores kunder får et team, der tænker fremad, ikke kun udfører opgaver.",
       "button": "Book en konsultation"
-    },
-    "Cases": {
-      "title": "CASES",
-      "descriptionLeft": "VI HAR ARBEJDET MED VIRKSOMHEDER I FORSKELLIGE STØRRELSER — FRA SMÅ VIRKSOMHEDER TIL INTERNATIONALE PROJEKTER.",
-      "descriptionRight": "<gray>I hvert projekt fokuserer vi ikke</gray> kun på <gray>design eller teknologi,</gray> men på, hvordan <gray>digitale løsninger</gray> påvirker salg, processer <gray>og</gray> forretningsudvikling.",
-      "button": "Se cases"
     },
     "Questions": {
       "title": "OFTE STILLEDE SPØRGSMÅL",

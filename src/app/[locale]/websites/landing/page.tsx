@@ -7,26 +7,14 @@ import ServicesLanding from "@/components/landing-page/services-landing/services
 import Packages from "@/components/landing-page/packages/packages";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getTranslations } from "next-intl/server";
-import { fetchSanityData } from "@/utils/fetchSanityData";
-import { CaseWithLanguage } from "@/types/case";
-import { casesBySiteTypeQuery } from "@/lib/queries";
-import Cases from "@/components/landing-page/cases/cases";
 
 export default async function LandingPage({
   params,
 }: {
   params: Promise<{ slug: string; locale: string }>;
 }) {
-  const { locale } = await params;
+  await params;
   const t = await getTranslations("Breadcrumbs");
-
-  const landingCases = await fetchSanityData<CaseWithLanguage[]>(
-    casesBySiteTypeQuery,
-    {
-      lang: locale,
-      siteType: "landing",
-    },
-  );
 
   const breadcrumbSteps = [
     { label: `${t("home")}`, href: `/` },
@@ -39,7 +27,6 @@ export default async function LandingPage({
       <Hero />
       <Breadcrumbs steps={breadcrumbSteps} className="py-10 lg:pt-0 lg:pb-20" />
       <Packages />
-      <Cases cases={landingCases} />
       <ServicesLanding />
       <OrderLanding />
       <Faq />
