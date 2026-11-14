@@ -122,15 +122,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative h-[210px] md:h-auto md:w-[39.4%] lg:w-[31.4%] xl:w-[46%] rounded-[14px] overflow-hidden">
-            <Image
-              src="/business-model-page-hero-image-three-n.webp"
-              alt="business-model-hero-image"
-              fill
-              priority
-              fetchPriority="high"
-              className="object-cover"
-            />
+          <div className="relative h-[210px] md:h-auto md:w-[39.4%] lg:w-[31.4%] xl:w-[46%] rounded-[14px] overflow-hidden bg-[linear-gradient(168deg,#e63b44_0%,#1b0000_100%)]">
             <GooeyWhiteLink
               text={t("button")}
               href={"/"}

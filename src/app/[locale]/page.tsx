@@ -15,9 +15,6 @@ const ChooseWrapper = dynamic(
 const AboutWrapper = dynamic(() => import("@/components/about/about-wrapper"), {
   ssr: true,
 });
-const TeamWrapper = dynamic(() => import("@/components/team/team-wrapper"), {
-  ssr: true,
-});
 const ReviewsContainer = dynamic(
   () => import("@/components/reviews/reviews-container"),
   { ssr: true },
@@ -87,7 +84,6 @@ export default async function Home({
       <div id="about">
         <AboutWrapper />
       </div>
-      <TeamWrapper />
       <ReviewsContainer />
       <Faq />
       <BusinessWrapper />

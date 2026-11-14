@@ -24,8 +24,6 @@ export default function Landing() {
           gray: (chunks) => <span className="text-[#818181]">{chunks}</span>,
         })}
         description={t("description")}
-        imageUrl={"/websites-landing-n.webp"}
-        imageAlt="Landing page"
         list={list}
         buttonText={t("button")}
         href="/websites/landing"

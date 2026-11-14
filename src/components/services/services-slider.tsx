@@ -63,28 +63,7 @@ const ServicesSlider = () => {
                     </div>
                   </button>
                 </div>
-                <div className="relative rounded-[6px] w-full h-[165px] bg-[linear-gradient(168deg,#e63b44_0%,#1b0000_100%)]">
-                  <div className="relative overflow-hidden w-full h-full rounded-[6px]">
-                    <Image
-                      src={service.imageDesktop}
-                      alt="services-slider-image"
-                      width={370}
-                      height={489}
-                      sizes="(max-width: 768px) 100vw, 370px"
-                      quality={80}
-                      className="absolute max-w-none w-[370px] h-auto right-[-120px] bottom-[-63%]"
-                    />
-                  </div>
-                </div>
-                <Image
-                  src={service.imageMobile}
-                  alt="services-slider-image"
-                  width={375}
-                  height={241}
-                  sizes="(max-width: 768px) 100vw, 380px"
-                  quality={80}
-                  className="absolute left-[13px] bottom-[-165px] max-w-none"
-                />
+                <div className="relative rounded-[6px] w-full h-[165px] bg-[linear-gradient(168deg,#e63b44_0%,#1b0000_100%)]" />
               </div>
             </CarouselItem>
           ))}

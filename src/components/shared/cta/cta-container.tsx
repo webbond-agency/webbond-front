@@ -35,24 +35,7 @@ const CtaContainer = ({
   return (
     <section className={cn("relative pt-0 pb-[148px]", className)}>
       <Container>
-        <m.div
-          initial={{ opacity: 0, scale: 0.9, y: 30 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="relative w-full h-[437px] will-change-transform"
-        >
-          <Image
-            src="/Business-phone-n.png"
-            alt="business-left-decor"
-            width={320}
-            height={437}
-            sizes="(max-width: 768px) 100vw, 320px"
-            quality={80}
-            className="object-contain pointer-events-none"
-          />
-        </m.div>
-        <div className="relative z-10">
+        <div className="relative z-10 pt-[40px]">
           <m.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

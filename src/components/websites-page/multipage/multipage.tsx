@@ -30,8 +30,6 @@ export default function Multipage() {
           gray: (chunks) => <span className="text-[#818181]">{chunks}</span>,
         })}
         description={t("description")}
-        imageUrl={"/websites-multipage-n.webp"}
-        imageAlt="Landing page"
         list={list}
         buttonText={t("button")}
         href="/websites/multi-page"

@@ -160,28 +160,7 @@ const ServiceDesktopSlider = () => {
                   />
                 </div>
               </div>
-              <div className="relative rounded-[6px] w-full min-h-full bg-[linear-gradient(168deg,#e63b44_0%,#1b0000_100%)]">
-                <div className="relative overflow-hidden w-full h-full rounded-[6px]">
-                  <Image
-                    src={service.imageDesktop}
-                    alt="services-slider-image"
-                    width={450}
-                    height={450}
-                    sizes="(max-width: 1024px) 300px, 450px"
-                    quality={80}
-                    className="absolute max-w-none h-auto right-[-100px] md:right-[-145px] bottom-[-100px] md:bottom-[-135px] w-[300px] md:w-[450px]"
-                  />
-                </div>
-              </div>
-              <Image
-                src={service.imageMobile}
-                alt="services-slider-image"
-                width={540}
-                height={200}
-                sizes="(max-width: 1024px) 400px, 540px"
-                quality={80}
-                className="absolute left-[20px] md:left-[30px] bottom-[-200px] md:bottom-[-260px] max-w-none pointer-events-none w-[400px] md:w-[540px]"
-              />
+              <div className="relative rounded-[6px] w-full min-h-full bg-[linear-gradient(168deg,#e63b44_0%,#1b0000_100%)]" />
             </div>
           </m.div>
         ))}

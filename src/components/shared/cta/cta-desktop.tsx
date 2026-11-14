@@ -36,23 +36,6 @@ const CtaDesktop = ({
     <section className={cn("relative pb-[176px]", className)}>
       <Container className="relative">
         <m.div
-          initial={{ opacity: 0, x: -100, rotate: 5 }}
-          whileInView={{ opacity: 1, x: 0, rotate: 10 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="absolute -z-10 max-w-none top-[-240px] xl:top-[-180px] left-[-280px] xl:left-[-170px] origin-top-left pointer-events-none select-none will-change-transform transform-gpu"
-        >
-          <Image
-            src="/Business-phone-n.png"
-            alt="business-left-decor"
-            width={500}
-            height={700}
-            sizes="(max-width: 1280px) 33vw, 500px"
-            quality={80}
-            className="scale-[1.1] object-contain"
-          />
-        </m.div>
-        <m.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

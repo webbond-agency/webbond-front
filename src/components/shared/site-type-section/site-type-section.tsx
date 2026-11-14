@@ -6,8 +6,8 @@ import GooeyWhiteLink from "../../ui/gooey-white-link";
 interface SiteTypeSectionProps {
   title: string | React.ReactNode;
   description: string;
-  imageUrl: string;
-  imageAlt: string;
+  imageUrl?: string;
+  imageAlt?: string;
   list: string[];
   buttonText: string;
   href: string;
@@ -45,14 +45,16 @@ export default function SiteTypeSection({
           transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
           className={`flex flex-col gap-6 lg:gap-8 mb-6 ${variant === "left" ? "md:flex-row" : "md:flex-row-reverse"}`}
         >
-          <Image
-            src={imageUrl}
-            alt={imageAlt}
-            width={592}
-            height={453}
-            className="w-full md:w-1/2 h-auto object-cover rounded-[20px]"
-          />
-          <div>
+          {imageUrl && (
+            <Image
+              src={imageUrl}
+              alt={imageAlt ?? ""}
+              width={592}
+              height={453}
+              className="w-full md:w-1/2 h-auto object-cover rounded-[20px]"
+            />
+          )}
+          <div className={imageUrl ? "" : "w-full"}>
             <p className="mb-6 lg:mb-8 font-montserrat text-[12px] lg:text-[14px] font-light text-white leading-[120%]">
               {description}
             </p>

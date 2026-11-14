@@ -92,15 +92,6 @@ const DesktopChooseWebsiteContainer = () => {
                   className="object-cover rounded-[14px]"
                 />
                 <div className="absolute inset-0 pointer-events-none" />
-                <Image
-                  src={activeContent.phoneImage}
-                  alt="choosefon"
-                  width={500}
-                  height={946}
-                  sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 400px, 500px"
-                  quality={80}
-                  className="absolute top-[120px] lg:top-[130px] xl:top-[160px] left-[50px] lg:left-[55px] xl:left-[70px] select-none pointer-events-none max-w-none h-auto w-[400px] lg:w-[400px] xl:w-[500px] origin-top-left z-10"
-                />
               </div>
             </div>
           </div>

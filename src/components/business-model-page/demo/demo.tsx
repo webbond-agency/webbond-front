@@ -71,16 +71,8 @@ export default function Demo() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="relative md:w-[calc(50%-12px)] lg:w-[calc(50%-16px)] rounded-[11px] overflow-hidden"
-          >
-            <Image
-              src="/business-model-page-demo-image-n.webp"
-              alt="Demo"
-              width={320}
-              height={238}
-              className="w-full h-auto object-cover"
-            />
-          </m.div>
+            className="relative md:w-[calc(50%-12px)] lg:w-[calc(50%-16px)] min-h-[200px] md:min-h-full rounded-[11px] overflow-hidden bg-[linear-gradient(168deg,#e63b44_0%,#1b0000_100%)]"
+          />
         </div>
         <m.div
           initial={{ opacity: 0, y: 30 }}

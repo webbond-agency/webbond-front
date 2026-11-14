@@ -2,7 +2,6 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import GooeyWhiteButton from '../ui/gooey-white-button';
-import HeroSlider from './hero-slider';
 import SplineGlobe from '../ui/spline-globe';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
@@ -57,9 +56,6 @@ const HeroDesktop = () => {
         <p className="mt-[35px] lg:mt-[15px] xl:mt-[35px] max-w-[235px] text-[14px] leading-[120%] font-light font-montserrat text-right text-white">
           {t('description')}
         </p>
-        <div className="absolute right-[-20px] bottom-[60px] lg:bottom-[30px] xl:bottom-[60px] transform rotate-90 text-[20px] leading-[120%] uppercase font-montserrat text-white before:content-[''] before:w-[10px] before:h-[10px] before:bg-[#939393] before:rounded-full before:absolute before:bottom-0 before:translate-x-[50%] before:left-[-50%] before:-translate-y-[50%]">
-          {t('verticalText')}
-        </div>
       </div>
       <div className="relative flex">
         <p className="absolute top-[100px] lg:top-[90px] xl:top-[100px] left-[-48px] transform max-w-[112px] -rotate-90 text-[14px] uppercase font-light font-manrope text-[#9a9a9a]">
@@ -81,7 +77,6 @@ const HeroDesktop = () => {
             })}
           </p>
         </div>
-        <HeroSlider />
       </div>
       <FeedbackModal isOpen={isFeedbackOpen} onOpenChange={setIsFeedbackOpen} />
     </section>

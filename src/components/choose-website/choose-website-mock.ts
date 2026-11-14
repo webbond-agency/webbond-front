@@ -9,23 +9,23 @@ export interface WebsiteType {
 export const WEBSITE_TYPES_MOCK: WebsiteType[] = [
   {
     id: 'landingpage',
-    fonImage: '/choose-fon.webp',
-    fonImageDesktop: '/choose-fon-desktop.webp',
+    fonImage: '/choose-fon-n.webp',
+    fonImageDesktop: '/choose-fon-desktop-n.webp',
     phoneImage: '/choose-iphone-n.webp',
-    bannerImage: '/banner-for-choose-list.webp',
+    bannerImage: '/banner-for-choose-list-n.webp',
   },
   {
     id: 'hjemmeside',
-    fonImage: '/choose-fon.webp',
-    fonImageDesktop: '/choose-fon-desktop.webp',
+    fonImage: '/choose-fon-n.webp',
+    fonImageDesktop: '/choose-fon-desktop-n.webp',
     phoneImage: '/choose-iphone-2-n.webp',
-    bannerImage: '/banner-for-choose-list-2.webp',
+    bannerImage: '/banner-for-choose-list-2-n.webp',
   },
   {
     id: 'webshop',
-    fonImage: '/choose-fon.webp',
-    fonImageDesktop: '/choose-fon-desktop.webp',
+    fonImage: '/choose-fon-n.webp',
+    fonImageDesktop: '/choose-fon-desktop-n.webp',
     phoneImage: '/choose-iphone-3-n.webp',
-    bannerImage: '/banner-for-choose-list-3.webp',
+    bannerImage: '/banner-for-choose-list-3-n.webp',
   },
 ];
